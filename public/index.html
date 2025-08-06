@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuperHeroes - Animal Superhero Game</title>
+    <meta name="description" content="Test your knowledge of satirical animal-themed superheroes in this fun identification game!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .hero-image {
+            font-size: 6rem;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+        
+        .choice-button {
+            transition: all 0.2s ease;
+            transform: translateY(0);
+        }
+        
+        .choice-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .choice-button.correct {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border-color: #059669;
+        }
+        
+        .choice-button.incorrect {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+            border-color: #dc2626;
+        }
+        
+        .choice-button.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .game-stats {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="module">
+        // Game State Management
+        class GameState {
+            constructor() {
+                this.heroes = [];
+                this.currentPage = 'home';
+                this.gameState = 'menu';
+                this.currentHero = null;
+                this.choices = [];
+                this.correctAnswer = '';
+                this.selectedAnswer = '';
+                this.showFeedback = false;
+                this.stats = {
+                    score: 0,
+                    timeRemaining: 60,
+                    questionsAnswered: 0,
+                    correctAnswers: 0,
+                    currentStreak: 0
+                };
+                this.gameTimer = null;
+                this.loadHeroes();
+            }
+
+            async loadHeroes() {
+                try {
+                    const response = await fetch('./heroes.json');
+                    const data = await response.json();
+                    this.heroes = data.heroes;
+                    console.log(`Loaded ${this.heroes.length} heroes`);
+                } catch (error) {
+                    console.error('Error loading heroes:', error);
+                    this.heroes = this.getFallbackHeroes();
+                }
+                this.render();
+            }
+
+            getFallbackHeroes() {
+                return [
+                    {
+                        superhero_name: "Captain Canine",
+                        real_name: "Steve Rover Rogers",
+                        powers: "Super loyalty, frisbee shield mastery, patriotic tail wagging, freedom sniffing",
+                        origin: "Golden retriever accidentally injected with Super Soldier Serum during flea shot.",
+                        trivia: "Uses a frisbee as his shield and can detect freedom from miles away",
+                        animal_theme: "Dog",
+                        hero_inspiration: "Captain America",
+                        difficulty: "Easy"
+                    },
+                    {
+                        superhero_name: "Hulk-a-Hopper",
+                        real_name: "Bruce Banner-Bounce",
+                        powers: "Incredible jumping strength, lily pad smashing, toxic tongue lash, polka-dot rage transformation",
+                        origin: "Scientist who stepped on a Lego during gamma experiment with radioactive pond scum.",
+                        trivia: "Transforms into a polka-dotted frog that sings opera when angry",
+                        animal_theme: "Frog",
+                        hero_inspiration: "The Hulk",
+                        difficulty: "Easy"
+                    },
+                    {
+                        superhero_name: "Wolverine Whiskers",
+                        real_name: "Logan the Meow-gan",
+                        powers: "Adamantium claws/can openers, nine lives (on #4), purr healing factor, explosive hairball projectiles",
+                        origin: "Canadian house cat volunteered for experiment promising unlimited tuna.",
+                        trivia: "Is currently on his 4th life and ironically can't figure out how can openers work",
+                        animal_theme: "Cat",
+                        hero_inspiration: "Wolverine",
+                        difficulty: "Medium"
+                    },
+                    {
+                        superhero_name: "Spider-Swinger",
+                        real_name: "Peter Banana-Parker",
+                        powers: "Web-spinning from tail/armpits, supersonic tree swinging, banana spider-sense, coconut web-shooters",
+                        origin: "Young monkey bitten by radioactive spider at Nuclear-Powered Fruit Research Facility.",
+                        trivia: "His spider-sense is specifically tuned to detect ripe bananas and danger",
+                        animal_theme: "Monkey",
+                        hero_inspiration: "Spider-Man",
+                        difficulty: "Easy"
+                    }
+                ];
+            }
+
+            getAnimalEmoji(animalTheme) {
+                const emojiMap = {
+                    'Dog': '🐕', 'Poodle': '🐩', 'Frog': '🐸', 'Koala': '🐨',
+                    'Cat': '🐱', 'Monkey': '🐒', 'Bat': '🦇', 'Eagle': '🦅',
+                    'Horse': '🐴', 'Whale': '🐋', 'Fish': '🐟', 'Gecko': '🦎',
+                    'Canary': '🐦', 'Panther': '🐾', 'Anteater': '🐜', 'Bee': '🐝',
+                    'Octopus': '🐙', 'Dolphin': '🐬', 'Tiger': '🐅', 'Rhino Beetle': '🪲'
+                };
+                return emojiMap[animalTheme] || '🦸‍♂️';
+            }
+
+            getRandomHero() {
+                if (this.heroes.length === 0) return null;
+                return this.heroes[Math.floor(Math.random() * this.heroes.length)];
+            }
+
+            generateChoices(correctHero) {
+                const wrongChoices = this.heroes
+                    .filter(h => h.superhero_name !== correctHero.superhero_name)
+                    .sort(() => Math.random() - 0.5)
+                    .slice(0, 3)
+                    .map(h => h.superhero_name);
+
+                const allChoices = [correctHero.superhero_name, ...wrongChoices]
+                    .sort(() => Math.random() - 0.5);
+
+                return allChoices;
+            }
+
+            startGame() {
+                this.gameState = 'playing';
+                this.stats = {
+                    score: 0,
+                    timeRemaining: 60,
+                    questionsAnswered: 0,
+                    correctAnswers: 0,
+                    currentStreak: 0
+                };
+                this.startTimer();
+                this.nextQuestion();
+            }
+
+            startTimer() {
+                this.gameTimer = setInterval(() => {
+                    this.stats.timeRemaining--;
+                    if (this.stats.timeRemaining <= 0) {
+                        this.endGame();
+                    }
+                    this.render();
+                }, 1000);
+            }
+
+            nextQuestion() {
+                const hero = this.getRandomHero();
+                if (!hero) return;
+
+                this.currentHero = hero;
+                this.choices = this.generateChoices(hero);
+                this.correctAnswer = hero.superhero_name;
+                this.selectedAnswer = '';
+                this.showFeedback = false;
+                this.render();
+            }
+
+            selectAnswer(answer) {
+                if (this.showFeedback) return;
+
+                this.selectedAnswer = answer;
+                this.showFeedback = true;
+
+                const isCorrect = answer === this.correctAnswer;
+                const points = isCorrect ? (10 + this.stats.currentStreak * 2) : 0;
+
+                this.stats.score += points;
+                this.stats.questionsAnswered++;
+                if (isCorrect) {
+                    this.stats.correctAnswers++;
+                    this.stats.currentStreak++;
+                } else {
+                    this.stats.currentStreak = 0;
+                }
+
+                this.render();
+
+                setTimeout(() => {
+                    if (this.stats.timeRemaining > 0) {
+                        this.nextQuestion();
+                    }
+                }, 2000);
+            }
+
+            endGame() {
+                clearInterval(this.gameTimer);
+                this.gameState = 'finished';
+                this.saveGameStats();
+                this.render();
+            }
+
+            saveGameStats() {
+                try {
+                    const localStats = JSON.parse(localStorage.getItem('heroGameStats') || '{}');
+                    const personalBest = localStats.beatTheClockBest || 0;
+
+                    if (this.stats.score > personalBest) {
+                        localStorage.setItem('heroGameStats', JSON.stringify({
+                            ...localStats,
+                            beatTheClockBest: this.stats.score,
+                            lastPlayed: new Date().toISOString(),
+                        }));
+                    }
+                } catch (error) {
+                    console.error('Error saving game stats:', error);
+                }
+            }
+
+            getPersonalBest() {
+                try {
+                    const localStats = JSON.parse(localStorage.getItem('heroGameStats') || '{}');
+                    return localStats.beatTheClockBest || 0;
+                } catch {
+                    return 0;
+                }
+            }
+
+            render() {
+                const app = document.getElementById('app');
+                
+                if (this.gameState === 'menu') {
+                    app.innerHTML = this.renderMenu();
+                } else if (this.gameState === 'playing') {
+                    app.innerHTML = this.renderGame();
+                } else if (this.gameState === 'finished') {
+                    app.innerHTML = this.renderResults();
+                }
+                
+                this.attachEventListeners();
+            }
+
+            renderMenu() {
+                return `
+                    <div class="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                        <div class="text-center text-white max-w-md mx-auto px-4">
+                            <h1 class="text-6xl font-bold mb-4">🦸‍♂️</h1>
+                            <h2 class="text-4xl font-bold mb-4">DuperHeroes</h2>
+                            <p class="text-xl mb-6">Animal Superhero Identification Game</p>
+                            <p class="text-lg mb-8">Beat the Clock: Identify as many animal superheroes as possible in 60 seconds!</p>
+                            <div class="mb-6 text-lg">
+                                <p>Personal Best: <span class="font-bold">${this.getPersonalBest()}</span> points</p>
+                            </div>
+                            <button onclick="game.startGame()" class="bg-yellow-400 text-black px-8 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-300 transition-colors">
+                                Start Game
+                            </button>
+                            <div class="mt-8 text-sm opacity-80">
+                                <p>Test your knowledge of satirical animal-themed superheroes!</p>
+                                <p class="mt-2">${this.heroes.length} heroes loaded</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            renderGame() {
+                if (!this.currentHero) return '';
+
+                return `
+                    <div class="min-h-screen bg-gradient-to-br from-purple-500 to-pink-600">
+                        <!-- Game Header -->
+                        <div class="game-stats p-4">
+                            <div class="max-w-4xl mx-auto flex justify-between items-center text-white">
+                                <div class="text-xl font-bold">Score: ${this.stats.score}</div>
+                                <div class="text-2xl font-bold">⏰ ${this.stats.timeRemaining}s</div>
+                                <div class="text-xl">Streak: ${this.stats.currentStreak}</div>
+                            </div>
+                        </div>
+
+                        <!-- Game Content -->
+                        <div class="max-w-2xl mx-auto px-4 py-8">
+                            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                                <!-- Hero Image -->
+                                <div class="h-64 bg-gray-200 flex items-center justify-center">
+                                    <div class="hero-image">${this.getAnimalEmoji(this.currentHero.animal_theme)}</div>
+                                </div>
+
+                                <!-- Question -->
+                                <div class="p-6">
+                                    <h2 class="text-2xl font-bold text-center mb-6">Who is this superhero?</h2>
+                                    
+                                    <!-- Answer Choices -->
+                                    <div class="grid grid-cols-1 gap-3">
+                                        ${this.choices.map((choice, index) => {
+                                            let buttonClass = "choice-button w-full p-4 text-left rounded-lg border-2 transition-all duration-200 ";
+                                            
+                                            if (this.showFeedback) {
+                                                if (choice === this.correctAnswer) {
+                                                    buttonClass += "correct";
+                                                } else if (choice === this.selectedAnswer && choice !== this.correctAnswer) {
+                                                    buttonClass += "incorrect";
+                                                } else {
+                                                    buttonClass += "bg-gray-100 text-gray-600 border-gray-300 disabled";
+                                                }
+                                            } else {
+                                                buttonClass += "bg-gray-50 hover:bg-blue-50 border-gray-300 hover:border-blue-300 cursor-pointer";
+                                            }
+
+                                            return `
+                                                <button 
+                                                    onclick="game.selectAnswer('${choice}')" 
+                                                    class="${buttonClass}"
+                                                    ${this.showFeedback ? 'disabled' : ''}
+                                                >
+                                                    <span class="font-semibold">${choice}</span>
+                                                </button>
+                                            `;
+                                        }).join('')}
+                                    </div>
+
+                                    <!-- Feedback -->
+                                    ${this.showFeedback ? `
+                                        <div class="mt-6 p-4 rounded-lg bg-blue-50">
+                                            <div class="text-center">
+                                                <div class="text-lg font-semibold mb-2">
+                                                    ${this.selectedAnswer === this.correctAnswer ? '✅ Correct!' : '❌ Incorrect'}
+                                                    ${this.selectedAnswer === this.correctAnswer && this.stats.currentStreak > 1 ? ` (+${this.stats.currentStreak - 1} streak bonus!)` : ''}
+                                                </div>
+                                                <div class="text-sm text-gray-600">
+                                                    <strong>${this.currentHero.superhero_name}</strong> is ${this.currentHero.real_name}
+                                                </div>
+                                                ${this.currentHero.trivia ? `
+                                                    <div class="text-sm text-gray-600 mt-2">
+                                                        💡 ${this.currentHero.trivia}
+                                                    </div>
+                                                ` : ''}
+                                            </div>
+                                        </div>
+                                    ` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            renderResults() {
+                const personalBest = this.getPersonalBest();
+                const isNewRecord = this.stats.score > personalBest;
+
+                return `
+                    <div class="min-h-screen bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
+                        <div class="text-center text-white max-w-md mx-auto px-4">
+                            <h1 class="text-5xl font-bold mb-4">Time's Up!</h1>
+                            ${isNewRecord ? '<div class="text-2xl mb-4 text-yellow-300">🎉 New Personal Best! 🎉</div>' : ''}
+                            <div class="bg-white/20 rounded-lg p-6 mb-6">
+                                <div class="text-3xl font-bold mb-2">${this.stats.score} Points</div>
+                                <div class="text-lg space-y-1">
+                                    <div>Questions: ${this.stats.questionsAnswered}</div>
+                                    <div>Correct: ${this.stats.correctAnswers}</div>
+                                    <div>Accuracy: ${this.stats.questionsAnswered > 0 ? Math.round((this.stats.correctAnswers / this.stats.questionsAnswered) * 100) : 0}%</div>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <button
+                                    onclick="game.startGame()"
+                                    class="w-full bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-colors"
+                                >
+                                    Play Again
+                                </button>
+                                <button
+                                    onclick="game.gameState = 'menu'; game.render();"
+                                    class="w-full bg-white/20 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-white/30 transition-colors"
+                                >
+                                    Back to Menu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            attachEventListeners() {
+                // Event listeners are handled through onclick attributes in the HTML
+            }
+        }
+
+        // Initialize the game
+        window.game = new GameState();
+    </script>
+</body>
+</html>
