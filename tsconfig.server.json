@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "jsx": "preserve",
+    "outDir": "./dist/server",
+    "rootDir": "./src/server"
+  },
+  "include": [
+    "src/server/**/*",
+    "src/shared/**/*",
+    "src/database/**/*"
+  ],
+  "exclude": [
+    "src/client/**/*",
+    "node_modules",
+    "dist"
+  ]
+}
