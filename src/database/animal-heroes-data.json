@@ -1,0 +1,204 @@
+{
+  "heroes": [
+    {
+      "superhero_name": "Captain Canine",
+      "real_name": "Steve Rover Rogers",
+      "powers": "Super loyalty, frisbee shield mastery, patriotic tail wagging, freedom sniffing",
+      "origin": "Golden retriever accidentally injected with Super Soldier Serum during flea shot. Now fights for truth, justice, and unlimited belly rubs.",
+      "trivia": "Uses a frisbee as his shield and can detect freedom from miles away",
+      "animal_theme": "Dog",
+      "hero_inspiration": "Captain America",
+      "difficulty": "Easy"
+    },
+    {
+      "superhero_name": "Winter Woofle",
+      "real_name": "Bucky Bark Barnes",
+      "powers": "Bionic poodle puff with 147 functions, enhanced sniffing, tactical yipping, metal bone throwing",
+      "origin": "Captain Canine's best friend who fell from a train playing extreme frisbee. Soviet scientists gave him a cybernetic poof and trained him as the ultimate good boy assassin.",
+      "trivia": "His bionic poodle puff has 147 different functions including a disco ball mode",
+      "animal_theme": "Poodle",
+      "hero_inspiration": "Winter Soldier",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Hulk-a-Hopper",
+      "real_name": "Bruce Banner-Bounce",
+      "powers": "Incredible jumping strength, lily pad smashing, toxic tongue lash, polka-dot rage transformation",
+      "origin": "Scientist who stepped on a Lego during gamma experiment with radioactive pond scum. Transforms into giant polka-dotted opera-singing frog when angry.",
+      "trivia": "Transforms into a polka-dotted frog that sings opera when angry",
+      "animal_theme": "Frog",
+      "hero_inspiration": "The Hulk",
+      "difficulty": "Easy"
+    },
+    {
+      "superhero_name": "Crimson Koala",
+      "real_name": "Ross the Red Boss",
+      "powers": "Eucalyptus-fueled rage, time-traveling tree climbing, magic pouch storage, rainbow burping",
+      "origin": "Military general became red koala after gamma exposure while hunting Hulk-a-Hopper with eucalyptus butterfly net. Now speaks only Australian slang backwards.",
+      "trivia": "Speaks only Australian slang backwards and burps rainbows when excited",
+      "animal_theme": "Koala",
+      "hero_inspiration": "Red Hulk",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Wolverine Whiskers",
+      "real_name": "Logan the Meow-gan",
+      "powers": "Adamantium claws/can openers, nine lives (on #4), purr healing factor, explosive hairball projectiles",
+      "origin": "Canadian house cat volunteered for experiment promising unlimited tuna. Got metal claws but memory erased, now remembers everything except how can openers work.",
+      "trivia": "Is currently on his 4th life and ironically can't figure out how can openers work despite having adamantium claws",
+      "animal_theme": "Cat",
+      "hero_inspiration": "Wolverine",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Spider-Swinger",
+      "real_name": "Peter Banana-Parker",
+      "powers": "Web-spinning from tail/armpits, supersonic tree swinging, banana spider-sense, coconut web-shooters",
+      "origin": "Young monkey bitten by radioactive spider at Nuclear-Powered Fruit Research Facility. Uncle Banana taught him 'with great banana power comes great banana responsibility.'",
+      "trivia": "His spider-sense is specifically tuned to detect ripe bananas and danger",
+      "animal_theme": "Monkey",
+      "hero_inspiration": "Spider-Man",
+      "difficulty": "Easy"
+    },
+    {
+      "superhero_name": "Batty McBat-Face",
+      "real_name": "Bruce Fang-Wayne",
+      "powers": "Echolocation through souls, dramatic windless cape fluttering, blood orange super strength, gothic sonar screeching",
+      "origin": "Wealthy bat scientist became vampire bat after experiment with radioactive fruit bats and expired ketchup. Fights crime 3 hours/day, sleeps 20, spends 1 hour cape swooshing.",
+      "trivia": "Spends exactly 1 hour per day practicing dramatic cape swooshing",
+      "animal_theme": "Bat",
+      "hero_inspiration": "Morbius",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Iron Eagle",
+      "real_name": "Tony Stark-Beak",
+      "powers": "847-gadget flight suit, steel talons, instant skyscraper nest-building, missile feathers that explode into confetti",
+      "origin": "Genius eagle captured by hunters, escaped by building suit from paper clips and extension cords. Suit powered by solar energy, smugness, and expensive coffee beans.",
+      "trivia": "His suit is powered by solar energy, smugness, and expensive coffee beans",
+      "animal_theme": "Eagle",
+      "hero_inspiration": "Iron Man",
+      "difficulty": "Easy"
+    },
+    {
+      "superhero_name": "Thor-ough Bred",
+      "real_name": "Thunder Gallop-Son",
+      "powers": "Lightning gallop with rainbow trails, 500-ton Mjolnir horseshoe, storm summoning neighs, self-styling mane",
+      "origin": "Asgardian prince banished for eating all golden apples and trying to marry the Moon. Can return when he learns humility and stops challenging random horses to races.",
+      "trivia": "Was banished for trying to marry the Moon and challenging every horse he meets to a race",
+      "animal_theme": "Horse",
+      "hero_inspiration": "Thor",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Aqua-Mammal",
+      "real_name": "Prince Namor Splash-a-Lot",
+      "powers": "Universal sonar translation, belly-flop tidal waves, krill smoothie strength, disco ball crown",
+      "origin": "Half-whale ruler of Atlantis who gets cranky about ocean pollution. Commands all sea life except dolphins who think his jokes are terrible.",
+      "trivia": "Commands all sea life except dolphins who find his jokes unbearably bad",
+      "animal_theme": "Whale",
+      "hero_inspiration": "Namor",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Quicksilver Swimmer",
+      "real_name": "Pietro Fin-imoff",
+      "powers": "Faster-than-light swimming, portal-creating water vortexes, sonic bubble bursts, time-stream navigation",
+      "origin": "Sarcastic fish struck by lightning in particle accelerator cooling tank. Everything moves in slow motion to him, especially other fish telling jokes.",
+      "trivia": "Everything moves in slow motion to him, especially other fish telling jokes",
+      "animal_theme": "Fish",
+      "hero_inspiration": "Quicksilver",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Stretchy McStretch-Face",
+      "real_name": "Reed Richard-Tail",
+      "powers": "Infinite body stretching, wall-crawling sticky toes, Tuesday tail regeneration, color-changing camouflage",
+      "origin": "Scientist gecko became infinitely stretchable after cosmic radiation from terrarium heat lamp experiment. Once stretched to Jupiter for pizza delivery.",
+      "trivia": "Once stretched all the way to Jupiter just to deliver a pizza",
+      "animal_theme": "Gecko",
+      "hero_inspiration": "Mr. Fantastic",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Falcon McFlappy",
+      "real_name": "Sam Wing-Wilson",
+      "powers": "Supersonic flight with traffic control, wing-mounted rockets, bird army summoning, seed bomb forests",
+      "origin": "Military canary given experimental jet pack technology. Flew so fast he accidentally traveled to last Tuesday and had to fly back.",
+      "trivia": "Once flew so fast he accidentally time traveled to last Tuesday",
+      "animal_theme": "Canary",
+      "hero_inspiration": "Falcon",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Black Panther Paws",
+      "real_name": "T'Challa Whisker-Wakanda",
+      "powers": "Vibranium claws, physics-defying reflexes, royal nine lives, table-knocking precision, catnip sense enhancement",
+      "origin": "King of Wakitty who ate heart-shaped herb growing by grandmother's cosmic scratching post. Protects world's tuna supply and sacred catnip mines.",
+      "trivia": "Protects the world's tuna supply and sacred catnip mines with vibranium claws",
+      "animal_theme": "Panther",
+      "hero_inspiration": "Black Panther",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Ant-Eater Andy",
+      "real_name": "Scott Lang-Snout",
+      "powers": "Size manipulation, 47-dialect ant communication, rock tunneling snout, 30,000-ant eating capacity",
+      "origin": "Reformed burglar discovered Pym's shrinking suit while robbing ant farm for midnight snack. Suit powered by concentrated ant essence and regret.",
+      "trivia": "Can communicate in 47 different ant dialects and eat 30,000 ants in one sitting",
+      "animal_theme": "Anteater",
+      "hero_inspiration": "Ant-Man",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Wasp Wonder-Bee",
+      "real_name": "Janet van Buzz-Dyne",
+      "powers": "Hummingbird-speed flight, delicious honey blasts, perfect-hair size changing, sneeze-inducing pollen clouds",
+      "origin": "Fashion designer bee gained powers from experimental pollen in husband's lab. Designs tiny superhero costumes for insects while maintaining fabulous style.",
+      "trivia": "Designs tiny superhero costumes for insects while maintaining perfect hair at any size",
+      "animal_theme": "Bee",
+      "hero_inspiration": "Wasp",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Doctor Strange-topus",
+      "real_name": "Stephen Tentacle-Strange",
+      "powers": "Eight-arm jazz-hands spellcasting, dimensional ink portals, reality-sticking suction cups, pickle jar magic",
+      "origin": "Surgeon octopus learned mystic arts after Bermuda Triangle diving accident. Ancient sea turtle taught him magic through underwater charades.",
+      "trivia": "Learned magic from an ancient sea turtle through underwater charades",
+      "animal_theme": "Octopus",
+      "hero_inspiration": "Doctor Strange",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Flipper the Flippy",
+      "real_name": "Arthur Curry-Fin",
+      "powers": "Universal liquid breathing, space echolocation, fish customer service telepathy, shark-laughing comedy shows",
+      "origin": "Half-human dolphin prince hosts ocean's most popular comedy club. Jokes so funny even grumpy lobsters crack shells laughing.",
+      "trivia": "Hosts the ocean's most popular comedy club where even grumpy lobsters crack up",
+      "animal_theme": "Dolphin",
+      "hero_inspiration": "Aquaman",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Sabretooth Tabby",
+      "real_name": "Victor Stripe-Creed",
+      "powers": "Rainbow-colored regenerating fangs, three-state territorial roaring, laser pointer terror, catnip immunity",
+      "origin": "Mutant tiger obsessed with hunting Wolverine Whiskers. Raised by circus tigers who taught dramatic roaring and flaming hoop jumping.",
+      "trivia": "Has rainbow-colored regenerating fangs and is completely immune to catnip",
+      "animal_theme": "Tiger",
+      "hero_inspiration": "Sabretooth",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Rhino Beetle-Borg",
+      "real_name": "Alex Bug-Crusher",
+      "powers": "Titanium exoskeleton, dimension-breaking charges, sneeze demolition, 850x strength with calculus, ice cream radar",
+      "origin": "Criminal bug fused with rhino armor after volunteering for 'totally safe' experiment involving beetle juice and rock music. Crashes through walls because doors are for quitters.",
+      "trivia": "Has built-in ice cream radar and crashes through walls because doors are for quitters",
+      "animal_theme": "Rhino Beetle",
+      "hero_inspiration": "Rhino",
+      "difficulty": "Medium"
+    }
+  ]
+}

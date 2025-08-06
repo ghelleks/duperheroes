@@ -125,25 +125,27 @@ function Game() {
         
         setChoices(choicesData.choices);
         setCorrectAnswer(choicesData.correct_answer);
+        return;
       }
     } catch (error) {
-      console.error('Error fetching hero:', error);
-      // Fallback to mock data for testing
-      const randomHero = mockHeroes[Math.floor(Math.random() * mockHeroes.length)];
-      setCurrentHero(randomHero);
-      
-      // Generate wrong choices
-      const wrongChoices = mockHeroes
-        .filter(h => h.id !== randomHero.id)
-        .map(h => h.superhero_name)
-        .slice(0, 3);
-      
-      const allChoices = [randomHero.superhero_name, ...wrongChoices]
-        .sort(() => Math.random() - 0.5);
-      
-      setChoices(allChoices);
-      setCorrectAnswer(randomHero.superhero_name);
+      console.error('Error fetching hero, using fallback:', error);
     }
+    
+    // Fallback to mock data if API fails
+    const randomHero = mockHeroes[Math.floor(Math.random() * mockHeroes.length)];
+    setCurrentHero(randomHero);
+    
+    // Generate wrong choices
+    const wrongChoices = mockHeroes
+      .filter(h => h.id !== randomHero.id)
+      .map(h => h.superhero_name)
+      .slice(0, 3);
+    
+    const allChoices = [randomHero.superhero_name, ...wrongChoices]
+      .sort(() => Math.random() - 0.5);
+    
+    setChoices(allChoices);
+    setCorrectAnswer(randomHero.superhero_name);
   }, []);
 
   const startGame = () => {
