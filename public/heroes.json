@@ -199,6 +199,306 @@
       "animal_theme": "Rhino Beetle",
       "hero_inspiration": "Rhino",
       "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Lizard Larry",
+      "real_name": "Curt Connors-Scale",
+      "powers": "20-minute tail regeneration, cloud wall-crawling, mood color-changing, reptile telepathy, 100% bug-catching tongue",
+      "origin": "One-armed scientist tried regrowing limb with gecko DNA and radioactive lizard vitamins. Became giant gecko who sunbathes on skyscrapers and gives life advice.",
+      "trivia": "Sunbathes on skyscrapers and gives life advice to anyone who asks",
+      "animal_theme": "Lizard",
+      "hero_inspiration": "The Lizard",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Venom Danger-Noodle",
+      "real_name": "Eddie Brock-Hiss",
+      "powers": "Truth-telling venomous bite, cosmic anxiety symbiosis, chocolate-powered strength, outfit shape-shifting scales",
+      "origin": "Grumpy journalist bonded with alien symbiote addicted to chocolate ice cream. They fight crime while arguing about lunch and pineapple pizza.",
+      "trivia": "Constantly argues with his symbiote about lunch choices and pineapple pizza ethics",
+      "animal_theme": "Snake",
+      "hero_inspiration": "Venom",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Deadpool Trash-Panda",
+      "real_name": "Wade Wilson-Rinse",
+      "powers": "Too-good playing dead healing, narrator-annoying fourth-wall breaking, garbage gourmet cooking, physics-defying ridiculousness",
+      "origin": "Wise-cracking mercenary gained immortality through experimental garbage consumption and radioactive pizza crusts. Went insane but developed audience-talking ability.",
+      "trivia": "Gained immortality from eating experimental garbage and radioactive pizza crusts",
+      "animal_theme": "Raccoon",
+      "hero_inspiration": "Deadpool",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Silver Surfer Shark",
+      "real_name": "Norrin Great-Bite",
+      "powers": "Starlight surfboard cosmic travel, laser-reflecting metallic skin, galaxy ocean manipulation, space-underwater breathing",
+      "origin": "Philosophical shark became Galactus herald to save reef from cosmic litterbugs. Surfs universe seeking planets with good waves and decent sushi.",
+      "trivia": "Surfs the universe looking for planets with good waves and decent sushi",
+      "animal_theme": "Shark",
+      "hero_inspiration": "Silver Surfer",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Daredevil Deer",
+      "real_name": "Matt Murdock-Antler",
+      "powers": "Lie-detecting forest senses, 47-style antler combat, ZIP code hearing range, emotion-changing molting armor",
+      "origin": "Blind lawyer deer hit by radioactive waste truck gained superhuman senses. Fights for court justice by day, crime by night with pointy antlers.",
+      "trivia": "Can hear everything within a ZIP code radius and practices 47 different antler combat styles",
+      "animal_theme": "Deer",
+      "hero_inspiration": "Daredevil",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Power Primate",
+      "real_name": "Luke Cage-Kong",
+      "powers": "Bullet-deflecting unbreakable fur, ego-shattering chest beats, banana-slip immunity, city-launching tire swings",
+      "origin": "Wrongly imprisoned gorilla gained invulnerable skin from radioactive banana bread recipe experiment. Fights crime for money because superhero work doesn't pay zoo bills.",
+      "trivia": "Is completely immune to banana peels and fights crime to pay his zoo bills",
+      "animal_theme": "Gorilla",
+      "hero_inspiration": "Luke Cage",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Iron Fist Cricket",
+      "real_name": "Danny Rand-Chirp",
+      "powers": "Mountain-shattering chi cricket strikes, time-stopping meditation, 47-generation insect martial arts, sleep-inducing chirp hypnosis",
+      "origin": "Rich cricket trained in mystical K'un-Lun after parents' plane crash. Learned to channel chi into glowing tiny green lantern fists.",
+      "trivia": "Channels chi into glowing fists and knows 47 generations of insect martial arts",
+      "animal_theme": "Cricket",
+      "hero_inspiration": "Iron Fist",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Jessica Hop-Jones",
+      "real_name": "Jessica Bounce-Detective",
+      "powers": "Low-orbit super jumping, pouch detective storage, sonic boom kick boxing, joey protection instincts",
+      "origin": "Former superhero turned private investigator after traumatic Purple Man-drill experience. Solves cases powered by coffee, stubbornness, and pouch organization.",
+      "trivia": "Solves cases powered by coffee, stubbornness, and excellent pouch organization skills",
+      "animal_theme": "Kangaroo",
+      "hero_inspiration": "Jessica Jones",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Punisher Pine-Cushion",
+      "real_name": "Frank Quill-Castle",
+      "powers": "Heat-seeking quill projectiles, bullet-deflecting defensive rolling, 247 tactical spike patterns, 100-yard needle threading",
+      "origin": "Vigilante porcupine's family killed during picnic gone wrong. Wages pointed justice war on crime with custom motorcycle built for quills.",
+      "trivia": "Rides a custom motorcycle designed specifically for porcupines and knows 247 tactical spike patterns",
+      "animal_theme": "Porcupine",
+      "hero_inspiration": "The Punisher",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Ghost Rider Raccoon",
+      "real_name": "Johnny Trash-Blaze",
+      "powers": "Guilty-only burning hellfire, worst-crime penance stare, flaming garbage truck riding, dimensional trash summoning",
+      "origin": "Stunt raccoon made deal with Mephisto to save dying father. Head becomes flaming skull seeking vengeance against litterbugs and non-recyclers.",
+      "trivia": "Seeks vengeance specifically against litterbugs and people who don't recycle",
+      "animal_theme": "Raccoon",
+      "hero_inspiration": "Ghost Rider",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Captain Marvel Cat",
+      "real_name": "Carol Whiskers-Danvers",
+      "powers": "Attitude-powered cosmic flight, photon hairball blasts, laser pointer energy absorption, zero-gravity table knocking",
+      "origin": "Air Force cat pilot gained cosmic powers from Kree technology explosion. Flies through space absorbing energy and resisting urge to knock things off spaceships.",
+      "trivia": "Constantly resists the urge to knock things off spaceships while flying through the cosmos",
+      "animal_theme": "Cat",
+      "hero_inspiration": "Captain Marvel",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Storm Breaker Bird",
+      "real_name": "Ororo Wind-Rider",
+      "powers": "Emotion-responsive weather control, hurricane wing beats, tail lightning, rainbow bridge cloud nesting, fish rain summoning",
+      "origin": "Mutant albatross controls all weather and accidentally made it rain gummy bears during villain speech. Worshipped as goddess until joining X-Manimals.",
+      "trivia": "Once accidentally made it rain gummy bears during an important villain speech",
+      "animal_theme": "Albatross",
+      "hero_inspiration": "Storm",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Cyclops Ram",
+      "real_name": "Scott Summers-Horn",
+      "powers": "Horn optic blasts, barnyard leadership, ruby quartz truth vision, mountain-moving head butts, self-fluffing wool armor",
+      "origin": "Mutant ram shoots energy beams from horns, leads X-Manimals superhero barnyard team. Wears ruby glasses to control power despite being fluffy.",
+      "trivia": "Leads the X-Manimals superhero barnyard team and has self-fluffing wool armor",
+      "animal_theme": "Ram",
+      "hero_inspiration": "Cyclops",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Phoenix Dove",
+      "real_name": "Jean Grey-Feather",
+      "powers": "Galaxy-range telepathic cooing, physics-defying telekinetic flight, cosmic firebird transformation, bread crumb telepathy",
+      "origin": "Psychic dove became Phoenix Force vessel with godlike powers and overwhelming urge to nest on tall buildings. Once erased embarrassing X-Men meeting memories.",
+      "trivia": "Once erased everyone's memories of an embarrassing X-Men team meeting",
+      "animal_theme": "Dove",
+      "hero_inspiration": "Jean Grey/Phoenix",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Beast Buffalo",
+      "real_name": "Hank McCoy-Bull",
+      "powers": "Problem-solving head-butting, 12-PhD scientific genius, supersonic stampeding, chemical-mixing horns, commercial-break speed reading",
+      "origin": "Scientist buffalo's genetic experiments gave enhanced intelligence and blue fur. Speaks Shakespeare while fighting and organizes lab by color and alphabet.",
+      "trivia": "Has 12 PhDs, speaks Shakespeare while fighting, and organizes his lab by color and alphabet",
+      "animal_theme": "Buffalo",
+      "hero_inspiration": "Beast",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Rogue Skunk",
+      "real_name": "Anna Marie Stripe-d'Acier",
+      "powers": "Selective skin-contact power absorption, mood-dependent defensive spray, memory-stealing touch, zebra herd camouflage",
+      "origin": "Mutant skunk absorbs powers through touch making dating complicated until learning control. Raised by villainous Mystique, joined X-Manimals after realizing evil was too dramatic.",
+      "trivia": "Joined the X-Manimals after deciding that villainy was just too dramatic for her taste",
+      "animal_theme": "Skunk",
+      "hero_inspiration": "Rogue",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Gambit Peacock",
+      "real_name": "Remy Lebeau-Plume",
+      "powers": "Fireworks-exploding kinetic feathers, irresistible charm aura, enemy-entrancing eye spots, perfect-accuracy explosive cards",
+      "origin": "Cajun peacock thief charges objects with kinetic energy for spectacular explosions. French accent gets stronger when showing off magnificent tail feathers.",
+      "trivia": "His French accent gets stronger whenever he shows off his magnificent tail feathers",
+      "animal_theme": "Peacock",
+      "hero_inspiration": "Gambit",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Magneto Magpie",
+      "real_name": "Erik Shiny-Sher",
+      "powers": "Submarine-lifting magnetic control, solar-system shiny detection, jewelry nest building, office prank paper clip telekinesis",
+      "origin": "Holocaust survivor magpie controls magnetism with uncontrollable metal collecting urge. Built magnificent nest from stolen bottle caps, spoons, and occasional cars.",
+      "trivia": "Built his nest from stolen bottle caps, spoons, and the occasional car",
+      "animal_theme": "Magpie",
+      "hero_inspiration": "Magneto",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Professor Hoot-X",
+      "real_name": "Charles Xavier-Wise",
+      "powers": "Mind-reading telepathic wisdom, situation-calming psychic hoots, mental education downloads, 360-degree vision, all-night grading stamina",
+      "origin": "World's most powerful psychic owl founded Xavier's School for Gifted Animals. Bald, wise, confined to high-tech perch after Magneto Magpie nest accident.",
+      "trivia": "Confined to a high-tech perch after an unfortunate accident involving Magneto Magpie's nest",
+      "animal_theme": "Owl",
+      "hero_inspiration": "Professor X",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Mystique Chameleon",
+      "real_name": "Raven Color-Change",
+      "powers": "Perfect animal shape-shifting, automatic emotion color adaptation, invisible environmental camouflage, professional identity crisis management",
+      "origin": "100+ year old mutant chameleon spy can mimic any animal but forgets original form. Once spent three years convinced she was houseplant.",
+      "trivia": "Once spent three years completely convinced that she was a houseplant",
+      "animal_theme": "Chameleon",
+      "hero_inspiration": "Mystique",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Nightcrawler Cricket",
+      "real_name": "Kurt Wagner-Hop",
+      "powers": "BAMF! teleportation with sulfur smoke, parallel universe hopping, gravity-defying acrobatics, tiny rapier swashbuckling",
+      "origin": "German circus-raised mutant cricket teleports anywhere he pictures, leaving sulfur puffs and hopping sounds. Deeply religious, attends worldwide church services every Sunday.",
+      "trivia": "Attends church services all around the world every Sunday via teleportation",
+      "animal_theme": "Cricket",
+      "hero_inspiration": "Nightcrawler",
+      "difficulty": "Hard"
+    },
+    {
+      "superhero_name": "Colossus Rhino",
+      "real_name": "Piotr Steel-Horn",
+      "powers": "Indestructible organic steel transformation, sound-barrier charging, missile-deflecting armor, living chisel sculpture creation",
+      "origin": "Russian rhino artist transforms into organic steel armor. Creates beautiful sculptures when not accidentally running through buildings but gets stuck in doorways.",
+      "trivia": "Creates beautiful sculptures but constantly gets stuck in doorways due to his size",
+      "animal_theme": "Rhino",
+      "hero_inspiration": "Colossus",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Iceman Polar",
+      "real_name": "Bobby Freeze-Drake",
+      "powers": "Glacier-creating ice manipulation, snow cone freezing breath, ice cream preservation, lake-freezing ice skating",
+      "origin": "Mutant polar bear discovered powers during warm Arctic summer when frustrated and accidentally froze entire North Pole. Makes world's best snow cones.",
+      "trivia": "Accidentally froze the entire North Pole during a warm summer and makes the world's best snow cones",
+      "animal_theme": "Polar Bear",
+      "hero_inspiration": "Iceman",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Human Torch-Mander",
+      "real_name": "Johnny Hot-Storm",
+      "powers": "Volcano-living fire immunity, infinite flame projection, hot place healing, sky fire writing, s'mores mastery",
+      "origin": "Space salamander gained flame powers from cosmic sun radiation during research trip. Controls fire, flies, runs universe's hottest BBQ restaurant.",
+      "trivia": "Runs the universe's hottest BBQ restaurant and is a master at making s'mores",
+      "animal_theme": "Salamander",
+      "hero_inspiration": "Human Torch",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Invisible Octopus-Woman",
+      "real_name": "Susan Storm-Arms",
+      "powers": "Complete space-underwater invisibility, submarine-lifting tentacle force fields, vanilla-scented disappearing ink, hug-activated invisibility sharing",
+      "origin": "Space-traveling octopus gained invisibility from Mars vacation cosmic radiation. Creates force fields, turns invisible, keeps track of eight arms when they disappear.",
+      "trivia": "Has trouble keeping track of all eight arms when they turn invisible",
+      "animal_theme": "Octopus",
+      "hero_inspiration": "Invisible Woman",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Thing Turtle",
+      "real_name": "Benjamin Rock-Shell",
+      "powers": "Nuclear-weapon-deflecting shell, mountain-lifting strength, 500-year wisdom, slow-motion comedy timing, living boulder transformation",
+      "origin": "Test pilot turtle transformed by cosmic rays into orange rocky creature. Moves incredibly slowly but hits harder than meteorites, secretly proud of shell aerodynamics.",
+      "trivia": "Moves incredibly slowly but is secretly very proud of his shell's aerodynamic properties",
+      "animal_theme": "Turtle",
+      "hero_inspiration": "The Thing",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Hawkeye Hawk",
+      "real_name": "Clint Sharp-Beak",
+      "powers": "Orbital-distance perfect aim, blindfolded barrel roll archery, dimensional prey tracking, sleep-archery championship skills",
+      "origin": "Circus-trained master archer never misses targets. Once shot arrow around Earth twice to hit target behind him, won blindfolded sleeping dart game.",
+      "trivia": "Once shot an arrow around Earth twice to hit a target behind him",
+      "animal_theme": "Hawk",
+      "hero_inspiration": "Hawkeye",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Black Widow Spider",
+      "real_name": "Natasha Web-Romanoff",
+      "powers": "Embarrassing-truth venom bite, steel-strong web entrapment, eight-keyboard multitasking, 15-language ceiling walking",
+      "origin": "Russian Red Room spy spider trained as perfect assassin. Defected to heroism, uses skills fighting crime and organizing perfect webs.",
+      "trivia": "Can multitask on eight keyboards simultaneously and speak 15 languages while walking on ceilings",
+      "animal_theme": "Spider",
+      "hero_inspiration": "Black Widow",
+      "difficulty": "Medium"
+    },
+    {
+      "superhero_name": "Nick Furry",
+      "real_name": "Nicholas Burrow-Fury",
+      "powers": "Steel-concrete burrowing, sniper-precision one-eyed targeting, global underground intelligence, computer eyepatch, jack-in-box surprise appearances",
+      "origin": "S.H.I.E.L.D. director lost eye in alien time-travel tunneling accident. Keeps world safe by popping up in most unexpected places like furry surprise.",
+      "trivia": "Keeps the world safe by popping up in the most unexpected places like a furry jack-in-the-box",
+      "animal_theme": "Badger",
+      "hero_inspiration": "Nick Fury",
+      "difficulty": "Easy"
+    },
+    {
+      "superhero_name": "Groot Sloth",
+      "real_name": "Groot Slow-kowski",
+      "powers": "Extremely slow branch generation, sunlight-nap photosynthesis healing, three-episode regeneration, five-minute-per-word speech",
+      "origin": "Planet X sentient tree sloth says 'I am Groot' so slowly each word takes five minutes. Regenerates from twigs, gives galaxy's best hugs (eventually).",
+      "trivia": "Says 'I am Groot' so slowly that each word takes five minutes to complete",
+      "animal_theme": "Sloth",
+      "hero_inspiration": "Groot",
+      "difficulty": "Medium"
     }
   ]
 }
