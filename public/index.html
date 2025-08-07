@@ -158,28 +158,26 @@
             }
 
             getHeroDisplay(hero) {
-                // Generate image path from superhero name
-                const imagePath = `images/${hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
                 const emoji = this.getAnimalEmoji(hero.animal_theme);
-                const uniqueId = `hero-display-${Math.random().toString(36).substr(2, 9)}`;
                 
-                // Start with emoji, replace with image only if it loads successfully
-                setTimeout(() => {
-                    const container = document.getElementById(uniqueId);
-                    if (container) {
-                        const img = new Image();
-                        img.onload = function() {
-                            img.className = 'hero-image-img';
-                            img.alt = hero.superhero_name;
-                            container.innerHTML = '';
-                            container.appendChild(img);
-                        };
-                        // If image fails to load, do nothing - keep the emoji
-                        img.src = imagePath;
-                    }
-                }, 0);
+                // List of heroes that have images (no attempt to load others)
+                const heroesWithImages = [
+                    'captain-canine',
+                    'crimson-koala', 
+                    'hulk-a-hopper',
+                    'iron-eagle',
+                    'thor-ough-bred',
+                    'wolverine-whiskers'
+                ];
                 
-                return `<div id="${uniqueId}" class="hero-image-emoji">${emoji}</div>`;
+                const heroSlug = hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                
+                if (heroesWithImages.includes(heroSlug)) {
+                    const imagePath = `images/${heroSlug}.png`;
+                    return `<img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" />`;
+                } else {
+                    return `<div class="hero-image-emoji">${emoji}</div>`;
+                }
             }
 
             getAnimalEmoji(animalTheme) {
