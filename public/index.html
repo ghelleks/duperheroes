@@ -161,9 +161,15 @@
                 // Generate image path from superhero name
                 const imagePath = `images/${hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
                 const emoji = this.getAnimalEmoji(hero.animal_theme);
+                const uniqueId = `hero-img-${Math.random().toString(36).substr(2, 9)}`;
                 
-                return `<img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                        <div class="hero-image-emoji" style="display:none;">${emoji}</div>`;
+                // Use a more robust error handling approach
+                return `<div id="${uniqueId}">
+                    <img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" 
+                         onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+                         onerror="this.remove(); document.getElementById('${uniqueId}').querySelector('.hero-image-emoji').style.display='block';" />
+                    <div class="hero-image-emoji" style="display:none;">${emoji}</div>
+                </div>`;
             }
 
             getAnimalEmoji(animalTheme) {
