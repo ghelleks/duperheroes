@@ -161,15 +161,25 @@
                 // Generate image path from superhero name
                 const imagePath = `images/${hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
                 const emoji = this.getAnimalEmoji(hero.animal_theme);
-                const uniqueId = `hero-img-${Math.random().toString(36).substr(2, 9)}`;
+                const uniqueId = `hero-display-${Math.random().toString(36).substr(2, 9)}`;
                 
-                // Use a more robust error handling approach
-                return `<div id="${uniqueId}">
-                    <img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" 
-                         onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
-                         onerror="this.remove(); document.getElementById('${uniqueId}').querySelector('.hero-image-emoji').style.display='block';" />
-                    <div class="hero-image-emoji" style="display:none;">${emoji}</div>
-                </div>`;
+                // Start with emoji, replace with image only if it loads successfully
+                setTimeout(() => {
+                    const container = document.getElementById(uniqueId);
+                    if (container) {
+                        const img = new Image();
+                        img.onload = function() {
+                            img.className = 'hero-image-img';
+                            img.alt = hero.superhero_name;
+                            container.innerHTML = '';
+                            container.appendChild(img);
+                        };
+                        // If image fails to load, do nothing - keep the emoji
+                        img.src = imagePath;
+                    }
+                }, 0);
+                
+                return `<div id="${uniqueId}" class="hero-image-emoji">${emoji}</div>`;
             }
 
             getAnimalEmoji(animalTheme) {
