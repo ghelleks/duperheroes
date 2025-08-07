@@ -162,7 +162,7 @@
                 const imagePath = `images/${hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
                 const emoji = this.getAnimalEmoji(hero.animal_theme);
                 
-                return `<img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                return `<img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';" />
                         <div class="hero-image-emoji" style="display:none;">${emoji}</div>`;
             }
 
