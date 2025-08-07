@@ -26,6 +26,19 @@
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
         }
         
+        .hero-image-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+        
+        .hero-image-emoji {
+            font-size: 6rem;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+        
         .choice-button {
             transition: all 0.2s ease;
             transform: translateY(0);
@@ -142,6 +155,15 @@
                         difficulty: "Easy"
                     }
                 ];
+            }
+
+            getHeroDisplay(hero) {
+                // Generate image path from superhero name
+                const imagePath = `images/${hero.superhero_name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
+                const emoji = this.getAnimalEmoji(hero.animal_theme);
+                
+                return `<img src="${imagePath}" alt="${hero.superhero_name}" class="hero-image-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                        <div class="hero-image-emoji" style="display:none;">${emoji}</div>`;
             }
 
             getAnimalEmoji(animalTheme) {
@@ -331,7 +353,7 @@
                             <div class="bg-white rounded-lg shadow-xl overflow-hidden">
                                 <!-- Hero Image -->
                                 <div class="h-64 bg-gray-200 flex items-center justify-center">
-                                    <div class="hero-image">${this.getAnimalEmoji(this.currentHero.animal_theme)}</div>
+                                    <div class="hero-image">${this.getHeroDisplay(this.currentHero)}</div>
                                 </div>
 
                                 <!-- Question -->
