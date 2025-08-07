@@ -4,83 +4,49 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-"Duperheroes" is a superhero identification web game featuring satirical animal-themed superheroes. The application consists of a public game website and a password-protected admin site for managing the superhero database. Players can compete in single-user modes (Beat the Clock, Speedrun, Practice) and optional multiplayer battles, earning in-game currency (Hero Points) to purchase cosmetic items.
+"DuperHeroes" is a single-page web application featuring a superhero identification game with satirical animal-themed superheroes. Players compete in a "Beat the Clock" mode where they have 60 seconds to identify as many animal superheroes as possible. The application is a static site designed for GitHub Pages deployment.
 
 ## Development Commands
 
-### Primary Development
-- `npm run dev` - Start both client and server in development mode
-- `npm run dev:server` - Start only the Express server (port 3001)
-- `npm run dev:client` - Start only the Vite dev server (port 5173)
+### Local Development
+- `npx http-server public -p 8080 -o` - Serve static files locally
+- `cd public && python -m http.server 8080` - Alternative Python server
+- No build process required - direct file serving
 
-### Building
-- `npm run build` - Build both client and server for production
-- `npm run build:server` - Build server only (outputs to dist/)
-- `npm run build:client` - Build client only (outputs to dist/client/)
-- `npm start` - Run production server from dist/
-
-### Testing
-- `npm test` - Run Jest test suite
-- `npm run test:watch` - Run tests in watch mode
-- `npm run test:coverage` - Generate coverage report
-- Coverage threshold: 70% branches, functions, lines, statements
-
-### Code Quality
-- `npm run lint` - Run ESLint on src/ directory
-- `npm run lint:fix` - Auto-fix ESLint issues
-- `npm run format` - Format code with Prettier
-- `npm run format:check` - Check formatting without changes
-- `npm run typecheck` - TypeScript type checking for client
-- `npm run typecheck:server` - TypeScript type checking for server
-
-### Database Management
-- `npm run db:migrate` - Run database migrations
-- `npm run db:seed` - Seed database with initial data
-- `npm run db:reset` - Reset database (delete, migrate, seed)
-
-### Docker
-- `npm run docker:build` - Build Docker image
-- `npm run docker:run` - Run production container
-- `npm run docker:dev` - Start development environment with docker-compose
+### Deployment
+- `git push origin production` - Triggers automatic GitHub Pages deployment
+- GitHub Actions workflow deploys from `public/` directory
+- Live at: https://ghelleks.github.io/duperheroes
 
 ## Architecture
 
-### Full-Stack TypeScript Monolith
-- **Frontend**: React + TypeScript + Vite + Tailwind CSS
-- **Backend**: Express.js + TypeScript + WebSocket
-- **Database**: SQLite (single file, no installation required)
-- **Build System**: Vite for client, TSC for server
-- **Testing**: Jest with ts-jest preset
+### Static Single-Page Application
+- **Frontend**: Pure HTML/CSS/JavaScript (no frameworks)
+- **Styling**: Tailwind CSS via CDN
+- **Database**: JSON file (`public/heroes.json`)
+- **Deployment**: GitHub Pages with GitHub Actions
+- **Storage**: localStorage for personal best tracking
 
 ### Project Structure
 ```
-src/
-├── client/           # React frontend (Vite root)
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── index.html
-│   └── pages/        # Page components
-├── server/           # Express backend
-│   ├── index.ts      # Server entry point
-│   └── routes/       # API route handlers
-├── database/         # SQLite schema and utilities
-│   ├── database.ts   # Database connection
-│   ├── migrate.ts    # Migration runner
-│   ├── schema.sql    # Database schema
-│   └── seed.ts       # Seed data
-└── shared/           # Shared types and utilities
+public/
+├── index.html          # Single-page application with embedded JavaScript
+├── heroes.json         # Character database (50 heroes)
+└── (GitHub Pages serves this directory)
+
+.github/workflows/
+└── deploy.yml          # Automatic GitHub Pages deployment
+
+animal_heroes_database.md # Source data for character creation
+README.md              # Project documentation
+CLAUDE.md             # This file
 ```
 
-### Development Servers
-- **Client Dev Server**: Vite on port 5173 with proxy to server
-- **Server**: Express on port 3001 (proxied from Vite)
-- **Proxied Routes**: `/api/*` and `/uploads/*` → backend server
-
-### Database Architecture
-- **SQLite Database**: Single file database (database.sqlite)
-- **Key Tables**: superheroes, superhero_images, users, game_stats, admin_users
-- **Admin System**: Password-protected interface for content management
-- **Character Theme**: 50 satirical animal-themed superhero parodies
+### Application Architecture
+- **Game State Management**: Vanilla JavaScript ES6 class (`GameState`)
+- **Data Loading**: Fetch API with fallback mock data
+- **UI Rendering**: Template literals with dynamic content
+- **Event Handling**: Direct onclick attributes and method calls
 
 ## Character Database
 
@@ -90,62 +56,71 @@ The game features 50 satirical animal-themed superheroes that parody Marvel char
 - **Examples**: Captain Canine (Captain America), Hulk-a-Hopper (Hulk), Spider-Swinger (Spider-Man)
 
 Each character includes:
-- Real name and superhero name
-- Powers and origin story
-- Multiple high-quality images
-- Difficulty rating for matchmaking
-- Animal theme and original hero inspiration
+- `superhero_name`: Display name for the game
+- `real_name`: Satirical real identity
+- `powers`: Humorous list of abilities
+- `origin`: Comedic backstory
+- `trivia`: Fun facts about the character
+- `animal_theme`: Animal type (used for emoji mapping)
+- `hero_inspiration`: Original Marvel character
+- `difficulty`: Easy/Medium/Hard for game balance
 
-## Configuration Files
+### Emoji Mapping
+The game automatically displays animal emojis for each character based on their `animal_theme`. The mapping is defined in the `getAnimalEmoji()` function in `index.html`.
 
-### TypeScript
-- `tsconfig.json` - Client TypeScript config (React, strict mode)
-- `tsconfig.server.json` - Server TypeScript config (Node.js)
-- Strict compilation with comprehensive type checking
+## Game Features
 
-### Code Quality
-- **ESLint**: TypeScript + Prettier integration, Jest environment
-- **Prettier**: Single quotes, 80 char width, 2-space tabs
-- **Husky + lint-staged**: Pre-commit hooks for formatting and linting
+### Beat the Clock Mode
+- **Time Limit**: 60 seconds
+- **Scoring**: 10 points base + 2 points per streak
+- **Questions**: Multiple choice with 4 options
+- **Feedback**: Instant correct/incorrect with character trivia
+- **Personal Best**: Saved in localStorage
 
-### Testing
-- **Jest**: Node environment with ts-jest preset
-- **Path mapping**: `@/*` aliases for src directories
-- **Setup file**: `src/test/setup.ts`
-- **Coverage**: HTML and LCOV reports in coverage/
+### Game Mechanics
+- Random hero selection from 50-character database
+- Multiple choice generation (1 correct + 3 random)
+- Streak bonuses for consecutive correct answers
+- Real-time timer with automatic game end
+- Question count and accuracy tracking
 
-## Development Workflow
+## Technical Implementation
 
-### Game Modes Implementation
-- **Single-user modes**: Beat the Clock (60s), Speedrun (25 questions), Practice (unlimited)
-- **Multiplayer**: Real-time WebSocket battles between players
-- **Admin interface**: Superhero database management with image uploads
+### Core Technologies
+- **Vanilla JavaScript**: No frameworks or build tools
+- **Tailwind CSS**: Utility-first styling via CDN
+- **JSON Database**: Static file with character data
+- **localStorage**: Personal best persistence
+- **GitHub Actions**: Automated deployment
 
-### Key Technologies
-- **WebSocket**: Real-time multiplayer communication
-- **SQLite**: Embedded database for simplicity
-- **Vite**: Fast development and optimized builds
-- **Tailwind CSS**: Utility-first styling
-- **Sharp**: Image processing and optimization
+### Browser Compatibility
+- Modern browsers with ES6 support
+- Fetch API support
+- localStorage support
+- CSS Grid and Flexbox
 
-### Environment Requirements
-- Node.js ≥18.0.0
-- npm ≥9.0.0
-- Modern browser with WebSocket support
+### Performance Considerations
+- Single file application for fast loading
+- CDN-served Tailwind CSS
+- Minimal JavaScript footprint
+- Fallback data prevents loading failures
 
-## Testing Strategy
+## Development Guidelines
 
-### Unit Testing
-- Jest with TypeScript support
-- Component testing for React
-- API endpoint testing with Supertest
-- Database operation testing
+### Adding New Characters
+1. Edit `public/heroes.json` to add character data
+2. Update emoji mapping in `getAnimalEmoji()` function if needed
+3. Test locally with a static server
+4. Commit and push to trigger deployment
 
-### File Patterns
-- `**/__tests__/**/*.+(ts|tsx|js)`
-- `**/*.(test|spec).+(ts|tsx|js)`
-- Setup file automatically loaded: `src/test/setup.ts`
+### File Structure Guidelines
+- Keep all game logic in `public/index.html`
+- Store character data in `public/heroes.json`
+- Update documentation in `README.md` as needed
+- Use `animal_heroes_database.md` as character reference
 
-### Coverage Requirements
-- Minimum 70% coverage across all metrics
-- Excludes: type definitions, test files, index files
+### Deployment Process
+- GitHub Actions automatically deploys on push to production branch
+- Workflow serves `public/` directory to GitHub Pages
+- Live site updates within minutes of push
+- No build process required - direct file serving
