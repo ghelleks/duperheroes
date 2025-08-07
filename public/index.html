@@ -71,6 +71,7 @@
                 this.currentPage = 'home';
                 this.gameState = 'menu';
                 this.currentHero = null;
+                this.currentHeroImage = '';
                 this.choices = [];
                 this.correctAnswer = '';
                 this.selectedAnswer = '';
@@ -144,6 +145,38 @@
                 ];
             }
 
+            generateHeroSlug(superheroName) {
+                return superheroName.toLowerCase()
+                    .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
+                    .replace(/\s+/g, '-')         // Replace spaces with hyphens
+                    .replace(/-+/g, '-')          // Replace multiple hyphens with single
+                    .replace(/^-|-$/g, '');       // Remove leading/trailing hyphens
+            }
+
+            async checkImageExists(imagePath) {
+                try {
+                    const response = await fetch(imagePath, { method: 'HEAD' });
+                    return response.ok;
+                } catch {
+                    return false;
+                }
+            }
+
+            async getHeroImage(hero) {
+                const slug = this.generateHeroSlug(hero.superhero_name);
+                const extensions = ['png', 'jpg', 'jpeg', 'webp'];
+                
+                for (const ext of extensions) {
+                    const imagePath = `./uploads/${slug}.${ext}`;
+                    if (await this.checkImageExists(imagePath)) {
+                        return `<img src="${imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg">`;
+                    }
+                }
+                
+                // Fallback to emoji
+                return `<div class="hero-image">${this.getAnimalEmoji(hero.animal_theme)}</div>`;
+            }
+
             getAnimalEmoji(animalTheme) {
                 const emojiMap = {
                     'Dog': '🐕', 'Poodle': '🐩', 'Frog': '🐸', 'Koala': '🐨',
@@ -203,11 +236,12 @@
                 }, 1000);
             }
 
-            nextQuestion() {
+            async nextQuestion() {
                 const hero = this.getRandomHero();
                 if (!hero) return;
 
                 this.currentHero = hero;
+                this.currentHeroImage = await this.getHeroImage(hero);
                 this.choices = this.generateChoices(hero);
                 this.correctAnswer = hero.superhero_name;
                 this.selectedAnswer = '';
@@ -331,7 +365,7 @@
                             <div class="bg-white rounded-lg shadow-xl overflow-hidden">
                                 <!-- Hero Image -->
                                 <div class="h-64 bg-gray-200 flex items-center justify-center">
-                                    <div class="hero-image">${this.getAnimalEmoji(this.currentHero.animal_theme)}</div>
+                                    ${this.currentHeroImage}
                                 </div>
 
                                 <!-- Question -->
