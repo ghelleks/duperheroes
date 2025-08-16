@@ -17,6 +17,7 @@ const IMAGE_DIRECTORIES = [
     path.join(__dirname, '../public/images')
 ];
 const SUPPORTED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
+const DEBUG_OUTPUT_FILE = path.join(__dirname, '../public/debug/image-audit.json');
 
 /**
  * Generates a hero slug matching the game's logic
@@ -337,9 +338,50 @@ function generateJSONReport(auditResults, outputPath) {
 }
 
 /**
+ * Saves debug output for the debug page
+ */
+function saveDebugOutput(auditResults, logs, status, error = null) {
+    try {
+        // Ensure debug directory exists
+        const debugDir = path.dirname(DEBUG_OUTPUT_FILE);
+        if (!fs.existsSync(debugDir)) {
+            fs.mkdirSync(debugDir, { recursive: true });
+        }
+        
+        const debugData = {
+            timestamp: new Date().toISOString(),
+            status: status,
+            stats: auditResults ? auditResults.stats : null,
+            heroesWithImages: auditResults ? auditResults.heroesWithImages : [],
+            heroesWithoutImages: auditResults ? auditResults.heroesWithoutImages : [],
+            orphanedImages: auditResults ? auditResults.orphanedImages : [],
+            logs: logs,
+            error: error ? error.message : null,
+            imageDirectories: IMAGE_DIRECTORIES.map(dir => path.basename(dir)),
+            supportedExtensions: SUPPORTED_EXTENSIONS
+        };
+        
+        fs.writeFileSync(DEBUG_OUTPUT_FILE, JSON.stringify(debugData, null, 2));
+        console.log(`📄 Debug output saved to: ${DEBUG_OUTPUT_FILE}`);
+    } catch (debugError) {
+        console.error(`❌ Error saving debug output: ${debugError.message}`);
+    }
+}
+
+/**
  * Main execution function
  */
 function main() {
+    const logs = [];
+    const originalConsoleLog = console.log;
+    
+    // Capture console output for debug logging
+    console.log = (...args) => {
+        const message = args.join(' ');
+        logs.push(`[${new Date().toISOString()}] ${message}`);
+        originalConsoleLog(...args);
+    };
+    
     try {
         const auditResults = performAudit();
         displayReport(auditResults);
@@ -350,6 +392,9 @@ function main() {
             const outputPath = jsonOutputArg.split('=')[1];
             generateJSONReport(auditResults, outputPath);
         }
+        
+        // Save debug output
+        saveDebugOutput(auditResults, logs, 'success');
         
         // Exit with error code if there are issues (for CI/CD)
         const hasIssues = auditResults.stats.orphanedImages > 0 || 
@@ -365,7 +410,14 @@ function main() {
         
     } catch (error) {
         console.error(`❌ Fatal error during audit: ${error.message}`);
+        
+        // Save debug output with error
+        saveDebugOutput(null, logs, 'error', error);
+        
         process.exit(1);
+    } finally {
+        // Restore original console.log
+        console.log = originalConsoleLog;
     }
 }
 

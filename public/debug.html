@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuperHeroes - Debug Console</title>
+    <meta name="description" content="Debug console for DuperHeroes build and deployment processes">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .debug-panel {
+            background: #1a1a1a;
+            color: #e5e5e5;
+            font-family: 'Courier New', monospace;
+            border: 1px solid #333;
+        }
+        
+        .debug-output {
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        
+        .status-success {
+            color: #22c55e;
+        }
+        
+        .status-error {
+            color: #ef4444;
+        }
+        
+        .status-warning {
+            color: #f59e0b;
+        }
+        
+        .status-info {
+            color: #3b82f6;
+        }
+        
+        .timestamp {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+        
+        .refresh-button {
+            transition: all 0.2s ease;
+        }
+        
+        .refresh-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">🐛 Debug Console</h1>
+                    <p class="text-gray-600 mt-2">Build and deployment process monitoring</p>
+                </div>
+                <div class="flex space-x-4">
+                    <button 
+                        onclick="refreshData()" 
+                        class="refresh-button bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md"
+                    >
+                        🔄 Refresh
+                    </button>
+                    <a 
+                        href="index.html" 
+                        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg shadow-md transition"
+                    >
+                        🏠 Back to Game
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 flex space-x-4 text-sm">
+                <span class="timestamp">Last updated: <span id="lastUpdated">Loading...</span></span>
+                <span class="status-info">Build Status: <span id="buildStatus">Checking...</span></span>
+            </div>
+        </div>
+
+        <!-- Status Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">📚 Heroes Database</h3>
+                <div id="heroStats" class="space-y-2">
+                    <div class="text-2xl font-bold text-blue-600">-</div>
+                    <div class="text-sm text-gray-600">Total Heroes</div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">🖼️ Image Coverage</h3>
+                <div id="imageStats" class="space-y-2">
+                    <div class="text-2xl font-bold text-green-600">-%</div>
+                    <div class="text-sm text-gray-600">Coverage Rate</div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">⚠️ Issues Found</h3>
+                <div id="issueStats" class="space-y-2">
+                    <div class="text-2xl font-bold text-yellow-600">-</div>
+                    <div class="text-sm text-gray-600">Orphaned Images</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Debug Panels -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Hero Fetch Output -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">📥 Hero Fetch Process</h2>
+                    <p class="text-sm text-gray-600 mt-1">Output from Google Doc data fetching</p>
+                </div>
+                <div class="p-4">
+                    <div id="heroFetchPanel" class="debug-panel rounded-lg p-4 h-96 overflow-y-auto">
+                        <div class="status-info">Loading hero fetch output...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Audit Output -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">🔍 Image Audit Process</h2>
+                    <p class="text-sm text-gray-600 mt-1">Output from image coverage analysis</p>
+                </div>
+                <div class="p-4">
+                    <div id="imageAuditPanel" class="debug-panel rounded-lg p-4 h-96 overflow-y-auto">
+                        <div class="status-info">Loading image audit output...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Reports -->
+        <div class="mt-8 grid grid-cols-1 gap-6">
+            <!-- Heroes with Images -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">✅ Heroes with Images</h2>
+                    <p class="text-sm text-gray-600 mt-1">Characters that have corresponding image files</p>
+                </div>
+                <div class="p-4">
+                    <div id="heroesWithImages" class="space-y-2">
+                        <div class="text-gray-500">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orphaned Images -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">🗑️ Orphaned Images</h2>
+                    <p class="text-sm text-gray-600 mt-1">Image files with no corresponding hero entries</p>
+                </div>
+                <div class="p-4">
+                    <div id="orphanedImages" class="space-y-2">
+                        <div class="text-gray-500">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heroes Missing Images -->
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">❌ Heroes Missing Images</h2>
+                    <p class="text-sm text-gray-600 mt-1">Characters using emoji fallbacks (showing first 20)</p>
+                </div>
+                <div class="p-4">
+                    <div id="heroesWithoutImages" class="space-y-2">
+                        <div class="text-gray-500">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Raw Data Section -->
+        <div class="mt-8">
+            <div class="bg-white rounded-lg shadow-md">
+                <div class="p-4 border-b border-gray-200">
+                    <h2 class="text-xl font-semibold text-gray-900">📋 Raw Debug Data</h2>
+                    <p class="text-sm text-gray-600 mt-1">Complete debug outputs in JSON format</p>
+                </div>
+                <div class="p-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="font-medium text-gray-900 mb-2">Hero Fetch Debug</h3>
+                            <textarea 
+                                id="heroFetchRaw" 
+                                class="w-full h-32 p-3 border border-gray-300 rounded-lg font-mono text-xs"
+                                readonly
+                                placeholder="Hero fetch debug data will appear here..."
+                            ></textarea>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-900 mb-2">Image Audit Debug</h3>
+                            <textarea 
+                                id="imageAuditRaw" 
+                                class="w-full h-32 p-3 border border-gray-300 rounded-lg font-mono text-xs"
+                                readonly
+                                placeholder="Image audit debug data will appear here..."
+                            ></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Debug page functionality
+        class DebugConsole {
+            constructor() {
+                this.heroFetchData = null;
+                this.imageAuditData = null;
+                this.lastUpdated = new Date();
+                
+                this.init();
+            }
+            
+            async init() {
+                await this.loadData();
+                this.updateDisplay();
+                
+                // Update timestamp
+                document.getElementById('lastUpdated').textContent = this.formatTimestamp(this.lastUpdated);
+            }
+            
+            async loadData() {
+                try {
+                    // Try to load hero fetch debug data
+                    await this.loadHeroFetchData();
+                } catch (error) {
+                    console.warn('Could not load hero fetch data:', error);
+                }
+                
+                try {
+                    // Try to load image audit data
+                    await this.loadImageAuditData();
+                } catch (error) {
+                    console.warn('Could not load image audit data:', error);
+                }
+                
+                try {
+                    // Always try to load heroes.json for basic stats
+                    await this.loadHeroesData();
+                } catch (error) {
+                    console.warn('Could not load heroes data:', error);
+                }
+            }
+            
+            async loadHeroFetchData() {
+                try {
+                    const response = await fetch('./debug/hero-fetch.json');
+                    if (response.ok) {
+                        this.heroFetchData = await response.json();
+                    }
+                } catch (error) {
+                    this.heroFetchData = {
+                        status: 'error',
+                        message: 'Hero fetch debug data not available',
+                        timestamp: new Date().toISOString()
+                    };
+                }
+            }
+            
+            async loadImageAuditData() {
+                try {
+                    const response = await fetch('./debug/image-audit.json');
+                    if (response.ok) {
+                        this.imageAuditData = await response.json();
+                    }
+                } catch (error) {
+                    this.imageAuditData = {
+                        status: 'error',
+                        message: 'Image audit debug data not available',
+                        timestamp: new Date().toISOString()
+                    };
+                }
+            }
+            
+            async loadHeroesData() {
+                try {
+                    const response = await fetch('./heroes.json');
+                    if (response.ok) {
+                        const data = await response.json();
+                        this.heroesData = data.heroes || [];
+                    }
+                } catch (error) {
+                    this.heroesData = [];
+                }
+            }
+            
+            updateDisplay() {
+                this.updateStats();
+                this.updateHeroFetchPanel();
+                this.updateImageAuditPanel();
+                this.updateDetailedReports();
+                this.updateRawData();
+            }
+            
+            updateStats() {
+                // Hero count
+                const heroCount = this.heroesData ? this.heroesData.length : 0;
+                document.getElementById('heroStats').innerHTML = `
+                    <div class="text-2xl font-bold text-blue-600">${heroCount}</div>
+                    <div class="text-sm text-gray-600">Total Heroes</div>
+                `;
+                
+                // Image coverage
+                if (this.imageAuditData && this.imageAuditData.stats) {
+                    const coverage = Math.round((this.imageAuditData.stats.heroesWithImages / this.imageAuditData.stats.totalHeroes) * 100);
+                    document.getElementById('imageStats').innerHTML = `
+                        <div class="text-2xl font-bold text-green-600">${coverage}%</div>
+                        <div class="text-sm text-gray-600">Coverage Rate</div>
+                    `;
+                    
+                    const orphanedCount = this.imageAuditData.stats.orphanedImages || 0;
+                    document.getElementById('issueStats').innerHTML = `
+                        <div class="text-2xl font-bold text-yellow-600">${orphanedCount}</div>
+                        <div class="text-sm text-gray-600">Orphaned Images</div>
+                    `;
+                }
+                
+                // Build status
+                const buildStatus = this.determineBuildStatus();
+                document.getElementById('buildStatus').textContent = buildStatus.text;
+                document.getElementById('buildStatus').className = buildStatus.class;
+            }
+            
+            determineBuildStatus() {
+                if (this.heroFetchData && this.heroFetchData.status === 'error') {
+                    return { text: 'Hero Fetch Failed', class: 'status-error' };
+                }
+                if (this.imageAuditData && this.imageAuditData.status === 'error') {
+                    return { text: 'Audit Failed', class: 'status-error' };
+                }
+                if (this.imageAuditData && this.imageAuditData.stats && this.imageAuditData.stats.orphanedImages > 0) {
+                    return { text: 'Issues Found', class: 'status-warning' };
+                }
+                return { text: 'All Systems OK', class: 'status-success' };
+            }
+            
+            updateHeroFetchPanel() {
+                const panel = document.getElementById('heroFetchPanel');
+                
+                if (this.heroFetchData) {
+                    let output = '';
+                    
+                    if (this.heroFetchData.logs) {
+                        output = this.heroFetchData.logs.join('\n');
+                    } else if (this.heroFetchData.message) {
+                        output = this.heroFetchData.message;
+                    } else {
+                        output = JSON.stringify(this.heroFetchData, null, 2);
+                    }
+                    
+                    panel.innerHTML = `<div class="debug-output">${this.escapeHtml(output)}</div>`;
+                } else {
+                    panel.innerHTML = '<div class="status-warning">No hero fetch debug data available</div>';
+                }
+            }
+            
+            updateImageAuditPanel() {
+                const panel = document.getElementById('imageAuditPanel');
+                
+                if (this.imageAuditData) {
+                    let output = '';
+                    
+                    if (this.imageAuditData.logs) {
+                        output = this.imageAuditData.logs.join('\n');
+                    } else if (this.imageAuditData.stats) {
+                        output = `Image Audit Results:
+Total Heroes: ${this.imageAuditData.stats.totalHeroes}
+Total Images: ${this.imageAuditData.stats.totalImages}
+Heroes with Images: ${this.imageAuditData.stats.heroesWithImages}
+Heroes without Images: ${this.imageAuditData.stats.heroesWithoutImages}
+Orphaned Images: ${this.imageAuditData.stats.orphanedImages}
+Duplicate Images: ${this.imageAuditData.stats.duplicateImages}`;
+                    } else if (this.imageAuditData.message) {
+                        output = this.imageAuditData.message;
+                    } else {
+                        output = JSON.stringify(this.imageAuditData, null, 2);
+                    }
+                    
+                    panel.innerHTML = `<div class="debug-output">${this.escapeHtml(output)}</div>`;
+                } else {
+                    panel.innerHTML = '<div class="status-warning">No image audit debug data available</div>';
+                }
+            }
+            
+            updateDetailedReports() {
+                // Heroes with images
+                if (this.imageAuditData && this.imageAuditData.heroesWithImages) {
+                    const heroesWithImagesEl = document.getElementById('heroesWithImages');
+                    heroesWithImagesEl.innerHTML = this.imageAuditData.heroesWithImages.map(item => `
+                        <div class="border-l-4 border-green-500 pl-4 py-2">
+                            <div class="font-medium">${item.heroName}</div>
+                            <div class="text-sm text-gray-600">Slug: ${item.slug}</div>
+                            <div class="text-sm text-gray-600">Images: ${item.images.map(img => `${img.filename} (${img.directory})`).join(', ')}</div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('heroesWithImages').innerHTML = '<div class="text-gray-500">No data available</div>';
+                }
+                
+                // Orphaned images
+                if (this.imageAuditData && this.imageAuditData.orphanedImages) {
+                    const orphanedImagesEl = document.getElementById('orphanedImages');
+                    orphanedImagesEl.innerHTML = this.imageAuditData.orphanedImages.map(img => `
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                            <div class="font-medium">${img.filename}</div>
+                            <div class="text-sm text-gray-600">Directory: ${img.directory}</div>
+                            <div class="text-sm text-gray-600">Size: ${this.formatBytes(img.size)}</div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('orphanedImages').innerHTML = '<div class="text-gray-500">No orphaned images found</div>';
+                }
+                
+                // Heroes without images (first 20)
+                if (this.imageAuditData && this.imageAuditData.heroesWithoutImages) {
+                    const heroesWithoutImagesEl = document.getElementById('heroesWithoutImages');
+                    const limitedList = this.imageAuditData.heroesWithoutImages.slice(0, 20);
+                    heroesWithoutImagesEl.innerHTML = limitedList.map(item => `
+                        <div class="border-l-4 border-red-500 pl-4 py-2">
+                            <div class="font-medium">${item.heroName}</div>
+                            <div class="text-sm text-gray-600">Slug: ${item.slug}</div>
+                            <div class="text-sm text-gray-600">Theme: ${item.animalTheme}</div>
+                        </div>
+                    `).join('');
+                    
+                    if (this.imageAuditData.heroesWithoutImages.length > 20) {
+                        heroesWithoutImagesEl.innerHTML += `<div class="text-sm text-gray-500 mt-4">... and ${this.imageAuditData.heroesWithoutImages.length - 20} more</div>`;
+                    }
+                } else {
+                    document.getElementById('heroesWithoutImages').innerHTML = '<div class="text-gray-500">No data available</div>';
+                }
+            }
+            
+            updateRawData() {
+                document.getElementById('heroFetchRaw').value = this.heroFetchData ? 
+                    JSON.stringify(this.heroFetchData, null, 2) : 'No data available';
+                    
+                document.getElementById('imageAuditRaw').value = this.imageAuditData ? 
+                    JSON.stringify(this.imageAuditData, null, 2) : 'No data available';
+            }
+            
+            formatTimestamp(date) {
+                return date.toLocaleString();
+            }
+            
+            formatBytes(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+            }
+            
+            escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+        }
+        
+        // Global functions
+        async function refreshData() {
+            const refreshButton = document.querySelector('.refresh-button');
+            refreshButton.disabled = true;
+            refreshButton.textContent = '🔄 Refreshing...';
+            
+            try {
+                debugConsole.lastUpdated = new Date();
+                await debugConsole.loadData();
+                debugConsole.updateDisplay();
+                document.getElementById('lastUpdated').textContent = debugConsole.formatTimestamp(debugConsole.lastUpdated);
+            } catch (error) {
+                console.error('Error refreshing data:', error);
+            } finally {
+                refreshButton.disabled = false;
+                refreshButton.textContent = '🔄 Refresh';
+            }
+        }
+        
+        // Initialize debug console
+        let debugConsole;
+        document.addEventListener('DOMContentLoaded', () => {
+            debugConsole = new DebugConsole();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-08-16T23:43:25.942Z",
+  "status": "success",
+  "heroCount": 194,
+  "duration": 1280,
+  "logs": [
+    "[2025-08-16T23:43:25.942Z] INFO: 🦸 Google Doc to Heroes JSON Generator",
+    "[2025-08-16T23:43:25.943Z] INFO: =====================================",
+    "[2025-08-16T23:43:25.943Z] INFO: Fetching document from Google Docs...",
+    "[2025-08-16T23:43:27.208Z] SUCCESS: Document fetched successfully (100813 characters)",
+    "[2025-08-16T23:43:27.208Z] INFO: Parsing heroes data...",
+    "[2025-08-16T23:43:27.218Z] SUCCESS: Successfully parsed 194 heroes",
+    "[2025-08-16T23:43:27.218Z] INFO: Saving heroes data to file...",
+    "[2025-08-16T23:43:27.222Z] SUCCESS: 🎉 Heroes JSON generation completed successfully!",
+    "[2025-08-16T23:43:27.222Z] INFO: 📊 Total heroes: 194",
+    "[2025-08-16T23:43:27.222Z] INFO: 📈 Difficulty breakdown: {\"Easy\":9,\"Hard\":66,\"Medium\":119}"
+  ],
+  "error": null,
+  "docUrl": "https://docs.google.com/document/d/1EqPn6k6UicD8uTSbKQ0z4SuBKC19UPI-GC1PAjy3VUY/export?format=txt"
+}
