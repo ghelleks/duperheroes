@@ -89,6 +89,7 @@
                 this.correctAnswer = '';
                 this.selectedAnswer = '';
                 this.showFeedback = false;
+                this.loadError = null;
                 this.stats = {
                     score: 0,
                     timeRemaining: 60,
@@ -103,60 +104,23 @@
             async loadHeroes() {
                 try {
                     const response = await fetch('./heroes.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
                     const data = await response.json();
+                    if (!data || !data.heroes || !Array.isArray(data.heroes) || data.heroes.length === 0) {
+                        throw new Error('Invalid heroes data: missing or empty heroes array');
+                    }
                     this.heroes = data.heroes;
                     console.log(`Loaded ${this.heroes.length} heroes`);
                 } catch (error) {
                     console.error('Error loading heroes:', error);
-                    this.heroes = this.getFallbackHeroes();
+                    this.gameState = 'error';
+                    this.loadError = error;
                 }
                 this.render();
             }
 
-            getFallbackHeroes() {
-                return [
-                    {
-                        superhero_name: "Captain Canine",
-                        real_name: "Steve Rover Rogers",
-                        powers: "Super loyalty, frisbee shield mastery, patriotic tail wagging, freedom sniffing",
-                        origin: "Golden retriever accidentally injected with Super Soldier Serum during flea shot.",
-                        trivia: "Uses a frisbee as his shield and can detect freedom from miles away",
-                        animal_theme: "Dog",
-                        hero_inspiration: "Captain America",
-                        difficulty: "Easy"
-                    },
-                    {
-                        superhero_name: "Hulk-a-Hopper",
-                        real_name: "Bruce Banner-Bounce",
-                        powers: "Incredible jumping strength, lily pad smashing, toxic tongue lash, polka-dot rage transformation",
-                        origin: "Scientist who stepped on a Lego during gamma experiment with radioactive pond scum.",
-                        trivia: "Transforms into a polka-dotted frog that sings opera when angry",
-                        animal_theme: "Frog",
-                        hero_inspiration: "The Hulk",
-                        difficulty: "Easy"
-                    },
-                    {
-                        superhero_name: "Wolverine Whiskers",
-                        real_name: "Logan the Meow-gan",
-                        powers: "Adamantium claws/can openers, nine lives (on #4), purr healing factor, explosive hairball projectiles",
-                        origin: "Canadian house cat volunteered for experiment promising unlimited tuna.",
-                        trivia: "Is currently on his 4th life and ironically can't figure out how can openers work",
-                        animal_theme: "Cat",
-                        hero_inspiration: "Wolverine",
-                        difficulty: "Medium"
-                    },
-                    {
-                        superhero_name: "Spider-Swinger",
-                        real_name: "Peter Banana-Parker",
-                        powers: "Web-spinning from tail/armpits, supersonic tree swinging, banana spider-sense, coconut web-shooters",
-                        origin: "Young monkey bitten by radioactive spider at Nuclear-Powered Fruit Research Facility.",
-                        trivia: "His spider-sense is specifically tuned to detect ripe bananas and danger",
-                        animal_theme: "Monkey",
-                        hero_inspiration: "Spider-Man",
-                        difficulty: "Easy"
-                    }
-                ];
-            }
 
             generateHeroSlug(superheroName) {
                 return superheroName.toLowerCase()
@@ -209,11 +173,13 @@
             }
 
             getRandomHero() {
-                if (this.heroes.length === 0) return null;
+                if (!this.heroes || this.heroes.length === 0) return null;
                 return this.heroes[Math.floor(Math.random() * this.heroes.length)];
             }
 
             generateChoices(correctHero) {
+                if (!this.heroes || this.heroes.length < 4) return [];
+                
                 const wrongChoices = this.heroes
                     .filter(h => h.superhero_name !== correctHero.superhero_name)
                     .sort(() => Math.random() - 0.5)
@@ -227,6 +193,11 @@
             }
 
             startGame() {
+                if (!this.heroes || this.heroes.length === 0) {
+                    console.error('Cannot start game: No heroes loaded');
+                    return;
+                }
+                
                 this.gameState = 'playing';
                 this.stats = {
                     score: 0,
@@ -325,7 +296,9 @@
             render() {
                 const app = document.getElementById('app');
                 
-                if (this.gameState === 'menu') {
+                if (this.gameState === 'error') {
+                    app.innerHTML = this.renderError();
+                } else if (this.gameState === 'menu') {
                     app.innerHTML = this.renderMenu();
                 } else if (this.gameState === 'playing') {
                     app.innerHTML = this.renderGame();
@@ -337,6 +310,9 @@
             }
 
             renderMenu() {
+                const heroesLoaded = this.heroes && this.heroes.length > 0;
+                const heroCount = heroesLoaded ? this.heroes.length : 0;
+                
                 return `
                     <div class="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
                         <div class="text-center text-white max-w-md mx-auto px-4">
@@ -347,12 +323,16 @@
                             <div class="mb-6 text-lg">
                                 <p>Personal Best: <span class="font-bold">${this.getPersonalBest()}</span> points</p>
                             </div>
-                            <button onclick="game.startGame()" class="bg-yellow-400 text-black px-8 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-300 transition-colors">
-                                Start Game
+                            <button 
+                                onclick="game.startGame()" 
+                                class="bg-yellow-400 text-black px-8 py-3 rounded-lg text-xl font-semibold transition-colors ${heroesLoaded ? 'hover:bg-yellow-300' : 'opacity-50 cursor-not-allowed'}"
+                                ${!heroesLoaded ? 'disabled' : ''}
+                            >
+                                ${heroesLoaded ? 'Start Game' : 'Loading Heroes...'}
                             </button>
                             <div class="mt-8 text-sm opacity-80">
                                 <p>Test your knowledge of satirical animal-themed superheroes!</p>
-                                <p class="mt-2">${this.heroes.length} heroes loaded</p>
+                                <p class="mt-2">${heroCount > 0 ? `${heroCount} heroes loaded` : 'Loading hero data...'}</p>
                             </div>
                         </div>
                     </div>
@@ -470,6 +450,70 @@
                                 >
                                     Back to Menu
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            renderError() {
+                const errorMessage = this.loadError?.message || 'Unknown error occurred';
+                const isNetworkError = errorMessage.includes('HTTP') || errorMessage.includes('fetch');
+                const isDataError = errorMessage.includes('Invalid heroes data');
+                
+                return `
+                    <div class="min-h-screen bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center">
+                        <div class="text-center text-white max-w-lg mx-auto px-4">
+                            <div class="text-6xl mb-6">🚨</div>
+                            <h1 class="text-4xl font-bold mb-4">Oops! Game Data Unavailable</h1>
+                            <div class="bg-white/20 rounded-lg p-6 mb-6">
+                                <h2 class="text-xl font-semibold mb-3">What happened?</h2>
+                                <p class="text-lg mb-3">
+                                    ${isNetworkError 
+                                        ? 'The hero data file could not be loaded from the server.' 
+                                        : isDataError 
+                                        ? 'The hero data file is corrupted or empty.'
+                                        : 'There was an error loading the game data.'}
+                                </p>
+                                <div class="text-sm bg-red-900/30 rounded-lg p-3 text-left">
+                                    <strong>Technical details:</strong><br>
+                                    ${errorMessage}
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-semibold">Try these solutions:</h3>
+                                <div class="text-left bg-white/10 rounded-lg p-4 space-y-2">
+                                    ${isNetworkError ? `
+                                        <div>• Check your internet connection</div>
+                                        <div>• Refresh the page (Ctrl+F5 or Cmd+Shift+R)</div>
+                                        <div>• Try again in a few minutes</div>
+                                    ` : `
+                                        <div>• Refresh the page to try loading again</div>
+                                        <div>• Clear your browser cache</div>
+                                        <div>• Contact support if the issue persists</div>
+                                    `}
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 space-y-3">
+                                <button
+                                    onclick="window.location.reload()"
+                                    class="w-full bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-colors"
+                                >
+                                    🔄 Refresh Page
+                                </button>
+                                <button
+                                    onclick="game.loadHeroes()"
+                                    class="w-full bg-white/20 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-white/30 transition-colors"
+                                >
+                                    🔄 Try Again
+                                </button>
+                            </div>
+                            
+                            <div class="mt-8 text-sm opacity-80">
+                                <p>DuperHeroes requires hero data to function properly.</p>
+                                <p class="mt-2">If this problem persists, please report it to the developers.</p>
                             </div>
                         </div>
                     </div>
