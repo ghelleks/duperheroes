@@ -22,3 +22,6 @@ coverage/
 
 *.tgz
 *.tar.gz
+
+# Generated audit reports
+audit-report.json

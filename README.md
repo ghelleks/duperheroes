@@ -132,7 +132,26 @@ npm run build
 
 # Test hero data fetching and parsing
 npm run build:heroes
+
+# Audit hero images and report coverage
+npm run audit-images
+
+# Generate JSON audit report
+npm run audit-images:json
+
+# Strict audit mode (exits with error if issues found)
+npm run audit-images:strict
 ```
+
+### Image Audit System
+
+The project includes an automated image audit system that compares the heroes database with available images:
+
+- **Purpose**: Ensures image coverage and identifies orphaned files
+- **Integration**: Runs automatically during GitHub Actions deployment
+- **Coverage Tracking**: Reports heroes with/without images and orphaned files
+- **Formats**: Console output and optional JSON reports
+- **Directories Scanned**: `/uploads/` and `/public/images/`
 
 ## 🚀 Deployment
 
