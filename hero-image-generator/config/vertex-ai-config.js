@@ -68,7 +68,8 @@ class VertexAIConfig {
                     }
                 ],
                 parameters: {
-                    sampleCount: 1
+                    sampleCount: 1,
+                    ...params
                 }
             };
 
@@ -131,12 +132,10 @@ class VertexAIConfig {
         const [width, height] = size.split('x').map(Number);
         
         return {
-            width: width,
-            height: height,
-            aspectRatio: `${width}:${height}`, // Imagen expects aspect ratio as string like "1:1"
-            guidance: 7, // Controls adherence to prompt
-            seed: Math.floor(Math.random() * 1000000), // Random seed for variation
-            format: process.env.IMAGE_FORMAT || 'png'
+            aspectRatio: "1:1", // Use standard square format for 512x512
+            addWatermark: false, // Disable watermarking
+            enhancePrompt: true, // Use LLM-based prompt enhancement
+            safetySetting: "block_low_and_above" // Correct safety setting value
         };
     }
 
