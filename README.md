@@ -42,20 +42,17 @@ git clone https://github.com/ghelleks/duperheroes.git
 cd duperheroes
 ```
 
-2. Install dependencies (for hero data fetching):
+2. Serve the static files:
 ```bash
-npm install
-```
+# Option 1: npm script (recommended)
+npm run serve
 
-3. Serve the static files:
-```bash
-# Option 1: Simple HTTP server
+# Option 2: Python server  
+npm run serve:python
+
+# Option 3: Direct commands
 npx http-server public -p 8080 -o
-
-# Option 2: Python server
 cd public && python -m http.server 8080
-
-# Option 3: Any static file server
 ```
 
 4. Open http://localhost:8080 in your browser
