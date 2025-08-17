@@ -581,7 +581,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/sandmanatee.png"
     },
     {
       "superhero_name": "Eelectro",
@@ -625,7 +625,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Mr. Sinister",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/mr-sinister-salmon.jpeg"
     },
     {
       "superhero_name": "Juggernaut-ilus",
@@ -746,7 +746,7 @@
       "animal_theme": "Bat",
       "hero_inspiration": "Blade",
       "difficulty": "Medium",
-      "imagePath": "./images/blade-the-bat.png"
+      "imagePath": "./images/blade-the-bat.jpeg"
     },
     {
       "superhero_name": "Moon Knight-Owl",
@@ -1098,7 +1098,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Agatha Harkness",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/agatha-hark-moth.jpeg"
     },
     {
       "superhero_name": "Ronan the Accuser-Cat",
