@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-08-17T17:56:31.285Z",
+  "timestamp": "2025-08-17T18:04:52.930Z",
   "status": "success",
-  "duration": 1875,
+  "duration": 970,
   "heroCount": 193,
   "logs": [
     "🦸 Google Doc to Heroes JSON Generator",
