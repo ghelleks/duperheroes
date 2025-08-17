@@ -15,7 +15,7 @@ on:
       batch_size:
         description: 'Number of images to generate in batch'
         required: false
-        default: '5'
+        default: '2'
         type: string
 
 permissions:
@@ -75,7 +75,7 @@ jobs:
         run: |
           cd hero-image-generator
           npm install
-          node src/image-generator.js --batch-size=${{ github.event.inputs.batch_size || '5' }}
+          node src/image-generator.js --batch-size=${{ github.event.inputs.batch_size || '2' }}
         env:
           GOOGLE_CLOUD_PROJECT: ${{ secrets.GCP_PROJECT_ID }}
           VERTEX_AI_REGION: us-central1
@@ -83,8 +83,8 @@ jobs:
           REQUIRED_GCLOUD_ACCOUNT: ${{ secrets.REQUIRED_GCLOUD_ACCOUNT }}
           OUTPUT_DIRECTORY: /home/runner/work/duperheroes/duperheroes/public/images
           DEBUG_OUTPUT: /home/runner/work/duperheroes/duperheroes/public/debug/image-generation.json
-          BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
-          RATE_LIMIT_DELAY: 2000
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '2' }}
+          RATE_LIMIT_DELAY: 5000
           MAX_RETRIES: 3
           DRY_RUN: false
           VERBOSE_LOGGING: true
