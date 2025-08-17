@@ -16,6 +16,8 @@ const GOOGLE_DOC_ID = '1EqPn6k6UicD8uTSbKQ0z4SuBKC19UPI-GC1PAjy3VUY';
 const GOOGLE_DOC_URL = `https://docs.google.com/document/d/${GOOGLE_DOC_ID}/export?format=txt`;
 const OUTPUT_FILE = path.join(__dirname, '../public/heroes.json');
 const FALLBACK_FILE = path.join(__dirname, '../public/heroes.json');
+const IMAGE_DIRECTORY = path.join(__dirname, '../public/images');
+const SUPPORTED_IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
 
 // Animal emoji mapping for theme extraction
 const ANIMAL_EMOJIS = {
@@ -148,6 +150,39 @@ function normalizeDifficulty(difficulty) {
 }
 
 /**
+ * Generates a hero slug matching the game's logic
+ */
+function generateHeroSlug(superheroName) {
+  return superheroName.toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
+    .replace(/\s+/g, '-')         // Replace spaces with hyphens
+    .replace(/-+/g, '-')          // Replace multiple hyphens with single
+    .replace(/^-|-$/g, '');       // Remove leading/trailing hyphens
+}
+
+/**
+ * Finds image for a hero in the images directory
+ */
+function findHeroImage(superheroName) {
+  const slug = generateHeroSlug(superheroName);
+  
+  // Check if image directory exists
+  if (!fs.existsSync(IMAGE_DIRECTORY)) {
+    return null;
+  }
+  
+  // Try different extensions
+  for (const ext of SUPPORTED_IMAGE_EXTENSIONS) {
+    const imagePath = path.join(IMAGE_DIRECTORY, `${slug}.${ext}`);
+    if (fs.existsSync(imagePath)) {
+      return `./images/${slug}.${ext}`;
+    }
+  }
+  
+  return null;
+}
+
+/**
  * Parses individual character entry
  */
 function parseCharacterEntry(entryText) {
@@ -242,6 +277,9 @@ function parseCharacterEntry(entryText) {
     return null;
   }
   
+  // Find image for this hero
+  const imagePath = findHeroImage(superhero_name.replace(/^\d+\.\s*/, '').trim());
+  
   const character = {
     superhero_name: superhero_name.replace(/^\d+\.\s*/, '').trim(),
     real_name: real_name || `${superhero_name} (Real Name Unknown)`,
@@ -250,7 +288,8 @@ function parseCharacterEntry(entryText) {
     trivia: trivia || `${superhero_name} is a unique hero with many secrets.`,
     animal_theme,
     hero_inspiration: hero_inspiration || 'Original Character',
-    difficulty
+    difficulty,
+    imagePath: imagePath
   };
   
   console.log(`✓ Parsed: ${character.superhero_name} (${character.animal_theme}, ${character.difficulty})`);

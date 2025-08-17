@@ -8,7 +8,8 @@
       "trivia": "Dum dog is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "Captain America",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "Doy dog",
@@ -18,7 +19,8 @@
       "trivia": "Doy dog is a unique hero with many secrets.",
       "animal_theme": "Poodle",
       "hero_inspiration": "The Hulk",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "krazy Koala",
@@ -28,7 +30,8 @@
       "trivia": "krazy Koala is a unique hero with many secrets.",
       "animal_theme": "Koala",
       "hero_inspiration": "Red Hulk",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Claw cat",
@@ -38,7 +41,8 @@
       "trivia": "Claw cat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "Wolverine",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/claw-cat.jpeg"
     },
     {
       "superhero_name": "Spider-Swinger",
@@ -48,7 +52,8 @@
       "trivia": "Spider-Swinger is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Morbius (the movie)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/spider-swinger.jpeg"
     },
     {
       "superhero_name": "Iron Eagle",
@@ -58,7 +63,8 @@
       "trivia": "Iron Eagle is a unique hero with many secrets.",
       "animal_theme": "Eagle",
       "hero_inspiration": "Iron Man",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": "./images/iron-eagle.png"
     },
     {
       "superhero_name": "Thor-ough Bred",
@@ -68,7 +74,8 @@
       "trivia": "Thor-ough Bred is a unique hero with many secrets.",
       "animal_theme": "Horse",
       "hero_inspiration": "Thor",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/thor-ough-bred.png"
     },
     {
       "superhero_name": "Aqua-Mammal",
@@ -78,7 +85,8 @@
       "trivia": "Aqua-Mammal is a unique hero with many secrets.",
       "animal_theme": "Whale",
       "hero_inspiration": "Namor",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/aqua-mammal.jpeg"
     },
     {
       "superhero_name": "Quicksilver Swimmer",
@@ -88,7 +96,8 @@
       "trivia": "Quicksilver Swimmer is a unique hero with many secrets.",
       "animal_theme": "Fish",
       "hero_inspiration": "Quicksilver",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Flap McFlappy",
@@ -98,7 +107,8 @@
       "trivia": "Flap McFlappy is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Falcon",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/flap-mcflappy.jpeg"
     },
     {
       "superhero_name": "Black Panther Paws",
@@ -108,7 +118,8 @@
       "trivia": "Black Panther Paws is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Black Panther",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/black-panther-paws.jpeg"
     },
     {
       "superhero_name": "Ant Andy",
@@ -118,7 +129,8 @@
       "trivia": "Ant Andy is a unique hero with many secrets.",
       "animal_theme": "Anteater",
       "hero_inspiration": "Ant-Man",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/ant-andy.jpeg"
     },
     {
       "superhero_name": "Wasp Wonder-Bee",
@@ -128,7 +140,8 @@
       "trivia": "Wasp Wonder-Bee is a unique hero with many secrets.",
       "animal_theme": "Bee",
       "hero_inspiration": "Wasp",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/wasp-wonder-bee.jpeg"
     },
     {
       "superhero_name": "Doctor Strange-topus",
@@ -138,7 +151,8 @@
       "trivia": "Doctor Strange-topus is a unique hero with many secrets.",
       "animal_theme": "Octopus",
       "hero_inspiration": "Doctor Strange",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/doctor-strange-topus.jpeg"
     },
     {
       "superhero_name": "Flipper the Flippy",
@@ -148,7 +162,8 @@
       "trivia": "Flipper the Flippy is a unique hero with many secrets.",
       "animal_theme": "Dolphin",
       "hero_inspiration": "Namor",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/flipper-the-flippy.jpeg"
     },
     {
       "superhero_name": "Sabretooth Tabby",
@@ -158,7 +173,8 @@
       "trivia": "Sabretooth Tabby is a unique hero with many secrets.",
       "animal_theme": "Tiger",
       "hero_inspiration": "Sabretooth",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Rhino Beetle-Borg",
@@ -168,7 +184,8 @@
       "trivia": "Rhino Beetle-Borg is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Rhino",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/rhino-beetle-borg.jpeg"
     },
     {
       "superhero_name": "Lizard Larry",
@@ -178,7 +195,8 @@
       "trivia": "Lizard Larry is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Lizard",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Venom",
@@ -188,7 +206,8 @@
       "trivia": "Venom is a unique hero with many secrets.",
       "animal_theme": "Snake",
       "hero_inspiration": "Venom",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Deadpool Trash-Panda",
@@ -198,7 +217,8 @@
       "trivia": "Deadpool Trash-Panda is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Deadpool",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/deadpool-trash-panda.jpeg"
     },
     {
       "superhero_name": "Silver Shark",
@@ -208,7 +228,8 @@
       "trivia": "Silver Shark is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Silver Surfer",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/silver-shark.jpeg"
     },
     {
       "superhero_name": "Daredevil Deer",
@@ -218,7 +239,8 @@
       "trivia": "Daredevil Deer is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Daredevil",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/daredevil-deer.jpeg"
     },
     {
       "superhero_name": "Power Primate",
@@ -228,7 +250,8 @@
       "trivia": "Power Primate is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Luke Cage",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Iron Fist Cricket",
@@ -238,7 +261,8 @@
       "trivia": "Iron Fist Cricket is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Iron Fist",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/iron-fist-cricket.jpeg"
     },
     {
       "superhero_name": "Jessica Hop-Jones",
@@ -248,7 +272,8 @@
       "trivia": "Jessica Hop-Jones is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Jessica Jones",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/jessica-hop-jones.jpeg"
     },
     {
       "superhero_name": "Punisher Pine-Cushion",
@@ -258,7 +283,8 @@
       "trivia": "Punisher Pine-Cushion is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Punisher",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ghost Rider Raccoon",
@@ -268,7 +294,8 @@
       "trivia": "Ghost Rider Raccoon is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Ghost Rider",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/ghost-rider-raccoon.jpeg"
     },
     {
       "superhero_name": "Captain Marvel Cat",
@@ -278,7 +305,8 @@
       "trivia": "Captain Marvel Cat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "Captain Marvel",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/captain-marvel-cat.jpeg"
     },
     {
       "superhero_name": "Storm Breaker Bird",
@@ -288,7 +316,8 @@
       "trivia": "Storm Breaker Bird is a unique hero with many secrets.",
       "animal_theme": "Eagle",
       "hero_inspiration": "Storm",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/storm-breaker-bird.jpeg"
     },
     {
       "superhero_name": "Cyclops Ram",
@@ -298,7 +327,8 @@
       "trivia": "Cyclops Ram is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Cyclops",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Phoenix Dove",
@@ -308,7 +338,8 @@
       "trivia": "Phoenix Dove is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Jean Grey/Phoenix",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/phoenix-dove.jpeg"
     },
     {
       "superhero_name": "Beast Buffalo",
@@ -318,7 +349,8 @@
       "trivia": "Beast Buffalo is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Beast",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/beast-buffalo.jpeg"
     },
     {
       "superhero_name": "Rogue Skunk",
@@ -328,7 +360,8 @@
       "trivia": "Rogue Skunk is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Rogue",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/rogue-skunk.jpeg"
     },
     {
       "superhero_name": "Gambit Peacock",
@@ -338,7 +371,8 @@
       "trivia": "Gambit Peacock is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Gambit",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/gambit-peacock.jpeg"
     },
     {
       "superhero_name": "Magneto Magpie",
@@ -348,7 +382,8 @@
       "trivia": "Magneto Magpie is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Magneto",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/magneto-magpie.jpeg"
     },
     {
       "superhero_name": "Professor Hoot-X",
@@ -358,7 +393,8 @@
       "trivia": "Professor Hoot-X is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Professor X",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Mystique Chameleon",
@@ -368,7 +404,8 @@
       "trivia": "Mystique Chameleon is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Mystique",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Nightcrawler Cricket",
@@ -378,7 +415,8 @@
       "trivia": "Nightcrawler Cricket is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Nightcrawler",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": "./images/nightcrawler-cricket.jpeg"
     },
     {
       "superhero_name": "Colossus Rhino",
@@ -388,7 +426,8 @@
       "trivia": "Colossus Rhino is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Colossus",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/colossus-rhino.jpeg"
     },
     {
       "superhero_name": "Iceman Polar bear",
@@ -398,7 +437,8 @@
       "trivia": "Iceman Polar bear is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Iceman",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/iceman-polar-bear.jpeg"
     },
     {
       "superhero_name": "Human Torch-Mander",
@@ -408,7 +448,8 @@
       "trivia": "Human Torch-Mander is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Human Torch",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/human-torch-mander.jpeg"
     },
     {
       "superhero_name": "Invisible Octopus-Woman",
@@ -418,7 +459,8 @@
       "trivia": "Invisible Octopus-Woman is a unique hero with many secrets.",
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Thing Turtle",
@@ -428,7 +470,8 @@
       "trivia": "Thing Turtle is a unique hero with many secrets.",
       "animal_theme": "Turtle",
       "hero_inspiration": "The Thing",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Hawkeye Hawk",
@@ -438,7 +481,8 @@
       "trivia": "Hawkeye Hawk is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Hawkeye",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/hawkeye-hawk.jpeg"
     },
     {
       "superhero_name": "Black Widow Spider",
@@ -448,7 +492,8 @@
       "trivia": "Black Widow Spider is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Black Widow",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": "./images/black-widow-spider.jpeg"
     },
     {
       "superhero_name": "Nick Furry",
@@ -458,7 +503,8 @@
       "trivia": "Nick Furry is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Captain Britain",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Loki Lemur",
@@ -468,7 +514,8 @@
       "trivia": "Loki Lemur is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Loki",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ultron Bug",
@@ -478,7 +525,8 @@
       "trivia": "Ultron Bug is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Ultron",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Doctor Goose",
@@ -488,7 +536,8 @@
       "trivia": "Doctor Goose is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Doom",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Green Gobblin'",
@@ -498,7 +547,8 @@
       "trivia": "Green Gobblin' is a unique hero with many secrets.",
       "animal_theme": "Eagle",
       "hero_inspiration": "Green Goblin",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Kingpin Penguin",
@@ -508,7 +558,8 @@
       "trivia": "Kingpin Penguin is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Kingpin",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Mysterio-fish",
@@ -518,7 +569,8 @@
       "trivia": "Mysterio-fish is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Mysterio",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Vulture Vulture",
@@ -528,7 +580,8 @@
       "trivia": "Vulture Vulture is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Vulture",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Sandmanatee",
@@ -538,7 +591,8 @@
       "trivia": "Sandmanatee is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Eelectro",
@@ -548,7 +602,8 @@
       "trivia": "Eelectro is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Electro",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Carnage-vorous Plant",
@@ -558,7 +613,8 @@
       "trivia": "Carnage-vorous Plant is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Carnage",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "A-pork-alypse",
@@ -568,7 +624,8 @@
       "trivia": "A-pork-alypse is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Apocalypse",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Mr. Sinister Salmon",
@@ -578,7 +635,8 @@
       "trivia": "Mr. Sinister Salmon is a unique hero with many secrets.",
       "animal_theme": "Fish",
       "hero_inspiration": "Mr. Sinister",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Juggernaut-ilus",
@@ -588,7 +646,8 @@
       "trivia": "Juggernaut-ilus is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Juggernaut",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Gopher-lactus",
@@ -598,7 +657,8 @@
       "trivia": "Gopher-lactus is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Kang the Conger-er",
@@ -608,7 +668,8 @@
       "trivia": "Kang the Conger-er is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Kang the Conqueror",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Task-Mantis",
@@ -618,7 +679,8 @@
       "trivia": "Task-Mantis is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Taskmaster",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Dor-hamster-mmu",
@@ -628,7 +690,8 @@
       "trivia": "Dor-hamster-mmu is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Dormammu",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Hela-phant",
@@ -638,7 +701,8 @@
       "trivia": "Hela-phant is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Hela",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Red Skull-Cap Mushroom",
@@ -648,7 +712,8 @@
       "trivia": "The Red Skull-Cap Mushroom is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Red Skull",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Scarlet Finch",
@@ -658,7 +723,8 @@
       "trivia": "Scarlet Finch is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Scarlet Witch",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Pigeon",
@@ -668,7 +734,8 @@
       "trivia": "The Pigeon is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "The Vision",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "War Machine-Dog",
@@ -678,7 +745,8 @@
       "trivia": "War Machine-Dog is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "War Machine",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Blade the Bat",
@@ -688,7 +756,8 @@
       "trivia": "Blade the Bat is a unique hero with many secrets.",
       "animal_theme": "Bat",
       "hero_inspiration": "Blade",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Moon Knight-Owl",
@@ -698,7 +767,8 @@
       "trivia": "Moon Knight-Owl is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Moon Knight",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "She-Hulk Sheep",
@@ -708,7 +778,8 @@
       "trivia": "She-Hulk Sheep is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "She-Hulk",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Nova Corp-gi",
@@ -718,7 +789,8 @@
       "trivia": "Nova Corp-gi is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "Nova",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Adam Warthog",
@@ -728,7 +800,8 @@
       "trivia": "Adam Warthog is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Adam Warlock",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ikaris-Canary",
@@ -738,7 +811,8 @@
       "trivia": "Ikaris-Canary is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Ikaris (The Eternals)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Shang-Chimpanzee",
@@ -748,7 +822,8 @@
       "trivia": "Shang-Chimpanzee is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Shang-Chi",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Elek-tric Eel",
@@ -758,7 +833,8 @@
       "trivia": "Elek-tric Eel is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Elektra",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Echo-location Bat",
@@ -768,7 +844,8 @@
       "trivia": "Echo-location Bat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "Echo",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Kate Bishop-Hawk",
@@ -778,7 +855,8 @@
       "trivia": "Kate Bishop-Hawk is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Kate Bishop (Hawkeye)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Miles Mor-rat-les",
@@ -788,7 +866,8 @@
       "trivia": "Miles Mor-rat-les is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Miles Morales",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ghost-Spider-Goat",
@@ -798,7 +877,8 @@
       "trivia": "Ghost-Spider-Goat is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Ghost-Spider (Spider-Gwen)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ms. Marvel-ot",
@@ -808,7 +888,8 @@
       "trivia": "Ms. Marvel-ot is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Ms. Marvel (Kamala Khan)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Squirrel Girl",
@@ -818,7 +899,8 @@
       "trivia": "Squirrel Girl is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Squirrel Girl",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Groot-A-Saurus",
@@ -828,7 +910,8 @@
       "trivia": "Groot-A-Saurus is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Groot",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Rocket Raccoon",
@@ -838,7 +921,8 @@
       "trivia": "Rocket Raccoon is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Rocket Raccoon",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Star-Lord Seahorse",
@@ -848,7 +932,8 @@
       "trivia": "Star-Lord Seahorse is a unique hero with many secrets.",
       "animal_theme": "Horse",
       "hero_inspiration": "Star-Lord",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Gamora-affe",
@@ -858,7 +943,8 @@
       "trivia": "Gamora-affe is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Gamora",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Drax the Destroyer Dung-Beetle",
@@ -868,7 +954,8 @@
       "trivia": "Drax the Destroyer Dung-Beetle is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Drax the Destroyer",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Praying Mantis",
@@ -878,7 +965,8 @@
       "trivia": "Praying Mantis is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Mantis",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Black Bolt-Weevil",
@@ -888,7 +976,8 @@
       "trivia": "Black Bolt-Weevil is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Black Bolt",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Medusa-Moth",
@@ -898,7 +987,8 @@
       "trivia": "Medusa-Moth is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Medusa",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Fin Fang Foom-Fly",
@@ -908,7 +998,8 @@
       "trivia": "Fin Fang Foom-Fly is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Fin Fang Foom",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Sentry-pede",
@@ -918,7 +1009,8 @@
       "trivia": "The Sentry-pede is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Sentry",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "She-Venom",
@@ -928,7 +1020,8 @@
       "trivia": "She-Venom is a unique hero with many secrets.",
       "animal_theme": "Snake",
       "hero_inspiration": "She-Venom",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Grandmaster-Cat",
@@ -938,7 +1031,8 @@
       "trivia": "The Grandmaster-Cat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "The Grandmaster",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Kraven the Hunter-Vark",
@@ -948,7 +1042,8 @@
       "trivia": "Kraven the Hunter-Vark is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Kraven the Hunter",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Abomination-Ape",
@@ -958,7 +1053,8 @@
       "trivia": "Abomination-Ape is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Abomination",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Baron Zebra",
@@ -968,7 +1064,8 @@
       "trivia": "Baron Zebra is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Baron Zemo",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
@@ -978,7 +1075,8 @@
       "trivia": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "M.O.D.O.K.",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Super-Skrull-Cow",
@@ -988,7 +1086,8 @@
       "trivia": "Super-Skrull-Cow is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Super-Skrull",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Scorpion-Scorpion",
@@ -998,7 +1097,8 @@
       "trivia": "Scorpion-Scorpion is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Scorpion",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Agatha Hark-moth",
@@ -1008,7 +1108,8 @@
       "trivia": "Agatha Hark-moth is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Agatha Harkness",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Ronan the Accuser-Cat",
@@ -1018,7 +1119,8 @@
       "trivia": "Ronan the Accuser-Cat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "Ronan the Accuser",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Annihilus-Ant",
@@ -1028,7 +1130,8 @@
       "trivia": "Annihilus-Ant is a unique hero with many secrets.",
       "animal_theme": "Anteater",
       "hero_inspiration": "Annihilus",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Magik-arp",
@@ -1038,7 +1141,8 @@
       "trivia": "Magik-arp is a unique hero with many secrets.",
       "animal_theme": "Fish",
       "hero_inspiration": "Magik",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Sunspot-Sunflower",
@@ -1048,7 +1152,8 @@
       "trivia": "Sunspot-Sunflower is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Sunspot",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Cannonball-Weevil",
@@ -1058,7 +1163,8 @@
       "trivia": "Cannonball-Weevil is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Cannonball",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Sersi-Horse",
@@ -1068,7 +1174,8 @@
       "trivia": "Sersi-Horse is a unique hero with many secrets.",
       "animal_theme": "Horse",
       "hero_inspiration": "Sersi (The Eternals)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Gorr the God-Butcher-Bird",
@@ -1078,7 +1185,8 @@
       "trivia": "Gorr the God-Butcher-Bird is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Gorr the God Butcher",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "America Cha-vez-Chinchilla",
@@ -1088,7 +1196,8 @@
       "trivia": "America Cha-vez-Chinchilla is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "America Chavez",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Thena-Newt",
@@ -1098,7 +1207,8 @@
       "trivia": "Thena-Newt is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Thena (The Eternals)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Karnak-the-Mantis-Shrimp",
@@ -1108,7 +1218,8 @@
       "trivia": "Karnak-the-Mantis-Shrimp is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Ghost-Goose",
@@ -1118,7 +1229,8 @@
       "trivia": "Ghost-Goose is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Ghost (Ant-Man and The Wasp)",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Shuma-Gorath-Starfish",
@@ -1128,7 +1240,8 @@
       "trivia": "Shuma-Gorath-Starfish is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Shuma-Gorath",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The High Evolutionary-Hedgehog",
@@ -1138,7 +1251,8 @@
       "trivia": "The High Evolutionary-Hedgehog is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The High Evolutionary",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Korgi",
@@ -1148,7 +1262,8 @@
       "trivia": "Korgi is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "Korg",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "Miek-the-Mite",
@@ -1158,7 +1273,8 @@
       "trivia": "Miek-the-Mite is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Miek",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Collector-Cat",
@@ -1168,7 +1284,8 @@
       "trivia": "The Collector-Cat is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "The Collector",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Mandarin-Duck",
@@ -1178,7 +1295,8 @@
       "trivia": "The Mandarin-Duck is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Mandarin",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Yelena Belova-Weasel",
@@ -1188,7 +1306,8 @@
       "trivia": "Yelena Belova-Weasel is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Yelena Belova",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Red Guardian-Bear",
@@ -1198,7 +1317,8 @@
       "trivia": "Red Guardian-Bear is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Red Guardian",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Watcher-Wombat",
@@ -1208,7 +1328,8 @@
       "trivia": "The Watcher-Wombat is a unique hero with many secrets.",
       "animal_theme": "Bat",
       "hero_inspiration": "The Watcher",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Beta Ray Bill-Fish",
@@ -1218,7 +1339,8 @@
       "trivia": "Beta Ray Bill-Fish is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Beta Ray Bill",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Gladiator-Gull",
@@ -1228,7 +1350,8 @@
       "trivia": "Gladiator-Gull is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Gladiator",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Firestar-Firefly",
@@ -1238,7 +1361,8 @@
       "trivia": "Firestar-Firefly is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Firestar",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Cloak-and-Dagger-Flies",
@@ -1248,7 +1372,8 @@
       "trivia": "Cloak-and-Dagger-Flies is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Cloak and Dagger",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Wonder Man-atee",
@@ -1258,7 +1383,8 @@
       "trivia": "Wonder Man-atee is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Wonder Man",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Tigra-the-Tiger",
@@ -1268,7 +1394,8 @@
       "trivia": "Tigra-the-Tiger is a unique hero with many secrets.",
       "animal_theme": "Tiger",
       "hero_inspiration": "Tigra",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Morbius the Fruit Bat",
@@ -1278,7 +1405,8 @@
       "trivia": "Morbius the Fruit Bat is a unique hero with many secrets.",
       "animal_theme": "Bat",
       "hero_inspiration": "Morbius, the Living Vampire",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Werewolf by Night-Woof",
@@ -1288,7 +1416,8 @@
       "trivia": "Werewolf by Night-Woof is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Werewolf by Night",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Man-Thing-Thang",
@@ -1298,7 +1427,8 @@
       "trivia": "Man-Thing-Thang is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Man-Thing",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Mephisto-Poodle",
@@ -1308,7 +1438,8 @@
       "trivia": "Mephisto-Poodle is a unique hero with many secrets.",
       "animal_theme": "Poodle",
       "hero_inspiration": "Mephisto",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Blackheart-Ram",
@@ -1318,7 +1449,8 @@
       "trivia": "Blackheart-Ram is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Blackheart",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The Leader-Frog",
@@ -1328,7 +1460,8 @@
       "trivia": "The Leader-Frog is a unique hero with many secrets.",
       "animal_theme": "Frog",
       "hero_inspiration": "The Leader",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Songbird-Songbird",
@@ -1338,7 +1471,8 @@
       "trivia": "Songbird-Songbird is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Songbird",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Moon-Giraffe",
@@ -1348,7 +1482,8 @@
       "trivia": "Moon-Giraffe is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Moon Girl",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Devil Dino-Dog",
@@ -1358,7 +1493,8 @@
       "trivia": "Devil Dino-Dog is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "Devil Dinosaur",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Sasquatch-Sasquatch",
@@ -1368,7 +1504,8 @@
       "trivia": "Sasquatch-Sasquatch is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Sasquatch (Alpha Flight)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Puck-the-Puffin",
@@ -1378,7 +1515,8 @@
       "trivia": "Puck-the-Puffin is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Puck (Alpha Flight)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Northstar-Goose (🦢) & Aurora-Goose",
@@ -1388,7 +1526,8 @@
       "trivia": "Northstar-Goose (🦢) & Aurora-Goose is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Northstar & Aurora (Alpha Flight)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Havok-Hare",
@@ -1398,7 +1537,8 @@
       "trivia": "Havok-Hare is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Havok",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Polaris-Peacock",
@@ -1408,7 +1548,8 @@
       "trivia": "Polaris-Peacock is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Polaris",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Multiple Man-atee",
@@ -1418,7 +1559,8 @@
       "trivia": "Multiple Man-atee is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Multiple Man",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Bishop-the-Bison",
@@ -1428,7 +1570,8 @@
       "trivia": "Bishop-the-Bison is a unique hero with many secrets.",
       "animal_theme": "Buffalo",
       "hero_inspiration": "Bishop",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Cable-the-Capybara",
@@ -1438,7 +1581,8 @@
       "trivia": "Cable-the-Capybara is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Cable",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Domino-Dalmatian",
@@ -1448,7 +1592,8 @@
       "trivia": "Domino-Dalmatian is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "Domino",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Warpath-Walrus",
@@ -1458,7 +1603,8 @@
       "trivia": "Warpath-Walrus is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Warpath",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Shatterstar-fish",
@@ -1468,7 +1614,8 @@
       "trivia": "Shatterstar-fish is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Shatterstar",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Forge-the-Ferret",
@@ -1478,7 +1625,8 @@
       "trivia": "Forge-the-Ferret is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Forge",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Psylocke-Butterfly",
@@ -1488,7 +1636,8 @@
       "trivia": "Psylocke-Butterfly is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Psylocke",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "X-23-Wolf",
@@ -1498,7 +1647,8 @@
       "trivia": "X-23-Wolf is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "X-23",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Enchantress-Emu",
@@ -1508,7 +1658,8 @@
       "trivia": "The Enchantress-Emu is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Enchantress",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Executioner-Elk",
@@ -1518,7 +1669,8 @@
       "trivia": "The Executioner-Elk is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Executioner",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Sif-the-Swan",
@@ -1528,7 +1680,8 @@
       "trivia": "Sif-the-Swan is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Lady Sif",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Warriors Three-Hogs",
@@ -1538,7 +1691,8 @@
       "trivia": "The Warriors Three-Hogs is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Warriors Three",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Heimdall-the-Heron",
@@ -1548,7 +1702,8 @@
       "trivia": "Heimdall-the-Heron is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Heimdall",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Odin-the-Owl",
@@ -1558,7 +1713,8 @@
       "trivia": "Odin-the-Owl is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Odin",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Spider-Woman-Spider",
@@ -1568,7 +1724,8 @@
       "trivia": "Spider-Woman-Spider is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Spider-Woman",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Falcon-and-the-Winter-Soldier-Snails",
@@ -1578,7 +1735,8 @@
       "trivia": "The Falcon-and-the-Winter-Soldier-Snails is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Falcon and The Winter Soldier (as a duo)",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "She-Ra-Coon",
@@ -1588,7 +1746,8 @@
       "trivia": "She-Ra-Coon is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "She-Ra (a fun, non-Marvel crossover)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "He-Man-atee",
@@ -1598,7 +1757,8 @@
       "trivia": "He-Man-atee is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "He-Man (a fun, non-Marvel crossover)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Skelet-eel",
@@ -1608,7 +1768,8 @@
       "trivia": "Skelet-eel is a unique hero with many secrets.",
       "animal_theme": "Snake",
       "hero_inspiration": "Skeletor (a fun, non-Marvel crossover)",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Dr. Octopus-Octopus",
@@ -1618,7 +1779,8 @@
       "trivia": "Dr. Octopus-Octopus is a unique hero with many secrets.",
       "animal_theme": "Octopus",
       "hero_inspiration": "Doctor Octopus",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "The Lizard-Lizard",
@@ -1628,7 +1790,8 @@
       "trivia": "The Lizard-Lizard is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Lizard",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Electro-Eel",
@@ -1638,7 +1801,8 @@
       "trivia": "Electro-Eel is a unique hero with many secrets.",
       "animal_theme": "Snake",
       "hero_inspiration": "Electro",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Sandman-Sand-Dollar",
@@ -1648,7 +1812,8 @@
       "trivia": "Sandman-Sand-Dollar is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Rhino-Rhino",
@@ -1658,7 +1823,8 @@
       "trivia": "Rhino-Rhino is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Rhino",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Mysterio-Mantis",
@@ -1668,7 +1834,8 @@
       "trivia": "Mysterio-Mantis is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Mysterio",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Vulture-Vulture",
@@ -1678,7 +1845,8 @@
       "trivia": "The Vulture-Vulture is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "The Vulture",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Kingpin-Killer-Whale",
@@ -1688,7 +1856,8 @@
       "trivia": "Kingpin-Killer-Whale is a unique hero with many secrets.",
       "animal_theme": "Whale",
       "hero_inspiration": "The Kingpin",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Bullseye-Bullfrog",
@@ -1698,7 +1867,8 @@
       "trivia": "Bullseye-Bullfrog is a unique hero with many secrets.",
       "animal_theme": "Frog",
       "hero_inspiration": "Bullseye",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The Purple Man-drill",
@@ -1708,7 +1878,8 @@
       "trivia": "The Purple Man-drill is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Purple Man",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Kang the Kangaroo",
@@ -1718,7 +1889,8 @@
       "trivia": "Kang the Kangaroo is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Kang the Conqueror",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Dr. Doom-Duck",
@@ -1728,7 +1900,8 @@
       "trivia": "Dr. Doom-Duck is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Doom",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "Galactus-Goat",
@@ -1738,7 +1911,8 @@
       "trivia": "Galactus-Goat is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "The Silver Surfer-Slug",
@@ -1748,7 +1922,8 @@
       "trivia": "The Silver Surfer-Slug is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Silver Surfer",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     },
     {
       "superhero_name": "The Human-Fly",
@@ -1758,7 +1933,8 @@
       "trivia": "The Human-Fly is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Human Fly",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The Spot-Spotted-Salamander",
@@ -1768,7 +1944,8 @@
       "trivia": "The Spot-Spotted-Salamander is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Spot",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Speedball-Sugar-Glider",
@@ -1778,7 +1955,8 @@
       "trivia": "Speedball-Sugar-Glider is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Speedball",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Night-Thrasher-Thrush",
@@ -1788,7 +1966,8 @@
       "trivia": "Night-Thrasher-Thrush is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Night Thrasher",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Quasar-Quail",
@@ -1798,7 +1977,8 @@
       "trivia": "Quasar-Quail is a unique hero with many secrets.",
       "animal_theme": "Canary",
       "hero_inspiration": "Quasar",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Hyperion-Hippo",
@@ -1808,7 +1988,8 @@
       "trivia": "Hyperion-Hippo is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Hyperion",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Nighthawk-Night-Hawk",
@@ -1818,7 +1999,8 @@
       "trivia": "Nighthawk-Night-Hawk is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Nighthawk",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Power Princess-Poodle",
@@ -1828,7 +2010,8 @@
       "trivia": "Power Princess-Poodle is a unique hero with many secrets.",
       "animal_theme": "Poodle",
       "hero_inspiration": "Power Princess",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The Whizzer-Whippet",
@@ -1838,7 +2021,8 @@
       "trivia": "The Whizzer-Whippet is a unique hero with many secrets.",
       "animal_theme": "Dog",
       "hero_inspiration": "The Whizzer",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Doctor Spectrum-Spectacled-Bear",
@@ -1848,7 +2032,8 @@
       "trivia": "Doctor Spectrum-Spectacled-Bear is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Spectrum",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "The Beyonder-Beetle",
@@ -1858,7 +2043,8 @@
       "trivia": "The Beyonder-Beetle is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "The Beyonder",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Molecule Man-Mole",
@@ -1868,7 +2054,8 @@
       "trivia": "Molecule Man-Mole is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Molecule Man",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Titania-Tarantula",
@@ -1878,7 +2065,8 @@
       "trivia": "Titania-Tarantula is a unique hero with many secrets.",
       "animal_theme": "Spider",
       "hero_inspiration": "Titania",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Volcana-Vole",
@@ -1888,7 +2076,8 @@
       "trivia": "Volcana-Vole is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Volcana",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Klaw-the-Clam",
@@ -1898,7 +2087,8 @@
       "trivia": "Klaw-the-Clam is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "An physicist who stole Vibranium from Wakitty and was transformed into a sound-being. He is the arch-nemesis of Black Panther Paws.",
-      "difficulty": "Hard"
+      "difficulty": "Hard",
+      "imagePath": null
     },
     {
       "superhero_name": "Man-Ape-Ape",
@@ -1908,7 +2098,8 @@
       "trivia": "Man-Ape-Ape is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Man-Ape",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Killmonger-Catfish",
@@ -1918,7 +2109,8 @@
       "trivia": "Killmonger-Catfish is a unique hero with many secrets.",
       "animal_theme": "Cat",
       "hero_inspiration": "Killmonger",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Okoye-Okapi",
@@ -1928,7 +2120,8 @@
       "trivia": "Okoye-Okapi is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Okoye",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "imagePath": null
     },
     {
       "superhero_name": "Shuri-Shrew",
@@ -1938,7 +2131,8 @@
       "trivia": "Shuri-Shrew is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Shuri",
-      "difficulty": "Easy"
+      "difficulty": "Easy",
+      "imagePath": null
     }
   ]
 }
