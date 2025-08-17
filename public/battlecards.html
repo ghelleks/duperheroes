@@ -252,8 +252,9 @@
             await loadHeroes();
             setupEventListeners();
             generateAlphabetNav();
-            displayHeroes();
-            updateStats();
+            // Ensure filters are properly initialized
+            currentFilter = { search: '', difficulty: 'all', letter: '' };
+            applyFilters();
         });
 
         // Load heroes data
@@ -323,7 +324,7 @@
 
         // Handle search
         function handleSearch(event) {
-            currentFilter.search = event.target.value.toLowerCase();
+            currentFilter.search = event.target.value.toLowerCase().trim();
             applyFilters();
         }
 
@@ -361,8 +362,8 @@
         function applyFilters() {
             filteredHeroes = allHeroes.filter(hero => {
                 // Search filter
-                if (currentFilter.search) {
-                    const searchTerm = currentFilter.search;
+                if (currentFilter.search && currentFilter.search.trim()) {
+                    const searchTerm = currentFilter.search.trim();
                     const searchableText = [
                         hero.superhero_name,
                         hero.real_name,
@@ -382,7 +383,7 @@
                 }
 
                 // Letter filter
-                if (currentFilter.letter && !hero.superhero_name.toUpperCase().startsWith(currentFilter.letter)) {
+                if (currentFilter.letter && currentFilter.letter.trim() && !hero.superhero_name.toUpperCase().startsWith(currentFilter.letter.trim())) {
                     return false;
                 }
 
@@ -526,9 +527,15 @@
             
             // Update filter text
             const filterParts = [];
-            if (currentFilter.search) filterParts.push(`matching "${currentFilter.search}"`);
-            if (currentFilter.difficulty !== 'all') filterParts.push(`${currentFilter.difficulty} difficulty`);
-            if (currentFilter.letter) filterParts.push(`starting with "${currentFilter.letter}"`);
+            if (currentFilter.search && currentFilter.search.trim()) {
+                filterParts.push(`matching "${currentFilter.search}"`);
+            }
+            if (currentFilter.difficulty !== 'all') {
+                filterParts.push(`${currentFilter.difficulty} difficulty`);
+            }
+            if (currentFilter.letter && currentFilter.letter.trim()) {
+                filterParts.push(`starting with "${currentFilter.letter}"`);
+            }
             
             const filterText = filterParts.length > 0 ? `(${filterParts.join(', ')})` : '';
             document.getElementById('filter-text').textContent = filterText;
