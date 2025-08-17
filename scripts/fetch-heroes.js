@@ -18,6 +18,7 @@ const OUTPUT_FILE = path.join(__dirname, '../public/heroes.json');
 const FALLBACK_FILE = path.join(__dirname, '../public/heroes.json');
 const IMAGE_DIRECTORY = path.join(__dirname, '../public/images');
 const SUPPORTED_IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
+const DEBUG_OUTPUT_FILE = path.join(__dirname, '../public/debug/hero-fetch.json');
 
 // Animal emoji mapping for theme extraction
 const ANIMAL_EMOJIS = {
@@ -392,17 +393,76 @@ function saveJSON(jsonData, outputPath) {
 }
 
 /**
+ * Debug logging class for capturing output
+ */
+class DebugLogger {
+  constructor() {
+    this.logs = [];
+    this.startTime = Date.now();
+  }
+  
+  log(message) {
+    this.logs.push(message);
+    console.log(message);
+  }
+  
+  info(message) {
+    this.log(message);
+  }
+  
+  success(message) {
+    this.log(message);
+  }
+  
+  error(message) {
+    this.logs.push(message);
+    console.error(message);
+  }
+  
+  getDebugData(status, heroCount = 0, error = null) {
+    return {
+      timestamp: new Date().toISOString(),
+      status: status,
+      duration: Date.now() - this.startTime,
+      heroCount: heroCount,
+      logs: this.logs,
+      error: error ? error.message : null,
+      docUrl: GOOGLE_DOC_URL
+    };
+  }
+  
+  async saveDebugOutput(debugData) {
+    try {
+      // Ensure debug directory exists
+      const debugDir = path.dirname(DEBUG_OUTPUT_FILE);
+      if (!fs.existsSync(debugDir)) {
+        fs.mkdirSync(debugDir, { recursive: true });
+      }
+      
+      fs.writeFileSync(DEBUG_OUTPUT_FILE, JSON.stringify(debugData, null, 2));
+      this.log(`📄 Debug output saved to ${DEBUG_OUTPUT_FILE}`);
+    } catch (error) {
+      this.error(`❌ Failed to save debug output: ${error.message}`);
+    }
+  }
+}
+
+/**
  * Main execution function
  */
 async function main() {
-  console.log('🦸 Google Doc to Heroes JSON Generator');
-  console.log('=====================================');
+  const logger = new DebugLogger();
+  
+  logger.info('🦸 Google Doc to Heroes JSON Generator');
+  logger.info('=====================================');
   
   try {
     // Fetch document
+    logger.info('Fetching Google Doc...');
     const docText = await fetchGoogleDoc(GOOGLE_DOC_URL);
     
     // Parse heroes
+    logger.info('🔍 Parsing heroes data...');
     const heroes = parseHeroesData(docText);
     
     if (heroes.length === 0) {
@@ -410,37 +470,49 @@ async function main() {
     }
     
     // Generate JSON
+    logger.info('📦 Generating JSON data...');
     const jsonData = generateJSON(heroes);
     
     // Save to file
+    logger.info('💾 Saving heroes to JSON file...');
     const success = saveJSON(jsonData, OUTPUT_FILE);
     
     if (success) {
-      console.log('🎉 Heroes JSON generation completed successfully!');
-      console.log(`📊 Total heroes: ${heroes.length}`);
+      logger.success('🎉 Heroes JSON generation completed successfully!');
+      logger.info(`📊 Total heroes: ${heroes.length}`);
       
       // Show difficulty breakdown
       const breakdown = heroes.reduce((acc, hero) => {
         acc[hero.difficulty] = (acc[hero.difficulty] || 0) + 1;
         return acc;
       }, {});
-      console.log('📈 Difficulty breakdown:', breakdown);
+      logger.info(`📈 Difficulty breakdown: ${JSON.stringify(breakdown)}`);
+      
+      // Save debug output
+      const debugData = logger.getDebugData('success', heroes.length);
+      await logger.saveDebugOutput(debugData);
       
       process.exit(0);
     } else {
+      const debugData = logger.getDebugData('error', heroes.length, new Error('Failed to save JSON file'));
+      await logger.saveDebugOutput(debugData);
       process.exit(1);
     }
     
   } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    console.log('🔄 Attempting to maintain existing heroes.json file...');
+    logger.error(`❌ Error: ${error.message}`);
+    logger.info('🔄 Attempting to maintain existing heroes.json file...');
     
     // Check if fallback file exists
     if (fs.existsSync(FALLBACK_FILE)) {
-      console.log('✅ Existing heroes.json file preserved');
+      logger.success('✅ Existing heroes.json file preserved');
     } else {
-      console.error('💥 No existing heroes.json file found - manual intervention required');
+      logger.error('💥 No existing heroes.json file found - manual intervention required');
     }
+    
+    // Save debug output with error
+    const debugData = logger.getDebugData('error', 0, error);
+    await logger.saveDebugOutput(debugData);
     
     process.exit(1);
   }

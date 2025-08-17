@@ -11,6 +11,7 @@ This directory contains Architectural Decision Records for the DuperHeroes proje
 - [ADR-005: Emoji-First Display with Image Fallback Strategy](./ADR-005-emoji-first-display.md)
 - [ADR-006: CDN-Based Styling with Tailwind CSS](./ADR-006-cdn-based-styling.md)
 - [ADR-007: Google Doc Hero Fetcher Integration](./ADR-007-google-doc-hero-fetcher.md)
+- [ADR-008: Debugging System Implementation](./ADR-008-debugging-system-implementation.md)
 
 ## ADR Template
 
