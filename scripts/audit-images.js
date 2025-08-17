@@ -13,7 +13,6 @@ const path = require('path');
 // Configuration
 const HEROES_JSON_PATH = path.join(__dirname, '../public/heroes.json');
 const IMAGE_DIRECTORIES = [
-    path.join(__dirname, '../uploads'),
     path.join(__dirname, '../public/images')
 ];
 const SUPPORTED_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
