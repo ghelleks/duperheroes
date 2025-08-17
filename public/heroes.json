@@ -581,7 +581,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
       "difficulty": "Medium",
-      "imagePath": "./images/sandmanatee.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Eelectro",
@@ -1098,7 +1098,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Agatha Harkness",
       "difficulty": "Medium",
-      "imagePath": "./images/agatha-hark-moth.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Ronan the Accuser-Cat",
@@ -1186,7 +1186,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "America Chavez",
       "difficulty": "Medium",
-      "imagePath": "./images/america-cha-vez-chinchilla.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Thena-Newt",
