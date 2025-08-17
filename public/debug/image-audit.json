@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-17T17:56:37.774Z",
+  "timestamp": "2025-08-17T18:20:45.780Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 209,
-    "heroesWithImages": 179,
-    "heroesWithoutImages": 14,
-    "orphanedImages": 23,
+    "totalImages": 220,
+    "heroesWithImages": 189,
+    "heroesWithoutImages": 4,
+    "orphanedImages": 24,
     "duplicateImages": 7
   },
   "heroesWithImages": [
@@ -1080,6 +1080,17 @@
       ]
     },
     {
+      "heroName": "Baron Zebra",
+      "slug": "baron-zebra",
+      "images": [
+        {
+          "filename": "baron-zebra.png",
+          "directory": "images",
+          "size": 1470537
+        }
+      ]
+    },
+    {
       "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
       "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
       "images": [
@@ -1109,17 +1120,6 @@
           "filename": "scorpion-scorpion.png",
           "directory": "images",
           "size": 1664748
-        }
-      ]
-    },
-    {
-      "heroName": "Agatha Hark-moth",
-      "slug": "agatha-hark-moth",
-      "images": [
-        {
-          "filename": "agatha-hark-moth.png",
-          "directory": "images",
-          "size": 1681567
         }
       ]
     },
@@ -1168,6 +1168,17 @@
       ]
     },
     {
+      "heroName": "Cannonball-Weevil",
+      "slug": "cannonball-weevil",
+      "images": [
+        {
+          "filename": "cannonball-weevil.png",
+          "directory": "images",
+          "size": 2053818
+        }
+      ]
+    },
+    {
       "heroName": "Sersi-Horse",
       "slug": "sersi-horse",
       "images": [
@@ -1190,17 +1201,6 @@
       ]
     },
     {
-      "heroName": "America Cha-vez-Chinchilla",
-      "slug": "america-cha-vez-chinchilla",
-      "images": [
-        {
-          "filename": "america-cha-vez-chinchilla.png",
-          "directory": "images",
-          "size": 1591328
-        }
-      ]
-    },
-    {
       "heroName": "Thena-Newt",
       "slug": "thena-newt",
       "images": [
@@ -1208,6 +1208,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1646975
         }
       ]
     },
@@ -1278,6 +1289,17 @@
       ]
     },
     {
+      "heroName": "The Mandarin-Duck",
+      "slug": "the-mandarin-duck",
+      "images": [
+        {
+          "filename": "the-mandarin-duck.png",
+          "directory": "images",
+          "size": 1578713
+        }
+      ]
+    },
+    {
       "heroName": "Yelena Belova-Weasel",
       "slug": "yelena-belova-weasel",
       "images": [
@@ -1318,6 +1340,17 @@
           "filename": "beta-ray-bill-fish.png",
           "directory": "images",
           "size": 1577018
+        }
+      ]
+    },
+    {
+      "heroName": "Gladiator-Gull",
+      "slug": "gladiator-gull",
+      "images": [
+        {
+          "filename": "gladiator-gull.png",
+          "directory": "images",
+          "size": 1391144
         }
       ]
     },
@@ -1373,6 +1406,17 @@
           "filename": "morbius-the-fruit-bat.png",
           "directory": "images",
           "size": 1362557
+        }
+      ]
+    },
+    {
+      "heroName": "Werewolf by Night-Woof",
+      "slug": "werewolf-by-night-woof",
+      "images": [
+        {
+          "filename": "werewolf-by-night-woof.png",
+          "directory": "images",
+          "size": 1918042
         }
       ]
     },
@@ -1498,6 +1542,17 @@
       ]
     },
     {
+      "heroName": "Multiple Man-atee",
+      "slug": "multiple-man-atee",
+      "images": [
+        {
+          "filename": "multiple-man-atee.png",
+          "directory": "images",
+          "size": 1634089
+        }
+      ]
+    },
+    {
       "heroName": "Bishop-the-Bison",
       "slug": "bishop-the-bison",
       "images": [
@@ -1542,6 +1597,28 @@
       ]
     },
     {
+      "heroName": "Shatterstar-fish",
+      "slug": "shatterstar-fish",
+      "images": [
+        {
+          "filename": "shatterstar-fish.png",
+          "directory": "images",
+          "size": 1856438
+        }
+      ]
+    },
+    {
+      "heroName": "Forge-the-Ferret",
+      "slug": "forge-the-ferret",
+      "images": [
+        {
+          "filename": "forge-the-ferret.png",
+          "directory": "images",
+          "size": 1717028
+        }
+      ]
+    },
+    {
       "heroName": "Psylocke-Butterfly",
       "slug": "psylocke-butterfly",
       "images": [
@@ -1582,6 +1659,17 @@
           "filename": "the-executioner-elk.png",
           "directory": "images",
           "size": 1381692
+        }
+      ]
+    },
+    {
+      "heroName": "Sif-the-Swan",
+      "slug": "sif-the-swan",
+      "images": [
+        {
+          "filename": "sif-the-swan.png",
+          "directory": "images",
+          "size": 1474776
         }
       ]
     },
@@ -1795,6 +1883,17 @@
       ]
     },
     {
+      "heroName": "Dr. Doom-Duck",
+      "slug": "dr-doom-duck",
+      "images": [
+        {
+          "filename": "dr-doom-duck.png",
+          "directory": "images",
+          "size": 1532806
+        }
+      ]
+    },
+    {
       "heroName": "Galactus-Goat",
       "slug": "galactus-goat",
       "images": [
@@ -1901,6 +2000,17 @@
           "filename": "power-princess-poodle.png",
           "directory": "images",
           "size": 1823163
+        }
+      ]
+    },
+    {
+      "heroName": "The Whizzer-Whippet",
+      "slug": "the-whizzer-whippet",
+      "images": [
+        {
+          "filename": "the-whizzer-whippet.png",
+          "directory": "images",
+          "size": 1647204
         }
       ]
     },
@@ -2022,72 +2132,27 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Baron Zebra",
-      "slug": "baron-zebra",
+      "heroName": "Agatha Hark-moth",
+      "slug": "agatha-hark-moth",
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Cannonball-Weevil",
-      "slug": "cannonball-weevil",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Mandarin-Duck",
-      "slug": "the-mandarin-duck",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Gladiator-Gull",
-      "slug": "gladiator-gull",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Werewolf by Night-Woof",
-      "slug": "werewolf-by-night-woof",
+      "heroName": "America Cha-vez-Chinchilla",
+      "slug": "america-cha-vez-chinchilla",
       "animalTheme": "Unknown"
     },
     {
       "heroName": "Man-Thing-Thang",
       "slug": "man-thing-thang",
       "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Multiple Man-atee",
-      "slug": "multiple-man-atee",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Shatterstar-fish",
-      "slug": "shatterstar-fish",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Forge-the-Ferret",
-      "slug": "forge-the-ferret",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Sif-the-Swan",
-      "slug": "sif-the-swan",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Dr. Doom-Duck",
-      "slug": "dr-doom-duck",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Whizzer-Whippet",
-      "slug": "the-whizzer-whippet",
-      "animalTheme": "Dog"
     }
   ],
   "orphanedImages": [
+    {
+      "filename": "Agatha-hark-moth.jpeg",
+      "directory": "images",
+      "size": 2097376
+    },
     {
       "filename": "Mr-sinister-salmon.jpeg",
       "directory": "images",
@@ -2210,16 +2275,16 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 209 images",
-    "✅ Found 209 total images",
+    "  images: 220 images",
+    "✅ Found 220 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 209",
-    "Heroes with Images: 179 (93%)",
-    "Heroes without Images: 14 (7%)",
-    "Orphaned Images: 23",
+    "Total Images: 220",
+    "Heroes with Images: 189 (98%)",
+    "Heroes without Images: 4 (2%)",
+    "Orphaned Images: 24",
     "Duplicate Images: 7",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2411,14 +2476,14 @@
     "    → kraven-the-hunter-vark.png (images)",
     "  Abomination-Ape (abomination-ape)",
     "    → abomination-ape.png (images)",
+    "  Baron Zebra (baron-zebra)",
+    "    → baron-zebra.png (images)",
     "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
     "    → modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
     "  Super-Skrull-Cow (super-skrull-cow)",
     "    → super-skrull-cow.png (images)",
     "  Scorpion-Scorpion (scorpion-scorpion)",
     "    → scorpion-scorpion.png (images)",
-    "  Agatha Hark-moth (agatha-hark-moth)",
-    "    → agatha-hark-moth.png (images)",
     "  Ronan the Accuser-Cat (ronan-the-accuser-cat)",
     "    → ronan-the-accuser-cat.png (images)",
     "  Annihilus-Ant (annihilus-ant)",
@@ -2427,14 +2492,16 @@
     "    → magik-arp.png (images)",
     "  Sunspot-Sunflower (sunspot-sunflower)",
     "    → sunspot-sunflower.png (images)",
+    "  Cannonball-Weevil (cannonball-weevil)",
+    "    → cannonball-weevil.png (images)",
     "  Sersi-Horse (sersi-horse)",
     "    → sersi-horse.png (images)",
     "  Gorr the God-Butcher-Bird (gorr-the-god-butcher-bird)",
     "    → gorr-the-god-butcher-bird.png (images)",
-    "  America Cha-vez-Chinchilla (america-cha-vez-chinchilla)",
-    "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2447,6 +2514,8 @@
     "    → miek-the-mite.png (images)",
     "  The Collector-Cat (the-collector-cat)",
     "    → the-collector-cat.png (images)",
+    "  The Mandarin-Duck (the-mandarin-duck)",
+    "    → the-mandarin-duck.png (images)",
     "  Yelena Belova-Weasel (yelena-belova-weasel)",
     "    → yelena-belova-weasel.png (images)",
     "  Red Guardian-Bear (red-guardian-bear)",
@@ -2455,6 +2524,8 @@
     "    → the-watcher-wombat.png (images)",
     "  Beta Ray Bill-Fish (beta-ray-bill-fish)",
     "    → beta-ray-bill-fish.png (images)",
+    "  Gladiator-Gull (gladiator-gull)",
+    "    → gladiator-gull.png (images)",
     "  Firestar-Firefly (firestar-firefly)",
     "    → firestar-firefly.png (images)",
     "  Cloak-and-Dagger-Flies (cloak-and-dagger-flies)",
@@ -2465,6 +2536,8 @@
     "    → tigra-the-tiger.png (images)",
     "  Morbius the Fruit Bat (morbius-the-fruit-bat)",
     "    → morbius-the-fruit-bat.png (images)",
+    "  Werewolf by Night-Woof (werewolf-by-night-woof)",
+    "    → werewolf-by-night-woof.png (images)",
     "  Mephisto-Poodle (mephisto-poodle)",
     "    → mephisto-poodle.png (images)",
     "  Blackheart-Ram (blackheart-ram)",
@@ -2487,6 +2560,8 @@
     "    → havok-hare.png (images)",
     "  Polaris-Peacock (polaris-peacock)",
     "    → polaris-peacock.png (images)",
+    "  Multiple Man-atee (multiple-man-atee)",
+    "    → multiple-man-atee.png (images)",
     "  Bishop-the-Bison (bishop-the-bison)",
     "    → bishop-the-bison.png (images)",
     "  Cable-the-Capybara (cable-the-capybara)",
@@ -2495,6 +2570,10 @@
     "    → domino-dalmatian.png (images)",
     "  Warpath-Walrus (warpath-walrus)",
     "    → warpath-walrus.png (images)",
+    "  Shatterstar-fish (shatterstar-fish)",
+    "    → shatterstar-fish.png (images)",
+    "  Forge-the-Ferret (forge-the-ferret)",
+    "    → forge-the-ferret.png (images)",
     "  Psylocke-Butterfly (psylocke-butterfly)",
     "    → psylocke-butterfly.png (images)",
     "  X-23-Wolf (x-23-wolf)",
@@ -2503,6 +2582,8 @@
     "    → the-enchantress-emu.png (images)",
     "  The Executioner-Elk (the-executioner-elk)",
     "    → the-executioner-elk.png (images)",
+    "  Sif-the-Swan (sif-the-swan)",
+    "    → sif-the-swan.png (images)",
     "  The Warriors Three-Hogs (the-warriors-three-hogs)",
     "    → the-warriors-three-hogs.png (images)",
     "  Heimdall-the-Heron (heimdall-the-heron)",
@@ -2541,6 +2622,8 @@
     "    → the-purple-man-drill.png (images)",
     "  Kang the Kangaroo (kang-the-kangaroo)",
     "    → kang-the-kangaroo.png (images)",
+    "  Dr. Doom-Duck (dr-doom-duck)",
+    "    → dr-doom-duck.png (images)",
     "  Galactus-Goat (galactus-goat)",
     "    → galactus-goat.png (images)",
     "  The Silver Surfer-Slug (the-silver-surfer-slug)",
@@ -2561,6 +2644,8 @@
     "    → nighthawk-night-hawk.png (images)",
     "  Power Princess-Poodle (power-princess-poodle)",
     "    → power-princess-poodle.png (images)",
+    "  The Whizzer-Whippet (the-whizzer-whippet)",
+    "    → the-whizzer-whippet.png (images)",
     "  Doctor Spectrum-Spectacled-Bear (doctor-spectrum-spectacled-bear)",
     "    → doctor-spectrum-spectacled-bear.png (images)",
     "  The Beyonder-Beetle (the-beyonder-beetle)",
@@ -2585,35 +2670,16 @@
     "==========================",
     "  Sandmanatee (sandmanatee)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Baron Zebra (baron-zebra)",
+    "  Agatha Hark-moth (agatha-hark-moth)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Cannonball-Weevil (cannonball-weevil)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Mandarin-Duck (the-mandarin-duck)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Gladiator-Gull (gladiator-gull)",
-    "    → Using emoji fallback: 🐦",
-    "  Werewolf by Night-Woof (werewolf-by-night-woof)",
+    "  America Cha-vez-Chinchilla (america-cha-vez-chinchilla)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Man-Thing-Thang (man-thing-thang)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Multiple Man-atee (multiple-man-atee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Shatterstar-fish (shatterstar-fish)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Forge-the-Ferret (forge-the-ferret)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Sif-the-Swan (sif-the-swan)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Dr. Doom-Duck (dr-doom-duck)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Whizzer-Whippet (the-whizzer-whippet)",
-    "    → Using emoji fallback: 🐕",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
+    "  Agatha-hark-moth.jpeg (images) - 2 MB",
     "  Mr-sinister-salmon.jpeg (images) - 907.2 KB",
     "  Mr.-sinister-salmon.jpeg (images) - 907.2 KB",
     "  Sandmanatee.png (images) - 1.8 MB",
@@ -2662,8 +2728,8 @@
     "    → elek-tric-eel.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 14 heroes missing images",
-    "• Review 23 orphaned images - delete unused or rename to match heroes",
+    "• Create images for 4 heroes missing images",
+    "• Review 24 orphaned images - delete unused or rename to match heroes",
     "• Resolve 7 heroes with multiple images - choose primary image"
   ],
   "error": null,
