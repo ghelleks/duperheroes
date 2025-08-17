@@ -625,7 +625,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Mr. Sinister",
       "difficulty": "Medium",
-      "imagePath": "./images/mr-sinister-salmon.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Juggernaut-ilus",
