@@ -1483,7 +1483,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Devil Dinosaur",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/devil-dino-dog.jpeg"
     },
     {
       "superhero_name": "Sasquatch-Sasquatch",
