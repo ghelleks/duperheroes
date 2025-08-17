@@ -966,7 +966,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Black Bolt",
       "difficulty": "Medium",
-      "imagePath": "./images/black-bolt-weevil.png"
+      "imagePath": "./images/black-bolt-weevil.jpeg"
     },
     {
       "superhero_name": "Medusa-Moth",
@@ -1153,7 +1153,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cannonball",
       "difficulty": "Hard",
-      "imagePath": "./images/cannonball-weevil.png"
+      "imagePath": "./images/cannonball-weevil.jpeg"
     },
     {
       "superhero_name": "Sersi-Horse",
