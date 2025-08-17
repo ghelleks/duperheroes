@@ -177,47 +177,25 @@ class HeroImageGenerator {
      */
     async callVertexAI(promptData) {
         try {
-            const model = this.vertexAI.getGenerativeModel();
             const params = this.vertexAI.getImageGenerationParams();
-            
-            // Prepare the request for image generation
-            const request = {
-                contents: [{
-                    role: 'user',
-                    parts: [{ text: promptData.prompt }]
-                }],
-                generationConfig: {
-                    maxOutputTokens: 2048,
-                    temperature: 0.4,
-                    topK: 32,
-                    topP: 1
-                }
-            };
             
             if (this.options.verbose) {
                 this.log(`🔧 Vertex AI request parameters: ${JSON.stringify(params, null, 2)}`);
             }
             
-            // Make the API call for image generation
-            const response = await model.generateContent(request);
+            // Make the API call for image generation using the new generateImage method
+            const response = await this.vertexAI.generateImage(promptData.prompt);
             
             // Extract image data from response
-            if (response && response.candidates && response.candidates[0]) {
-                const candidate = response.candidates[0];
+            if (response && response.predictions && response.predictions[0]) {
+                const prediction = response.predictions[0];
                 
-                // Handle different response formats
+                // The response should contain base64-encoded image data
                 let imageData;
-                if (candidate.content && candidate.content.parts) {
-                    // Look for image data in parts
-                    const imagePart = candidate.content.parts.find(part => 
-                        part.inlineData && part.inlineData.mimeType.startsWith('image/')
-                    );
-                    
-                    if (imagePart) {
-                        imageData = imagePart.inlineData.data;
-                    }
-                } else if (candidate.image) {
-                    imageData = candidate.image;
+                if (prediction.bytesBase64Encoded) {
+                    imageData = prediction.bytesBase64Encoded;
+                } else if (prediction.image) {
+                    imageData = prediction.image;
                 } else {
                     throw new Error('No image data found in response');
                 }
