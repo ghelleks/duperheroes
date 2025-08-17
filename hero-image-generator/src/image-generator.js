@@ -238,6 +238,7 @@ class HeroImageGenerator {
      */
     async generateImages(heroesNeedingImages) {
         this.log(`🔄 Starting batch generation for ${heroesNeedingImages.length} heroes...`);
+        this.log(`📋 Batch size setting: ${this.options.batchSize}`);
         
         const results = [];
         const batchSize = this.options.batchSize;
@@ -443,6 +444,7 @@ async function main() {
             options.verbose = true;
         } else if (arg.startsWith('--batch-size=')) {
             options.batchSize = parseInt(arg.split('=')[1]);
+            console.log(`[DEBUG] Setting batch size to: ${options.batchSize}`);
         } else if (arg.startsWith('--format=')) {
             options.outputFormat = arg.split('=')[1];
         }

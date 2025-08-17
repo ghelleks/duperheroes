@@ -38,6 +38,7 @@ REQUIRED_APIS=(
 REQUIRED_ROLES=(
     "roles/aiplatform.user"
     "roles/ml.developer"
+    "roles/aiplatform.admin"
 )
 
 print_header() {
@@ -77,11 +78,30 @@ check_prerequisites() {
         exit 1
     fi
     
-    # Check if user is authenticated
-    if ! gcloud auth list --filter=status:ACTIVE --format="value(account)" | head -n1 > /dev/null; then
+    # Check for required account
+    REQUIRED_ACCOUNT="gunnar@hellekson.com"
+    CURRENT_ACCOUNT=$(gcloud auth list --filter=status:ACTIVE --format="value(account)" | head -n1)
+    
+    if [ -z "$CURRENT_ACCOUNT" ]; then
         print_error "Not authenticated with Google Cloud."
-        print_info "Run: gcloud auth login"
+        print_info "Run: gcloud auth login $REQUIRED_ACCOUNT"
         exit 1
+    fi
+    
+    if [ "$CURRENT_ACCOUNT" != "$REQUIRED_ACCOUNT" ]; then
+        print_warning "Currently authenticated as: $CURRENT_ACCOUNT"
+        print_warning "This script requires authentication as: $REQUIRED_ACCOUNT"
+        print_info "Switching to required account..."
+        
+        # Check if required account is available
+        if gcloud auth list --format="value(account)" | grep -q "^$REQUIRED_ACCOUNT$"; then
+            print_info "Account $REQUIRED_ACCOUNT found, activating..."
+            gcloud config set account "$REQUIRED_ACCOUNT"
+        else
+            print_error "Account $REQUIRED_ACCOUNT not found in authenticated accounts."
+            print_info "Run: gcloud auth login $REQUIRED_ACCOUNT"
+            exit 1
+        fi
     fi
     
     # Get current project if not provided
