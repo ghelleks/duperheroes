@@ -1582,7 +1582,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Domino",
       "difficulty": "Medium",
-      "imagePath": "./images/domino-dalmatian.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Warpath-Walrus",
