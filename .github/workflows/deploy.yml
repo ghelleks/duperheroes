@@ -28,14 +28,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  fetch-heroes:
     runs-on: ubuntu-latest
+    outputs:
+      heroes-updated: ${{ steps.check-changes.outputs.heroes-updated }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -47,52 +48,108 @@ jobs:
         env:
           NODE_ENV: production
       
+      - name: Check for hero data changes
+        id: check-changes
+        run: |
+          if git diff --quiet public/heroes.json; then
+            echo "heroes-updated=false" >> $GITHUB_OUTPUT
+            echo "No changes to heroes.json"
+          else
+            echo "heroes-updated=true" >> $GITHUB_OUTPUT
+            echo "Heroes data has been updated"
+          fi
+      
       - name: Commit updated hero data
+        if: steps.check-changes.outputs.heroes-updated == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add public/heroes.json
           git add public/debug/
-          if git diff --cached --quiet; then
-            echo "No hero data updates to commit"
-          else
-            echo "Committing updated hero data from Google Doc"
-            git commit -m "🤖 Update hero data from Google Doc
+          git commit -m "🤖 Update hero data from Google Doc
 
-            Fetched latest hero data and updated heroes.json database.
-            
-            🤖 Generated with [Claude Code](https://claude.ai/code)
-            
-            Co-Authored-By: Claude <noreply@anthropic.com>"
-            git push origin main
-          fi
-        continue-on-error: true
+          Fetched latest hero data and updated heroes.json database.
+          
+          🤖 Generated with [Claude Code](https://claude.ai/code)
+          
+          Co-Authored-By: Claude <noreply@anthropic.com>"
+          git push origin main
+
+  audit-images:
+    needs: fetch-heroes
+    runs-on: ubuntu-latest
+    outputs:
+      missing-images: ${{ steps.audit.outputs.missing-images }}
+      audit-results: ${{ steps.audit.outputs.audit-results }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest after potential hero data commit
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
       
       - name: Audit hero images
-        run: npm run audit-images
-        continue-on-error: true
+        id: audit
+        run: |
+          npm run audit-images
+          # Extract missing images count from audit output
+          if [ -f "public/debug/image-audit.json" ]; then
+            missing_count=$(jq '.summary.missing_images' public/debug/image-audit.json)
+            echo "missing-images=${missing_count}" >> $GITHUB_OUTPUT
+            echo "Found ${missing_count} missing images"
+            
+            # Store audit results as artifact
+            echo "audit-results=public/debug/image-audit.json" >> $GITHUB_OUTPUT
+          else
+            echo "missing-images=0" >> $GITHUB_OUTPUT
+            echo "No audit results file found"
+          fi
+      
+      - name: Upload audit results
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-audit-results
+          path: public/debug/image-audit.json
+          retention-days: 7
+
+  generate-images:
+    needs: audit-images
+    if: ${{ needs.audit-images.outputs.missing-images > 0 && (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest after potential hero data commit
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Download audit results
+        uses: actions/download-artifact@v4
+        with:
+          name: image-audit-results
+          path: public/debug/
       
       - name: Authenticate to Google Cloud
-        if: ${{ (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
       
       - name: Set up Google Cloud SDK
-        if: ${{ (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
         uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
       
-      - name: Configure Git for commits
-        if: ${{ (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-      
       - name: Generate missing hero images
-        if: ${{ (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
         run: |
           cd hero-image-generator
           npm install
@@ -109,11 +166,11 @@ jobs:
           MAX_RETRIES: 3
           DRY_RUN: false
           VERBOSE_LOGGING: true
-        continue-on-error: true
       
       - name: Commit generated images
-        if: ${{ (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
           git add public/images/
           git add public/debug/
           if git diff --cached --quiet; then
@@ -123,13 +180,27 @@ jobs:
             git commit -m "🤖 Generate missing hero images via GitHub Actions
 
             Generated images for heroes without existing images using Vertex AI.
+            Generated ${{ needs.audit-images.outputs.missing-images }} missing images.
             
             🤖 Generated with [Claude Code](https://claude.ai/code)
             
             Co-Authored-By: Claude <noreply@anthropic.com>"
             git push origin main
           fi
-        continue-on-error: true
+
+  deploy:
+    needs: [fetch-heroes, audit-images]
+    # Always deploy, even if image generation was skipped
+    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest including any commits from previous jobs
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
