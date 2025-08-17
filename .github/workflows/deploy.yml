@@ -189,9 +189,9 @@ jobs:
           fi
 
   deploy:
-    needs: [fetch-heroes, audit-images]
-    # Always deploy, even if image generation was skipped
-    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success')
+    needs: [fetch-heroes, audit-images, generate-images]
+    # Always deploy after all previous jobs complete
+    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped'))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
