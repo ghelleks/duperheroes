@@ -111,8 +111,9 @@
                     if (!data || !data.heroes || !Array.isArray(data.heroes) || data.heroes.length === 0) {
                         throw new Error('Invalid heroes data: missing or empty heroes array');
                     }
-                    this.heroes = data.heroes;
-                    console.log(`Loaded ${this.heroes.length} heroes`);
+                    // Only include heroes that have defined image paths
+                    this.heroes = data.heroes.filter(hero => hero.imagePath && hero.imagePath !== null);
+                    console.log(`Loaded ${this.heroes.length} heroes with images (filtered from ${data.heroes.length} total heroes)`);
                 } catch (error) {
                     console.error('Error loading heroes:', error);
                     this.gameState = 'error';
