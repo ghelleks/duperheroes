@@ -5,9 +5,21 @@ on:
     branches: [ production ]
   pull_request:
     branches: [ production ]
+  workflow_dispatch:
+    inputs:
+      generate_images:
+        description: 'Generate missing hero images'
+        required: false
+        default: true
+        type: boolean
+      batch_size:
+        description: 'Number of images to generate in batch'
+        required: false
+        default: '5'
+        type: string
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -37,6 +49,65 @@ jobs:
       
       - name: Audit hero images
         run: npm run audit-images
+        continue-on-error: true
+      
+      - name: Authenticate to Google Cloud
+        if: ${{ github.event.inputs.generate_images != 'false' && github.ref == 'refs/heads/production' }}
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
+          service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
+      
+      - name: Set up Google Cloud SDK
+        if: ${{ github.event.inputs.generate_images != 'false' && github.ref == 'refs/heads/production' }}
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+      
+      - name: Configure Git for commits
+        if: ${{ github.event.inputs.generate_images != 'false' && github.ref == 'refs/heads/production' }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+      
+      - name: Generate missing hero images
+        if: ${{ github.event.inputs.generate_images != 'false' && github.ref == 'refs/heads/production' }}
+        run: |
+          cd hero-image-generator
+          npm install
+          node src/image-generator.js --batch-size=${{ github.event.inputs.batch_size || '5' }}
+        env:
+          GOOGLE_CLOUD_PROJECT: ${{ secrets.GCP_PROJECT_ID }}
+          VERTEX_AI_REGION: us-central1
+          VERTEX_AI_MODEL: imagen-3.0-generate-002
+          REQUIRED_GCLOUD_ACCOUNT: ${{ secrets.REQUIRED_GCLOUD_ACCOUNT }}
+          OUTPUT_DIRECTORY: /home/runner/work/duperheroes/duperheroes/public/images
+          DEBUG_OUTPUT: /home/runner/work/duperheroes/duperheroes/public/debug/image-generation.json
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
+          RATE_LIMIT_DELAY: 2000
+          MAX_RETRIES: 3
+          DRY_RUN: false
+          VERBOSE_LOGGING: true
+        continue-on-error: true
+      
+      - name: Commit generated images
+        if: ${{ github.event.inputs.generate_images != 'false' && github.ref == 'refs/heads/production' }}
+        run: |
+          git add public/images/
+          git add public/debug/
+          if git diff --cached --quiet; then
+            echo "No new images or debug files generated"
+          else
+            echo "Committing newly generated images and debug output"
+            git commit -m "🤖 Generate missing hero images via GitHub Actions
+
+            Generated images for heroes without existing images using Vertex AI.
+            
+            🤖 Generated with [Claude Code](https://claude.ai/code)
+            
+            Co-Authored-By: Claude <noreply@anthropic.com>"
+            git push origin production
+          fi
         continue-on-error: true
       
       - name: Setup Pages

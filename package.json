@@ -9,11 +9,13 @@
     "audit-images:json": "node scripts/audit-images.js --json=audit-report.json",
     "audit-images:strict": "node scripts/audit-images.js --strict",
     "setup-gcp": "cd hero-image-generator && ./scripts/setup-gcp.sh",
+    "setup-workload-identity": "./scripts/setup-workload-identity.sh",
     "generate-images": "cd hero-image-generator && npm install && node src/image-generator.js",
     "generate-images:dry-run": "cd hero-image-generator && npm install && node src/image-generator.js --dry-run",
     "generate-images:verbose": "cd hero-image-generator && npm install && node src/image-generator.js --verbose",
     "build-images": "npm run audit-images && npm run generate-images",
     "build-images:dry-run": "npm run audit-images && npm run generate-images:dry-run",
+    "extract-service-key": "./scripts/extract-service-account-key.sh",
     "serve": "npx http-server public -p 8080 -o",
     "serve:python": "cd public && python -m http.server 8080"
   },
