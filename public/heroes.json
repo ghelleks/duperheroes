@@ -20,7 +20,7 @@
       "animal_theme": "Poodle",
       "hero_inspiration": "The Hulk",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/doy-dog.jpeg"
     },
     {
       "superhero_name": "krazy Koala",
