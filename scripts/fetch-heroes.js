@@ -426,6 +426,7 @@ async function main() {
       }, {});
       console.log('📈 Difficulty breakdown:', breakdown);
       
+      process.exit(0);
     } else {
       process.exit(1);
     }
