@@ -1,7 +1,12 @@
 # Credentials and sensitive files
 credentials/
-*.json
+credentials/*.json
+service-account-key.json
 .env
+
+# Allow essential package files
+!package.json
+!package-lock.json
 
 # Node.js
 node_modules/

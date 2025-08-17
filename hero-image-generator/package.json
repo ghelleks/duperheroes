@@ -1,0 +1,28 @@
+{
+  "name": "hero-image-generator",
+  "version": "1.0.0",
+  "description": "Google Vertex AI powered image generator for DuperHeroes characters",
+  "main": "src/image-generator.js",
+  "scripts": {
+    "generate": "node src/image-generator.js",
+    "test": "node src/image-generator.js --dry-run",
+    "generate-batch": "node src/image-generator.js --batch-size=5"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "axios": "^1.11.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "vertex-ai",
+    "image-generation",
+    "superhero",
+    "google-cloud"
+  ],
+  "author": "Gunnar Hellekson",
+  "license": "MIT"
+}
