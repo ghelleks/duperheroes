@@ -122,35 +122,14 @@
             }
 
 
-            generateHeroSlug(superheroName) {
-                return superheroName.toLowerCase()
-                    .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
-                    .replace(/\s+/g, '-')         // Replace spaces with hyphens
-                    .replace(/-+/g, '-')          // Replace multiple hyphens with single
-                    .replace(/^-|-$/g, '');       // Remove leading/trailing hyphens
-            }
 
-            async checkImageExists(imagePath) {
-                try {
-                    const response = await fetch(imagePath, { method: 'HEAD' });
-                    return response.ok;
-                } catch {
-                    return false;
-                }
-            }
-
-            async getHeroImage(hero) {
-                const slug = this.generateHeroSlug(hero.superhero_name);
-                const extensions = ['png', 'jpg', 'jpeg', 'webp'];
-                
-                for (const ext of extensions) {
-                    const imagePath = `./images/${slug}.${ext}`;
-                    if (await this.checkImageExists(imagePath)) {
-                        return `<img src="${imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg">`;
-                    }
+            getHeroImage(hero) {
+                // Use pre-stored image path from hero data
+                if (hero.imagePath) {
+                    return `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg">`;
                 }
                 
-                // Fallback to emoji
+                // Fallback to emoji if no image path stored
                 return `<div class="hero-image">${this.getAnimalEmoji(hero.animal_theme)}</div>`;
             }
 
@@ -225,7 +204,7 @@
                 if (!hero) return;
 
                 this.currentHero = hero;
-                this.currentHeroImage = await this.getHeroImage(hero);
+                this.currentHeroImage = this.getHeroImage(hero);
                 this.choices = this.generateChoices(hero);
                 this.correctAnswer = hero.superhero_name;
                 this.selectedAnswer = '';

@@ -9,8 +9,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Development Commands
 
 ### Local Development
-- `npx http-server public -p 8080 -o` - Serve static files locally
-- `cd public && python -m http.server 8080` - Alternative Python server
+- `npm run serve` - Serve static files locally (uses npx http-server)
+- `npm run serve:python` - Alternative Python server
 - No build process required - direct file serving
 
 ### Deployment
@@ -31,12 +31,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```
 public/
 ├── index.html          # Single-page application with embedded JavaScript
-├── heroes.json         # Character database (50 heroes)
-└── (GitHub Pages serves this directory)
+├── debug.html          # Debug console for build monitoring
+├── heroes.json         # Character database (194 heroes)
+├── images/             # Hero character images
+└── debug/              # Debug output files
+
+scripts/
+├── fetch-heroes.js     # Google Doc to JSON converter
+└── audit-images.js     # Image coverage audit tool
 
 .github/workflows/
 └── deploy.yml          # Automatic GitHub Pages deployment
 
+docs/adr/              # Architectural Decision Records
 animal_heroes_database.md # Source data for character creation
 README.md              # Project documentation
 CLAUDE.md             # This file
