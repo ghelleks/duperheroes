@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-17T18:20:45.780Z",
+  "timestamp": "2025-08-17T18:29:27.660Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 220,
+    "totalImages": 221,
     "heroesWithImages": 189,
     "heroesWithoutImages": 4,
     "orphanedImages": 24,
-    "duplicateImages": 7
+    "duplicateImages": 8
   },
   "heroesWithImages": [
     {
@@ -995,6 +995,11 @@
       "heroName": "Black Bolt-Weevil",
       "slug": "black-bolt-weevil",
       "images": [
+        {
+          "filename": "black-bolt-weevil.jpeg",
+          "directory": "images",
+          "size": 1964388
+        },
         {
           "filename": "black-bolt-weevil.png",
           "directory": "images",
@@ -2275,17 +2280,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 220 images",
-    "✅ Found 220 total images",
+    "  images: 221 images",
+    "✅ Found 221 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 220",
+    "Total Images: 221",
     "Heroes with Images: 189 (98%)",
     "Heroes without Images: 4 (2%)",
     "Orphaned Images: 24",
-    "Duplicate Images: 7",
+    "Duplicate Images: 8",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2461,7 +2466,7 @@
     "  Praying Mantis (praying-mantis)",
     "    → praying-mantis.png (images)",
     "  Black Bolt-Weevil (black-bolt-weevil)",
-    "    → black-bolt-weevil.png (images)",
+    "    → black-bolt-weevil.jpeg (images), black-bolt-weevil.png (images)",
     "  Medusa-Moth (medusa-moth)",
     "    → medusa-moth.png (images)",
     "  Fin Fang Foom-Fly (fin-fang-foom-fly)",
@@ -2726,11 +2731,14 @@
     "  Elek-tric Eel (elek-tric-eel)",
     "    → elek-tric-eel.jpeg (images)",
     "    → elek-tric-eel.png (images)",
+    "  Black Bolt-Weevil (black-bolt-weevil)",
+    "    → black-bolt-weevil.jpeg (images)",
+    "    → black-bolt-weevil.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
     "• Create images for 4 heroes missing images",
     "• Review 24 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 7 heroes with multiple images - choose primary image"
+    "• Resolve 8 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
