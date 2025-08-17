@@ -1890,7 +1890,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Doom",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/dr-doom-duck.jpeg"
     },
     {
       "superhero_name": "Galactus-Goat",
