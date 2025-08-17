@@ -173,9 +173,9 @@ class HeroImageGenerator {
     }
 
     /**
-     * Call Vertex AI to generate image
+     * Call Vertex AI to generate image with retry logic
      */
-    async callVertexAI(promptData) {
+    async callVertexAI(promptData, retryCount = 0) {
         try {
             const params = this.vertexAI.getImageGenerationParams();
             
@@ -210,6 +210,15 @@ class HeroImageGenerator {
             }
             
         } catch (error) {
+            // Check if it's a rate limiting error (429) and we have retries left
+            if (error.message.includes('429') && retryCount < this.options.maxRetries) {
+                const backoffDelay = Math.min(1000 * Math.pow(2, retryCount), 30000); // Exponential backoff, max 30s
+                this.log(`⏳ Rate limited (429), retrying in ${backoffDelay}ms (attempt ${retryCount + 1}/${this.options.maxRetries + 1})`);
+                
+                await this.delay(backoffDelay);
+                return await this.callVertexAI(promptData, retryCount + 1);
+            }
+            
             this.log(`❌ Vertex AI API error: ${error.message}`);
             return {
                 success: false,
@@ -235,19 +244,27 @@ class HeroImageGenerator {
             
             this.log(`📦 Processing batch ${batchNumber}/${totalBatches} (${batch.length} heroes)`);
             
-            // Process batch
-            const batchPromises = batch.map(heroData => this.generateHeroImage(heroData));
-            const batchResults = await Promise.allSettled(batchPromises);
-            
-            // Collect results
-            for (const result of batchResults) {
-                if (result.status === 'fulfilled') {
-                    results.push(result.value);
-                } else {
+            // Process batch sequentially to avoid rate limiting
+            for (let j = 0; j < batch.length; j++) {
+                const heroData = batch[j];
+                const heroNumber = j + 1;
+                
+                this.log(`  🎯 Processing hero ${heroNumber}/${batch.length}: ${heroData.hero.superhero_name}`);
+                
+                try {
+                    const result = await this.generateHeroImage(heroData);
+                    results.push(result);
+                    
+                    // Add small delay between individual requests within batch
+                    if (j < batch.length - 1) {
+                        await this.delay(500); // 500ms between individual requests
+                    }
+                } catch (error) {
                     this.stats.failed++;
                     this.stats.errors.push({
-                        error: result.reason.message,
-                        timestamp: new Date().toISOString()
+                        error: error.message,
+                        timestamp: new Date().toISOString(),
+                        hero: heroData.hero.superhero_name
                     });
                 }
             }

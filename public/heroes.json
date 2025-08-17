@@ -9,7 +9,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Captain America",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/dum-dog.png"
     },
     {
       "superhero_name": "Doy dog",
@@ -20,7 +20,7 @@
       "animal_theme": "Poodle",
       "hero_inspiration": "The Hulk",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/doy-dog.png"
     },
     {
       "superhero_name": "krazy Koala",
@@ -31,7 +31,7 @@
       "animal_theme": "Koala",
       "hero_inspiration": "Red Hulk",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/krazy-koala.png"
     },
     {
       "superhero_name": "Claw cat",
@@ -97,7 +97,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Quicksilver",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/quicksilver-swimmer.png"
     },
     {
       "superhero_name": "Flap McFlappy",
@@ -174,7 +174,7 @@
       "animal_theme": "Tiger",
       "hero_inspiration": "Sabretooth",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/sabretooth-tabby.png"
     },
     {
       "superhero_name": "Rhino Beetle-Borg",
@@ -196,7 +196,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Lizard",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/lizard-larry.png"
     },
     {
       "superhero_name": "Venom",
@@ -207,7 +207,7 @@
       "animal_theme": "Snake",
       "hero_inspiration": "Venom",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/venom.png"
     },
     {
       "superhero_name": "Deadpool Trash-Panda",
@@ -251,7 +251,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Luke Cage",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/power-primate.png"
     },
     {
       "superhero_name": "Iron Fist Cricket",
@@ -284,7 +284,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Punisher",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/punisher-pine-cushion.png"
     },
     {
       "superhero_name": "Ghost Rider Raccoon",
@@ -328,7 +328,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cyclops",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/cyclops-ram.png"
     },
     {
       "superhero_name": "Phoenix Dove",
@@ -394,7 +394,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Professor X",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/professor-hoot-x.png"
     },
     {
       "superhero_name": "Mystique Chameleon",
@@ -405,7 +405,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Mystique",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/mystique-chameleon.png"
     },
     {
       "superhero_name": "Nightcrawler Cricket",
@@ -460,7 +460,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/invisible-octopus-woman.png"
     },
     {
       "superhero_name": "Thing Turtle",
@@ -471,7 +471,7 @@
       "animal_theme": "Turtle",
       "hero_inspiration": "The Thing",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/thing-turtle.png"
     },
     {
       "superhero_name": "Hawkeye Hawk",
@@ -504,18 +504,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Captain Britain",
       "difficulty": "Medium",
-      "imagePath": null
-    },
-    {
-      "superhero_name": "Loki Lemur",
-      "real_name": "The God of Mischievous Scent-Marking",
-      "powers": "Shape-shifting into other jungle animals, illusion casting (usually involving fake fruit), master of back-stabbing and dramatic exits, wields a scepter that makes others trip over vines.",
-      "origin": "The adopted brother of Thor-ough Bred1, a frost-giant lemur raised in Asgard. Constantly schemes to take over the jungle canopy, but is easily distracted by low-hanging fruit.",
-      "trivia": "Loki Lemur is a unique hero with many secrets.",
-      "animal_theme": "Unknown",
-      "hero_inspiration": "Loki",
-      "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/nick-furry.png"
     },
     {
       "superhero_name": "Ultron Bug",
@@ -526,7 +515,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ultron",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ultron-bug.png"
     },
     {
       "superhero_name": "Doctor Goose",
@@ -537,7 +526,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Doom",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/doctor-goose.png"
     },
     {
       "superhero_name": "Green Gobblin'",
@@ -548,7 +537,7 @@
       "animal_theme": "Eagle",
       "hero_inspiration": "Green Goblin",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/green-gobblin.png"
     },
     {
       "superhero_name": "Kingpin Penguin",
@@ -559,7 +548,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kingpin",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/kingpin-penguin.png"
     },
     {
       "superhero_name": "Mysterio-fish",
@@ -570,7 +559,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Mysterio",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/mysterio-fish.png"
     },
     {
       "superhero_name": "Vulture Vulture",
@@ -581,7 +570,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Vulture",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/vulture-vulture.png"
     },
     {
       "superhero_name": "Sandmanatee",
@@ -592,7 +581,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/sandmanatee.png"
     },
     {
       "superhero_name": "Eelectro",
@@ -603,7 +592,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Electro",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/eelectro.png"
     },
     {
       "superhero_name": "Carnage-vorous Plant",
@@ -614,7 +603,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Carnage",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/carnage-vorous-plant.jpeg"
     },
     {
       "superhero_name": "A-pork-alypse",
@@ -625,7 +614,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Apocalypse",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/a-pork-alypse.jpeg"
     },
     {
       "superhero_name": "Mr. Sinister Salmon",
@@ -636,7 +625,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Mr. Sinister",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/mr-sinister-salmon.png"
     },
     {
       "superhero_name": "Juggernaut-ilus",
@@ -647,7 +636,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Juggernaut",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/juggernaut-ilus.jpeg"
     },
     {
       "superhero_name": "Gopher-lactus",
@@ -658,7 +647,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/gopher-lactus.jpeg"
     },
     {
       "superhero_name": "Kang the Conger-er",
@@ -669,7 +658,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kang the Conqueror",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/kang-the-conger-er.jpeg"
     },
     {
       "superhero_name": "Task-Mantis",
@@ -680,7 +669,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Taskmaster",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/task-mantis.jpeg"
     },
     {
       "superhero_name": "Dor-hamster-mmu",
@@ -691,7 +680,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Dormammu",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/dor-hamster-mmu.jpeg"
     },
     {
       "superhero_name": "Hela-phant",
@@ -702,7 +691,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Hela",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/hela-phant.jpeg"
     },
     {
       "superhero_name": "The Red Skull-Cap Mushroom",
@@ -713,7 +702,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Red Skull",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-red-skull-cap-mushroom.jpeg"
     },
     {
       "superhero_name": "Scarlet Finch",
@@ -724,7 +713,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Scarlet Witch",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/scarlet-finch.jpeg"
     },
     {
       "superhero_name": "The Pigeon",
@@ -735,7 +724,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "The Vision",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-pigeon.jpeg"
     },
     {
       "superhero_name": "War Machine-Dog",
@@ -746,7 +735,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "War Machine",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/war-machine-dog.jpeg"
     },
     {
       "superhero_name": "Blade the Bat",
@@ -757,7 +746,7 @@
       "animal_theme": "Bat",
       "hero_inspiration": "Blade",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/blade-the-bat.png"
     },
     {
       "superhero_name": "Moon Knight-Owl",
@@ -768,7 +757,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Moon Knight",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/moon-knight-owl.jpeg"
     },
     {
       "superhero_name": "She-Hulk Sheep",
@@ -779,7 +768,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "She-Hulk",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/she-hulk-sheep.jpeg"
     },
     {
       "superhero_name": "Nova Corp-gi",
@@ -790,7 +779,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Nova",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/nova-corp-gi.jpeg"
     },
     {
       "superhero_name": "Adam Warthog",
@@ -801,7 +790,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Adam Warlock",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/adam-warthog.jpeg"
     },
     {
       "superhero_name": "Ikaris-Canary",
@@ -812,7 +801,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Ikaris (The Eternals)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ikaris-canary.jpeg"
     },
     {
       "superhero_name": "Shang-Chimpanzee",
@@ -823,7 +812,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Shang-Chi",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/shang-chimpanzee.png"
     },
     {
       "superhero_name": "Elek-tric Eel",
@@ -834,7 +823,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Elektra",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/elek-tric-eel.png"
     },
     {
       "superhero_name": "Echo-location Bat",
@@ -845,7 +834,7 @@
       "animal_theme": "Cat",
       "hero_inspiration": "Echo",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/echo-location-bat.png"
     },
     {
       "superhero_name": "Kate Bishop-Hawk",
@@ -856,7 +845,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kate Bishop (Hawkeye)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/kate-bishop-hawk.png"
     },
     {
       "superhero_name": "Miles Mor-rat-les",
@@ -867,7 +856,7 @@
       "animal_theme": "Spider",
       "hero_inspiration": "Miles Morales",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/miles-mor-rat-les.png"
     },
     {
       "superhero_name": "Ghost-Spider-Goat",
@@ -878,7 +867,7 @@
       "animal_theme": "Spider",
       "hero_inspiration": "Ghost-Spider (Spider-Gwen)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ghost-spider-goat.png"
     },
     {
       "superhero_name": "Ms. Marvel-ot",
@@ -889,7 +878,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ms. Marvel (Kamala Khan)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ms-marvel-ot.png"
     },
     {
       "superhero_name": "Squirrel Girl",
@@ -900,7 +889,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Squirrel Girl",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/squirrel-girl.png"
     },
     {
       "superhero_name": "Groot-A-Saurus",
@@ -911,7 +900,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Groot",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/groot-a-saurus.png"
     },
     {
       "superhero_name": "Rocket Raccoon",
@@ -922,7 +911,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Rocket Raccoon",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/rocket-raccoon.png"
     },
     {
       "superhero_name": "Star-Lord Seahorse",
@@ -933,7 +922,7 @@
       "animal_theme": "Horse",
       "hero_inspiration": "Star-Lord",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/star-lord-seahorse.png"
     },
     {
       "superhero_name": "Gamora-affe",
@@ -944,7 +933,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Gamora",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/gamora-affe.png"
     },
     {
       "superhero_name": "Drax the Destroyer Dung-Beetle",
@@ -955,7 +944,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Drax the Destroyer",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/drax-the-destroyer-dung-beetle.png"
     },
     {
       "superhero_name": "Praying Mantis",
@@ -966,7 +955,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Mantis",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/praying-mantis.png"
     },
     {
       "superhero_name": "Black Bolt-Weevil",
@@ -977,7 +966,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Black Bolt",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/black-bolt-weevil.png"
     },
     {
       "superhero_name": "Medusa-Moth",
@@ -988,7 +977,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Medusa",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/medusa-moth.png"
     },
     {
       "superhero_name": "Fin Fang Foom-Fly",
@@ -999,7 +988,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Fin Fang Foom",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/fin-fang-foom-fly.png"
     },
     {
       "superhero_name": "The Sentry-pede",
@@ -1010,7 +999,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Sentry",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-sentry-pede.png"
     },
     {
       "superhero_name": "She-Venom",
@@ -1021,7 +1010,7 @@
       "animal_theme": "Snake",
       "hero_inspiration": "She-Venom",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/she-venom.png"
     },
     {
       "superhero_name": "The Grandmaster-Cat",
@@ -1032,7 +1021,7 @@
       "animal_theme": "Cat",
       "hero_inspiration": "The Grandmaster",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-grandmaster-cat.png"
     },
     {
       "superhero_name": "Kraven the Hunter-Vark",
@@ -1043,7 +1032,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kraven the Hunter",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/kraven-the-hunter-vark.png"
     },
     {
       "superhero_name": "Abomination-Ape",
@@ -1054,7 +1043,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Abomination",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/abomination-ape.png"
     },
     {
       "superhero_name": "Baron Zebra",
@@ -1065,7 +1054,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Baron Zemo",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/baron-zebra.png"
     },
     {
       "superhero_name": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
@@ -1076,7 +1065,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "M.O.D.O.K.",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/modok-mechanized-organism-designed-only-for-krill-consumption.png"
     },
     {
       "superhero_name": "Super-Skrull-Cow",
@@ -1087,7 +1076,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Super-Skrull",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/super-skrull-cow.png"
     },
     {
       "superhero_name": "Scorpion-Scorpion",
@@ -1098,7 +1087,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Scorpion",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/scorpion-scorpion.png"
     },
     {
       "superhero_name": "Agatha Hark-moth",
@@ -1109,7 +1098,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Agatha Harkness",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/agatha-hark-moth.png"
     },
     {
       "superhero_name": "Ronan the Accuser-Cat",
@@ -1120,7 +1109,7 @@
       "animal_theme": "Cat",
       "hero_inspiration": "Ronan the Accuser",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/ronan-the-accuser-cat.png"
     },
     {
       "superhero_name": "Annihilus-Ant",
@@ -1131,7 +1120,7 @@
       "animal_theme": "Anteater",
       "hero_inspiration": "Annihilus",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/annihilus-ant.png"
     },
     {
       "superhero_name": "Magik-arp",
@@ -1142,7 +1131,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Magik",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/magik-arp.png"
     },
     {
       "superhero_name": "Sunspot-Sunflower",
@@ -1153,7 +1142,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sunspot",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/sunspot-sunflower.png"
     },
     {
       "superhero_name": "Cannonball-Weevil",
@@ -1164,7 +1153,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cannonball",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/cannonball-weevil.png"
     },
     {
       "superhero_name": "Sersi-Horse",
@@ -1175,7 +1164,7 @@
       "animal_theme": "Horse",
       "hero_inspiration": "Sersi (The Eternals)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/sersi-horse.png"
     },
     {
       "superhero_name": "Gorr the God-Butcher-Bird",
@@ -1186,7 +1175,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Gorr the God Butcher",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/gorr-the-god-butcher-bird.png"
     },
     {
       "superhero_name": "America Cha-vez-Chinchilla",
@@ -1197,7 +1186,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "America Chavez",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/america-cha-vez-chinchilla.png"
     },
     {
       "superhero_name": "Thena-Newt",
@@ -1208,7 +1197,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Thena (The Eternals)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/thena-newt.png"
     },
     {
       "superhero_name": "Karnak-the-Mantis-Shrimp",
@@ -1219,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/karnak-the-mantis-shrimp.png"
     },
     {
       "superhero_name": "Ghost-Goose",
@@ -1230,7 +1219,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ghost (Ant-Man and The Wasp)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ghost-goose.png"
     },
     {
       "superhero_name": "Shuma-Gorath-Starfish",
@@ -1241,7 +1230,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Shuma-Gorath",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/shuma-gorath-starfish.png"
     },
     {
       "superhero_name": "The High Evolutionary-Hedgehog",
@@ -1252,7 +1241,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The High Evolutionary",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-high-evolutionary-hedgehog.png"
     },
     {
       "superhero_name": "Korgi",
@@ -1263,7 +1252,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Korg",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/korgi.png"
     },
     {
       "superhero_name": "Miek-the-Mite",
@@ -1274,7 +1263,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Miek",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/miek-the-mite.png"
     },
     {
       "superhero_name": "The Collector-Cat",
@@ -1285,7 +1274,7 @@
       "animal_theme": "Cat",
       "hero_inspiration": "The Collector",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-collector-cat.png"
     },
     {
       "superhero_name": "The Mandarin-Duck",
@@ -1296,7 +1285,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Mandarin",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-mandarin-duck.png"
     },
     {
       "superhero_name": "Yelena Belova-Weasel",
@@ -1307,7 +1296,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Yelena Belova",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/yelena-belova-weasel.png"
     },
     {
       "superhero_name": "Red Guardian-Bear",
@@ -1318,7 +1307,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Red Guardian",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/red-guardian-bear.png"
     },
     {
       "superhero_name": "The Watcher-Wombat",
@@ -1329,7 +1318,7 @@
       "animal_theme": "Bat",
       "hero_inspiration": "The Watcher",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-watcher-wombat.png"
     },
     {
       "superhero_name": "Beta Ray Bill-Fish",
@@ -1340,7 +1329,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Beta Ray Bill",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/beta-ray-bill-fish.png"
     },
     {
       "superhero_name": "Gladiator-Gull",
@@ -1351,7 +1340,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Gladiator",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/gladiator-gull.png"
     },
     {
       "superhero_name": "Firestar-Firefly",
@@ -1362,7 +1351,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Firestar",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/firestar-firefly.png"
     },
     {
       "superhero_name": "Cloak-and-Dagger-Flies",
@@ -1373,7 +1362,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cloak and Dagger",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/cloak-and-dagger-flies.png"
     },
     {
       "superhero_name": "Wonder Man-atee",
@@ -1384,7 +1373,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Wonder Man",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/wonder-man-atee.png"
     },
     {
       "superhero_name": "Tigra-the-Tiger",
@@ -1395,7 +1384,7 @@
       "animal_theme": "Tiger",
       "hero_inspiration": "Tigra",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/tigra-the-tiger.png"
     },
     {
       "superhero_name": "Morbius the Fruit Bat",
@@ -1406,7 +1395,7 @@
       "animal_theme": "Bat",
       "hero_inspiration": "Morbius, the Living Vampire",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/morbius-the-fruit-bat.png"
     },
     {
       "superhero_name": "Werewolf by Night-Woof",
@@ -1417,7 +1406,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Werewolf by Night",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/werewolf-by-night-woof.png"
     },
     {
       "superhero_name": "Man-Thing-Thang",
@@ -1439,7 +1428,7 @@
       "animal_theme": "Poodle",
       "hero_inspiration": "Mephisto",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/mephisto-poodle.png"
     },
     {
       "superhero_name": "Blackheart-Ram",
@@ -1450,7 +1439,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Blackheart",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/blackheart-ram.png"
     },
     {
       "superhero_name": "The Leader-Frog",
@@ -1461,7 +1450,7 @@
       "animal_theme": "Frog",
       "hero_inspiration": "The Leader",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-leader-frog.png"
     },
     {
       "superhero_name": "Songbird-Songbird",
@@ -1472,7 +1461,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Songbird",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/songbird-songbird.png"
     },
     {
       "superhero_name": "Moon-Giraffe",
@@ -1483,7 +1472,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Moon Girl",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/moon-giraffe.png"
     },
     {
       "superhero_name": "Devil Dino-Dog",
@@ -1494,7 +1483,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Devil Dinosaur",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/devil-dino-dog.png"
     },
     {
       "superhero_name": "Sasquatch-Sasquatch",
@@ -1505,7 +1494,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sasquatch (Alpha Flight)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/sasquatch-sasquatch.png"
     },
     {
       "superhero_name": "Puck-the-Puffin",
@@ -1516,7 +1505,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Puck (Alpha Flight)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/puck-the-puffin.png"
     },
     {
       "superhero_name": "Northstar-Goose (🦢) & Aurora-Goose",
@@ -1527,7 +1516,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Northstar & Aurora (Alpha Flight)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/northstar-goose-aurora-goose.png"
     },
     {
       "superhero_name": "Havok-Hare",
@@ -1538,7 +1527,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Havok",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/havok-hare.png"
     },
     {
       "superhero_name": "Polaris-Peacock",
@@ -1549,7 +1538,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Polaris",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/polaris-peacock.png"
     },
     {
       "superhero_name": "Multiple Man-atee",
@@ -1560,7 +1549,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Multiple Man",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/multiple-man-atee.png"
     },
     {
       "superhero_name": "Bishop-the-Bison",
@@ -1571,7 +1560,7 @@
       "animal_theme": "Buffalo",
       "hero_inspiration": "Bishop",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/bishop-the-bison.png"
     },
     {
       "superhero_name": "Cable-the-Capybara",
@@ -1582,7 +1571,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cable",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/cable-the-capybara.png"
     },
     {
       "superhero_name": "Domino-Dalmatian",
@@ -1593,7 +1582,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "Domino",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/domino-dalmatian.png"
     },
     {
       "superhero_name": "Warpath-Walrus",
@@ -1604,7 +1593,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Warpath",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/warpath-walrus.png"
     },
     {
       "superhero_name": "Shatterstar-fish",
@@ -1615,7 +1604,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Shatterstar",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/shatterstar-fish.png"
     },
     {
       "superhero_name": "Forge-the-Ferret",
@@ -1626,7 +1615,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Forge",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/forge-the-ferret.png"
     },
     {
       "superhero_name": "Psylocke-Butterfly",
@@ -1637,7 +1626,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Psylocke",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/psylocke-butterfly.png"
     },
     {
       "superhero_name": "X-23-Wolf",
@@ -1648,7 +1637,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "X-23",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/x-23-wolf.png"
     },
     {
       "superhero_name": "The Enchantress-Emu",
@@ -1659,7 +1648,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Enchantress",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-enchantress-emu.png"
     },
     {
       "superhero_name": "The Executioner-Elk",
@@ -1670,7 +1659,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Executioner",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-executioner-elk.png"
     },
     {
       "superhero_name": "Sif-the-Swan",
@@ -1681,7 +1670,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Lady Sif",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/sif-the-swan.png"
     },
     {
       "superhero_name": "The Warriors Three-Hogs",
@@ -1692,7 +1681,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Warriors Three",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-warriors-three-hogs.png"
     },
     {
       "superhero_name": "Heimdall-the-Heron",
@@ -1703,7 +1692,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Heimdall",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/heimdall-the-heron.png"
     },
     {
       "superhero_name": "Odin-the-Owl",
@@ -1714,7 +1703,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Odin",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/odin-the-owl.png"
     },
     {
       "superhero_name": "Spider-Woman-Spider",
@@ -1725,7 +1714,7 @@
       "animal_theme": "Spider",
       "hero_inspiration": "Spider-Woman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/spider-woman-spider.png"
     },
     {
       "superhero_name": "The Falcon-and-the-Winter-Soldier-Snails",
@@ -1736,7 +1725,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Falcon and The Winter Soldier (as a duo)",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/the-falcon-and-the-winter-soldier-snails.png"
     },
     {
       "superhero_name": "She-Ra-Coon",
@@ -1747,7 +1736,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "She-Ra (a fun, non-Marvel crossover)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/she-ra-coon.png"
     },
     {
       "superhero_name": "He-Man-atee",
@@ -1758,7 +1747,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "He-Man (a fun, non-Marvel crossover)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/he-man-atee.png"
     },
     {
       "superhero_name": "Skelet-eel",
@@ -1769,7 +1758,7 @@
       "animal_theme": "Snake",
       "hero_inspiration": "Skeletor (a fun, non-Marvel crossover)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/skelet-eel.png"
     },
     {
       "superhero_name": "Dr. Octopus-Octopus",
@@ -1780,7 +1769,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Doctor Octopus",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/dr-octopus-octopus.png"
     },
     {
       "superhero_name": "The Lizard-Lizard",
@@ -1791,7 +1780,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Lizard",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-lizard-lizard.png"
     },
     {
       "superhero_name": "Electro-Eel",
@@ -1802,7 +1791,7 @@
       "animal_theme": "Snake",
       "hero_inspiration": "Electro",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/electro-eel.png"
     },
     {
       "superhero_name": "Sandman-Sand-Dollar",
@@ -1813,7 +1802,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Sandman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/sandman-sand-dollar.png"
     },
     {
       "superhero_name": "Rhino-Rhino",
@@ -1824,18 +1813,18 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Rhino",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/rhino-rhino.png"
     },
     {
       "superhero_name": "Mysterio-Mantis",
-      "real_name": "Quentin Beck-Bug",
+      "real_name": "Quentin Bug",
       "powers": "A master of special effects and illusion. He is not a magician, just a very clever insect who uses holograms, projectors, and smoke to fake superpowers and terrify his enemies. Wears a dome on his head.",
       "origin": "A disgraced special effects artist who decided to use his talents for crime. He believes the world doesn't want heroes, it wants a spectacle, and he is happy to provide one. Note: Different from the underwater Mysterio-fish.",
       "trivia": "Mysterio-Mantis is a unique hero with many secrets.",
       "animal_theme": "Unknown",
       "hero_inspiration": "Mysterio",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/mysterio-mantis.png"
     },
     {
       "superhero_name": "The Vulture-Vulture",
@@ -1846,7 +1835,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "The Vulture",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/the-vulture-vulture.png"
     },
     {
       "superhero_name": "Kingpin-Killer-Whale",
@@ -1857,7 +1846,7 @@
       "animal_theme": "Whale",
       "hero_inspiration": "The Kingpin",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/kingpin-killer-whale.png"
     },
     {
       "superhero_name": "Bullseye-Bullfrog",
@@ -1868,7 +1857,7 @@
       "animal_theme": "Frog",
       "hero_inspiration": "Bullseye",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/bullseye-bullfrog.png"
     },
     {
       "superhero_name": "The Purple Man-drill",
@@ -1879,7 +1868,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Purple Man",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-purple-man-drill.png"
     },
     {
       "superhero_name": "Kang the Kangaroo",
@@ -1890,7 +1879,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kang the Conqueror",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/kang-the-kangaroo.png"
     },
     {
       "superhero_name": "Dr. Doom-Duck",
@@ -1901,7 +1890,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Doom",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/dr-doom-duck.png"
     },
     {
       "superhero_name": "Galactus-Goat",
@@ -1912,7 +1901,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/galactus-goat.png"
     },
     {
       "superhero_name": "The Silver Surfer-Slug",
@@ -1923,7 +1912,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Silver Surfer",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/the-silver-surfer-slug.png"
     },
     {
       "superhero_name": "The Human-Fly",
@@ -1934,7 +1923,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Human Fly",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-human-fly.png"
     },
     {
       "superhero_name": "The Spot-Spotted-Salamander",
@@ -1945,7 +1934,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Spot",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-spot-spotted-salamander.png"
     },
     {
       "superhero_name": "Speedball-Sugar-Glider",
@@ -1956,7 +1945,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Speedball",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/speedball-sugar-glider.png"
     },
     {
       "superhero_name": "Night-Thrasher-Thrush",
@@ -1967,7 +1956,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Night Thrasher",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/night-thrasher-thrush.png"
     },
     {
       "superhero_name": "Quasar-Quail",
@@ -1978,7 +1967,7 @@
       "animal_theme": "Canary",
       "hero_inspiration": "Quasar",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/quasar-quail.png"
     },
     {
       "superhero_name": "Hyperion-Hippo",
@@ -1989,7 +1978,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Hyperion",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/hyperion-hippo.png"
     },
     {
       "superhero_name": "Nighthawk-Night-Hawk",
@@ -2000,7 +1989,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Nighthawk",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/nighthawk-night-hawk.png"
     },
     {
       "superhero_name": "Power Princess-Poodle",
@@ -2011,7 +2000,7 @@
       "animal_theme": "Poodle",
       "hero_inspiration": "Power Princess",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/power-princess-poodle.png"
     },
     {
       "superhero_name": "The Whizzer-Whippet",
@@ -2022,7 +2011,7 @@
       "animal_theme": "Dog",
       "hero_inspiration": "The Whizzer",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-whizzer-whippet.png"
     },
     {
       "superhero_name": "Doctor Spectrum-Spectacled-Bear",
@@ -2033,7 +2022,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Doctor Spectrum",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/doctor-spectrum-spectacled-bear.png"
     },
     {
       "superhero_name": "The Beyonder-Beetle",
@@ -2044,7 +2033,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Beyonder",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/the-beyonder-beetle.png"
     },
     {
       "superhero_name": "Molecule Man-Mole",
@@ -2055,7 +2044,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Molecule Man",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/molecule-man-mole.png"
     },
     {
       "superhero_name": "Titania-Tarantula",
@@ -2066,7 +2055,7 @@
       "animal_theme": "Spider",
       "hero_inspiration": "Titania",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/titania-tarantula.png"
     },
     {
       "superhero_name": "Volcana-Vole",
@@ -2077,7 +2066,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Volcana",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/volcana-vole.png"
     },
     {
       "superhero_name": "Klaw-the-Clam",
@@ -2088,7 +2077,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "An physicist who stole Vibranium from Wakitty and was transformed into a sound-being. He is the arch-nemesis of Black Panther Paws.",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/klaw-the-clam.png"
     },
     {
       "superhero_name": "Man-Ape-Ape",
@@ -2099,7 +2088,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Man-Ape",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/man-ape-ape.png"
     },
     {
       "superhero_name": "Killmonger-Catfish",
@@ -2110,7 +2099,7 @@
       "animal_theme": "Cat",
       "hero_inspiration": "Killmonger",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/killmonger-catfish.png"
     },
     {
       "superhero_name": "Okoye-Okapi",
@@ -2121,7 +2110,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Okoye",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/okoye-okapi.png"
     },
     {
       "superhero_name": "Shuri-Shrew",
@@ -2132,7 +2121,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Shuri",
       "difficulty": "Easy",
-      "imagePath": null
+      "imagePath": "./images/shuri-shrew.png"
     }
   ]
 }

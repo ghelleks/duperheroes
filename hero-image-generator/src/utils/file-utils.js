@@ -9,9 +9,25 @@ const path = require('path');
  */
 
 class FileUtils {
-    constructor(outputDir = '../public/images') {
-        this.outputDir = path.resolve(__dirname, outputDir);
-        this.debugDir = path.resolve(__dirname, '../public/debug');
+    constructor(outputDir = null) {
+        // Use environment variable if provided, otherwise use default relative path
+        const defaultOutputDir = outputDir || process.env.OUTPUT_DIRECTORY || '../public/images';
+        const defaultDebugDir = process.env.DEBUG_OUTPUT || '../public/debug';
+        
+        // If paths are absolute, use them directly; otherwise resolve relative to __dirname
+        this.outputDir = path.isAbsolute(defaultOutputDir) 
+            ? defaultOutputDir 
+            : path.resolve(__dirname, defaultOutputDir);
+            
+        // Handle debug directory - if it's a file path, extract the directory
+        if (path.isAbsolute(defaultDebugDir)) {
+            this.debugDir = defaultDebugDir.endsWith('.json') 
+                ? path.dirname(defaultDebugDir) 
+                : defaultDebugDir;
+        } else {
+            this.debugDir = path.resolve(__dirname, defaultDebugDir);
+        }
+            
         this.supportedExtensions = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
     }
 

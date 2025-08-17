@@ -1,15 +1,48 @@
 {
-  "timestamp": "2025-08-17T13:11:29.545Z",
+  "timestamp": "2025-08-17T17:56:37.774Z",
   "status": "success",
   "stats": {
-    "totalHeroes": 194,
-    "totalImages": 44,
-    "heroesWithImages": 31,
-    "heroesWithoutImages": 163,
-    "orphanedImages": 13,
-    "duplicateImages": 0
+    "totalHeroes": 193,
+    "totalImages": 209,
+    "heroesWithImages": 179,
+    "heroesWithoutImages": 14,
+    "orphanedImages": 23,
+    "duplicateImages": 7
   },
   "heroesWithImages": [
+    {
+      "heroName": "Dum dog",
+      "slug": "dum-dog",
+      "images": [
+        {
+          "filename": "dum-dog.png",
+          "directory": "images",
+          "size": 3508565
+        }
+      ]
+    },
+    {
+      "heroName": "Doy dog",
+      "slug": "doy-dog",
+      "images": [
+        {
+          "filename": "doy-dog.png",
+          "directory": "images",
+          "size": 3445361
+        }
+      ]
+    },
+    {
+      "heroName": "krazy Koala",
+      "slug": "krazy-koala",
+      "images": [
+        {
+          "filename": "krazy-koala.png",
+          "directory": "images",
+          "size": 3735235
+        }
+      ]
+    },
     {
       "heroName": "Claw cat",
       "slug": "claw-cat",
@@ -62,6 +95,17 @@
           "filename": "aqua-mammal.jpeg",
           "directory": "images",
           "size": 852229
+        }
+      ]
+    },
+    {
+      "heroName": "Quicksilver Swimmer",
+      "slug": "quicksilver-swimmer",
+      "images": [
+        {
+          "filename": "quicksilver-swimmer.png",
+          "directory": "images",
+          "size": 4149440
         }
       ]
     },
@@ -132,6 +176,17 @@
       ]
     },
     {
+      "heroName": "Sabretooth Tabby",
+      "slug": "sabretooth-tabby",
+      "images": [
+        {
+          "filename": "sabretooth-tabby.png",
+          "directory": "images",
+          "size": 1876504
+        }
+      ]
+    },
+    {
       "heroName": "Rhino Beetle-Borg",
       "slug": "rhino-beetle-borg",
       "images": [
@@ -139,6 +194,33 @@
           "filename": "rhino-beetle-borg.jpeg",
           "directory": "images",
           "size": 2634045
+        }
+      ]
+    },
+    {
+      "heroName": "Lizard Larry",
+      "slug": "lizard-larry",
+      "images": [
+        {
+          "filename": "lizard-larry.jpeg",
+          "directory": "images",
+          "size": 2123519
+        },
+        {
+          "filename": "lizard-larry.png",
+          "directory": "images",
+          "size": 3929204
+        }
+      ]
+    },
+    {
+      "heroName": "Venom",
+      "slug": "venom",
+      "images": [
+        {
+          "filename": "venom.png",
+          "directory": "images",
+          "size": 1745012
         }
       ]
     },
@@ -176,6 +258,17 @@
       ]
     },
     {
+      "heroName": "Power Primate",
+      "slug": "power-primate",
+      "images": [
+        {
+          "filename": "power-primate.png",
+          "directory": "images",
+          "size": 4452186
+        }
+      ]
+    },
+    {
       "heroName": "Iron Fist Cricket",
       "slug": "iron-fist-cricket",
       "images": [
@@ -194,6 +287,17 @@
           "filename": "jessica-hop-jones.jpeg",
           "directory": "images",
           "size": 1898782
+        }
+      ]
+    },
+    {
+      "heroName": "Punisher Pine-Cushion",
+      "slug": "punisher-pine-cushion",
+      "images": [
+        {
+          "filename": "punisher-pine-cushion.png",
+          "directory": "images",
+          "size": 1666508
         }
       ]
     },
@@ -227,6 +331,22 @@
           "filename": "storm-breaker-bird.jpeg",
           "directory": "images",
           "size": 2481769
+        }
+      ]
+    },
+    {
+      "heroName": "Cyclops Ram",
+      "slug": "cyclops-ram",
+      "images": [
+        {
+          "filename": "cyclops-ram.jpeg",
+          "directory": "images",
+          "size": 2155548
+        },
+        {
+          "filename": "cyclops-ram.png",
+          "directory": "images",
+          "size": 4139722
         }
       ]
     },
@@ -286,6 +406,28 @@
       ]
     },
     {
+      "heroName": "Professor Hoot-X",
+      "slug": "professor-hoot-x",
+      "images": [
+        {
+          "filename": "professor-hoot-x.png",
+          "directory": "images",
+          "size": 144813
+        }
+      ]
+    },
+    {
+      "heroName": "Mystique Chameleon",
+      "slug": "mystique-chameleon",
+      "images": [
+        {
+          "filename": "mystique-chameleon.png",
+          "directory": "images",
+          "size": 4497147
+        }
+      ]
+    },
+    {
       "heroName": "Nightcrawler Cricket",
       "slug": "nightcrawler-cricket",
       "images": [
@@ -330,6 +472,38 @@
       ]
     },
     {
+      "heroName": "Invisible Octopus-Woman",
+      "slug": "invisible-octopus-woman",
+      "images": [
+        {
+          "filename": "invisible-octopus-woman.jpeg",
+          "directory": "images",
+          "size": 2790699
+        },
+        {
+          "filename": "invisible-octopus-woman.png",
+          "directory": "images",
+          "size": 1967513
+        }
+      ]
+    },
+    {
+      "heroName": "Thing Turtle",
+      "slug": "thing-turtle",
+      "images": [
+        {
+          "filename": "thing-turtle.jpeg",
+          "directory": "images",
+          "size": 2842498
+        },
+        {
+          "filename": "thing-turtle.png",
+          "directory": "images",
+          "size": 4035744
+        }
+      ]
+    },
+    {
       "heroName": "Hawkeye Hawk",
       "slug": "hawkeye-hawk",
       "images": [
@@ -350,332 +524,1501 @@
           "size": 2313337
         }
       ]
-    }
-  ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Dum dog",
-      "slug": "dum-dog",
-      "animalTheme": "Dog"
-    },
-    {
-      "heroName": "Doy dog",
-      "slug": "doy-dog",
-      "animalTheme": "Poodle"
-    },
-    {
-      "heroName": "krazy Koala",
-      "slug": "krazy-koala",
-      "animalTheme": "Koala"
-    },
-    {
-      "heroName": "Quicksilver Swimmer",
-      "slug": "quicksilver-swimmer",
-      "animalTheme": "Fish"
-    },
-    {
-      "heroName": "Sabretooth Tabby",
-      "slug": "sabretooth-tabby",
-      "animalTheme": "Tiger"
-    },
-    {
-      "heroName": "Lizard Larry",
-      "slug": "lizard-larry",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Venom",
-      "slug": "venom",
-      "animalTheme": "Snake"
-    },
-    {
-      "heroName": "Power Primate",
-      "slug": "power-primate",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Punisher Pine-Cushion",
-      "slug": "punisher-pine-cushion",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Cyclops Ram",
-      "slug": "cyclops-ram",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Professor Hoot-X",
-      "slug": "professor-hoot-x",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Mystique Chameleon",
-      "slug": "mystique-chameleon",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Invisible Octopus-Woman",
-      "slug": "invisible-octopus-woman",
-      "animalTheme": "Octopus"
-    },
-    {
-      "heroName": "Thing Turtle",
-      "slug": "thing-turtle",
-      "animalTheme": "Turtle"
     },
     {
       "heroName": "Nick Furry",
       "slug": "nick-furry",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Loki Lemur",
-      "slug": "loki-lemur",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "nick-furry.png",
+          "directory": "images",
+          "size": 734522
+        }
+      ]
     },
     {
       "heroName": "Ultron Bug",
       "slug": "ultron-bug",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "ultron-bug.png",
+          "directory": "images",
+          "size": 1724682
+        }
+      ]
     },
     {
       "heroName": "Doctor Goose",
       "slug": "doctor-goose",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "doctor-goose.png",
+          "directory": "images",
+          "size": 1359372
+        }
+      ]
     },
     {
       "heroName": "Green Gobblin'",
       "slug": "green-gobblin",
-      "animalTheme": "Eagle"
+      "images": [
+        {
+          "filename": "green-gobblin.png",
+          "directory": "images",
+          "size": 1533677
+        }
+      ]
     },
     {
       "heroName": "Kingpin Penguin",
       "slug": "kingpin-penguin",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "kingpin-penguin.png",
+          "directory": "images",
+          "size": 1253260
+        }
+      ]
     },
     {
       "heroName": "Mysterio-fish",
       "slug": "mysterio-fish",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "mysterio-fish.png",
+          "directory": "images",
+          "size": 1672017
+        }
+      ]
     },
     {
       "heroName": "Vulture Vulture",
       "slug": "vulture-vulture",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Sandmanatee",
-      "slug": "sandmanatee",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "vulture-vulture.png",
+          "directory": "images",
+          "size": 1271664
+        }
+      ]
     },
     {
       "heroName": "Eelectro",
       "slug": "eelectro",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "eelectro.png",
+          "directory": "images",
+          "size": 224915
+        }
+      ]
     },
     {
       "heroName": "Carnage-vorous Plant",
       "slug": "carnage-vorous-plant",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "carnage-vorous-plant.jpeg",
+          "directory": "images",
+          "size": 1239698
+        }
+      ]
     },
     {
       "heroName": "A-pork-alypse",
       "slug": "a-pork-alypse",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "a-pork-alypse.jpeg",
+          "directory": "images",
+          "size": 2593366
+        }
+      ]
     },
     {
       "heroName": "Mr. Sinister Salmon",
       "slug": "mr-sinister-salmon",
-      "animalTheme": "Fish"
+      "images": [
+        {
+          "filename": "mr-sinister-salmon.png",
+          "directory": "images",
+          "size": 1388166
+        }
+      ]
     },
     {
       "heroName": "Juggernaut-ilus",
       "slug": "juggernaut-ilus",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "juggernaut-ilus.jpeg",
+          "directory": "images",
+          "size": 2793384
+        }
+      ]
     },
     {
       "heroName": "Gopher-lactus",
       "slug": "gopher-lactus",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "gopher-lactus.jpeg",
+          "directory": "images",
+          "size": 569113
+        }
+      ]
     },
     {
       "heroName": "Kang the Conger-er",
       "slug": "kang-the-conger-er",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "kang-the-conger-er.jpeg",
+          "directory": "images",
+          "size": 767869
+        }
+      ]
     },
     {
       "heroName": "Task-Mantis",
       "slug": "task-mantis",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "task-mantis.jpeg",
+          "directory": "images",
+          "size": 933895
+        }
+      ]
     },
     {
       "heroName": "Dor-hamster-mmu",
       "slug": "dor-hamster-mmu",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "dor-hamster-mmu.jpeg",
+          "directory": "images",
+          "size": 2881405
+        }
+      ]
     },
     {
       "heroName": "Hela-phant",
       "slug": "hela-phant",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "hela-phant.jpeg",
+          "directory": "images",
+          "size": 1889173
+        }
+      ]
     },
     {
       "heroName": "The Red Skull-Cap Mushroom",
       "slug": "the-red-skull-cap-mushroom",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "the-red-skull-cap-mushroom.jpeg",
+          "directory": "images",
+          "size": 2575303
+        }
+      ]
     },
     {
       "heroName": "Scarlet Finch",
       "slug": "scarlet-finch",
-      "animalTheme": "Canary"
+      "images": [
+        {
+          "filename": "scarlet-finch.jpeg",
+          "directory": "images",
+          "size": 2666975
+        }
+      ]
     },
     {
       "heroName": "The Pigeon",
       "slug": "the-pigeon",
-      "animalTheme": "Canary"
+      "images": [
+        {
+          "filename": "the-pigeon.jpeg",
+          "directory": "images",
+          "size": 2719970
+        }
+      ]
     },
     {
       "heroName": "War Machine-Dog",
       "slug": "war-machine-dog",
-      "animalTheme": "Dog"
+      "images": [
+        {
+          "filename": "war-machine-dog.jpeg",
+          "directory": "images",
+          "size": 2334485
+        }
+      ]
     },
     {
       "heroName": "Blade the Bat",
       "slug": "blade-the-bat",
-      "animalTheme": "Bat"
+      "images": [
+        {
+          "filename": "blade-the-bat.jpeg",
+          "directory": "images",
+          "size": 1859504
+        },
+        {
+          "filename": "blade-the-bat.png",
+          "directory": "images",
+          "size": 1086441
+        }
+      ]
     },
     {
       "heroName": "Moon Knight-Owl",
       "slug": "moon-knight-owl",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "moon-knight-owl.jpeg",
+          "directory": "images",
+          "size": 1751980
+        }
+      ]
     },
     {
       "heroName": "She-Hulk Sheep",
       "slug": "she-hulk-sheep",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "she-hulk-sheep.jpeg",
+          "directory": "images",
+          "size": 2008162
+        }
+      ]
     },
     {
       "heroName": "Nova Corp-gi",
       "slug": "nova-corp-gi",
-      "animalTheme": "Dog"
+      "images": [
+        {
+          "filename": "nova-corp-gi.jpeg",
+          "directory": "images",
+          "size": 1600725
+        }
+      ]
     },
     {
       "heroName": "Adam Warthog",
       "slug": "adam-warthog",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "adam-warthog.jpeg",
+          "directory": "images",
+          "size": 2692454
+        }
+      ]
     },
     {
       "heroName": "Ikaris-Canary",
       "slug": "ikaris-canary",
-      "animalTheme": "Canary"
+      "images": [
+        {
+          "filename": "ikaris-canary.jpeg",
+          "directory": "images",
+          "size": 888002
+        }
+      ]
     },
     {
       "heroName": "Shang-Chimpanzee",
       "slug": "shang-chimpanzee",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "shang-chimpanzee.jpeg",
+          "directory": "images",
+          "size": 2455526
+        },
+        {
+          "filename": "shang-chimpanzee.png",
+          "directory": "images",
+          "size": 1660385
+        }
+      ]
     },
     {
       "heroName": "Elek-tric Eel",
       "slug": "elek-tric-eel",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "elek-tric-eel.jpeg",
+          "directory": "images",
+          "size": 2417622
+        },
+        {
+          "filename": "elek-tric-eel.png",
+          "directory": "images",
+          "size": 1227245
+        }
+      ]
     },
     {
       "heroName": "Echo-location Bat",
       "slug": "echo-location-bat",
-      "animalTheme": "Cat"
+      "images": [
+        {
+          "filename": "echo-location-bat.png",
+          "directory": "images",
+          "size": 1577432
+        }
+      ]
     },
     {
       "heroName": "Kate Bishop-Hawk",
       "slug": "kate-bishop-hawk",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "kate-bishop-hawk.png",
+          "directory": "images",
+          "size": 1310928
+        }
+      ]
     },
     {
       "heroName": "Miles Mor-rat-les",
       "slug": "miles-mor-rat-les",
-      "animalTheme": "Spider"
+      "images": [
+        {
+          "filename": "miles-mor-rat-les.png",
+          "directory": "images",
+          "size": 1554291
+        }
+      ]
     },
     {
       "heroName": "Ghost-Spider-Goat",
       "slug": "ghost-spider-goat",
-      "animalTheme": "Spider"
+      "images": [
+        {
+          "filename": "ghost-spider-goat.png",
+          "directory": "images",
+          "size": 1454527
+        }
+      ]
     },
     {
       "heroName": "Ms. Marvel-ot",
       "slug": "ms-marvel-ot",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "ms-marvel-ot.png",
+          "directory": "images",
+          "size": 1675470
+        }
+      ]
     },
     {
       "heroName": "Squirrel Girl",
       "slug": "squirrel-girl",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "squirrel-girl.png",
+          "directory": "images",
+          "size": 1771180
+        }
+      ]
     },
     {
       "heroName": "Groot-A-Saurus",
       "slug": "groot-a-saurus",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "groot-a-saurus.png",
+          "directory": "images",
+          "size": 1760050
+        }
+      ]
     },
     {
       "heroName": "Rocket Raccoon",
       "slug": "rocket-raccoon",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "rocket-raccoon.png",
+          "directory": "images",
+          "size": 1443637
+        }
+      ]
     },
     {
       "heroName": "Star-Lord Seahorse",
       "slug": "star-lord-seahorse",
-      "animalTheme": "Horse"
+      "images": [
+        {
+          "filename": "star-lord-seahorse.png",
+          "directory": "images",
+          "size": 1566763
+        }
+      ]
     },
     {
       "heroName": "Gamora-affe",
       "slug": "gamora-affe",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "gamora-affe.png",
+          "directory": "images",
+          "size": 1346597
+        }
+      ]
     },
     {
       "heroName": "Drax the Destroyer Dung-Beetle",
       "slug": "drax-the-destroyer-dung-beetle",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "drax-the-destroyer-dung-beetle.png",
+          "directory": "images",
+          "size": 1863960
+        }
+      ]
     },
     {
       "heroName": "Praying Mantis",
       "slug": "praying-mantis",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "praying-mantis.png",
+          "directory": "images",
+          "size": 1693052
+        }
+      ]
     },
     {
       "heroName": "Black Bolt-Weevil",
       "slug": "black-bolt-weevil",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "black-bolt-weevil.png",
+          "directory": "images",
+          "size": 1555582
+        }
+      ]
     },
     {
       "heroName": "Medusa-Moth",
       "slug": "medusa-moth",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "medusa-moth.png",
+          "directory": "images",
+          "size": 1678192
+        }
+      ]
     },
     {
       "heroName": "Fin Fang Foom-Fly",
       "slug": "fin-fang-foom-fly",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "fin-fang-foom-fly.png",
+          "directory": "images",
+          "size": 1900462
+        }
+      ]
     },
     {
       "heroName": "The Sentry-pede",
       "slug": "the-sentry-pede",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "the-sentry-pede.png",
+          "directory": "images",
+          "size": 1578672
+        }
+      ]
     },
     {
       "heroName": "She-Venom",
       "slug": "she-venom",
-      "animalTheme": "Snake"
+      "images": [
+        {
+          "filename": "she-venom.png",
+          "directory": "images",
+          "size": 1483826
+        }
+      ]
     },
     {
       "heroName": "The Grandmaster-Cat",
       "slug": "the-grandmaster-cat",
-      "animalTheme": "Cat"
+      "images": [
+        {
+          "filename": "the-grandmaster-cat.png",
+          "directory": "images",
+          "size": 1436942
+        }
+      ]
     },
     {
       "heroName": "Kraven the Hunter-Vark",
       "slug": "kraven-the-hunter-vark",
-      "animalTheme": "Unknown"
+      "images": [
+        {
+          "filename": "kraven-the-hunter-vark.png",
+          "directory": "images",
+          "size": 1874225
+        }
+      ]
     },
     {
       "heroName": "Abomination-Ape",
       "slug": "abomination-ape",
+      "images": [
+        {
+          "filename": "abomination-ape.png",
+          "directory": "images",
+          "size": 1873424
+        }
+      ]
+    },
+    {
+      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
+      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
+      "images": [
+        {
+          "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.png",
+          "directory": "images",
+          "size": 1527615
+        }
+      ]
+    },
+    {
+      "heroName": "Super-Skrull-Cow",
+      "slug": "super-skrull-cow",
+      "images": [
+        {
+          "filename": "super-skrull-cow.png",
+          "directory": "images",
+          "size": 1600458
+        }
+      ]
+    },
+    {
+      "heroName": "Scorpion-Scorpion",
+      "slug": "scorpion-scorpion",
+      "images": [
+        {
+          "filename": "scorpion-scorpion.png",
+          "directory": "images",
+          "size": 1664748
+        }
+      ]
+    },
+    {
+      "heroName": "Agatha Hark-moth",
+      "slug": "agatha-hark-moth",
+      "images": [
+        {
+          "filename": "agatha-hark-moth.png",
+          "directory": "images",
+          "size": 1681567
+        }
+      ]
+    },
+    {
+      "heroName": "Ronan the Accuser-Cat",
+      "slug": "ronan-the-accuser-cat",
+      "images": [
+        {
+          "filename": "ronan-the-accuser-cat.png",
+          "directory": "images",
+          "size": 1525746
+        }
+      ]
+    },
+    {
+      "heroName": "Annihilus-Ant",
+      "slug": "annihilus-ant",
+      "images": [
+        {
+          "filename": "annihilus-ant.png",
+          "directory": "images",
+          "size": 1603243
+        }
+      ]
+    },
+    {
+      "heroName": "Magik-arp",
+      "slug": "magik-arp",
+      "images": [
+        {
+          "filename": "magik-arp.png",
+          "directory": "images",
+          "size": 1815798
+        }
+      ]
+    },
+    {
+      "heroName": "Sunspot-Sunflower",
+      "slug": "sunspot-sunflower",
+      "images": [
+        {
+          "filename": "sunspot-sunflower.png",
+          "directory": "images",
+          "size": 1488007
+        }
+      ]
+    },
+    {
+      "heroName": "Sersi-Horse",
+      "slug": "sersi-horse",
+      "images": [
+        {
+          "filename": "sersi-horse.png",
+          "directory": "images",
+          "size": 1970532
+        }
+      ]
+    },
+    {
+      "heroName": "Gorr the God-Butcher-Bird",
+      "slug": "gorr-the-god-butcher-bird",
+      "images": [
+        {
+          "filename": "gorr-the-god-butcher-bird.png",
+          "directory": "images",
+          "size": 1484390
+        }
+      ]
+    },
+    {
+      "heroName": "America Cha-vez-Chinchilla",
+      "slug": "america-cha-vez-chinchilla",
+      "images": [
+        {
+          "filename": "america-cha-vez-chinchilla.png",
+          "directory": "images",
+          "size": 1591328
+        }
+      ]
+    },
+    {
+      "heroName": "Thena-Newt",
+      "slug": "thena-newt",
+      "images": [
+        {
+          "filename": "thena-newt.png",
+          "directory": "images",
+          "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Ghost-Goose",
+      "slug": "ghost-goose",
+      "images": [
+        {
+          "filename": "ghost-goose.png",
+          "directory": "images",
+          "size": 1542673
+        }
+      ]
+    },
+    {
+      "heroName": "Shuma-Gorath-Starfish",
+      "slug": "shuma-gorath-starfish",
+      "images": [
+        {
+          "filename": "shuma-gorath-starfish.png",
+          "directory": "images",
+          "size": 1760248
+        }
+      ]
+    },
+    {
+      "heroName": "The High Evolutionary-Hedgehog",
+      "slug": "the-high-evolutionary-hedgehog",
+      "images": [
+        {
+          "filename": "the-high-evolutionary-hedgehog.png",
+          "directory": "images",
+          "size": 1527010
+        }
+      ]
+    },
+    {
+      "heroName": "Korgi",
+      "slug": "korgi",
+      "images": [
+        {
+          "filename": "korgi.png",
+          "directory": "images",
+          "size": 1778018
+        }
+      ]
+    },
+    {
+      "heroName": "Miek-the-Mite",
+      "slug": "miek-the-mite",
+      "images": [
+        {
+          "filename": "miek-the-mite.png",
+          "directory": "images",
+          "size": 1128120
+        }
+      ]
+    },
+    {
+      "heroName": "The Collector-Cat",
+      "slug": "the-collector-cat",
+      "images": [
+        {
+          "filename": "the-collector-cat.png",
+          "directory": "images",
+          "size": 1796628
+        }
+      ]
+    },
+    {
+      "heroName": "Yelena Belova-Weasel",
+      "slug": "yelena-belova-weasel",
+      "images": [
+        {
+          "filename": "yelena-belova-weasel.png",
+          "directory": "images",
+          "size": 1353484
+        }
+      ]
+    },
+    {
+      "heroName": "Red Guardian-Bear",
+      "slug": "red-guardian-bear",
+      "images": [
+        {
+          "filename": "red-guardian-bear.png",
+          "directory": "images",
+          "size": 1469923
+        }
+      ]
+    },
+    {
+      "heroName": "The Watcher-Wombat",
+      "slug": "the-watcher-wombat",
+      "images": [
+        {
+          "filename": "the-watcher-wombat.png",
+          "directory": "images",
+          "size": 1551137
+        }
+      ]
+    },
+    {
+      "heroName": "Beta Ray Bill-Fish",
+      "slug": "beta-ray-bill-fish",
+      "images": [
+        {
+          "filename": "beta-ray-bill-fish.png",
+          "directory": "images",
+          "size": 1577018
+        }
+      ]
+    },
+    {
+      "heroName": "Firestar-Firefly",
+      "slug": "firestar-firefly",
+      "images": [
+        {
+          "filename": "firestar-firefly.png",
+          "directory": "images",
+          "size": 1628978
+        }
+      ]
+    },
+    {
+      "heroName": "Cloak-and-Dagger-Flies",
+      "slug": "cloak-and-dagger-flies",
+      "images": [
+        {
+          "filename": "cloak-and-dagger-flies.png",
+          "directory": "images",
+          "size": 1521438
+        }
+      ]
+    },
+    {
+      "heroName": "Wonder Man-atee",
+      "slug": "wonder-man-atee",
+      "images": [
+        {
+          "filename": "wonder-man-atee.png",
+          "directory": "images",
+          "size": 1663831
+        }
+      ]
+    },
+    {
+      "heroName": "Tigra-the-Tiger",
+      "slug": "tigra-the-tiger",
+      "images": [
+        {
+          "filename": "tigra-the-tiger.png",
+          "directory": "images",
+          "size": 1845210
+        }
+      ]
+    },
+    {
+      "heroName": "Morbius the Fruit Bat",
+      "slug": "morbius-the-fruit-bat",
+      "images": [
+        {
+          "filename": "morbius-the-fruit-bat.png",
+          "directory": "images",
+          "size": 1362557
+        }
+      ]
+    },
+    {
+      "heroName": "Mephisto-Poodle",
+      "slug": "mephisto-poodle",
+      "images": [
+        {
+          "filename": "mephisto-poodle.png",
+          "directory": "images",
+          "size": 1541105
+        }
+      ]
+    },
+    {
+      "heroName": "Blackheart-Ram",
+      "slug": "blackheart-ram",
+      "images": [
+        {
+          "filename": "blackheart-ram.png",
+          "directory": "images",
+          "size": 1669007
+        }
+      ]
+    },
+    {
+      "heroName": "The Leader-Frog",
+      "slug": "the-leader-frog",
+      "images": [
+        {
+          "filename": "the-leader-frog.png",
+          "directory": "images",
+          "size": 1672016
+        }
+      ]
+    },
+    {
+      "heroName": "Songbird-Songbird",
+      "slug": "songbird-songbird",
+      "images": [
+        {
+          "filename": "songbird-songbird.png",
+          "directory": "images",
+          "size": 1409894
+        }
+      ]
+    },
+    {
+      "heroName": "Moon-Giraffe",
+      "slug": "moon-giraffe",
+      "images": [
+        {
+          "filename": "moon-giraffe.png",
+          "directory": "images",
+          "size": 1229330
+        }
+      ]
+    },
+    {
+      "heroName": "Devil Dino-Dog",
+      "slug": "devil-dino-dog",
+      "images": [
+        {
+          "filename": "devil-dino-dog.png",
+          "directory": "images",
+          "size": 1493423
+        }
+      ]
+    },
+    {
+      "heroName": "Sasquatch-Sasquatch",
+      "slug": "sasquatch-sasquatch",
+      "images": [
+        {
+          "filename": "sasquatch-sasquatch.png",
+          "directory": "images",
+          "size": 1483780
+        }
+      ]
+    },
+    {
+      "heroName": "Puck-the-Puffin",
+      "slug": "puck-the-puffin",
+      "images": [
+        {
+          "filename": "puck-the-puffin.png",
+          "directory": "images",
+          "size": 1476244
+        }
+      ]
+    },
+    {
+      "heroName": "Northstar-Goose (🦢) & Aurora-Goose",
+      "slug": "northstar-goose-aurora-goose",
+      "images": [
+        {
+          "filename": "northstar-goose-aurora-goose.png",
+          "directory": "images",
+          "size": 1602192
+        }
+      ]
+    },
+    {
+      "heroName": "Havok-Hare",
+      "slug": "havok-hare",
+      "images": [
+        {
+          "filename": "havok-hare.png",
+          "directory": "images",
+          "size": 1584586
+        }
+      ]
+    },
+    {
+      "heroName": "Polaris-Peacock",
+      "slug": "polaris-peacock",
+      "images": [
+        {
+          "filename": "polaris-peacock.png",
+          "directory": "images",
+          "size": 1524265
+        }
+      ]
+    },
+    {
+      "heroName": "Bishop-the-Bison",
+      "slug": "bishop-the-bison",
+      "images": [
+        {
+          "filename": "bishop-the-bison.png",
+          "directory": "images",
+          "size": 1654469
+        }
+      ]
+    },
+    {
+      "heroName": "Cable-the-Capybara",
+      "slug": "cable-the-capybara",
+      "images": [
+        {
+          "filename": "cable-the-capybara.png",
+          "directory": "images",
+          "size": 1638823
+        }
+      ]
+    },
+    {
+      "heroName": "Domino-Dalmatian",
+      "slug": "domino-dalmatian",
+      "images": [
+        {
+          "filename": "domino-dalmatian.png",
+          "directory": "images",
+          "size": 1292829
+        }
+      ]
+    },
+    {
+      "heroName": "Warpath-Walrus",
+      "slug": "warpath-walrus",
+      "images": [
+        {
+          "filename": "warpath-walrus.png",
+          "directory": "images",
+          "size": 1697496
+        }
+      ]
+    },
+    {
+      "heroName": "Psylocke-Butterfly",
+      "slug": "psylocke-butterfly",
+      "images": [
+        {
+          "filename": "psylocke-butterfly.png",
+          "directory": "images",
+          "size": 1395676
+        }
+      ]
+    },
+    {
+      "heroName": "X-23-Wolf",
+      "slug": "x-23-wolf",
+      "images": [
+        {
+          "filename": "x-23-wolf.png",
+          "directory": "images",
+          "size": 1673689
+        }
+      ]
+    },
+    {
+      "heroName": "The Enchantress-Emu",
+      "slug": "the-enchantress-emu",
+      "images": [
+        {
+          "filename": "the-enchantress-emu.png",
+          "directory": "images",
+          "size": 1636631
+        }
+      ]
+    },
+    {
+      "heroName": "The Executioner-Elk",
+      "slug": "the-executioner-elk",
+      "images": [
+        {
+          "filename": "the-executioner-elk.png",
+          "directory": "images",
+          "size": 1381692
+        }
+      ]
+    },
+    {
+      "heroName": "The Warriors Three-Hogs",
+      "slug": "the-warriors-three-hogs",
+      "images": [
+        {
+          "filename": "the-warriors-three-hogs.png",
+          "directory": "images",
+          "size": 1972539
+        }
+      ]
+    },
+    {
+      "heroName": "Heimdall-the-Heron",
+      "slug": "heimdall-the-heron",
+      "images": [
+        {
+          "filename": "heimdall-the-heron.png",
+          "directory": "images",
+          "size": 1996116
+        }
+      ]
+    },
+    {
+      "heroName": "Odin-the-Owl",
+      "slug": "odin-the-owl",
+      "images": [
+        {
+          "filename": "odin-the-owl.png",
+          "directory": "images",
+          "size": 1543150
+        }
+      ]
+    },
+    {
+      "heroName": "Spider-Woman-Spider",
+      "slug": "spider-woman-spider",
+      "images": [
+        {
+          "filename": "spider-woman-spider.png",
+          "directory": "images",
+          "size": 1734872
+        }
+      ]
+    },
+    {
+      "heroName": "The Falcon-and-the-Winter-Soldier-Snails",
+      "slug": "the-falcon-and-the-winter-soldier-snails",
+      "images": [
+        {
+          "filename": "the-falcon-and-the-winter-soldier-snails.png",
+          "directory": "images",
+          "size": 1595391
+        }
+      ]
+    },
+    {
+      "heroName": "She-Ra-Coon",
+      "slug": "she-ra-coon",
+      "images": [
+        {
+          "filename": "she-ra-coon.png",
+          "directory": "images",
+          "size": 1431713
+        }
+      ]
+    },
+    {
+      "heroName": "He-Man-atee",
+      "slug": "he-man-atee",
+      "images": [
+        {
+          "filename": "he-man-atee.png",
+          "directory": "images",
+          "size": 1861429
+        }
+      ]
+    },
+    {
+      "heroName": "Skelet-eel",
+      "slug": "skelet-eel",
+      "images": [
+        {
+          "filename": "skelet-eel.png",
+          "directory": "images",
+          "size": 1566054
+        }
+      ]
+    },
+    {
+      "heroName": "Dr. Octopus-Octopus",
+      "slug": "dr-octopus-octopus",
+      "images": [
+        {
+          "filename": "dr-octopus-octopus.png",
+          "directory": "images",
+          "size": 1713332
+        }
+      ]
+    },
+    {
+      "heroName": "The Lizard-Lizard",
+      "slug": "the-lizard-lizard",
+      "images": [
+        {
+          "filename": "the-lizard-lizard.png",
+          "directory": "images",
+          "size": 1579907
+        }
+      ]
+    },
+    {
+      "heroName": "Electro-Eel",
+      "slug": "electro-eel",
+      "images": [
+        {
+          "filename": "electro-eel.png",
+          "directory": "images",
+          "size": 224915
+        }
+      ]
+    },
+    {
+      "heroName": "Sandman-Sand-Dollar",
+      "slug": "sandman-sand-dollar",
+      "images": [
+        {
+          "filename": "sandman-sand-dollar.png",
+          "directory": "images",
+          "size": 1905849
+        }
+      ]
+    },
+    {
+      "heroName": "Rhino-Rhino",
+      "slug": "rhino-rhino",
+      "images": [
+        {
+          "filename": "rhino-rhino.png",
+          "directory": "images",
+          "size": 1749395
+        }
+      ]
+    },
+    {
+      "heroName": "Mysterio-Mantis",
+      "slug": "mysterio-mantis",
+      "images": [
+        {
+          "filename": "mysterio-mantis.png",
+          "directory": "images",
+          "size": 1671527
+        }
+      ]
+    },
+    {
+      "heroName": "The Vulture-Vulture",
+      "slug": "the-vulture-vulture",
+      "images": [
+        {
+          "filename": "the-vulture-vulture.png",
+          "directory": "images",
+          "size": 1506362
+        }
+      ]
+    },
+    {
+      "heroName": "Kingpin-Killer-Whale",
+      "slug": "kingpin-killer-whale",
+      "images": [
+        {
+          "filename": "kingpin-killer-whale.png",
+          "directory": "images",
+          "size": 1655670
+        }
+      ]
+    },
+    {
+      "heroName": "Bullseye-Bullfrog",
+      "slug": "bullseye-bullfrog",
+      "images": [
+        {
+          "filename": "bullseye-bullfrog.png",
+          "directory": "images",
+          "size": 1374864
+        }
+      ]
+    },
+    {
+      "heroName": "The Purple Man-drill",
+      "slug": "the-purple-man-drill",
+      "images": [
+        {
+          "filename": "the-purple-man-drill.png",
+          "directory": "images",
+          "size": 1719548
+        }
+      ]
+    },
+    {
+      "heroName": "Kang the Kangaroo",
+      "slug": "kang-the-kangaroo",
+      "images": [
+        {
+          "filename": "kang-the-kangaroo.png",
+          "directory": "images",
+          "size": 1416335
+        }
+      ]
+    },
+    {
+      "heroName": "Galactus-Goat",
+      "slug": "galactus-goat",
+      "images": [
+        {
+          "filename": "galactus-goat.png",
+          "directory": "images",
+          "size": 1663917
+        }
+      ]
+    },
+    {
+      "heroName": "The Silver Surfer-Slug",
+      "slug": "the-silver-surfer-slug",
+      "images": [
+        {
+          "filename": "the-silver-surfer-slug.png",
+          "directory": "images",
+          "size": 1508189
+        }
+      ]
+    },
+    {
+      "heroName": "The Human-Fly",
+      "slug": "the-human-fly",
+      "images": [
+        {
+          "filename": "the-human-fly.png",
+          "directory": "images",
+          "size": 1699654
+        }
+      ]
+    },
+    {
+      "heroName": "The Spot-Spotted-Salamander",
+      "slug": "the-spot-spotted-salamander",
+      "images": [
+        {
+          "filename": "the-spot-spotted-salamander.png",
+          "directory": "images",
+          "size": 1115567
+        }
+      ]
+    },
+    {
+      "heroName": "Speedball-Sugar-Glider",
+      "slug": "speedball-sugar-glider",
+      "images": [
+        {
+          "filename": "speedball-sugar-glider.png",
+          "directory": "images",
+          "size": 1700095
+        }
+      ]
+    },
+    {
+      "heroName": "Night-Thrasher-Thrush",
+      "slug": "night-thrasher-thrush",
+      "images": [
+        {
+          "filename": "night-thrasher-thrush.png",
+          "directory": "images",
+          "size": 1194365
+        }
+      ]
+    },
+    {
+      "heroName": "Quasar-Quail",
+      "slug": "quasar-quail",
+      "images": [
+        {
+          "filename": "quasar-quail.png",
+          "directory": "images",
+          "size": 1479833
+        }
+      ]
+    },
+    {
+      "heroName": "Hyperion-Hippo",
+      "slug": "hyperion-hippo",
+      "images": [
+        {
+          "filename": "hyperion-hippo.png",
+          "directory": "images",
+          "size": 1800386
+        }
+      ]
+    },
+    {
+      "heroName": "Nighthawk-Night-Hawk",
+      "slug": "nighthawk-night-hawk",
+      "images": [
+        {
+          "filename": "nighthawk-night-hawk.png",
+          "directory": "images",
+          "size": 1448750
+        }
+      ]
+    },
+    {
+      "heroName": "Power Princess-Poodle",
+      "slug": "power-princess-poodle",
+      "images": [
+        {
+          "filename": "power-princess-poodle.png",
+          "directory": "images",
+          "size": 1823163
+        }
+      ]
+    },
+    {
+      "heroName": "Doctor Spectrum-Spectacled-Bear",
+      "slug": "doctor-spectrum-spectacled-bear",
+      "images": [
+        {
+          "filename": "doctor-spectrum-spectacled-bear.png",
+          "directory": "images",
+          "size": 1396110
+        }
+      ]
+    },
+    {
+      "heroName": "The Beyonder-Beetle",
+      "slug": "the-beyonder-beetle",
+      "images": [
+        {
+          "filename": "the-beyonder-beetle.png",
+          "directory": "images",
+          "size": 1626551
+        }
+      ]
+    },
+    {
+      "heroName": "Molecule Man-Mole",
+      "slug": "molecule-man-mole",
+      "images": [
+        {
+          "filename": "molecule-man-mole.png",
+          "directory": "images",
+          "size": 1747962
+        }
+      ]
+    },
+    {
+      "heroName": "Titania-Tarantula",
+      "slug": "titania-tarantula",
+      "images": [
+        {
+          "filename": "titania-tarantula.png",
+          "directory": "images",
+          "size": 1688670
+        }
+      ]
+    },
+    {
+      "heroName": "Volcana-Vole",
+      "slug": "volcana-vole",
+      "images": [
+        {
+          "filename": "volcana-vole.png",
+          "directory": "images",
+          "size": 1732147
+        }
+      ]
+    },
+    {
+      "heroName": "Klaw-the-Clam",
+      "slug": "klaw-the-clam",
+      "images": [
+        {
+          "filename": "klaw-the-clam.png",
+          "directory": "images",
+          "size": 1705719
+        }
+      ]
+    },
+    {
+      "heroName": "Man-Ape-Ape",
+      "slug": "man-ape-ape",
+      "images": [
+        {
+          "filename": "man-ape-ape.png",
+          "directory": "images",
+          "size": 1736387
+        }
+      ]
+    },
+    {
+      "heroName": "Killmonger-Catfish",
+      "slug": "killmonger-catfish",
+      "images": [
+        {
+          "filename": "killmonger-catfish.png",
+          "directory": "images",
+          "size": 1678233
+        }
+      ]
+    },
+    {
+      "heroName": "Okoye-Okapi",
+      "slug": "okoye-okapi",
+      "images": [
+        {
+          "filename": "okoye-okapi.png",
+          "directory": "images",
+          "size": 1404618
+        }
+      ]
+    },
+    {
+      "heroName": "Shuri-Shrew",
+      "slug": "shuri-shrew",
+      "images": [
+        {
+          "filename": "shuri-shrew.png",
+          "directory": "images",
+          "size": 1571927
+        }
+      ]
+    }
+  ],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Sandmanatee",
+      "slug": "sandmanatee",
       "animalTheme": "Unknown"
     },
     {
@@ -684,68 +2027,8 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
-      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Super-Skrull-Cow",
-      "slug": "super-skrull-cow",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Scorpion-Scorpion",
-      "slug": "scorpion-scorpion",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Agatha Hark-moth",
-      "slug": "agatha-hark-moth",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Ronan the Accuser-Cat",
-      "slug": "ronan-the-accuser-cat",
-      "animalTheme": "Cat"
-    },
-    {
-      "heroName": "Annihilus-Ant",
-      "slug": "annihilus-ant",
-      "animalTheme": "Anteater"
-    },
-    {
-      "heroName": "Magik-arp",
-      "slug": "magik-arp",
-      "animalTheme": "Fish"
-    },
-    {
-      "heroName": "Sunspot-Sunflower",
-      "slug": "sunspot-sunflower",
-      "animalTheme": "Unknown"
-    },
-    {
       "heroName": "Cannonball-Weevil",
       "slug": "cannonball-weevil",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Sersi-Horse",
-      "slug": "sersi-horse",
-      "animalTheme": "Horse"
-    },
-    {
-      "heroName": "Gorr the God-Butcher-Bird",
-      "slug": "gorr-the-god-butcher-bird",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "America Cha-vez-Chinchilla",
-      "slug": "america-cha-vez-chinchilla",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Thena-Newt",
-      "slug": "thena-newt",
       "animalTheme": "Unknown"
     },
     {
@@ -754,89 +2037,14 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Ghost-Goose",
-      "slug": "ghost-goose",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Shuma-Gorath-Starfish",
-      "slug": "shuma-gorath-starfish",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The High Evolutionary-Hedgehog",
-      "slug": "the-high-evolutionary-hedgehog",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Korgi",
-      "slug": "korgi",
-      "animalTheme": "Dog"
-    },
-    {
-      "heroName": "Miek-the-Mite",
-      "slug": "miek-the-mite",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Collector-Cat",
-      "slug": "the-collector-cat",
-      "animalTheme": "Cat"
-    },
-    {
       "heroName": "The Mandarin-Duck",
       "slug": "the-mandarin-duck",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Yelena Belova-Weasel",
-      "slug": "yelena-belova-weasel",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Red Guardian-Bear",
-      "slug": "red-guardian-bear",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Watcher-Wombat",
-      "slug": "the-watcher-wombat",
-      "animalTheme": "Bat"
-    },
-    {
-      "heroName": "Beta Ray Bill-Fish",
-      "slug": "beta-ray-bill-fish",
       "animalTheme": "Unknown"
     },
     {
       "heroName": "Gladiator-Gull",
       "slug": "gladiator-gull",
       "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Firestar-Firefly",
-      "slug": "firestar-firefly",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Cloak-and-Dagger-Flies",
-      "slug": "cloak-and-dagger-flies",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Wonder Man-atee",
-      "slug": "wonder-man-atee",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Tigra-the-Tiger",
-      "slug": "tigra-the-tiger",
-      "animalTheme": "Tiger"
-    },
-    {
-      "heroName": "Morbius the Fruit Bat",
-      "slug": "morbius-the-fruit-bat",
-      "animalTheme": "Bat"
     },
     {
       "heroName": "Werewolf by Night-Woof",
@@ -849,83 +2057,8 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Mephisto-Poodle",
-      "slug": "mephisto-poodle",
-      "animalTheme": "Poodle"
-    },
-    {
-      "heroName": "Blackheart-Ram",
-      "slug": "blackheart-ram",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Leader-Frog",
-      "slug": "the-leader-frog",
-      "animalTheme": "Frog"
-    },
-    {
-      "heroName": "Songbird-Songbird",
-      "slug": "songbird-songbird",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Moon-Giraffe",
-      "slug": "moon-giraffe",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Devil Dino-Dog",
-      "slug": "devil-dino-dog",
-      "animalTheme": "Dog"
-    },
-    {
-      "heroName": "Sasquatch-Sasquatch",
-      "slug": "sasquatch-sasquatch",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Puck-the-Puffin",
-      "slug": "puck-the-puffin",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Northstar-Goose (🦢) & Aurora-Goose",
-      "slug": "northstar-goose-aurora-goose",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Havok-Hare",
-      "slug": "havok-hare",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Polaris-Peacock",
-      "slug": "polaris-peacock",
-      "animalTheme": "Unknown"
-    },
-    {
       "heroName": "Multiple Man-atee",
       "slug": "multiple-man-atee",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Bishop-the-Bison",
-      "slug": "bishop-the-bison",
-      "animalTheme": "Buffalo"
-    },
-    {
-      "heroName": "Cable-the-Capybara",
-      "slug": "cable-the-capybara",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Domino-Dalmatian",
-      "slug": "domino-dalmatian",
-      "animalTheme": "Dog"
-    },
-    {
-      "heroName": "Warpath-Walrus",
-      "slug": "warpath-walrus",
       "animalTheme": "Unknown"
     },
     {
@@ -939,123 +2072,8 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Psylocke-Butterfly",
-      "slug": "psylocke-butterfly",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "X-23-Wolf",
-      "slug": "x-23-wolf",
-      "animalTheme": "Dog"
-    },
-    {
-      "heroName": "The Enchantress-Emu",
-      "slug": "the-enchantress-emu",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Executioner-Elk",
-      "slug": "the-executioner-elk",
-      "animalTheme": "Unknown"
-    },
-    {
       "heroName": "Sif-the-Swan",
       "slug": "sif-the-swan",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Warriors Three-Hogs",
-      "slug": "the-warriors-three-hogs",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Heimdall-the-Heron",
-      "slug": "heimdall-the-heron",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Odin-the-Owl",
-      "slug": "odin-the-owl",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Spider-Woman-Spider",
-      "slug": "spider-woman-spider",
-      "animalTheme": "Spider"
-    },
-    {
-      "heroName": "The Falcon-and-the-Winter-Soldier-Snails",
-      "slug": "the-falcon-and-the-winter-soldier-snails",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "She-Ra-Coon",
-      "slug": "she-ra-coon",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "He-Man-atee",
-      "slug": "he-man-atee",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Skelet-eel",
-      "slug": "skelet-eel",
-      "animalTheme": "Snake"
-    },
-    {
-      "heroName": "Dr. Octopus-Octopus",
-      "slug": "dr-octopus-octopus",
-      "animalTheme": "Octopus"
-    },
-    {
-      "heroName": "The Lizard-Lizard",
-      "slug": "the-lizard-lizard",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Electro-Eel",
-      "slug": "electro-eel",
-      "animalTheme": "Snake"
-    },
-    {
-      "heroName": "Sandman-Sand-Dollar",
-      "slug": "sandman-sand-dollar",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Rhino-Rhino",
-      "slug": "rhino-rhino",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Mysterio-Mantis",
-      "slug": "mysterio-mantis",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Vulture-Vulture",
-      "slug": "the-vulture-vulture",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Kingpin-Killer-Whale",
-      "slug": "kingpin-killer-whale",
-      "animalTheme": "Whale"
-    },
-    {
-      "heroName": "Bullseye-Bullfrog",
-      "slug": "bullseye-bullfrog",
-      "animalTheme": "Frog"
-    },
-    {
-      "heroName": "The Purple Man-drill",
-      "slug": "the-purple-man-drill",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Kang the Kangaroo",
-      "slug": "kang-the-kangaroo",
       "animalTheme": "Unknown"
     },
     {
@@ -1064,116 +2082,41 @@
       "animalTheme": "Unknown"
     },
     {
-      "heroName": "Galactus-Goat",
-      "slug": "galactus-goat",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Silver Surfer-Slug",
-      "slug": "the-silver-surfer-slug",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Human-Fly",
-      "slug": "the-human-fly",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Spot-Spotted-Salamander",
-      "slug": "the-spot-spotted-salamander",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Speedball-Sugar-Glider",
-      "slug": "speedball-sugar-glider",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Night-Thrasher-Thrush",
-      "slug": "night-thrasher-thrush",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Quasar-Quail",
-      "slug": "quasar-quail",
-      "animalTheme": "Canary"
-    },
-    {
-      "heroName": "Hyperion-Hippo",
-      "slug": "hyperion-hippo",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Nighthawk-Night-Hawk",
-      "slug": "nighthawk-night-hawk",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Power Princess-Poodle",
-      "slug": "power-princess-poodle",
-      "animalTheme": "Poodle"
-    },
-    {
       "heroName": "The Whizzer-Whippet",
       "slug": "the-whizzer-whippet",
       "animalTheme": "Dog"
-    },
-    {
-      "heroName": "Doctor Spectrum-Spectacled-Bear",
-      "slug": "doctor-spectrum-spectacled-bear",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "The Beyonder-Beetle",
-      "slug": "the-beyonder-beetle",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Molecule Man-Mole",
-      "slug": "molecule-man-mole",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Titania-Tarantula",
-      "slug": "titania-tarantula",
-      "animalTheme": "Spider"
-    },
-    {
-      "heroName": "Volcana-Vole",
-      "slug": "volcana-vole",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Klaw-the-Clam",
-      "slug": "klaw-the-clam",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Man-Ape-Ape",
-      "slug": "man-ape-ape",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Killmonger-Catfish",
-      "slug": "killmonger-catfish",
-      "animalTheme": "Cat"
-    },
-    {
-      "heroName": "Okoye-Okapi",
-      "slug": "okoye-okapi",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Shuri-Shrew",
-      "slug": "shuri-shrew",
-      "animalTheme": "Unknown"
     }
   ],
   "orphanedImages": [
     {
+      "filename": "Mr-sinister-salmon.jpeg",
+      "directory": "images",
+      "size": 928923
+    },
+    {
+      "filename": "Mr.-sinister-salmon.jpeg",
+      "directory": "images",
+      "size": 928923
+    },
+    {
+      "filename": "Sandmanatee.png",
+      "directory": "images",
+      "size": 1865107
+    },
+    {
       "filename": "batty-batter.jpeg",
       "directory": "images",
       "size": 1766957
+    },
+    {
+      "filename": "blade-the-bat-slayer.jpeg",
+      "directory": "images",
+      "size": 1859504
+    },
+    {
+      "filename": "captain-bulldog.png",
+      "directory": "images",
+      "size": 1925482
     },
     {
       "filename": "captain-canine.jpg",
@@ -1186,6 +2129,11 @@
       "size": 338748
     },
     {
+      "filename": "green-gobblin'.png",
+      "directory": "images",
+      "size": 1533677
+    },
+    {
       "filename": "hulk-a-hopper.png",
       "directory": "images",
       "size": 536332
@@ -1196,6 +2144,11 @@
       "size": 2790699
     },
     {
+      "filename": "loki-lemur.png",
+      "directory": "images",
+      "size": 4394528
+    },
+    {
       "filename": "luke-cage-gorilla.jpeg",
       "directory": "images",
       "size": 2866812
@@ -1204,6 +2157,11 @@
       "filename": "mystique-chameleon .jpeg",
       "directory": "images",
       "size": 2361625
+    },
+    {
+      "filename": "nick-fury.png",
+      "directory": "images",
+      "size": 734522
     },
     {
       "filename": "punisher-pine-cushing.jpeg",
@@ -1219,6 +2177,16 @@
       "filename": "sabertooth-tabby.jpeg",
       "directory": "images",
       "size": 864995
+    },
+    {
+      "filename": "sabreooth-tabby.jpeg",
+      "directory": "images",
+      "size": 864995
+    },
+    {
+      "filename": "than-otter.png",
+      "directory": "images",
+      "size": 1624004
     },
     {
       "filename": "the-thing-turtle.jpeg",
@@ -1240,21 +2208,27 @@
     "🔍 DuperHeroes Image Audit",
     "==========================",
     "📚 Loading heroes database...",
-    "✅ Loaded 194 heroes",
+    "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 44 images",
-    "✅ Found 44 total images",
+    "  images: 209 images",
+    "✅ Found 209 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
-    "Total Heroes: 194",
-    "Total Images: 44",
-    "Heroes with Images: 31 (16%)",
-    "Heroes without Images: 163 (84%)",
-    "Orphaned Images: 13",
-    "Duplicate Images: 0",
+    "Total Heroes: 193",
+    "Total Images: 209",
+    "Heroes with Images: 179 (93%)",
+    "Heroes without Images: 14 (7%)",
+    "Orphaned Images: 23",
+    "Duplicate Images: 7",
     "\n✅ HEROES WITH IMAGES",
     "======================",
+    "  Dum dog (dum-dog)",
+    "    → dum-dog.png (images)",
+    "  Doy dog (doy-dog)",
+    "    → doy-dog.png (images)",
+    "  krazy Koala (krazy-koala)",
+    "    → krazy-koala.png (images)",
     "  Claw cat (claw-cat)",
     "    → claw-cat.jpeg (images)",
     "  Spider-Swinger (spider-swinger)",
@@ -1265,6 +2239,8 @@
     "    → thor-ough-bred.png (images)",
     "  Aqua-Mammal (aqua-mammal)",
     "    → aqua-mammal.jpeg (images)",
+    "  Quicksilver Swimmer (quicksilver-swimmer)",
+    "    → quicksilver-swimmer.png (images)",
     "  Flap McFlappy (flap-mcflappy)",
     "    → flap-mcflappy.jpeg (images)",
     "  Black Panther Paws (black-panther-paws)",
@@ -1277,24 +2253,36 @@
     "    → doctor-strange-topus.jpeg (images)",
     "  Flipper the Flippy (flipper-the-flippy)",
     "    → flipper-the-flippy.jpeg (images)",
+    "  Sabretooth Tabby (sabretooth-tabby)",
+    "    → sabretooth-tabby.png (images)",
     "  Rhino Beetle-Borg (rhino-beetle-borg)",
     "    → rhino-beetle-borg.jpeg (images)",
+    "  Lizard Larry (lizard-larry)",
+    "    → lizard-larry.jpeg (images), lizard-larry.png (images)",
+    "  Venom (venom)",
+    "    → venom.png (images)",
     "  Deadpool Trash-Panda (deadpool-trash-panda)",
     "    → deadpool-trash-panda.jpeg (images)",
     "  Silver Shark (silver-shark)",
     "    → silver-shark.jpeg (images)",
     "  Daredevil Deer (daredevil-deer)",
     "    → daredevil-deer.jpeg (images)",
+    "  Power Primate (power-primate)",
+    "    → power-primate.png (images)",
     "  Iron Fist Cricket (iron-fist-cricket)",
     "    → iron-fist-cricket.jpeg (images)",
     "  Jessica Hop-Jones (jessica-hop-jones)",
     "    → jessica-hop-jones.jpeg (images)",
+    "  Punisher Pine-Cushion (punisher-pine-cushion)",
+    "    → punisher-pine-cushion.png (images)",
     "  Ghost Rider Raccoon (ghost-rider-raccoon)",
     "    → ghost-rider-raccoon.jpeg (images)",
     "  Captain Marvel Cat (captain-marvel-cat)",
     "    → captain-marvel-cat.jpeg (images)",
     "  Storm Breaker Bird (storm-breaker-bird)",
     "    → storm-breaker-bird.jpeg (images)",
+    "  Cyclops Ram (cyclops-ram)",
+    "    → cyclops-ram.jpeg (images), cyclops-ram.png (images)",
     "  Phoenix Dove (phoenix-dove)",
     "    → phoenix-dove.jpeg (images)",
     "  Beast Buffalo (beast-buffalo)",
@@ -1305,6 +2293,10 @@
     "    → gambit-peacock.jpeg (images)",
     "  Magneto Magpie (magneto-magpie)",
     "    → magneto-magpie.jpeg (images)",
+    "  Professor Hoot-X (professor-hoot-x)",
+    "    → professor-hoot-x.png (images)",
+    "  Mystique Chameleon (mystique-chameleon)",
+    "    → mystique-chameleon.png (images)",
     "  Nightcrawler Cricket (nightcrawler-cricket)",
     "    → nightcrawler-cricket.jpeg (images)",
     "  Colossus Rhino (colossus-rhino)",
@@ -1313,358 +2305,366 @@
     "    → iceman-polar-bear.jpeg (images)",
     "  Human Torch-Mander (human-torch-mander)",
     "    → human-torch-mander.jpeg (images)",
+    "  Invisible Octopus-Woman (invisible-octopus-woman)",
+    "    → invisible-octopus-woman.jpeg (images), invisible-octopus-woman.png (images)",
+    "  Thing Turtle (thing-turtle)",
+    "    → thing-turtle.jpeg (images), thing-turtle.png (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
     "    → hawkeye-hawk.jpeg (images)",
     "  Black Widow Spider (black-widow-spider)",
     "    → black-widow-spider.jpeg (images)",
+    "  Nick Furry (nick-furry)",
+    "    → nick-furry.png (images)",
+    "  Ultron Bug (ultron-bug)",
+    "    → ultron-bug.png (images)",
+    "  Doctor Goose (doctor-goose)",
+    "    → doctor-goose.png (images)",
+    "  Green Gobblin' (green-gobblin)",
+    "    → green-gobblin.png (images)",
+    "  Kingpin Penguin (kingpin-penguin)",
+    "    → kingpin-penguin.png (images)",
+    "  Mysterio-fish (mysterio-fish)",
+    "    → mysterio-fish.png (images)",
+    "  Vulture Vulture (vulture-vulture)",
+    "    → vulture-vulture.png (images)",
+    "  Eelectro (eelectro)",
+    "    → eelectro.png (images)",
+    "  Carnage-vorous Plant (carnage-vorous-plant)",
+    "    → carnage-vorous-plant.jpeg (images)",
+    "  A-pork-alypse (a-pork-alypse)",
+    "    → a-pork-alypse.jpeg (images)",
+    "  Mr. Sinister Salmon (mr-sinister-salmon)",
+    "    → mr-sinister-salmon.png (images)",
+    "  Juggernaut-ilus (juggernaut-ilus)",
+    "    → juggernaut-ilus.jpeg (images)",
+    "  Gopher-lactus (gopher-lactus)",
+    "    → gopher-lactus.jpeg (images)",
+    "  Kang the Conger-er (kang-the-conger-er)",
+    "    → kang-the-conger-er.jpeg (images)",
+    "  Task-Mantis (task-mantis)",
+    "    → task-mantis.jpeg (images)",
+    "  Dor-hamster-mmu (dor-hamster-mmu)",
+    "    → dor-hamster-mmu.jpeg (images)",
+    "  Hela-phant (hela-phant)",
+    "    → hela-phant.jpeg (images)",
+    "  The Red Skull-Cap Mushroom (the-red-skull-cap-mushroom)",
+    "    → the-red-skull-cap-mushroom.jpeg (images)",
+    "  Scarlet Finch (scarlet-finch)",
+    "    → scarlet-finch.jpeg (images)",
+    "  The Pigeon (the-pigeon)",
+    "    → the-pigeon.jpeg (images)",
+    "  War Machine-Dog (war-machine-dog)",
+    "    → war-machine-dog.jpeg (images)",
+    "  Blade the Bat (blade-the-bat)",
+    "    → blade-the-bat.jpeg (images), blade-the-bat.png (images)",
+    "  Moon Knight-Owl (moon-knight-owl)",
+    "    → moon-knight-owl.jpeg (images)",
+    "  She-Hulk Sheep (she-hulk-sheep)",
+    "    → she-hulk-sheep.jpeg (images)",
+    "  Nova Corp-gi (nova-corp-gi)",
+    "    → nova-corp-gi.jpeg (images)",
+    "  Adam Warthog (adam-warthog)",
+    "    → adam-warthog.jpeg (images)",
+    "  Ikaris-Canary (ikaris-canary)",
+    "    → ikaris-canary.jpeg (images)",
+    "  Shang-Chimpanzee (shang-chimpanzee)",
+    "    → shang-chimpanzee.jpeg (images), shang-chimpanzee.png (images)",
+    "  Elek-tric Eel (elek-tric-eel)",
+    "    → elek-tric-eel.jpeg (images), elek-tric-eel.png (images)",
+    "  Echo-location Bat (echo-location-bat)",
+    "    → echo-location-bat.png (images)",
+    "  Kate Bishop-Hawk (kate-bishop-hawk)",
+    "    → kate-bishop-hawk.png (images)",
+    "  Miles Mor-rat-les (miles-mor-rat-les)",
+    "    → miles-mor-rat-les.png (images)",
+    "  Ghost-Spider-Goat (ghost-spider-goat)",
+    "    → ghost-spider-goat.png (images)",
+    "  Ms. Marvel-ot (ms-marvel-ot)",
+    "    → ms-marvel-ot.png (images)",
+    "  Squirrel Girl (squirrel-girl)",
+    "    → squirrel-girl.png (images)",
+    "  Groot-A-Saurus (groot-a-saurus)",
+    "    → groot-a-saurus.png (images)",
+    "  Rocket Raccoon (rocket-raccoon)",
+    "    → rocket-raccoon.png (images)",
+    "  Star-Lord Seahorse (star-lord-seahorse)",
+    "    → star-lord-seahorse.png (images)",
+    "  Gamora-affe (gamora-affe)",
+    "    → gamora-affe.png (images)",
+    "  Drax the Destroyer Dung-Beetle (drax-the-destroyer-dung-beetle)",
+    "    → drax-the-destroyer-dung-beetle.png (images)",
+    "  Praying Mantis (praying-mantis)",
+    "    → praying-mantis.png (images)",
+    "  Black Bolt-Weevil (black-bolt-weevil)",
+    "    → black-bolt-weevil.png (images)",
+    "  Medusa-Moth (medusa-moth)",
+    "    → medusa-moth.png (images)",
+    "  Fin Fang Foom-Fly (fin-fang-foom-fly)",
+    "    → fin-fang-foom-fly.png (images)",
+    "  The Sentry-pede (the-sentry-pede)",
+    "    → the-sentry-pede.png (images)",
+    "  She-Venom (she-venom)",
+    "    → she-venom.png (images)",
+    "  The Grandmaster-Cat (the-grandmaster-cat)",
+    "    → the-grandmaster-cat.png (images)",
+    "  Kraven the Hunter-Vark (kraven-the-hunter-vark)",
+    "    → kraven-the-hunter-vark.png (images)",
+    "  Abomination-Ape (abomination-ape)",
+    "    → abomination-ape.png (images)",
+    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
+    "    → modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
+    "  Super-Skrull-Cow (super-skrull-cow)",
+    "    → super-skrull-cow.png (images)",
+    "  Scorpion-Scorpion (scorpion-scorpion)",
+    "    → scorpion-scorpion.png (images)",
+    "  Agatha Hark-moth (agatha-hark-moth)",
+    "    → agatha-hark-moth.png (images)",
+    "  Ronan the Accuser-Cat (ronan-the-accuser-cat)",
+    "    → ronan-the-accuser-cat.png (images)",
+    "  Annihilus-Ant (annihilus-ant)",
+    "    → annihilus-ant.png (images)",
+    "  Magik-arp (magik-arp)",
+    "    → magik-arp.png (images)",
+    "  Sunspot-Sunflower (sunspot-sunflower)",
+    "    → sunspot-sunflower.png (images)",
+    "  Sersi-Horse (sersi-horse)",
+    "    → sersi-horse.png (images)",
+    "  Gorr the God-Butcher-Bird (gorr-the-god-butcher-bird)",
+    "    → gorr-the-god-butcher-bird.png (images)",
+    "  America Cha-vez-Chinchilla (america-cha-vez-chinchilla)",
+    "    → america-cha-vez-chinchilla.png (images)",
+    "  Thena-Newt (thena-newt)",
+    "    → thena-newt.png (images)",
+    "  Ghost-Goose (ghost-goose)",
+    "    → ghost-goose.png (images)",
+    "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
+    "    → shuma-gorath-starfish.png (images)",
+    "  The High Evolutionary-Hedgehog (the-high-evolutionary-hedgehog)",
+    "    → the-high-evolutionary-hedgehog.png (images)",
+    "  Korgi (korgi)",
+    "    → korgi.png (images)",
+    "  Miek-the-Mite (miek-the-mite)",
+    "    → miek-the-mite.png (images)",
+    "  The Collector-Cat (the-collector-cat)",
+    "    → the-collector-cat.png (images)",
+    "  Yelena Belova-Weasel (yelena-belova-weasel)",
+    "    → yelena-belova-weasel.png (images)",
+    "  Red Guardian-Bear (red-guardian-bear)",
+    "    → red-guardian-bear.png (images)",
+    "  The Watcher-Wombat (the-watcher-wombat)",
+    "    → the-watcher-wombat.png (images)",
+    "  Beta Ray Bill-Fish (beta-ray-bill-fish)",
+    "    → beta-ray-bill-fish.png (images)",
+    "  Firestar-Firefly (firestar-firefly)",
+    "    → firestar-firefly.png (images)",
+    "  Cloak-and-Dagger-Flies (cloak-and-dagger-flies)",
+    "    → cloak-and-dagger-flies.png (images)",
+    "  Wonder Man-atee (wonder-man-atee)",
+    "    → wonder-man-atee.png (images)",
+    "  Tigra-the-Tiger (tigra-the-tiger)",
+    "    → tigra-the-tiger.png (images)",
+    "  Morbius the Fruit Bat (morbius-the-fruit-bat)",
+    "    → morbius-the-fruit-bat.png (images)",
+    "  Mephisto-Poodle (mephisto-poodle)",
+    "    → mephisto-poodle.png (images)",
+    "  Blackheart-Ram (blackheart-ram)",
+    "    → blackheart-ram.png (images)",
+    "  The Leader-Frog (the-leader-frog)",
+    "    → the-leader-frog.png (images)",
+    "  Songbird-Songbird (songbird-songbird)",
+    "    → songbird-songbird.png (images)",
+    "  Moon-Giraffe (moon-giraffe)",
+    "    → moon-giraffe.png (images)",
+    "  Devil Dino-Dog (devil-dino-dog)",
+    "    → devil-dino-dog.png (images)",
+    "  Sasquatch-Sasquatch (sasquatch-sasquatch)",
+    "    → sasquatch-sasquatch.png (images)",
+    "  Puck-the-Puffin (puck-the-puffin)",
+    "    → puck-the-puffin.png (images)",
+    "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
+    "    → northstar-goose-aurora-goose.png (images)",
+    "  Havok-Hare (havok-hare)",
+    "    → havok-hare.png (images)",
+    "  Polaris-Peacock (polaris-peacock)",
+    "    → polaris-peacock.png (images)",
+    "  Bishop-the-Bison (bishop-the-bison)",
+    "    → bishop-the-bison.png (images)",
+    "  Cable-the-Capybara (cable-the-capybara)",
+    "    → cable-the-capybara.png (images)",
+    "  Domino-Dalmatian (domino-dalmatian)",
+    "    → domino-dalmatian.png (images)",
+    "  Warpath-Walrus (warpath-walrus)",
+    "    → warpath-walrus.png (images)",
+    "  Psylocke-Butterfly (psylocke-butterfly)",
+    "    → psylocke-butterfly.png (images)",
+    "  X-23-Wolf (x-23-wolf)",
+    "    → x-23-wolf.png (images)",
+    "  The Enchantress-Emu (the-enchantress-emu)",
+    "    → the-enchantress-emu.png (images)",
+    "  The Executioner-Elk (the-executioner-elk)",
+    "    → the-executioner-elk.png (images)",
+    "  The Warriors Three-Hogs (the-warriors-three-hogs)",
+    "    → the-warriors-three-hogs.png (images)",
+    "  Heimdall-the-Heron (heimdall-the-heron)",
+    "    → heimdall-the-heron.png (images)",
+    "  Odin-the-Owl (odin-the-owl)",
+    "    → odin-the-owl.png (images)",
+    "  Spider-Woman-Spider (spider-woman-spider)",
+    "    → spider-woman-spider.png (images)",
+    "  The Falcon-and-the-Winter-Soldier-Snails (the-falcon-and-the-winter-soldier-snails)",
+    "    → the-falcon-and-the-winter-soldier-snails.png (images)",
+    "  She-Ra-Coon (she-ra-coon)",
+    "    → she-ra-coon.png (images)",
+    "  He-Man-atee (he-man-atee)",
+    "    → he-man-atee.png (images)",
+    "  Skelet-eel (skelet-eel)",
+    "    → skelet-eel.png (images)",
+    "  Dr. Octopus-Octopus (dr-octopus-octopus)",
+    "    → dr-octopus-octopus.png (images)",
+    "  The Lizard-Lizard (the-lizard-lizard)",
+    "    → the-lizard-lizard.png (images)",
+    "  Electro-Eel (electro-eel)",
+    "    → electro-eel.png (images)",
+    "  Sandman-Sand-Dollar (sandman-sand-dollar)",
+    "    → sandman-sand-dollar.png (images)",
+    "  Rhino-Rhino (rhino-rhino)",
+    "    → rhino-rhino.png (images)",
+    "  Mysterio-Mantis (mysterio-mantis)",
+    "    → mysterio-mantis.png (images)",
+    "  The Vulture-Vulture (the-vulture-vulture)",
+    "    → the-vulture-vulture.png (images)",
+    "  Kingpin-Killer-Whale (kingpin-killer-whale)",
+    "    → kingpin-killer-whale.png (images)",
+    "  Bullseye-Bullfrog (bullseye-bullfrog)",
+    "    → bullseye-bullfrog.png (images)",
+    "  The Purple Man-drill (the-purple-man-drill)",
+    "    → the-purple-man-drill.png (images)",
+    "  Kang the Kangaroo (kang-the-kangaroo)",
+    "    → kang-the-kangaroo.png (images)",
+    "  Galactus-Goat (galactus-goat)",
+    "    → galactus-goat.png (images)",
+    "  The Silver Surfer-Slug (the-silver-surfer-slug)",
+    "    → the-silver-surfer-slug.png (images)",
+    "  The Human-Fly (the-human-fly)",
+    "    → the-human-fly.png (images)",
+    "  The Spot-Spotted-Salamander (the-spot-spotted-salamander)",
+    "    → the-spot-spotted-salamander.png (images)",
+    "  Speedball-Sugar-Glider (speedball-sugar-glider)",
+    "    → speedball-sugar-glider.png (images)",
+    "  Night-Thrasher-Thrush (night-thrasher-thrush)",
+    "    → night-thrasher-thrush.png (images)",
+    "  Quasar-Quail (quasar-quail)",
+    "    → quasar-quail.png (images)",
+    "  Hyperion-Hippo (hyperion-hippo)",
+    "    → hyperion-hippo.png (images)",
+    "  Nighthawk-Night-Hawk (nighthawk-night-hawk)",
+    "    → nighthawk-night-hawk.png (images)",
+    "  Power Princess-Poodle (power-princess-poodle)",
+    "    → power-princess-poodle.png (images)",
+    "  Doctor Spectrum-Spectacled-Bear (doctor-spectrum-spectacled-bear)",
+    "    → doctor-spectrum-spectacled-bear.png (images)",
+    "  The Beyonder-Beetle (the-beyonder-beetle)",
+    "    → the-beyonder-beetle.png (images)",
+    "  Molecule Man-Mole (molecule-man-mole)",
+    "    → molecule-man-mole.png (images)",
+    "  Titania-Tarantula (titania-tarantula)",
+    "    → titania-tarantula.png (images)",
+    "  Volcana-Vole (volcana-vole)",
+    "    → volcana-vole.png (images)",
+    "  Klaw-the-Clam (klaw-the-clam)",
+    "    → klaw-the-clam.png (images)",
+    "  Man-Ape-Ape (man-ape-ape)",
+    "    → man-ape-ape.png (images)",
+    "  Killmonger-Catfish (killmonger-catfish)",
+    "    → killmonger-catfish.png (images)",
+    "  Okoye-Okapi (okoye-okapi)",
+    "    → okoye-okapi.png (images)",
+    "  Shuri-Shrew (shuri-shrew)",
+    "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Dum dog (dum-dog)",
-    "    → Using emoji fallback: 🐕",
-    "  Doy dog (doy-dog)",
-    "    → Using emoji fallback: 🐩",
-    "  krazy Koala (krazy-koala)",
-    "    → Using emoji fallback: 🐨",
-    "  Quicksilver Swimmer (quicksilver-swimmer)",
-    "    → Using emoji fallback: 🐟",
-    "  Sabretooth Tabby (sabretooth-tabby)",
-    "    → Using emoji fallback: 🐅",
-    "  Lizard Larry (lizard-larry)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Venom (venom)",
-    "    → Using emoji fallback: 🐍",
-    "  Power Primate (power-primate)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Punisher Pine-Cushion (punisher-pine-cushion)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Cyclops Ram (cyclops-ram)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Professor Hoot-X (professor-hoot-x)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Mystique Chameleon (mystique-chameleon)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → Using emoji fallback: 🐙",
-    "  Thing Turtle (thing-turtle)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Nick Furry (nick-furry)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Loki Lemur (loki-lemur)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Ultron Bug (ultron-bug)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Doctor Goose (doctor-goose)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Green Gobblin' (green-gobblin)",
-    "    → Using emoji fallback: 🦅",
-    "  Kingpin Penguin (kingpin-penguin)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Mysterio-fish (mysterio-fish)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Vulture Vulture (vulture-vulture)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "  Sandmanatee (sandmanatee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Eelectro (eelectro)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Carnage-vorous Plant (carnage-vorous-plant)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  A-pork-alypse (a-pork-alypse)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Mr. Sinister Salmon (mr-sinister-salmon)",
-    "    → Using emoji fallback: 🐟",
-    "  Juggernaut-ilus (juggernaut-ilus)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Gopher-lactus (gopher-lactus)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Kang the Conger-er (kang-the-conger-er)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Task-Mantis (task-mantis)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Dor-hamster-mmu (dor-hamster-mmu)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Hela-phant (hela-phant)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Red Skull-Cap Mushroom (the-red-skull-cap-mushroom)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Scarlet Finch (scarlet-finch)",
-    "    → Using emoji fallback: 🐦",
-    "  The Pigeon (the-pigeon)",
-    "    → Using emoji fallback: 🐦",
-    "  War Machine-Dog (war-machine-dog)",
-    "    → Using emoji fallback: 🐕",
-    "  Blade the Bat (blade-the-bat)",
-    "    → Using emoji fallback: 🦇",
-    "  Moon Knight-Owl (moon-knight-owl)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  She-Hulk Sheep (she-hulk-sheep)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Nova Corp-gi (nova-corp-gi)",
-    "    → Using emoji fallback: 🐕",
-    "  Adam Warthog (adam-warthog)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Ikaris-Canary (ikaris-canary)",
-    "    → Using emoji fallback: 🐦",
-    "  Shang-Chimpanzee (shang-chimpanzee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Elek-tric Eel (elek-tric-eel)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Echo-location Bat (echo-location-bat)",
-    "    → Using emoji fallback: 🐱",
-    "  Kate Bishop-Hawk (kate-bishop-hawk)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Miles Mor-rat-les (miles-mor-rat-les)",
-    "    → Using emoji fallback: 🕷️",
-    "  Ghost-Spider-Goat (ghost-spider-goat)",
-    "    → Using emoji fallback: 🕷️",
-    "  Ms. Marvel-ot (ms-marvel-ot)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Squirrel Girl (squirrel-girl)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Groot-A-Saurus (groot-a-saurus)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Rocket Raccoon (rocket-raccoon)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Star-Lord Seahorse (star-lord-seahorse)",
-    "    → Using emoji fallback: 🐴",
-    "  Gamora-affe (gamora-affe)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Drax the Destroyer Dung-Beetle (drax-the-destroyer-dung-beetle)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Praying Mantis (praying-mantis)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Black Bolt-Weevil (black-bolt-weevil)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Medusa-Moth (medusa-moth)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Fin Fang Foom-Fly (fin-fang-foom-fly)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Sentry-pede (the-sentry-pede)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  She-Venom (she-venom)",
-    "    → Using emoji fallback: 🐍",
-    "  The Grandmaster-Cat (the-grandmaster-cat)",
-    "    → Using emoji fallback: 🐱",
-    "  Kraven the Hunter-Vark (kraven-the-hunter-vark)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Abomination-Ape (abomination-ape)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Baron Zebra (baron-zebra)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Super-Skrull-Cow (super-skrull-cow)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Scorpion-Scorpion (scorpion-scorpion)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Agatha Hark-moth (agatha-hark-moth)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Ronan the Accuser-Cat (ronan-the-accuser-cat)",
-    "    → Using emoji fallback: 🐱",
-    "  Annihilus-Ant (annihilus-ant)",
-    "    → Using emoji fallback: 🐜",
-    "  Magik-arp (magik-arp)",
-    "    → Using emoji fallback: 🐟",
-    "  Sunspot-Sunflower (sunspot-sunflower)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "  Cannonball-Weevil (cannonball-weevil)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Sersi-Horse (sersi-horse)",
-    "    → Using emoji fallback: 🐴",
-    "  Gorr the God-Butcher-Bird (gorr-the-god-butcher-bird)",
-    "    → Using emoji fallback: 🐦",
-    "  America Cha-vez-Chinchilla (america-cha-vez-chinchilla)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Thena-Newt (thena-newt)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Ghost-Goose (ghost-goose)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The High Evolutionary-Hedgehog (the-high-evolutionary-hedgehog)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Korgi (korgi)",
-    "    → Using emoji fallback: 🐕",
-    "  Miek-the-Mite (miek-the-mite)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Collector-Cat (the-collector-cat)",
-    "    → Using emoji fallback: 🐱",
     "  The Mandarin-Duck (the-mandarin-duck)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Yelena Belova-Weasel (yelena-belova-weasel)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Red Guardian-Bear (red-guardian-bear)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Watcher-Wombat (the-watcher-wombat)",
-    "    → Using emoji fallback: 🦇",
-    "  Beta Ray Bill-Fish (beta-ray-bill-fish)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Gladiator-Gull (gladiator-gull)",
     "    → Using emoji fallback: 🐦",
-    "  Firestar-Firefly (firestar-firefly)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Cloak-and-Dagger-Flies (cloak-and-dagger-flies)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Wonder Man-atee (wonder-man-atee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Tigra-the-Tiger (tigra-the-tiger)",
-    "    → Using emoji fallback: 🐅",
-    "  Morbius the Fruit Bat (morbius-the-fruit-bat)",
-    "    → Using emoji fallback: 🦇",
     "  Werewolf by Night-Woof (werewolf-by-night-woof)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Man-Thing-Thang (man-thing-thang)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Mephisto-Poodle (mephisto-poodle)",
-    "    → Using emoji fallback: 🐩",
-    "  Blackheart-Ram (blackheart-ram)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Leader-Frog (the-leader-frog)",
-    "    → Using emoji fallback: 🐸",
-    "  Songbird-Songbird (songbird-songbird)",
-    "    → Using emoji fallback: 🐦",
-    "  Moon-Giraffe (moon-giraffe)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Devil Dino-Dog (devil-dino-dog)",
-    "    → Using emoji fallback: 🐕",
-    "  Sasquatch-Sasquatch (sasquatch-sasquatch)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Puck-the-Puffin (puck-the-puffin)",
-    "    → Using emoji fallback: 🐦",
-    "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Havok-Hare (havok-hare)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Polaris-Peacock (polaris-peacock)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "  Multiple Man-atee (multiple-man-atee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Bishop-the-Bison (bishop-the-bison)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Cable-the-Capybara (cable-the-capybara)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Domino-Dalmatian (domino-dalmatian)",
-    "    → Using emoji fallback: 🐕",
-    "  Warpath-Walrus (warpath-walrus)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Shatterstar-fish (shatterstar-fish)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Forge-the-Ferret (forge-the-ferret)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Psylocke-Butterfly (psylocke-butterfly)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  X-23-Wolf (x-23-wolf)",
-    "    → Using emoji fallback: 🐕",
-    "  The Enchantress-Emu (the-enchantress-emu)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Executioner-Elk (the-executioner-elk)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "  Sif-the-Swan (sif-the-swan)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Warriors Three-Hogs (the-warriors-three-hogs)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Heimdall-the-Heron (heimdall-the-heron)",
-    "    → Using emoji fallback: 🐦",
-    "  Odin-the-Owl (odin-the-owl)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Spider-Woman-Spider (spider-woman-spider)",
-    "    → Using emoji fallback: 🕷️",
-    "  The Falcon-and-the-Winter-Soldier-Snails (the-falcon-and-the-winter-soldier-snails)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  She-Ra-Coon (she-ra-coon)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  He-Man-atee (he-man-atee)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Skelet-eel (skelet-eel)",
-    "    → Using emoji fallback: 🐍",
-    "  Dr. Octopus-Octopus (dr-octopus-octopus)",
-    "    → Using emoji fallback: 🐙",
-    "  The Lizard-Lizard (the-lizard-lizard)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Electro-Eel (electro-eel)",
-    "    → Using emoji fallback: 🐍",
-    "  Sandman-Sand-Dollar (sandman-sand-dollar)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Rhino-Rhino (rhino-rhino)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Mysterio-Mantis (mysterio-mantis)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Vulture-Vulture (the-vulture-vulture)",
-    "    → Using emoji fallback: 🐦",
-    "  Kingpin-Killer-Whale (kingpin-killer-whale)",
-    "    → Using emoji fallback: 🐋",
-    "  Bullseye-Bullfrog (bullseye-bullfrog)",
-    "    → Using emoji fallback: 🐸",
-    "  The Purple Man-drill (the-purple-man-drill)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Kang the Kangaroo (kang-the-kangaroo)",
     "    → Using emoji fallback: 🦸‍♂️",
     "  Dr. Doom-Duck (dr-doom-duck)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Galactus-Goat (galactus-goat)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Silver Surfer-Slug (the-silver-surfer-slug)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Human-Fly (the-human-fly)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Spot-Spotted-Salamander (the-spot-spotted-salamander)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Speedball-Sugar-Glider (speedball-sugar-glider)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Night-Thrasher-Thrush (night-thrasher-thrush)",
-    "    → Using emoji fallback: 🐦",
-    "  Quasar-Quail (quasar-quail)",
-    "    → Using emoji fallback: 🐦",
-    "  Hyperion-Hippo (hyperion-hippo)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Nighthawk-Night-Hawk (nighthawk-night-hawk)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Power Princess-Poodle (power-princess-poodle)",
-    "    → Using emoji fallback: 🐩",
     "  The Whizzer-Whippet (the-whizzer-whippet)",
     "    → Using emoji fallback: 🐕",
-    "  Doctor Spectrum-Spectacled-Bear (doctor-spectrum-spectacled-bear)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  The Beyonder-Beetle (the-beyonder-beetle)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Molecule Man-Mole (molecule-man-mole)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Titania-Tarantula (titania-tarantula)",
-    "    → Using emoji fallback: 🕷️",
-    "  Volcana-Vole (volcana-vole)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Klaw-the-Clam (klaw-the-clam)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Man-Ape-Ape (man-ape-ape)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Killmonger-Catfish (killmonger-catfish)",
-    "    → Using emoji fallback: 🐱",
-    "  Okoye-Okapi (okoye-okapi)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Shuri-Shrew (shuri-shrew)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
+    "  Mr-sinister-salmon.jpeg (images) - 907.2 KB",
+    "  Mr.-sinister-salmon.jpeg (images) - 907.2 KB",
+    "  Sandmanatee.png (images) - 1.8 MB",
     "  batty-batter.jpeg (images) - 1.7 MB",
+    "  blade-the-bat-slayer.jpeg (images) - 1.8 MB",
+    "  captain-bulldog.png (images) - 1.8 MB",
     "  captain-canine.jpg (images) - 194 KB",
     "  crimson-koala.png (images) - 330.8 KB",
+    "  green-gobblin'.png (images) - 1.5 MB",
     "  hulk-a-hopper.png (images) - 523.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
+    "  loki-lemur.png (images) - 4.2 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
     "  mystique-chameleon .jpeg (images) - 2.3 MB",
+    "  nick-fury.png (images) - 717.3 KB",
     "  punisher-pine-cushing.jpeg (images) - 828.1 KB",
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
     "  sabertooth-tabby.jpeg (images) - 844.7 KB",
+    "  sabreooth-tabby.jpeg (images) - 844.7 KB",
+    "  than-otter.png (images) - 1.5 MB",
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
     "  venom-snake.jpeg (images) - 575.6 KB",
     "  wolverine-whiskers.png (images) - 7.5 MB",
+    "\n🔄 DUPLICATE IMAGES",
+    "====================",
+    "  Lizard Larry (lizard-larry)",
+    "    → lizard-larry.jpeg (images)",
+    "    → lizard-larry.png (images)",
+    "  Cyclops Ram (cyclops-ram)",
+    "    → cyclops-ram.jpeg (images)",
+    "    → cyclops-ram.png (images)",
+    "  Invisible Octopus-Woman (invisible-octopus-woman)",
+    "    → invisible-octopus-woman.jpeg (images)",
+    "    → invisible-octopus-woman.png (images)",
+    "  Thing Turtle (thing-turtle)",
+    "    → thing-turtle.jpeg (images)",
+    "    → thing-turtle.png (images)",
+    "  Blade the Bat (blade-the-bat)",
+    "    → blade-the-bat.jpeg (images)",
+    "    → blade-the-bat.png (images)",
+    "  Shang-Chimpanzee (shang-chimpanzee)",
+    "    → shang-chimpanzee.jpeg (images)",
+    "    → shang-chimpanzee.png (images)",
+    "  Elek-tric Eel (elek-tric-eel)",
+    "    → elek-tric-eel.jpeg (images)",
+    "    → elek-tric-eel.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 163 heroes missing images",
-    "• Review 13 orphaned images - delete unused or rename to match heroes"
+    "• Create images for 14 heroes missing images",
+    "• Review 23 orphaned images - delete unused or rename to match heroes",
+    "• Resolve 7 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
