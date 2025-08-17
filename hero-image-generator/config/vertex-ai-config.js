@@ -23,7 +23,8 @@ class VertexAIConfig {
             location: this.location
         });
         
-        this.generativeModel = this.vertexAI.getGenerativeModel({
+        // For image generation, we use the preview client
+        this.generativeModel = this.vertexAI.preview.getGenerativeModel({
             model: this.model
         });
     }

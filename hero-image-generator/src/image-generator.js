@@ -180,18 +180,25 @@ class HeroImageGenerator {
             const model = this.vertexAI.getGenerativeModel();
             const params = this.vertexAI.getImageGenerationParams();
             
-            // Prepare the request
+            // Prepare the request for image generation
             const request = {
-                prompt: promptData.prompt,
-                negativePrompt: promptData.negativePrompt,
-                ...params
+                contents: [{
+                    role: 'user',
+                    parts: [{ text: promptData.prompt }]
+                }],
+                generationConfig: {
+                    maxOutputTokens: 2048,
+                    temperature: 0.4,
+                    topK: 32,
+                    topP: 1
+                }
             };
             
             if (this.options.verbose) {
                 this.log(`🔧 Vertex AI request parameters: ${JSON.stringify(params, null, 2)}`);
             }
             
-            // Make the API call
+            // Make the API call for image generation
             const response = await model.generateContent(request);
             
             // Extract image data from response
