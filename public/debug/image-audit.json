@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T00:15:00.436Z",
+  "timestamp": "2025-08-18T00:17:56.401Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
@@ -1019,9 +1019,9 @@
       "slug": "fin-fang-foom-fly",
       "images": [
         {
-          "filename": "fin-fang-foom-fly.png",
+          "filename": "fin-fang-foom-fly.jpeg",
           "directory": "images",
-          "size": 1900462
+          "size": 2590897
         }
       ]
     },
@@ -2450,7 +2450,7 @@
     "  Medusa-Moth (medusa-moth)",
     "    → medusa-moth.png (images)",
     "  Fin Fang Foom-Fly (fin-fang-foom-fly)",
-    "    → fin-fang-foom-fly.png (images)",
+    "    → fin-fang-foom-fly.jpeg (images)",
     "  The Sentry-pede (the-sentry-pede)",
     "    → the-sentry-pede.png (images)",
     "  She-Venom (she-venom)",
