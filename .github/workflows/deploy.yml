@@ -188,10 +188,94 @@ jobs:
             git push origin main
           fi
 
-  deploy:
+  process-images:
     needs: [fetch-heroes, audit-images, generate-images]
-    # Always deploy after all previous jobs complete
+    # Run after image generation to create responsive formats
     if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped'))
+    runs-on: ubuntu-latest
+    outputs:
+      images-processed: ${{ steps.check-processing.outputs.images-processed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main  # Get latest including any new images
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Check if image processing needed
+        id: check-processing
+        run: |
+          # Check if there are any new images that don't have responsive variants
+          echo "Checking for images that need processing..."
+          
+          # Count original images
+          original_count=$(find public/images -maxdepth 1 -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" | wc -l)
+          
+          # Count thumbnail variants (should match original count)
+          thumbnail_count=0
+          if [ -d "public/images/thumbnail" ]; then
+            thumbnail_count=$(find public/images/thumbnail -name "*.jpg" | wc -l)
+          fi
+          
+          echo "Original images: ${original_count}"
+          echo "Thumbnail variants: ${thumbnail_count}"
+          
+          if [ "${original_count}" -gt "${thumbnail_count}" ]; then
+            echo "images-processed=true" >> $GITHUB_OUTPUT
+            echo "Processing needed: ${original_count} original vs ${thumbnail_count} thumbnails"
+          else
+            echo "images-processed=false" >> $GITHUB_OUTPUT
+            echo "No processing needed - all images have variants"
+          fi
+      
+      - name: Generate responsive images
+        if: steps.check-processing.outputs.images-processed == 'true'
+        run: |
+          echo "🖼️  Generating responsive image variants..."
+          npm run images:responsive
+      
+      - name: Convert to WebP format
+        if: steps.check-processing.outputs.images-processed == 'true'
+        run: |
+          echo "🌐 Converting images to WebP format..."
+          npm run images:webp
+      
+      - name: Commit processed images
+        if: steps.check-processing.outputs.images-processed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add public/images/thumbnail/
+          git add public/images/medium/
+          git add public/images/large/
+          if git diff --cached --quiet; then
+            echo "No new processed images to commit"
+          else
+            echo "Committing processed responsive images and WebP variants"
+            git commit -m "🤖 Generate responsive image formats via GitHub Actions
+
+            Automatically generated thumbnail, medium, and large variants plus WebP conversions
+            for any new images added to the repository. This ensures optimal performance
+            across all devices and browsers.
+            
+            🤖 Generated with [Claude Code](https://claude.ai/code)
+            
+            Co-Authored-By: Claude <noreply@anthropic.com>"
+            git push origin main
+          fi
+
+  deploy:
+    needs: [fetch-heroes, audit-images, generate-images, process-images]
+    # Always deploy after all previous jobs complete
+    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped') && (needs.process-images.result == 'success' || needs.process-images.result == 'skipped'))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

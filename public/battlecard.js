@@ -96,10 +96,7 @@ class BattlecardManager {
     // Generate the battlecard HTML
     getBattlecardHTML() {
         const hero = this.currentHero;
-        const heroImage = hero.imagePath 
-            ? `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="battlecard-image" width="150" height="150" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-               <div class="battlecard-emoji" style="display:none;">${this.getAnimalEmoji(hero.animal_theme)}</div>`
-            : `<div class="battlecard-emoji">${this.getAnimalEmoji(hero.animal_theme)}</div>`;
+        const heroImage = this.createResponsiveHeroImage(hero, 'large');
 
         const feedbackBanner = this.isFeedbackMode ? `
             <div class="feedback-banner ${this.feedbackResult.isCorrect ? '' : 'incorrect'}">
@@ -204,6 +201,56 @@ class BattlecardManager {
             'Chipmunk': '🐿️', 'Hedgehog': '🦔'
         };
         return emojiMap[animalTheme] || '🦸‍♂️';
+    }
+
+    // Generate hero slug for file names
+    getHeroSlug(heroName) {
+        return heroName
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '') // Remove special characters except hyphens
+            .replace(/\s+/g, '-') // Replace spaces with hyphens
+            .replace(/-+/g, '-') // Replace multiple hyphens with single
+            .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
+    }
+
+    // Get size configuration
+    getSizeConfig(size) {
+        const configs = {
+            thumbnail: { width: 120, height: 120 },
+            medium: { width: 300, height: 300 },
+            large: { width: 600, height: 600 }
+        };
+        return configs[size] || configs.thumbnail;
+    }
+
+    // Create responsive hero image with progressive loading
+    createResponsiveHeroImage(hero, size = 'large') {
+        const slug = this.getHeroSlug(hero.superhero_name);
+        const emoji = this.getAnimalEmoji(hero.animal_theme);
+        const sizeConfig = this.getSizeConfig(size);
+        const basePath = `./images/${size}/${slug}`;
+        
+        return `
+            <div class="progressive-image hero-image-container hero-${size}">
+                <!-- Placeholder with gradient -->
+                <div class="placeholder"></div>
+                
+                <!-- Actual responsive image -->
+                <picture>
+                    <source data-srcset="${basePath}.webp" type="image/webp">
+                    <img data-src="${basePath}.jpg" 
+                         alt="${hero.superhero_name}" 
+                         class="actual hero-image battlecard-image"
+                         width="${sizeConfig.width}" 
+                         height="${sizeConfig.height}">
+                </picture>
+                
+                <!-- Emoji fallback -->
+                <div class="emoji-fallback">
+                    <span class="emoji">${emoji}</span>
+                </div>
+            </div>
+        `;
     }
 }
 

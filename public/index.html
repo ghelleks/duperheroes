@@ -7,6 +7,7 @@
     <meta name="description" content="Test your knowledge of satirical animal-themed superheroes in this fun identification game!">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="shared.css">
+    <script src="js/advanced-lazy-loading.js"></script>
     <script src="battlecard.js"></script>
     <style>
         /* Game-specific styles only */
@@ -65,13 +66,7 @@
 
 
             getHeroImage(hero) {
-                // Use pre-stored image path from hero data
-                if (hero.imagePath) {
-                    return `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg" width="300" height="300" loading="lazy">`;
-                }
-                
-                // Fallback to emoji if no image path stored
-                return `<div class="hero-image">${this.getAnimalEmoji(hero.animal_theme)}</div>`;
+                return this.createResponsiveHeroImage(hero, 'medium');
             }
 
             getAnimalEmoji(animalTheme) {
@@ -90,6 +85,56 @@
                     'Badger': '🦡', 'Sloth': '🦥'
                 };
                 return emojiMap[animalTheme] || '🦸‍♂️';
+            }
+
+            // Generate hero slug for file names
+            getHeroSlug(heroName) {
+                return heroName
+                    .toLowerCase()
+                    .replace(/[^a-z0-9\s-]/g, '') // Remove special characters except hyphens
+                    .replace(/\s+/g, '-') // Replace spaces with hyphens
+                    .replace(/-+/g, '-') // Replace multiple hyphens with single
+                    .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
+            }
+
+            // Get size configuration
+            getSizeConfig(size) {
+                const configs = {
+                    thumbnail: { width: 120, height: 120 },
+                    medium: { width: 300, height: 300 },
+                    large: { width: 600, height: 600 }
+                };
+                return configs[size] || configs.thumbnail;
+            }
+
+            // Create responsive hero image with progressive loading
+            createResponsiveHeroImage(hero, size = 'medium') {
+                const slug = this.getHeroSlug(hero.superhero_name);
+                const emoji = this.getAnimalEmoji(hero.animal_theme);
+                const sizeConfig = this.getSizeConfig(size);
+                const basePath = `./images/${size}/${slug}`;
+                
+                return `
+                    <div class="progressive-image hero-image-container hero-${size}">
+                        <!-- Placeholder with gradient -->
+                        <div class="placeholder"></div>
+                        
+                        <!-- Actual responsive image -->
+                        <picture>
+                            <source data-srcset="${basePath}.webp" type="image/webp">
+                            <img data-src="${basePath}.jpg" 
+                                 alt="${hero.superhero_name}" 
+                                 class="actual hero-image max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                                 width="${sizeConfig.width}" 
+                                 height="${sizeConfig.height}">
+                        </picture>
+                        
+                        <!-- Emoji fallback -->
+                        <div class="emoji-fallback">
+                            <span class="emoji">${emoji}</span>
+                        </div>
+                    </div>
+                `;
             }
 
             getRandomHero() {

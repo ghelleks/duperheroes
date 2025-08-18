@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="shared.css">
+    <script src="js/advanced-lazy-loading.js"></script>
     <script src="battlecard.js"></script>
     <style>
         body {
@@ -359,12 +360,7 @@
 
                         <!-- Hero Image -->
                         <div class="flex justify-center mb-4">
-                            <img src="${imageUrl}" alt="${hero.superhero_name}" class="hero-image" 
-                                 width="200" height="200" loading="lazy"
-                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="hero-image flex items-center justify-center text-4xl bg-gradient-to-br from-gray-200 to-gray-300 text-gray-600" style="display:none;">
-                                ${emoji}
-                            </div>
+                            ${createResponsiveHeroImage(hero, 'thumbnail')}
                         </div>
 
                         <!-- Hero Name -->
@@ -422,6 +418,56 @@
                 'Poodle': '🐩', 'Anteater': '🐜', 'Sloth': '🦥'
             };
             return emojiMap[animalTheme] || '🦸‍♂️';
+        }
+
+        // Generate hero slug for file names
+        function getHeroSlug(heroName) {
+            return heroName
+                .toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, '') // Remove special characters except hyphens
+                .replace(/\s+/g, '-') // Replace spaces with hyphens
+                .replace(/-+/g, '-') // Replace multiple hyphens with single
+                .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
+        }
+
+        // Get size configuration
+        function getSizeConfig(size) {
+            const configs = {
+                thumbnail: { width: 120, height: 120 },
+                medium: { width: 300, height: 300 },
+                large: { width: 600, height: 600 }
+            };
+            return configs[size] || configs.thumbnail;
+        }
+
+        // Create responsive hero image with progressive loading
+        function createResponsiveHeroImage(hero, size = 'thumbnail') {
+            const slug = getHeroSlug(hero.superhero_name);
+            const emoji = getAnimalEmoji(hero.animal_theme);
+            const sizeConfig = getSizeConfig(size);
+            const basePath = `./images/${size}/${slug}`;
+            
+            return `
+                <div class="progressive-image hero-image-container hero-${size}">
+                    <!-- Placeholder with gradient -->
+                    <div class="placeholder"></div>
+                    
+                    <!-- Actual responsive image -->
+                    <picture>
+                        <source data-srcset="${basePath}.webp" type="image/webp">
+                        <img data-src="${basePath}.jpg" 
+                             alt="${hero.superhero_name}" 
+                             class="actual hero-image"
+                             width="${sizeConfig.width}" 
+                             height="${sizeConfig.height}">
+                    </picture>
+                    
+                    <!-- Emoji fallback -->
+                    <div class="emoji-fallback">
+                        <span class="emoji">${emoji}</span>
+                    </div>
+                </div>
+            `;
         }
 
         // Update statistics
