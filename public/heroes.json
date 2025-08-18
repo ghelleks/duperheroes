@@ -988,7 +988,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Fin Fang Foom",
       "difficulty": "Medium",
-      "imagePath": "./images/fin-fang-foom-fly.png"
+      "imagePath": null
     },
     {
       "superhero_name": "The Sentry-pede",
