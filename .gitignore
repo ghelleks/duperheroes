@@ -25,3 +25,6 @@ coverage/
 
 # Generated audit reports
 audit-report.json
+
+# Playwright working files
+.playwright-mcp/
