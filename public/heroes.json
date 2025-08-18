@@ -284,7 +284,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Punisher",
       "difficulty": "Medium",
-      "imagePath": "./images/punisher-pine-cushion.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Ghost Rider Raccoon",
@@ -1626,7 +1626,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Psylocke",
       "difficulty": "Medium",
-      "imagePath": "./images/psylocke-butterfly.png"
+      "imagePath": "./images/psylocke-butterfly.jpeg"
     },
     {
       "superhero_name": "X-23-Wolf",
