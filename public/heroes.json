@@ -31,7 +31,7 @@
       "animal_theme": "Koala",
       "hero_inspiration": "Red Hulk",
       "difficulty": "Hard",
-      "imagePath": "./images/krazy-koala.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Claw cat",
@@ -845,7 +845,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kate Bishop (Hawkeye)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/kate-bishop-hawk.png"
     },
     {
       "superhero_name": "Miles Mor-rat-les",
