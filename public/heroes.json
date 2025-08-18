@@ -284,7 +284,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "The Punisher",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/punisher-pine-cushion.png"
     },
     {
       "superhero_name": "Ghost Rider Raccoon",
@@ -1208,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": "./images/karnak-the-mantis-shrimp.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Ghost-Goose",
