@@ -12,6 +12,8 @@ This directory contains Architectural Decision Records for the DuperHeroes proje
 - [ADR-006: CDN-Based Styling with Tailwind CSS](./ADR-006-cdn-based-styling.md)
 - [ADR-007: Google Doc Hero Fetcher Integration](./ADR-007-google-doc-hero-fetcher.md)
 - [ADR-008: Debugging System Implementation](./ADR-008-debugging-system-implementation.md)
+- [ADR-009: Image Validation Filtering for Game Quality](./ADR-009-image-validation-filtering.md)
+- [ADR-010: Image Loading Performance Optimization](./ADR-010-image-loading-performance-optimization.md)
 
 ## ADR Template
 
