@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T17:22:58.196Z",
+  "timestamp": "2025-08-18T17:29:35.299Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 208,
+    "totalImages": 206,
     "heroesWithImages": 189,
     "heroesWithoutImages": 1,
-    "orphanedImages": 19,
+    "orphanedImages": 17,
     "duplicateImages": 0
   },
   "heroesWithImages": [
@@ -282,6 +282,17 @@
           "filename": "jessica-hop-jones.jpeg",
           "directory": "images",
           "size": 1898782
+        }
+      ]
+    },
+    {
+      "heroName": "Punisher Pine-Cushion",
+      "slug": "punisher-pine-cushion",
+      "images": [
+        {
+          "filename": "punisher-pine-cushion.png",
+          "directory": "images",
+          "size": 1691598
         }
       ]
     },
@@ -1199,17 +1210,6 @@
       ]
     },
     {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "images": [
-        {
-          "filename": "karnak-the-mantis-shrimp.png",
-          "directory": "images",
-          "size": 1579349
-        }
-      ]
-    },
-    {
       "heroName": "Ghost-Goose",
       "slug": "ghost-goose",
       "images": [
@@ -2092,8 +2092,8 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Punisher Pine-Cushion",
-      "slug": "punisher-pine-cushion",
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
       "animalTheme": "Unknown"
     }
   ],
@@ -2154,19 +2154,9 @@
       "size": 2500070
     },
     {
-      "filename": "sabertooth-tabby.jpeg",
-      "directory": "images",
-      "size": 864995
-    },
-    {
       "filename": "sabreooth-tabby.jpeg",
       "directory": "images",
       "size": 864995
-    },
-    {
-      "filename": "she-ra-coon.png",
-      "directory": "images",
-      "size": 1431713
     },
     {
       "filename": "skelet-eel.png",
@@ -2200,16 +2190,16 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 208 images",
-    "✅ Found 208 total images",
+    "  images: 206 images",
+    "✅ Found 206 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 208",
+    "Total Images: 206",
     "Heroes with Images: 189 (99%)",
     "Heroes without Images: 1 (1%)",
-    "Orphaned Images: 19",
+    "Orphaned Images: 17",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2263,6 +2253,8 @@
     "    → iron-fist-cricket.jpeg (images)",
     "  Jessica Hop-Jones (jessica-hop-jones)",
     "    → jessica-hop-jones.jpeg (images)",
+    "  Punisher Pine-Cushion (punisher-pine-cushion)",
+    "    → punisher-pine-cushion.png (images)",
     "  Ghost Rider Raccoon (ghost-rider-raccoon)",
     "    → ghost-rider-raccoon.jpeg (images)",
     "  Captain Marvel Cat (captain-marvel-cat)",
@@ -2429,8 +2421,6 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2593,7 +2583,7 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Punisher Pine-Cushion (punisher-pine-cushion)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
     "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
@@ -2609,9 +2599,7 @@
     "  mystique-chameleon .jpeg (images) - 2.3 MB",
     "  punisher-pine-cushing.jpeg (images) - 828.1 KB",
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
-    "  sabertooth-tabby.jpeg (images) - 844.7 KB",
     "  sabreooth-tabby.jpeg (images) - 844.7 KB",
-    "  she-ra-coon.png (images) - 1.4 MB",
     "  skelet-eel.png (images) - 1.5 MB",
     "  than-otter.png (images) - 1.5 MB",
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
@@ -2620,7 +2608,7 @@
     "\n💡 RECOMMENDATIONS",
     "==================",
     "• Create images for 1 heroes missing images",
-    "• Review 19 orphaned images - delete unused or rename to match heroes"
+    "• Review 17 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
   "imageDirectories": [
