@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T01:46:53.018Z",
+  "timestamp": "2025-08-18T02:03:36.607Z",
   "status": "success",
   "stats": {
     "totalHeroes": 191,
@@ -1987,9 +1987,9 @@
       "slug": "hyperion-hippo",
       "images": [
         {
-          "filename": "hyperion-hippo.png",
+          "filename": "hyperion-hippo.jpeg",
           "directory": "images",
-          "size": 1800386
+          "size": 1953399
         }
       ]
     },
@@ -2599,7 +2599,7 @@
     "  Quasar-Quail (quasar-quail)",
     "    → quasar-quail.png (images)",
     "  Hyperion-Hippo (hyperion-hippo)",
-    "    → hyperion-hippo.png (images)",
+    "    → hyperion-hippo.jpeg (images)",
     "  Nighthawk-Night-Hawk (nighthawk-night-hawk)",
     "    → nighthawk-night-hawk.png (images)",
     "  Power Princess-Poodle (power-princess-poodle)",
