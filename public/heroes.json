@@ -944,7 +944,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Drax the Destroyer",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/drax-the-destroyer-dung-beetle.png"
     },
     {
       "superhero_name": "Praying Mantis",
