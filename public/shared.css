@@ -230,6 +230,10 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    /* Performance optimizations */
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .alphabet-nav {
