@@ -405,7 +405,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Mystique",
       "difficulty": "Hard",
-      "imagePath": "./images/mystique-chameleon.png"
+      "imagePath": "./images/mystique-chameleon.jpeg"
     },
     {
       "superhero_name": "Nightcrawler Cricket",
@@ -1208,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/karnak-the-mantis-shrimp.png"
     },
     {
       "superhero_name": "Ghost-Goose",
