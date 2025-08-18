@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T00:52:11.370Z",
+  "timestamp": "2025-08-18T00:54:52.416Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 214,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
+    "totalImages": 215,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
     "orphanedImages": 17,
     "duplicateImages": 5
   },
@@ -923,6 +923,17 @@
           "filename": "squirrel-girl.png",
           "directory": "images",
           "size": 1771180
+        }
+      ]
+    },
+    {
+      "heroName": "Groot-A-Saurus",
+      "slug": "groot-a-saurus",
+      "images": [
+        {
+          "filename": "groot-a-saurus.jpeg",
+          "directory": "images",
+          "size": 1301046
         }
       ]
     },
@@ -2148,13 +2159,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Groot-A-Saurus",
-      "slug": "groot-a-saurus",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2248,15 +2253,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 214 images",
-    "✅ Found 214 total images",
+    "  images: 215 images",
+    "✅ Found 215 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 214",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Total Images: 215",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 17",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
@@ -2423,6 +2428,8 @@
     "    → ms-marvel-ot.png (images)",
     "  Squirrel Girl (squirrel-girl)",
     "    → squirrel-girl.png (images)",
+    "  Groot-A-Saurus (groot-a-saurus)",
+    "    → groot-a-saurus.jpeg (images)",
     "  Rocket Raccoon (rocket-raccoon)",
     "    → rocket-raccoon.png (images)",
     "  Star-Lord Seahorse (star-lord-seahorse)",
@@ -2645,10 +2652,6 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Groot-A-Saurus (groot-a-saurus)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2688,7 +2691,6 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 17 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
