@@ -179,6 +179,13 @@ class VertexAIConfig {
      * Verify that we're using the correct gcloud account
      */
     async verifyGcloudAccount() {
+        // Skip account verification if no required account is specified (for CI/service accounts)
+        const requiredAccount = process.env.REQUIRED_GCLOUD_ACCOUNT;
+        if (!requiredAccount || requiredAccount.trim() === '') {
+            console.log('⏭️  Skipping gcloud account verification (running with service account)');
+            return;
+        }
+        
         const { spawn } = require('child_process');
         
         return new Promise((resolve, reject) => {
@@ -192,7 +199,6 @@ class VertexAIConfig {
             gcloud.on('close', (code) => {
                 if (code === 0) {
                     const activeAccount = output.trim();
-                    const requiredAccount = process.env.REQUIRED_GCLOUD_ACCOUNT || 'gunnar@hellekson.com';
                     
                     if (activeAccount === requiredAccount) {
                         console.log(`✅ Verified gcloud account: ${activeAccount}`);
