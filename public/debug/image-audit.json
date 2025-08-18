@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T00:37:29.947Z",
+  "timestamp": "2025-08-18T00:41:08.322Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 215,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
+    "totalImages": 216,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
     "orphanedImages": 18,
     "duplicateImages": 5
   },
@@ -956,6 +956,17 @@
           "filename": "star-lord-seahorse.png",
           "directory": "images",
           "size": 1566763
+        }
+      ]
+    },
+    {
+      "heroName": "Gamora-affe",
+      "slug": "gamora-affe",
+      "images": [
+        {
+          "filename": "gamora-affe.jpeg",
+          "directory": "images",
+          "size": 1828547
         }
       ]
     },
@@ -2148,13 +2159,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Gamora-affe",
-      "slug": "gamora-affe",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2253,15 +2258,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 215 images",
-    "✅ Found 215 total images",
+    "  images: 216 images",
+    "✅ Found 216 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 215",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Total Images: 216",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 18",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
@@ -2434,6 +2439,8 @@
     "    → rocket-raccoon.png (images)",
     "  Star-Lord Seahorse (star-lord-seahorse)",
     "    → star-lord-seahorse.png (images)",
+    "  Gamora-affe (gamora-affe)",
+    "    → gamora-affe.jpeg (images)",
     "  Drax the Destroyer Dung-Beetle (drax-the-destroyer-dung-beetle)",
     "    → drax-the-destroyer-dung-beetle.png (images)",
     "  Praying Mantis (praying-mantis)",
@@ -2650,10 +2657,6 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Gamora-affe (gamora-affe)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2694,7 +2697,6 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 18 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
