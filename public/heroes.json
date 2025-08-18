@@ -900,7 +900,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Groot",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/groot-a-saurus.jpeg"
     },
     {
       "superhero_name": "Rocket Raccoon",
