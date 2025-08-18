@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T00:45:35.256Z",
+  "timestamp": "2025-08-18T00:47:49.429Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
     "totalImages": 215,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
-    "orphanedImages": 18,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
+    "orphanedImages": 17,
     "duplicateImages": 5
   },
   "heroesWithImages": [
@@ -1246,6 +1246,17 @@
       ]
     },
     {
+      "heroName": "Ghost-Goose",
+      "slug": "ghost-goose",
+      "images": [
+        {
+          "filename": "ghost-goose.png",
+          "directory": "images",
+          "size": 146196
+        }
+      ]
+    },
+    {
       "heroName": "Shuma-Gorath-Starfish",
       "slug": "shuma-gorath-starfish",
       "images": [
@@ -2148,13 +2159,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Ghost-Goose",
-      "slug": "ghost-goose",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2170,11 +2175,6 @@
       "filename": "crimson-koala.png",
       "directory": "images",
       "size": 338748
-    },
-    {
-      "filename": "green-gobblin'.png",
-      "directory": "images",
-      "size": 1533677
     },
     {
       "filename": "hulk-a-hopper.png",
@@ -2260,9 +2260,9 @@
     "================",
     "Total Heroes: 193",
     "Total Images: 215",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
-    "Orphaned Images: 18",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
+    "Orphaned Images: 17",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2486,6 +2486,8 @@
     "    → thena-newt.png (images)",
     "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
     "    → karnak-the-mantis-shrimp.png (images)",
+    "  Ghost-Goose (ghost-goose)",
+    "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
     "    → shuma-gorath-starfish.png (images)",
     "  The High Evolutionary-Hedgehog (the-high-evolutionary-hedgehog)",
@@ -2650,17 +2652,12 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Ghost-Goose (ghost-goose)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
     "  batty-batter.jpeg (images) - 1.7 MB",
     "  captain-bulldog.png (images) - 1.8 MB",
     "  crimson-koala.png (images) - 330.8 KB",
-    "  green-gobblin'.png (images) - 1.5 MB",
     "  hulk-a-hopper.png (images) - 523.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
     "  loki-lemur.png (images) - 4.2 MB",
@@ -2694,8 +2691,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
-    "• Review 18 orphaned images - delete unused or rename to match heroes",
+    "• Review 17 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
   "error": null,
