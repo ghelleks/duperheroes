@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T14:05:49.631Z",
+  "timestamp": "2025-08-18T14:16:56.116Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 210,
-    "heroesWithImages": 188,
-    "heroesWithoutImages": 2,
+    "totalImages": 211,
+    "heroesWithImages": 189,
+    "heroesWithoutImages": 1,
     "orphanedImages": 19,
     "duplicateImages": 3
   },
@@ -29,6 +29,17 @@
           "filename": "doy-dog.jpeg",
           "directory": "images",
           "size": 1959615
+        }
+      ]
+    },
+    {
+      "heroName": "krazy Koala",
+      "slug": "krazy-koala",
+      "images": [
+        {
+          "filename": "krazy-koala.png",
+          "directory": "images",
+          "size": 1701296
         }
       ]
     },
@@ -1071,17 +1082,6 @@
       ]
     },
     {
-      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
-      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
-      "images": [
-        {
-          "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.png",
-          "directory": "images",
-          "size": 1527615
-        }
-      ]
-    },
-    {
       "heroName": "Super-Skrull-Cow",
       "slug": "super-skrull-cow",
       "images": [
@@ -1210,6 +1210,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1605930
         }
       ]
     },
@@ -2096,13 +2107,8 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "krazy Koala",
-      "slug": "krazy-koala",
-      "animalTheme": "Koala"
-    },
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
+      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
+      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
       "animalTheme": "Unknown"
     }
   ],
@@ -2209,15 +2215,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 210 images",
-    "✅ Found 210 total images",
+    "  images: 211 images",
+    "✅ Found 211 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 210",
-    "Heroes with Images: 188 (99%)",
-    "Heroes without Images: 2 (1%)",
+    "Total Images: 211",
+    "Heroes with Images: 189 (99%)",
+    "Heroes without Images: 1 (1%)",
     "Orphaned Images: 19",
     "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
@@ -2226,6 +2232,8 @@
     "    → dum-dog.jpeg (images)",
     "  Doy dog (doy-dog)",
     "    → doy-dog.jpeg (images)",
+    "  krazy Koala (krazy-koala)",
+    "    → krazy-koala.png (images)",
     "  Claw cat (claw-cat)",
     "    → claw-cat.jpeg (images)",
     "  Spider-Swinger (spider-swinger)",
@@ -2412,8 +2420,6 @@
     "    → abomination-ape.png (images)",
     "  Baron Zebra (baron-zebra)",
     "    → baron-zebra.png (images)",
-    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
-    "    → modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
     "  Super-Skrull-Cow (super-skrull-cow)",
     "    → super-skrull-cow.png (images)",
     "  Scorpion-Scorpion (scorpion-scorpion)",
@@ -2438,6 +2444,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2600,9 +2608,7 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  krazy Koala (krazy-koala)",
-    "    → Using emoji fallback: 🐨",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
     "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
@@ -2639,7 +2645,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 2 heroes missing images",
+    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
     "• Resolve 3 heroes with multiple images - choose primary image"
   ],
