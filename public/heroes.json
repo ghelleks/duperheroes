@@ -405,7 +405,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Mystique",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/mystique-chameleon.png"
     },
     {
       "superhero_name": "Nightcrawler Cricket",
@@ -878,7 +878,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ms. Marvel (Kamala Khan)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ms-marvel-ot.png"
     },
     {
       "superhero_name": "Squirrel Girl",
