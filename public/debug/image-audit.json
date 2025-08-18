@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T15:16:04.849Z",
+  "timestamp": "2025-08-18T15:39:24.909Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
     "totalImages": 212,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 0,
+    "heroesWithImages": 189,
+    "heroesWithoutImages": 1,
     "orphanedImages": 19,
-    "duplicateImages": 3
+    "duplicateImages": 4
   },
   "heroesWithImages": [
     {
@@ -337,11 +337,6 @@
           "filename": "cyclops-ram.jpeg",
           "directory": "images",
           "size": 2155548
-        },
-        {
-          "filename": "cyclops-ram.png",
-          "directory": "images",
-          "size": 4139722
         }
       ]
     },
@@ -418,7 +413,7 @@
         {
           "filename": "mystique-chameleon.png",
           "directory": "images",
-          "size": 1834467
+          "size": 1737449
         }
       ]
     },
@@ -901,7 +896,7 @@
         {
           "filename": "ms-marvel-ot.png",
           "directory": "images",
-          "size": 1652022
+          "size": 1271458
         }
       ]
     },
@@ -1225,17 +1220,6 @@
       ]
     },
     {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "images": [
-        {
-          "filename": "karnak-the-mantis-shrimp.png",
-          "directory": "images",
-          "size": 1605930
-        }
-      ]
-    },
-    {
       "heroName": "Ghost-Goose",
       "slug": "ghost-goose",
       "images": [
@@ -1536,6 +1520,11 @@
       "heroName": "Northstar-Goose (🦢) & Aurora-Goose",
       "slug": "northstar-goose-aurora-goose",
       "images": [
+        {
+          "filename": "northstar-goose-aurora-goose.jpeg",
+          "directory": "images",
+          "size": 1580448
+        },
         {
           "filename": "northstar-goose-aurora-goose.png",
           "directory": "images",
@@ -2098,6 +2087,11 @@
       "slug": "okoye-okapi",
       "images": [
         {
+          "filename": "okoye-okapi.jpeg",
+          "directory": "images",
+          "size": 2229235
+        },
+        {
           "filename": "okoye-okapi.png",
           "directory": "images",
           "size": 1404618
@@ -2116,7 +2110,13 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "animalTheme": "Unknown"
+    }
+  ],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2227,10 +2227,10 @@
     "================",
     "Total Heroes: 190",
     "Total Images: 212",
-    "Heroes with Images: 190 (100%)",
-    "Heroes without Images: 0 (0%)",
+    "Heroes with Images: 189 (99%)",
+    "Heroes without Images: 1 (1%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 3",
+    "Duplicate Images: 4",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2292,7 +2292,7 @@
     "  Storm Breaker Bird (storm-breaker-bird)",
     "    → storm-breaker-bird.jpeg (images)",
     "  Cyclops Ram (cyclops-ram)",
-    "    → cyclops-ram.jpeg (images), cyclops-ram.png (images)",
+    "    → cyclops-ram.jpeg (images)",
     "  Phoenix Dove (phoenix-dove)",
     "    → phoenix-dove.jpeg (images)",
     "  Beast Buffalo (beast-buffalo)",
@@ -2451,8 +2451,6 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2508,7 +2506,7 @@
     "  Puck-the-Puffin (puck-the-puffin)",
     "    → puck-the-puffin.png (images)",
     "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
-    "    → northstar-goose-aurora-goose.png (images)",
+    "    → northstar-goose-aurora-goose.jpeg (images), northstar-goose-aurora-goose.png (images)",
     "  Havok-Hare (havok-hare)",
     "    → havok-hare.png (images)",
     "  Polaris-Peacock (polaris-peacock)",
@@ -2610,9 +2608,13 @@
     "  Killmonger-Catfish (killmonger-catfish)",
     "    → killmonger-catfish.png (images)",
     "  Okoye-Okapi (okoye-okapi)",
-    "    → okoye-okapi.png (images)",
+    "    → okoye-okapi.jpeg (images), okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2637,19 +2639,23 @@
     "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n🔄 DUPLICATE IMAGES",
     "====================",
-    "  Cyclops Ram (cyclops-ram)",
-    "    → cyclops-ram.jpeg (images)",
-    "    → cyclops-ram.png (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "    → thing-turtle.png (images)",
     "  Shang-Chimpanzee (shang-chimpanzee)",
     "    → shang-chimpanzee.jpeg (images)",
     "    → shang-chimpanzee.png (images)",
+    "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
+    "    → northstar-goose-aurora-goose.jpeg (images)",
+    "    → northstar-goose-aurora-goose.png (images)",
+    "  Okoye-Okapi (okoye-okapi)",
+    "    → okoye-okapi.jpeg (images)",
+    "    → okoye-okapi.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
+    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 3 heroes with multiple images - choose primary image"
+    "• Resolve 4 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
