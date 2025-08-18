@@ -69,6 +69,34 @@
                 return this.createResponsiveHeroImage(hero, 'medium');
             }
 
+            // Enhanced image loading with multiple format support
+            createImageWithFallbacks(hero, size = 'medium') {
+                const slug = this.getHeroSlug(hero.superhero_name);
+                const emoji = this.getAnimalEmoji(hero.animal_theme);
+                const sizeConfig = this.getSizeConfig(size);
+                const paths = this.getPreferredImagePath(slug, size);
+                
+                // Create img element with multiple source fallbacks
+                const img = document.createElement('img');
+                img.alt = hero.superhero_name;
+                img.className = 'actual hero-image max-w-full max-h-full object-contain rounded-lg shadow-lg';
+                img.width = sizeConfig.width;
+                img.height = sizeConfig.height;
+                
+                // Try JPEG first, then PNG fallback for root directory
+                if (size !== 'medium' && size !== 'thumbnail' && paths.pngFallback) {
+                    img.onerror = function() {
+                        if (this.src.endsWith('.jpeg')) {
+                            this.src = paths.pngFallback;
+                            this.onerror = null; // Prevent infinite loop
+                        }
+                    };
+                }
+                
+                img.src = paths.fallback;
+                return img;
+            }
+
             getAnimalEmoji(animalTheme) {
                 const emojiMap = {
                     'Dog': '🐕', 'Poodle': '🐩', 'Frog': '🐸', 'Koala': '🐨',
@@ -112,7 +140,7 @@
                 const slug = this.getHeroSlug(hero.superhero_name);
                 const emoji = this.getAnimalEmoji(hero.animal_theme);
                 const sizeConfig = this.getSizeConfig(size);
-                const basePath = `./images/${size}/${slug}`;
+                const preferredImagePath = this.getPreferredImagePath(slug, size);
                 
                 return `
                     <div class="progressive-image hero-image-container hero-${size}">
@@ -121,8 +149,8 @@
                         
                         <!-- Actual responsive image -->
                         <picture>
-                            <source data-srcset="${basePath}.webp" type="image/webp">
-                            <img data-src="${basePath}.jpg" 
+                            <source data-srcset="${preferredImagePath.webp}" type="image/webp">
+                            <img data-src="${preferredImagePath.fallback}" 
                                  alt="${hero.superhero_name}" 
                                  class="actual hero-image max-w-full max-h-full object-contain rounded-lg shadow-lg"
                                  width="${sizeConfig.width}" 
@@ -135,6 +163,27 @@
                         </div>
                     </div>
                 `;
+            }
+
+            // Get preferred image path with JPEG preference rule
+            getPreferredImagePath(slug, size = 'medium') {
+                const basePath = `./images/${size}/${slug}`;
+                
+                // For responsive directories (medium/thumbnail), use .jpg as they're already optimized
+                if (size === 'medium' || size === 'thumbnail') {
+                    return {
+                        webp: `${basePath}.webp`,
+                        fallback: `${basePath}.jpg`
+                    };
+                }
+                
+                // For root directory, prefer .jpeg over .png when both might exist
+                // This implements ADR-011: JPEG File Preference Rule
+                return {
+                    webp: `${basePath}.webp`, // WebP might not exist in root, but browser will handle gracefully
+                    fallback: `${basePath}.jpeg`, // Prefer .jpeg for root directory images
+                    pngFallback: `${basePath}.png` // Keep PNG as secondary fallback for legacy support
+                };
             }
 
             getRandomHero() {

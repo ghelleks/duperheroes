@@ -8,6 +8,11 @@ const path = require('path');
  * 
  * Compares the heroes database with available images and provides
  * comprehensive reporting on image coverage and orphaned files.
+ * 
+ * Implements ADR-011: JPEG File Preference Rule
+ * - Prefers JPEG over PNG files
+ * - Identifies duplicate format issues
+ * - Suggests cleanup actions
  */
 
 // Configuration
@@ -159,12 +164,25 @@ function performAudit() {
                 images: matchingImages
             });
             
-            // Check for duplicates
+            // Check for duplicates and format preferences
             if (matchingImages.length > 1) {
+                const hasJpeg = matchingImages.some(img => img.extension === 'jpeg');
+                const hasPng = matchingImages.some(img => img.extension === 'png');
+                const hasJpg = matchingImages.some(img => img.extension === 'jpg');
+                
                 auditResults.duplicateImages.push({
                     hero: hero,
                     slug: slug,
-                    images: matchingImages
+                    images: matchingImages,
+                    formatIssue: {
+                        hasJpeg,
+                        hasPng,
+                        hasJpg,
+                        violatesJpegRule: hasJpeg && (hasPng || hasJpg),
+                        recommendedAction: hasJpeg && hasPng ? 'Remove PNG files' : 
+                                         hasJpeg && hasJpg ? 'Remove JPG files' : 
+                                         hasJpg && hasPng ? 'Remove PNG files' : 'Review naming'
+                    }
                 });
             }
             
@@ -240,14 +258,21 @@ function displayReport(auditResults) {
         }
     }
     
-    // Duplicate images
+    // Duplicate images with JPEG preference analysis
     if (duplicateImages.length > 0) {
-        console.log('\n🔄 DUPLICATE IMAGES');
-        console.log('====================');
+        console.log('\n🔄 DUPLICATE IMAGES & FORMAT ISSUES');
+        console.log('====================================');
         for (const item of duplicateImages) {
             console.log(`  ${item.hero.superhero_name} (${item.slug})`);
             for (const image of item.images) {
-                console.log(`    → ${image.filename} (${image.directory})`);
+                const preferredMark = item.formatIssue.violatesJpegRule ? 
+                    (image.extension === 'jpeg' ? ' ✅ KEEP' : 
+                     image.extension === 'png' && item.formatIssue.hasJpeg ? ' ❌ REMOVE' :
+                     image.extension === 'jpg' && item.formatIssue.hasJpeg ? ' ❌ REMOVE' : '') : '';
+                console.log(`    → ${image.filename} (${image.directory})${preferredMark}`);
+            }
+            if (item.formatIssue.violatesJpegRule) {
+                console.log(`    💡 Action: ${item.formatIssue.recommendedAction}`);
             }
         }
     }
@@ -265,7 +290,11 @@ function displayReport(auditResults) {
     }
     
     if (stats.duplicateImages > 0) {
+        const jpegViolations = duplicateImages.filter(item => item.formatIssue.violatesJpegRule).length;
         console.log(`• Resolve ${stats.duplicateImages} heroes with multiple images - choose primary image`);
+        if (jpegViolations > 0) {
+            console.log(`• Fix ${jpegViolations} JPEG preference rule violations - run cleanup script`);
+        }
     }
     
     if (stats.heroesWithImages === stats.totalHeroes && stats.orphanedImages === 0) {

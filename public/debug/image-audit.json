@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T16:09:43.564Z",
+  "timestamp": "2025-08-18T17:07:35.137Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 212,
+    "totalImages": 209,
     "heroesWithImages": 190,
     "heroesWithoutImages": 0,
     "orphanedImages": 19,
-    "duplicateImages": 3
+    "duplicateImages": 0
   },
   "heroesWithImages": [
     {
@@ -480,11 +480,6 @@
           "filename": "thing-turtle.jpeg",
           "directory": "images",
           "size": 2842498
-        },
-        {
-          "filename": "thing-turtle.png",
-          "directory": "images",
-          "size": 4035744
         }
       ]
     },
@@ -826,11 +821,6 @@
           "filename": "shang-chimpanzee.jpeg",
           "directory": "images",
           "size": 2455526
-        },
-        {
-          "filename": "shang-chimpanzee.png",
-          "directory": "images",
-          "size": 1660385
         }
       ]
     },
@@ -1535,11 +1525,6 @@
           "filename": "northstar-goose-aurora-goose.jpeg",
           "directory": "images",
           "size": 1580448
-        },
-        {
-          "filename": "northstar-goose-aurora-goose.png",
-          "directory": "images",
-          "size": 1602192
         }
       ]
     },
@@ -2220,17 +2205,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 212 images",
-    "✅ Found 212 total images",
+    "  images: 209 images",
+    "✅ Found 209 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 212",
+    "Total Images: 209",
     "Heroes with Images: 190 (100%)",
     "Heroes without Images: 0 (0%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 3",
+    "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2318,7 +2303,7 @@
     "  Invisible Octopus-Woman (invisible-octopus-woman)",
     "    → invisible-octopus-woman.jpeg (images)",
     "  Thing Turtle (thing-turtle)",
-    "    → thing-turtle.jpeg (images), thing-turtle.png (images)",
+    "    → thing-turtle.jpeg (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
     "    → hawkeye-hawk.jpeg (images)",
     "  Black Widow Spider (black-widow-spider)",
@@ -2380,7 +2365,7 @@
     "  Ikaris-Canary (ikaris-canary)",
     "    → ikaris-canary.jpeg (images)",
     "  Shang-Chimpanzee (shang-chimpanzee)",
-    "    → shang-chimpanzee.jpeg (images), shang-chimpanzee.png (images)",
+    "    → shang-chimpanzee.jpeg (images)",
     "  Elek-tric Eel (elek-tric-eel)",
     "    → elek-tric-eel.jpeg (images)",
     "  Echo-location Bat (echo-location-bat)",
@@ -2508,7 +2493,7 @@
     "  Puck-the-Puffin (puck-the-puffin)",
     "    → puck-the-puffin.png (images)",
     "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
-    "    → northstar-goose-aurora-goose.jpeg (images), northstar-goose-aurora-goose.png (images)",
+    "    → northstar-goose-aurora-goose.jpeg (images)",
     "  Havok-Hare (havok-hare)",
     "    → havok-hare.png (images)",
     "  Polaris-Peacock (polaris-peacock)",
@@ -2635,21 +2620,9 @@
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
     "  venom-snake.jpeg (images) - 575.6 KB",
     "  wolverine-whiskers.png (images) - 7.5 MB",
-    "\n🔄 DUPLICATE IMAGES",
-    "====================",
-    "  Thing Turtle (thing-turtle)",
-    "    → thing-turtle.jpeg (images)",
-    "    → thing-turtle.png (images)",
-    "  Shang-Chimpanzee (shang-chimpanzee)",
-    "    → shang-chimpanzee.jpeg (images)",
-    "    → shang-chimpanzee.png (images)",
-    "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
-    "    → northstar-goose-aurora-goose.jpeg (images)",
-    "    → northstar-goose-aurora-goose.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 3 heroes with multiple images - choose primary image"
+    "• Review 19 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
   "imageDirectories": [

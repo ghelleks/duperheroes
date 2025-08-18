@@ -81,6 +81,7 @@ jobs:
     outputs:
       missing-images: ${{ steps.audit.outputs.missing-images }}
       audit-results: ${{ steps.audit.outputs.audit-results }}
+      duplicates-found: ${{ steps.audit.outputs.duplicates-found }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -102,10 +103,16 @@ jobs:
             echo "missing-images=${missing_count}" >> $GITHUB_OUTPUT
             echo "Found ${missing_count} missing images"
             
+            # Check for duplicate images that violate JPEG preference rule
+            duplicate_count=$(jq '.stats.duplicateImages // 0' public/debug/image-audit.json)
+            echo "duplicates-found=${duplicate_count}" >> $GITHUB_OUTPUT
+            echo "Found ${duplicate_count} duplicate image sets"
+            
             # Store audit results as artifact
             echo "audit-results=public/debug/image-audit.json" >> $GITHUB_OUTPUT
           else
             echo "missing-images=0" >> $GITHUB_OUTPUT
+            echo "duplicates-found=0" >> $GITHUB_OUTPUT
             echo "No audit results file found"
           fi
       
@@ -116,9 +123,52 @@ jobs:
           path: public/debug/image-audit.json
           retention-days: 7
 
-  generate-images:
+  cleanup-duplicates:
     needs: audit-images
-    if: ${{ needs.audit-images.outputs.missing-images != '0' && (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' }}
+    if: ${{ needs.audit-images.outputs.duplicates-found != '0' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Run JPEG preference cleanup
+        run: |
+          echo "🧹 Running JPEG preference cleanup script..."
+          node scripts/cleanup-image-duplicates.js
+      
+      - name: Commit cleanup changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add public/images/
+          if git diff --cached --quiet; then
+            echo "No duplicate files to remove"
+          else
+            echo "Committing duplicate file cleanup"
+            git commit -m "🧹 Clean up duplicate images per JPEG preference rule
+            
+            Implements ADR-011: JPEG File Preference Rule
+            - Removed PNG duplicates when JPEG exists
+            - Cleaned up naming inconsistencies
+            - Optimized storage and loading performance
+            
+            🤖 Generated with [Claude Code](https://claude.ai/code)
+            
+            Co-Authored-By: Claude <noreply@anthropic.com>"
+            git push origin main
+          fi
+
+  generate-images:
+    needs: [audit-images, cleanup-duplicates]
+    if: ${{ needs.audit-images.outputs.missing-images != '0' && (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' && always() }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -189,9 +239,9 @@ jobs:
           fi
 
   process-images:
-    needs: [fetch-heroes, audit-images, generate-images]
+    needs: [fetch-heroes, audit-images, cleanup-duplicates, generate-images]
     # Run after image generation to create responsive formats
-    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped'))
+    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.cleanup-duplicates.result == 'success' || needs.cleanup-duplicates.result == 'skipped') && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped'))
     runs-on: ubuntu-latest
     outputs:
       images-processed: ${{ steps.check-processing.outputs.images-processed }}
@@ -236,17 +286,19 @@ jobs:
             echo "No processing needed - all images have variants"
           fi
       
-      - name: Generate responsive images
+      - name: Generate responsive images (JPEG preferred)
         if: steps.check-processing.outputs.images-processed == 'true'
         run: |
-          echo "🖼️  Generating responsive image variants..."
+          echo "🖼️  Generating responsive image variants with JPEG preference..."
           npm run images:responsive
+          echo "📋 Processing JPEG files first, falling back to PNG only if needed"
       
       - name: Convert to WebP format
         if: steps.check-processing.outputs.images-processed == 'true'
         run: |
           echo "🌐 Converting images to WebP format..."
           npm run images:webp
+          echo "✅ WebP conversion complete - optimal format for web delivery"
       
       - name: Commit processed images
         if: steps.check-processing.outputs.images-processed == 'true'
@@ -273,9 +325,9 @@ jobs:
           fi
 
   deploy:
-    needs: [fetch-heroes, audit-images, generate-images, process-images]
+    needs: [fetch-heroes, audit-images, cleanup-duplicates, generate-images, process-images]
     # Always deploy after all previous jobs complete
-    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped') && (needs.process-images.result == 'success' || needs.process-images.result == 'skipped'))
+    if: always() && (needs.fetch-heroes.result == 'success' && needs.audit-images.result == 'success' && (needs.cleanup-duplicates.result == 'success' || needs.cleanup-duplicates.result == 'skipped') && (needs.generate-images.result == 'success' || needs.generate-images.result == 'skipped') && (needs.process-images.result == 'success' || needs.process-images.result == 'skipped'))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
