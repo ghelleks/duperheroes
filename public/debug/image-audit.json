@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T14:20:08.406Z",
+  "timestamp": "2025-08-18T14:25:26.663Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 213,
+    "totalImages": 212,
     "heroesWithImages": 190,
     "heroesWithoutImages": 0,
     "orphanedImages": 19,
-    "duplicateImages": 4
+    "duplicateImages": 3
   },
   "heroesWithImages": [
     {
@@ -1089,11 +1089,6 @@
           "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.jpeg",
           "directory": "images",
           "size": 2435413
-        },
-        {
-          "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.png",
-          "directory": "images",
-          "size": 1651529
         }
       ]
     },
@@ -2225,17 +2220,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 213 images",
-    "✅ Found 213 total images",
+    "  images: 212 images",
+    "✅ Found 212 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 213",
+    "Total Images: 212",
     "Heroes with Images: 190 (100%)",
     "Heroes without Images: 0 (0%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 4",
+    "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2431,7 +2426,7 @@
     "  Baron Zebra (baron-zebra)",
     "    → baron-zebra.png (images)",
     "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
-    "    → modok-mechanized-organism-designed-only-for-krill-consumption.jpeg (images), modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
+    "    → modok-mechanized-organism-designed-only-for-krill-consumption.jpeg (images)",
     "  Super-Skrull-Cow (super-skrull-cow)",
     "    → super-skrull-cow.png (images)",
     "  Scorpion-Scorpion (scorpion-scorpion)",
@@ -2651,13 +2646,10 @@
     "  Shang-Chimpanzee (shang-chimpanzee)",
     "    → shang-chimpanzee.jpeg (images)",
     "    → shang-chimpanzee.png (images)",
-    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
-    "    → modok-mechanized-organism-designed-only-for-krill-consumption.jpeg (images)",
-    "    → modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 4 heroes with multiple images - choose primary image"
+    "• Resolve 3 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
