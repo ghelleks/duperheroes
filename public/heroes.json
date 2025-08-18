@@ -31,7 +31,7 @@
       "animal_theme": "Koala",
       "hero_inspiration": "Red Hulk",
       "difficulty": "Hard",
-      "imagePath": "./images/krazy-koala.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Claw cat",
