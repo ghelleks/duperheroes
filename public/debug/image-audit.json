@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T14:32:02.599Z",
+  "timestamp": "2025-08-18T14:48:08.320Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 212,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 0,
+    "totalImages": 210,
+    "heroesWithImages": 188,
+    "heroesWithoutImages": 2,
     "orphanedImages": 19,
     "duplicateImages": 3
   },
@@ -408,17 +408,6 @@
           "filename": "professor-hoot-x.png",
           "directory": "images",
           "size": 144813
-        }
-      ]
-    },
-    {
-      "heroName": "Mystique Chameleon",
-      "slug": "mystique-chameleon",
-      "images": [
-        {
-          "filename": "mystique-chameleon.png",
-          "directory": "images",
-          "size": 4497147
         }
       ]
     },
@@ -891,17 +880,6 @@
           "filename": "ghost-spider-goat.png",
           "directory": "images",
           "size": 1454527
-        }
-      ]
-    },
-    {
-      "heroName": "Ms. Marvel-ot",
-      "slug": "ms-marvel-ot",
-      "images": [
-        {
-          "filename": "ms-marvel-ot.png",
-          "directory": "images",
-          "size": 1675470
         }
       ]
     },
@@ -2116,7 +2094,18 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Mystique Chameleon",
+      "slug": "mystique-chameleon",
+      "animalTheme": "Unknown"
+    },
+    {
+      "heroName": "Ms. Marvel-ot",
+      "slug": "ms-marvel-ot",
+      "animalTheme": "Unknown"
+    }
+  ],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2154,14 +2143,14 @@
       "size": 2866812
     },
     {
+      "filename": "ms-mavel-ot.jpeg",
+      "directory": "images",
+      "size": 2104676
+    },
+    {
       "filename": "mystique-chameleon .jpeg",
       "directory": "images",
       "size": 2361625
-    },
-    {
-      "filename": "nick-fury.png",
-      "directory": "images",
-      "size": 734522
     },
     {
       "filename": "punisher-pine-cushing.jpeg",
@@ -2220,15 +2209,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 212 images",
-    "✅ Found 212 total images",
+    "  images: 210 images",
+    "✅ Found 210 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 212",
-    "Heroes with Images: 190 (100%)",
-    "Heroes without Images: 0 (0%)",
+    "Total Images: 210",
+    "Heroes with Images: 188 (99%)",
+    "Heroes without Images: 2 (1%)",
     "Orphaned Images: 19",
     "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
@@ -2305,8 +2294,6 @@
     "    → magneto-magpie.jpeg (images)",
     "  Professor Hoot-X (professor-hoot-x)",
     "    → professor-hoot-x.png (images)",
-    "  Mystique Chameleon (mystique-chameleon)",
-    "    → mystique-chameleon.png (images)",
     "  Nightcrawler Cricket (nightcrawler-cricket)",
     "    → nightcrawler-cricket.jpeg (images)",
     "  Colossus Rhino (colossus-rhino)",
@@ -2391,8 +2378,6 @@
     "    → miles-mor-rat-les.png (images)",
     "  Ghost-Spider-Goat (ghost-spider-goat)",
     "    → ghost-spider-goat.png (images)",
-    "  Ms. Marvel-ot (ms-marvel-ot)",
-    "    → ms-marvel-ot.png (images)",
     "  Squirrel Girl (squirrel-girl)",
     "    → squirrel-girl.png (images)",
     "  Groot-A-Saurus (groot-a-saurus)",
@@ -2613,6 +2598,12 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  Mystique Chameleon (mystique-chameleon)",
+    "    → Using emoji fallback: 🦸‍♂️",
+    "  Ms. Marvel-ot (ms-marvel-ot)",
+    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2623,8 +2614,8 @@
     "  karnak-the-mantis-shimp.jpeg (images) - 1.9 MB",
     "  loki-lemur.png (images) - 4.2 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
+    "  ms-mavel-ot.jpeg (images) - 2 MB",
     "  mystique-chameleon .jpeg (images) - 2.3 MB",
-    "  nick-fury.png (images) - 717.3 KB",
     "  punisher-pine-cushing.jpeg (images) - 828.1 KB",
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
     "  sabertooth-tabby.jpeg (images) - 844.7 KB",
@@ -2648,6 +2639,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
+    "• Create images for 2 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
     "• Resolve 3 heroes with multiple images - choose primary image"
   ],
