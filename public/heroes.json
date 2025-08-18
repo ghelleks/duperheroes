@@ -471,7 +471,7 @@
       "animal_theme": "Turtle",
       "hero_inspiration": "The Thing",
       "difficulty": "Medium",
-      "imagePath": "./images/thing-turtle.png"
+      "imagePath": "./images/thing-turtle.jpeg"
     },
     {
       "superhero_name": "Hawkeye Hawk",
@@ -812,7 +812,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Shang-Chi",
       "difficulty": "Medium",
-      "imagePath": "./images/shang-chimpanzee.png"
+      "imagePath": "./images/shang-chimpanzee.jpeg"
     },
     {
       "superhero_name": "Elek-tric Eel",
@@ -1516,7 +1516,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Northstar & Aurora (Alpha Flight)",
       "difficulty": "Hard",
-      "imagePath": "./images/northstar-goose-aurora-goose.png"
+      "imagePath": "./images/northstar-goose-aurora-goose.jpeg"
     },
     {
       "superhero_name": "Havok-Hare",
