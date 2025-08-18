@@ -933,7 +933,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Gamora",
       "difficulty": "Medium",
-      "imagePath": "./images/gamora-affe.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Drax the Destroyer Dung-Beetle",
@@ -1901,7 +1901,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/galactus-goat.png"
     },
     {
       "superhero_name": "The Silver Surfer-Slug",
