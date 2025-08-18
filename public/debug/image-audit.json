@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T00:12:41.698Z",
+  "timestamp": "2025-08-18T00:15:00.436Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
     "totalImages": 216,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
     "orphanedImages": 18,
-    "duplicateImages": 6
+    "duplicateImages": 5
   },
   "heroesWithImages": [
     {
@@ -857,11 +857,6 @@
           "filename": "elek-tric-eel.jpeg",
           "directory": "images",
           "size": 2417622
-        },
-        {
-          "filename": "elek-tric-eel.png",
-          "directory": "images",
-          "size": 1227245
         }
       ]
     },
@@ -1445,6 +1440,17 @@
           "filename": "werewolf-by-night-woof.png",
           "directory": "images",
           "size": 1918042
+        }
+      ]
+    },
+    {
+      "heroName": "Man-Thing-Thang",
+      "slug": "man-thing-thang",
+      "images": [
+        {
+          "filename": "man-thing-thang.png",
+          "directory": "images",
+          "size": 1731464
         }
       ]
     },
@@ -2153,13 +2159,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Man-Thing-Thang",
-      "slug": "man-thing-thang",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2265,10 +2265,10 @@
     "================",
     "Total Heroes: 193",
     "Total Images: 216",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 18",
-    "Duplicate Images: 6",
+    "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2420,7 +2420,7 @@
     "  Shang-Chimpanzee (shang-chimpanzee)",
     "    → shang-chimpanzee.jpeg (images), shang-chimpanzee.png (images)",
     "  Elek-tric Eel (elek-tric-eel)",
-    "    → elek-tric-eel.jpeg (images), elek-tric-eel.png (images)",
+    "    → elek-tric-eel.jpeg (images)",
     "  Echo-location Bat (echo-location-bat)",
     "    → echo-location-bat.png (images)",
     "  Kate Bishop-Hawk (kate-bishop-hawk)",
@@ -2527,6 +2527,8 @@
     "    → morbius-the-fruit-bat.png (images)",
     "  Werewolf by Night-Woof (werewolf-by-night-woof)",
     "    → werewolf-by-night-woof.png (images)",
+    "  Man-Thing-Thang (man-thing-thang)",
+    "    → man-thing-thang.png (images)",
     "  Mephisto-Poodle (mephisto-poodle)",
     "    → mephisto-poodle.png (images)",
     "  Blackheart-Ram (blackheart-ram)",
@@ -2655,10 +2657,6 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Man-Thing-Thang (man-thing-thang)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2697,14 +2695,10 @@
     "  Shang-Chimpanzee (shang-chimpanzee)",
     "    → shang-chimpanzee.jpeg (images)",
     "    → shang-chimpanzee.png (images)",
-    "  Elek-tric Eel (elek-tric-eel)",
-    "    → elek-tric-eel.jpeg (images)",
-    "    → elek-tric-eel.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 18 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 6 heroes with multiple images - choose primary image"
+    "• Resolve 5 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
