@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T12:59:31.704Z",
+  "timestamp": "2025-08-18T13:04:47.728Z",
   "status": "success",
   "stats": {
     "totalHeroes": 191,
@@ -867,17 +867,6 @@
       ]
     },
     {
-      "heroName": "Kate Bishop-Hawk",
-      "slug": "kate-bishop-hawk",
-      "images": [
-        {
-          "filename": "kate-bishop-hawk.png",
-          "directory": "images",
-          "size": 1310928
-        }
-      ]
-    },
-    {
       "heroName": "Miles Mor-rat-les",
       "slug": "miles-mor-rat-les",
       "images": [
@@ -1226,6 +1215,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1591050
         }
       ]
     },
@@ -2123,8 +2123,8 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
+      "heroName": "Kate Bishop-Hawk",
+      "slug": "kate-bishop-hawk",
       "animalTheme": "Unknown"
     }
   ],
@@ -2391,8 +2391,6 @@
     "    → elek-tric-eel.jpeg (images)",
     "  Echo-location Bat (echo-location-bat)",
     "    → echo-location-bat.png (images)",
-    "  Kate Bishop-Hawk (kate-bishop-hawk)",
-    "    → kate-bishop-hawk.png (images)",
     "  Miles Mor-rat-les (miles-mor-rat-les)",
     "    → miles-mor-rat-les.png (images)",
     "  Ghost-Spider-Goat (ghost-spider-goat)",
@@ -2457,6 +2455,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2621,7 +2621,7 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "  Kate Bishop-Hawk (kate-bishop-hawk)",
     "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
