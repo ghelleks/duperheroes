@@ -16,6 +16,9 @@
     "build-images": "npm run audit-images && npm run generate-images",
     "build-images:dry-run": "npm run audit-images && npm run generate-images:dry-run",
     "extract-service-key": "./scripts/extract-service-account-key.sh",
+    "images:responsive": "node scripts/create-responsive-images.js",
+    "images:webp": "node scripts/convert-to-webp.js",
+    "images:optimize": "npm run images:responsive && npm run images:webp",
     "serve": "npx http-server public -p 8080 -o",
     "serve:python": "cd public && python -m http.server 8080"
   },
@@ -39,5 +42,8 @@
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.3"
   }
 }
