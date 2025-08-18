@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T15:35:30.584Z",
+  "timestamp": "2025-08-18T15:39:24.909Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 211,
+    "totalImages": 212,
     "heroesWithImages": 189,
     "heroesWithoutImages": 1,
     "orphanedImages": 19,
-    "duplicateImages": 3
+    "duplicateImages": 4
   },
   "heroesWithImages": [
     {
@@ -403,6 +403,17 @@
           "filename": "professor-hoot-x.png",
           "directory": "images",
           "size": 144813
+        }
+      ]
+    },
+    {
+      "heroName": "Mystique Chameleon",
+      "slug": "mystique-chameleon",
+      "images": [
+        {
+          "filename": "mystique-chameleon.png",
+          "directory": "images",
+          "size": 1737449
         }
       ]
     },
@@ -1205,17 +1216,6 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
-        }
-      ]
-    },
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "images": [
-        {
-          "filename": "karnak-the-mantis-shrimp.png",
-          "directory": "images",
-          "size": 1693972
         }
       ]
     },
@@ -2087,6 +2087,11 @@
       "slug": "okoye-okapi",
       "images": [
         {
+          "filename": "okoye-okapi.jpeg",
+          "directory": "images",
+          "size": 2229235
+        },
+        {
           "filename": "okoye-okapi.png",
           "directory": "images",
           "size": 1404618
@@ -2107,8 +2112,8 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Mystique Chameleon",
-      "slug": "mystique-chameleon",
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
       "animalTheme": "Unknown"
     }
   ],
@@ -2215,17 +2220,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 211 images",
-    "✅ Found 211 total images",
+    "  images: 212 images",
+    "✅ Found 212 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 211",
+    "Total Images: 212",
     "Heroes with Images: 189 (99%)",
     "Heroes without Images: 1 (1%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 3",
+    "Duplicate Images: 4",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2300,6 +2305,8 @@
     "    → magneto-magpie.jpeg (images)",
     "  Professor Hoot-X (professor-hoot-x)",
     "    → professor-hoot-x.png (images)",
+    "  Mystique Chameleon (mystique-chameleon)",
+    "    → mystique-chameleon.png (images)",
     "  Nightcrawler Cricket (nightcrawler-cricket)",
     "    → nightcrawler-cricket.jpeg (images)",
     "  Colossus Rhino (colossus-rhino)",
@@ -2444,8 +2451,6 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2603,12 +2608,12 @@
     "  Killmonger-Catfish (killmonger-catfish)",
     "    → killmonger-catfish.png (images)",
     "  Okoye-Okapi (okoye-okapi)",
-    "    → okoye-okapi.png (images)",
+    "    → okoye-okapi.jpeg (images), okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Mystique Chameleon (mystique-chameleon)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
     "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
@@ -2643,11 +2648,14 @@
     "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
     "    → northstar-goose-aurora-goose.jpeg (images)",
     "    → northstar-goose-aurora-goose.png (images)",
+    "  Okoye-Okapi (okoye-okapi)",
+    "    → okoye-okapi.jpeg (images)",
+    "    → okoye-okapi.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
     "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 3 heroes with multiple images - choose primary image"
+    "• Resolve 4 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
