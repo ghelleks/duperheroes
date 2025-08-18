@@ -1131,7 +1131,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Magik",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/magik-arp.jpeg"
     },
     {
       "superhero_name": "Sunspot-Sunflower",
