@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T17:18:07.914Z",
+  "timestamp": "2025-08-18T17:22:58.196Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 209,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 0,
+    "totalImages": 208,
+    "heroesWithImages": 189,
+    "heroesWithoutImages": 1,
     "orphanedImages": 19,
     "duplicateImages": 0
   },
@@ -282,17 +282,6 @@
           "filename": "jessica-hop-jones.jpeg",
           "directory": "images",
           "size": 1898782
-        }
-      ]
-    },
-    {
-      "heroName": "Punisher Pine-Cushion",
-      "slug": "punisher-pine-cushion",
-      "images": [
-        {
-          "filename": "punisher-pine-cushion.png",
-          "directory": "images",
-          "size": 1666508
         }
       ]
     },
@@ -1632,9 +1621,9 @@
       "slug": "psylocke-butterfly",
       "images": [
         {
-          "filename": "psylocke-butterfly.png",
+          "filename": "psylocke-butterfly.jpeg",
           "directory": "images",
-          "size": 1395676
+          "size": 1589958
         }
       ]
     },
@@ -2101,7 +2090,13 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Punisher Pine-Cushion",
+      "slug": "punisher-pine-cushion",
+      "animalTheme": "Unknown"
+    }
+  ],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2129,9 +2124,9 @@
       "size": 1993623
     },
     {
-      "filename": "loki-lemur.png",
+      "filename": "loki-lemor.jpeg",
       "directory": "images",
-      "size": 4394528
+      "size": 1979625
     },
     {
       "filename": "luke-cage-gorilla.jpeg",
@@ -2205,15 +2200,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 209 images",
-    "✅ Found 209 total images",
+    "  images: 208 images",
+    "✅ Found 208 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 209",
-    "Heroes with Images: 190 (100%)",
-    "Heroes without Images: 0 (0%)",
+    "Total Images: 208",
+    "Heroes with Images: 189 (99%)",
+    "Heroes without Images: 1 (1%)",
     "Orphaned Images: 19",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
@@ -2268,8 +2263,6 @@
     "    → iron-fist-cricket.jpeg (images)",
     "  Jessica Hop-Jones (jessica-hop-jones)",
     "    → jessica-hop-jones.jpeg (images)",
-    "  Punisher Pine-Cushion (punisher-pine-cushion)",
-    "    → punisher-pine-cushion.png (images)",
     "  Ghost Rider Raccoon (ghost-rider-raccoon)",
     "    → ghost-rider-raccoon.jpeg (images)",
     "  Captain Marvel Cat (captain-marvel-cat)",
@@ -2513,7 +2506,7 @@
     "  Forge-the-Ferret (forge-the-ferret)",
     "    → forge-the-ferret.png (images)",
     "  Psylocke-Butterfly (psylocke-butterfly)",
-    "    → psylocke-butterfly.png (images)",
+    "    → psylocke-butterfly.jpeg (images)",
     "  X-23-Wolf (x-23-wolf)",
     "    → x-23-wolf.png (images)",
     "  The Enchantress-Emu (the-enchantress-emu)",
@@ -2598,6 +2591,10 @@
     "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  Punisher Pine-Cushion (punisher-pine-cushion)",
+    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2606,7 +2603,7 @@
     "  crimson-koala.png (images) - 330.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
     "  karnak-the-mantis-shimp.jpeg (images) - 1.9 MB",
-    "  loki-lemur.png (images) - 4.2 MB",
+    "  loki-lemor.jpeg (images) - 1.9 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
     "  ms-mavel-ot.jpeg (images) - 2 MB",
     "  mystique-chameleon .jpeg (images) - 2.3 MB",
@@ -2622,6 +2619,7 @@
     "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n💡 RECOMMENDATIONS",
     "==================",
+    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
