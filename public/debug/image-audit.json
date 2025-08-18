@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T17:29:35.299Z",
+  "timestamp": "2025-08-18T17:34:13.868Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
     "totalImages": 206,
-    "heroesWithImages": 189,
-    "heroesWithoutImages": 1,
-    "orphanedImages": 17,
+    "heroesWithImages": 190,
+    "heroesWithoutImages": 0,
+    "orphanedImages": 16,
     "duplicateImages": 0
   },
   "heroesWithImages": [
@@ -182,7 +182,7 @@
         {
           "filename": "sabretooth-tabby.png",
           "directory": "images",
-          "size": 1876504
+          "size": 2037208
         }
       ]
     },
@@ -411,9 +411,9 @@
       "slug": "mystique-chameleon",
       "images": [
         {
-          "filename": "mystique-chameleon.png",
+          "filename": "mystique-chameleon.jpeg",
           "directory": "images",
-          "size": 1737449
+          "size": 2361625
         }
       ]
     },
@@ -1206,6 +1206,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1416440
         }
       ]
     },
@@ -2090,13 +2101,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2137,11 +2142,6 @@
       "filename": "ms-mavel-ot.jpeg",
       "directory": "images",
       "size": 2104676
-    },
-    {
-      "filename": "mystique-chameleon .jpeg",
-      "directory": "images",
-      "size": 2361625
     },
     {
       "filename": "punisher-pine-cushing.jpeg",
@@ -2197,9 +2197,9 @@
     "================",
     "Total Heroes: 190",
     "Total Images: 206",
-    "Heroes with Images: 189 (99%)",
-    "Heroes without Images: 1 (1%)",
-    "Orphaned Images: 17",
+    "Heroes with Images: 190 (100%)",
+    "Heroes without Images: 0 (0%)",
+    "Orphaned Images: 16",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2276,7 +2276,7 @@
     "  Professor Hoot-X (professor-hoot-x)",
     "    → professor-hoot-x.png (images)",
     "  Mystique Chameleon (mystique-chameleon)",
-    "    → mystique-chameleon.png (images)",
+    "    → mystique-chameleon.jpeg (images)",
     "  Nightcrawler Cricket (nightcrawler-cricket)",
     "    → nightcrawler-cricket.jpeg (images)",
     "  Colossus Rhino (colossus-rhino)",
@@ -2421,6 +2421,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2581,10 +2583,6 @@
     "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2596,7 +2594,6 @@
     "  loki-lemor.jpeg (images) - 1.9 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
     "  ms-mavel-ot.jpeg (images) - 2 MB",
-    "  mystique-chameleon .jpeg (images) - 2.3 MB",
     "  punisher-pine-cushing.jpeg (images) - 828.1 KB",
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
     "  sabreooth-tabby.jpeg (images) - 844.7 KB",
@@ -2607,8 +2604,7 @@
     "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
-    "• Review 17 orphaned images - delete unused or rename to match heroes"
+    "• Review 16 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
   "imageDirectories": [
