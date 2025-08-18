@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T01:21:56.935Z",
+  "timestamp": "2025-08-18T01:46:53.018Z",
   "status": "success",
   "stats": {
     "totalHeroes": 191,
-    "totalImages": 214,
+    "totalImages": 213,
     "heroesWithImages": 191,
     "heroesWithoutImages": 0,
-    "orphanedImages": 18,
+    "orphanedImages": 17,
     "duplicateImages": 5
   },
   "heroesWithImages": [
@@ -2155,11 +2155,6 @@
       "size": 338748
     },
     {
-      "filename": "hulk-a-hopper.png",
-      "directory": "images",
-      "size": 536332
-    },
-    {
       "filename": "invisible-woman-octopus.jpeg",
       "directory": "images",
       "size": 2790699
@@ -2236,16 +2231,16 @@
     "📚 Loading heroes database...",
     "✅ Loaded 191 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 214 images",
-    "✅ Found 214 total images",
+    "  images: 213 images",
+    "✅ Found 213 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 191",
-    "Total Images: 214",
+    "Total Images: 213",
     "Heroes with Images: 191 (100%)",
     "Heroes without Images: 0 (0%)",
-    "Orphaned Images: 18",
+    "Orphaned Images: 17",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2637,7 +2632,6 @@
     "  batty-batter.jpeg (images) - 1.7 MB",
     "  captain-bulldog.png (images) - 1.8 MB",
     "  crimson-koala.png (images) - 330.8 KB",
-    "  hulk-a-hopper.png (images) - 523.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
     "  loki-lemur.png (images) - 4.2 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
@@ -2671,7 +2665,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Review 18 orphaned images - delete unused or rename to match heroes",
+    "• Review 17 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
   "error": null,
