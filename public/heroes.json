@@ -1901,7 +1901,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Galactus",
       "difficulty": "Medium",
-      "imagePath": "./images/galactus-goat.png"
+      "imagePath": null
     },
     {
       "superhero_name": "The Silver Surfer-Slug",
