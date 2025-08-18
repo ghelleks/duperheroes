@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T14:16:56.116Z",
+  "timestamp": "2025-08-18T14:20:08.406Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 211,
-    "heroesWithImages": 189,
-    "heroesWithoutImages": 1,
+    "totalImages": 213,
+    "heroesWithImages": 190,
+    "heroesWithoutImages": 0,
     "orphanedImages": 19,
-    "duplicateImages": 3
+    "duplicateImages": 4
   },
   "heroesWithImages": [
     {
@@ -1082,6 +1082,22 @@
       ]
     },
     {
+      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
+      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
+      "images": [
+        {
+          "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.jpeg",
+          "directory": "images",
+          "size": 2435413
+        },
+        {
+          "filename": "modok-mechanized-organism-designed-only-for-krill-consumption.png",
+          "directory": "images",
+          "size": 1651529
+        }
+      ]
+    },
+    {
       "heroName": "Super-Skrull-Cow",
       "slug": "super-skrull-cow",
       "images": [
@@ -2105,13 +2121,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption)",
-      "slug": "modok-mechanized-organism-designed-only-for-krill-consumption",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2215,17 +2225,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 211 images",
-    "✅ Found 211 total images",
+    "  images: 213 images",
+    "✅ Found 213 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 211",
-    "Heroes with Images: 189 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Total Images: 213",
+    "Heroes with Images: 190 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 3",
+    "Duplicate Images: 4",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2420,6 +2430,8 @@
     "    → abomination-ape.png (images)",
     "  Baron Zebra (baron-zebra)",
     "    → baron-zebra.png (images)",
+    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
+    "    → modok-mechanized-organism-designed-only-for-krill-consumption.jpeg (images), modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
     "  Super-Skrull-Cow (super-skrull-cow)",
     "    → super-skrull-cow.png (images)",
     "  Scorpion-Scorpion (scorpion-scorpion)",
@@ -2606,10 +2618,6 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2643,11 +2651,13 @@
     "  Shang-Chimpanzee (shang-chimpanzee)",
     "    → shang-chimpanzee.jpeg (images)",
     "    → shang-chimpanzee.png (images)",
+    "  M.O.D.O.K. (Mechanized Organism Designed Only for Krill-consumption) (modok-mechanized-organism-designed-only-for-krill-consumption)",
+    "    → modok-mechanized-organism-designed-only-for-krill-consumption.jpeg (images)",
+    "    → modok-mechanized-organism-designed-only-for-krill-consumption.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 3 heroes with multiple images - choose primary image"
+    "• Resolve 4 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
