@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T00:17:56.401Z",
+  "timestamp": "2025-08-18T00:25:05.766Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
@@ -1382,9 +1382,9 @@
       "slug": "firestar-firefly",
       "images": [
         {
-          "filename": "firestar-firefly.png",
+          "filename": "firestar-firefly.jpeg",
           "directory": "images",
-          "size": 1628978
+          "size": 910089
         }
       ]
     },
@@ -2516,7 +2516,7 @@
     "  Gladiator-Gull (gladiator-gull)",
     "    → gladiator-gull.png (images)",
     "  Firestar-Firefly (firestar-firefly)",
-    "    → firestar-firefly.png (images)",
+    "    → firestar-firefly.jpeg (images)",
     "  Cloak-and-Dagger-Flies (cloak-and-dagger-flies)",
     "    → cloak-and-dagger-flies.jpeg (images)",
     "  Wonder Man-atee (wonder-man-atee)",
