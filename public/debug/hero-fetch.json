@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-08-18T13:07:13.735Z",
+  "timestamp": "2025-08-18T13:14:36.299Z",
   "status": "success",
-  "duration": 1172,
-  "heroCount": 191,
+  "duration": 1151,
+  "heroCount": 190,
   "logs": [
     "🦸 Google Doc to Heroes JSON Generator",
     "=====================================",
@@ -11,8 +11,8 @@
     "📦 Generating JSON data...",
     "💾 Saving heroes to JSON file...",
     "🎉 Heroes JSON generation completed successfully!",
-    "📊 Total heroes: 191",
-    "📈 Difficulty breakdown: {\"Easy\":9,\"Hard\":64,\"Medium\":118}"
+    "📊 Total heroes: 190",
+    "📈 Difficulty breakdown: {\"Easy\":8,\"Hard\":64,\"Medium\":118}"
   ],
   "error": null,
   "docUrl": "https://docs.google.com/document/d/1EqPn6k6UicD8uTSbKQ0z4SuBKC19UPI-GC1PAjy3VUY/export?format=txt"

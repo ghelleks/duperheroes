@@ -31,7 +31,7 @@
       "animal_theme": "Koala",
       "hero_inspiration": "Red Hulk",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/krazy-koala.png"
     },
     {
       "superhero_name": "Claw cat",
@@ -1131,7 +1131,7 @@
       "animal_theme": "Fish",
       "hero_inspiration": "Magik",
       "difficulty": "Hard",
-      "imagePath": "./images/magik-arp.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Sunspot-Sunflower",
@@ -1719,24 +1719,13 @@
     {
       "superhero_name": "The Falcon-and-the-Winter-Soldier-Snails",
       "real_name": "Sam-and-Bucky-Slime",
-      "powers": "They have no powers and move incredibly slowly. One has a tiny set of wings that don't work, and the other has a \"bionic\" shell made from a bottle cap. Their primary ability is staring contests and couples counseling.",
-      "origin": "A military experiment to create the ultimate partners. It failed spectacularly. They now co-own a boat and spend their days arguing about strategy.",
-      "trivia": "The Falcon-and-the-Winter-Soldier-Snails is a unique hero with many secrets.",
-      "animal_theme": "Unknown",
-      "hero_inspiration": "The Falcon and The Winter Soldier (as a duo)",
-      "difficulty": "Easy",
-      "imagePath": "./images/the-falcon-and-the-winter-soldier-snails.png"
-    },
-    {
-      "superhero_name": "Skelet-eel",
-      "real_name": "The Lord of Snake Mountain",
       "powers": "A powerful sorcerer with a floating skull for a head. He wields a Havoc Staff topped with a Ram's skull and insults his henchmen constantly with a high-pitched cackle.",
       "origin": "The arch-nemesis of He-Man-atee. He relentlessly tries to conquer Castle Grey-skull to learn its ancient secrets, but his plans are always foiled, usually due to his own incompetence.",
-      "trivia": "Skelet-eel is a unique hero with many secrets.",
-      "animal_theme": "Snake",
+      "trivia": "The Falcon-and-the-Winter-Soldier-Snails is a unique hero with many secrets.",
+      "animal_theme": "Unknown",
       "hero_inspiration": "Skeletor (a fun, non-Marvel crossover)",
       "difficulty": "Hard",
-      "imagePath": "./images/skelet-eel.png"
+      "imagePath": "./images/the-falcon-and-the-winter-soldier-snails.png"
     },
     {
       "superhero_name": "Dr. Octopus-Octopus",
