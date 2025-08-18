@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T13:05:45.940Z",
+  "timestamp": "2025-08-18T13:08:29.022Z",
   "summary": {
     "totalHeroes": 191,
     "missingImages": 1,
@@ -10,21 +10,21 @@
   },
   "errors": [],
   "logs": [
-    "[2025-08-18T13:05:39.957Z] 🚀 Initializing Hero Image Generator...",
-    "[2025-08-18T13:05:40.513Z] ✅ Generator initialized successfully",
-    "[2025-08-18T13:05:40.514Z] 📋 Analyzing heroes database for missing images...",
-    "[2025-08-18T13:05:40.525Z] 📊 Found 191 total heroes",
-    "[2025-08-18T13:05:40.525Z] 🎯 1 heroes need images",
-    "[2025-08-18T13:05:40.525Z] 🔄 Starting batch generation for 1 heroes...",
-    "[2025-08-18T13:05:40.525Z] 📋 Batch size setting: 2",
-    "[2025-08-18T13:05:40.525Z] 📦 Processing batch 1/1 (1 heroes)",
-    "[2025-08-18T13:05:40.525Z]   🎯 Processing hero 1/1: Kate Bishop-Hawk",
-    "[2025-08-18T13:05:40.525Z] 🎨 Generating image for Kate Bishop-Hawk...",
-    "[2025-08-18T13:05:40.526Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nKate Bishop-Hawk (🦸‍♂️) - The Other Hawkeye\nInspired by: Kate Bishop (Hawkeye)\nPowers: No actual superp...",
-    "[2025-08-18T13:05:40.526Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
-    "[2025-08-18T13:05:45.935Z] ✅ Generated image for Kate Bishop-Hawk",
-    "[2025-08-18T13:05:45.935Z] 📝 Updating heroes.json with generated image paths...",
-    "[2025-08-18T13:05:45.939Z] ✅ Updated 1 hero records with image paths"
+    "[2025-08-18T13:08:23.239Z] 🚀 Initializing Hero Image Generator...",
+    "[2025-08-18T13:08:23.799Z] ✅ Generator initialized successfully",
+    "[2025-08-18T13:08:23.799Z] 📋 Analyzing heroes database for missing images...",
+    "[2025-08-18T13:08:23.810Z] 📊 Found 191 total heroes",
+    "[2025-08-18T13:08:23.810Z] 🎯 1 heroes need images",
+    "[2025-08-18T13:08:23.810Z] 🔄 Starting batch generation for 1 heroes...",
+    "[2025-08-18T13:08:23.810Z] 📋 Batch size setting: 2",
+    "[2025-08-18T13:08:23.810Z] 📦 Processing batch 1/1 (1 heroes)",
+    "[2025-08-18T13:08:23.810Z]   🎯 Processing hero 1/1: krazy Koala",
+    "[2025-08-18T13:08:23.810Z] 🎨 Generating image for krazy Koala...",
+    "[2025-08-18T13:08:23.811Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nkrazy Koala (🐨) - Ross the Red Boss\nInspired by: Red Hulk\nPowers: Eucalyptus-fueled rage, time-travelin...",
+    "[2025-08-18T13:08:23.811Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
+    "[2025-08-18T13:08:29.017Z] ✅ Generated image for krazy Koala",
+    "[2025-08-18T13:08:29.017Z] 📝 Updating heroes.json with generated image paths...",
+    "[2025-08-18T13:08:29.022Z] ✅ Updated 1 hero records with image paths"
   ],
   "options": {
     "dryRun": false,

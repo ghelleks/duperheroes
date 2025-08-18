@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T13:04:47.728Z",
+  "timestamp": "2025-08-18T13:07:38.177Z",
   "status": "success",
   "stats": {
     "totalHeroes": 191,
@@ -29,17 +29,6 @@
           "filename": "doy-dog.jpeg",
           "directory": "images",
           "size": 1959615
-        }
-      ]
-    },
-    {
-      "heroName": "krazy Koala",
-      "slug": "krazy-koala",
-      "images": [
-        {
-          "filename": "krazy-koala.png",
-          "directory": "images",
-          "size": 3735235
         }
       ]
     },
@@ -863,6 +852,17 @@
           "filename": "echo-location-bat.png",
           "directory": "images",
           "size": 1577432
+        }
+      ]
+    },
+    {
+      "heroName": "Kate Bishop-Hawk",
+      "slug": "kate-bishop-hawk",
+      "images": [
+        {
+          "filename": "kate-bishop-hawk.png",
+          "directory": "images",
+          "size": 1552850
         }
       ]
     },
@@ -2123,9 +2123,9 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Kate Bishop-Hawk",
-      "slug": "kate-bishop-hawk",
-      "animalTheme": "Unknown"
+      "heroName": "krazy Koala",
+      "slug": "krazy-koala",
+      "animalTheme": "Koala"
     }
   ],
   "orphanedImages": [
@@ -2243,8 +2243,6 @@
     "    → dum-dog.jpeg (images)",
     "  Doy dog (doy-dog)",
     "    → doy-dog.jpeg (images)",
-    "  krazy Koala (krazy-koala)",
-    "    → krazy-koala.png (images)",
     "  Claw cat (claw-cat)",
     "    → claw-cat.jpeg (images)",
     "  Spider-Swinger (spider-swinger)",
@@ -2391,6 +2389,8 @@
     "    → elek-tric-eel.jpeg (images)",
     "  Echo-location Bat (echo-location-bat)",
     "    → echo-location-bat.png (images)",
+    "  Kate Bishop-Hawk (kate-bishop-hawk)",
+    "    → kate-bishop-hawk.png (images)",
     "  Miles Mor-rat-les (miles-mor-rat-les)",
     "    → miles-mor-rat-les.png (images)",
     "  Ghost-Spider-Goat (ghost-spider-goat)",
@@ -2621,8 +2621,8 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Kate Bishop-Hawk (kate-bishop-hawk)",
-    "    → Using emoji fallback: 🦸‍♂️",
+    "  krazy Koala (krazy-koala)",
+    "    → Using emoji fallback: 🐨",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
