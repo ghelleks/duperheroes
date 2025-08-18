@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T15:39:24.909Z",
+  "timestamp": "2025-08-18T16:09:43.564Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
     "totalImages": 212,
-    "heroesWithImages": 189,
-    "heroesWithoutImages": 1,
+    "heroesWithImages": 190,
+    "heroesWithoutImages": 0,
     "orphanedImages": 19,
-    "duplicateImages": 4
+    "duplicateImages": 3
   },
   "heroesWithImages": [
     {
@@ -1220,6 +1220,17 @@
       ]
     },
     {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1579349
+        }
+      ]
+    },
+    {
       "heroName": "Ghost-Goose",
       "slug": "ghost-goose",
       "images": [
@@ -2090,11 +2101,6 @@
           "filename": "okoye-okapi.jpeg",
           "directory": "images",
           "size": 2229235
-        },
-        {
-          "filename": "okoye-okapi.png",
-          "directory": "images",
-          "size": 1404618
         }
       ]
     },
@@ -2110,13 +2116,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2227,10 +2227,10 @@
     "================",
     "Total Heroes: 190",
     "Total Images: 212",
-    "Heroes with Images: 189 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Heroes with Images: 190 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 4",
+    "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2451,6 +2451,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2608,13 +2610,9 @@
     "  Killmonger-Catfish (killmonger-catfish)",
     "    → killmonger-catfish.png (images)",
     "  Okoye-Okapi (okoye-okapi)",
-    "    → okoye-okapi.jpeg (images), okoye-okapi.png (images)",
+    "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2648,14 +2646,10 @@
     "  Northstar-Goose (🦢) & Aurora-Goose (northstar-goose-aurora-goose)",
     "    → northstar-goose-aurora-goose.jpeg (images)",
     "    → northstar-goose-aurora-goose.png (images)",
-    "  Okoye-Okapi (okoye-okapi)",
-    "    → okoye-okapi.jpeg (images)",
-    "    → okoye-okapi.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 4 heroes with multiple images - choose primary image"
+    "• Resolve 3 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
