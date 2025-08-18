@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T13:16:33.062Z",
+  "timestamp": "2025-08-18T14:05:49.631Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 213,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 0,
+    "totalImages": 210,
+    "heroesWithImages": 188,
+    "heroesWithoutImages": 2,
     "orphanedImages": 19,
-    "duplicateImages": 4
+    "duplicateImages": 3
   },
   "heroesWithImages": [
     {
@@ -29,17 +29,6 @@
           "filename": "doy-dog.jpeg",
           "directory": "images",
           "size": 1959615
-        }
-      ]
-    },
-    {
-      "heroName": "krazy Koala",
-      "slug": "krazy-koala",
-      "images": [
-        {
-          "filename": "krazy-koala.png",
-          "directory": "images",
-          "size": 1691131
         }
       ]
     },
@@ -205,11 +194,6 @@
           "filename": "lizard-larry.jpeg",
           "directory": "images",
           "size": 2123519
-        },
-        {
-          "filename": "lizard-larry.png",
-          "directory": "images",
-          "size": 3929204
         }
       ]
     },
@@ -1230,17 +1214,6 @@
       ]
     },
     {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "images": [
-        {
-          "filename": "karnak-the-mantis-shrimp.png",
-          "directory": "images",
-          "size": 1591050
-        }
-      ]
-    },
-    {
       "heroName": "Ghost-Goose",
       "slug": "ghost-goose",
       "images": [
@@ -2121,7 +2094,18 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "krazy Koala",
+      "slug": "krazy-koala",
+      "animalTheme": "Koala"
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "animalTheme": "Unknown"
+    }
+  ],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2225,25 +2209,23 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 213 images",
-    "✅ Found 213 total images",
+    "  images: 210 images",
+    "✅ Found 210 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 213",
-    "Heroes with Images: 190 (100%)",
-    "Heroes without Images: 0 (0%)",
+    "Total Images: 210",
+    "Heroes with Images: 188 (99%)",
+    "Heroes without Images: 2 (1%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 4",
+    "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
     "    → dum-dog.jpeg (images)",
     "  Doy dog (doy-dog)",
     "    → doy-dog.jpeg (images)",
-    "  krazy Koala (krazy-koala)",
-    "    → krazy-koala.png (images)",
     "  Claw cat (claw-cat)",
     "    → claw-cat.jpeg (images)",
     "  Spider-Swinger (spider-swinger)",
@@ -2273,7 +2255,7 @@
     "  Rhino Beetle-Borg (rhino-beetle-borg)",
     "    → rhino-beetle-borg.jpeg (images)",
     "  Lizard Larry (lizard-larry)",
-    "    → lizard-larry.jpeg (images), lizard-larry.png (images)",
+    "    → lizard-larry.jpeg (images)",
     "  Venom (venom)",
     "    → venom.png (images)",
     "  Deadpool Trash-Panda (deadpool-trash-panda)",
@@ -2456,8 +2438,6 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2618,6 +2598,12 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  krazy Koala (krazy-koala)",
+    "    → Using emoji fallback: 🐨",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2642,9 +2628,6 @@
     "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n🔄 DUPLICATE IMAGES",
     "====================",
-    "  Lizard Larry (lizard-larry)",
-    "    → lizard-larry.jpeg (images)",
-    "    → lizard-larry.png (images)",
     "  Cyclops Ram (cyclops-ram)",
     "    → cyclops-ram.jpeg (images)",
     "    → cyclops-ram.png (images)",
@@ -2656,8 +2639,9 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
+    "• Create images for 2 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 4 heroes with multiple images - choose primary image"
+    "• Resolve 3 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
