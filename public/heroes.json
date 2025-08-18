@@ -988,7 +988,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Fin Fang Foom",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/fin-fang-foom-fly.jpeg"
     },
     {
       "superhero_name": "The Sentry-pede",
@@ -1351,7 +1351,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Firestar",
       "difficulty": "Medium",
-      "imagePath": "./images/firestar-firefly.png"
+      "imagePath": "./images/firestar-firefly.jpeg"
     },
     {
       "superhero_name": "Cloak-and-Dagger-Flies",
