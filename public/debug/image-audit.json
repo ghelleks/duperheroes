@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T02:44:35.607Z",
+  "timestamp": "2025-08-18T02:47:06.374Z",
   "status": "success",
   "stats": {
     "totalHeroes": 191,
-    "totalImages": 212,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 1,
-    "orphanedImages": 17,
-    "duplicateImages": 5
+    "totalImages": 213,
+    "heroesWithImages": 191,
+    "heroesWithoutImages": 0,
+    "orphanedImages": 18,
+    "duplicateImages": 4
   },
   "heroesWithImages": [
     {
@@ -479,11 +479,6 @@
           "filename": "invisible-octopus-woman.jpeg",
           "directory": "images",
           "size": 2790699
-        },
-        {
-          "filename": "invisible-octopus-woman.png",
-          "directory": "images",
-          "size": 1967513
         }
       ]
     },
@@ -1231,6 +1226,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1694675
         }
       ]
     },
@@ -2126,13 +2132,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "animalTheme": "Unknown"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2153,6 +2153,11 @@
       "filename": "invisible-woman-octopus.jpeg",
       "directory": "images",
       "size": 2790699
+    },
+    {
+      "filename": "karnak-the-mantis-shimp.jpeg",
+      "directory": "images",
+      "size": 1993623
     },
     {
       "filename": "loki-lemur.png",
@@ -2226,17 +2231,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 191 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 212 images",
-    "✅ Found 212 total images",
+    "  images: 213 images",
+    "✅ Found 213 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 191",
-    "Total Images: 212",
-    "Heroes with Images: 190 (99%)",
-    "Heroes without Images: 1 (1%)",
-    "Orphaned Images: 17",
-    "Duplicate Images: 5",
+    "Total Images: 213",
+    "Heroes with Images: 191 (100%)",
+    "Heroes without Images: 0 (0%)",
+    "Orphaned Images: 18",
+    "Duplicate Images: 4",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2322,7 +2327,7 @@
     "  Human Torch-Mander (human-torch-mander)",
     "    → human-torch-mander.jpeg (images)",
     "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → invisible-octopus-woman.jpeg (images), invisible-octopus-woman.png (images)",
+    "    → invisible-octopus-woman.jpeg (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images), thing-turtle.png (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
@@ -2457,6 +2462,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2619,10 +2626,6 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2630,6 +2633,7 @@
     "  captain-bulldog.png (images) - 1.8 MB",
     "  crimson-koala.png (images) - 330.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
+    "  karnak-the-mantis-shimp.jpeg (images) - 1.9 MB",
     "  loki-lemur.png (images) - 4.2 MB",
     "  luke-cage-gorilla.jpeg (images) - 2.7 MB",
     "  mystique-chameleon .jpeg (images) - 2.3 MB",
@@ -2651,9 +2655,6 @@
     "  Cyclops Ram (cyclops-ram)",
     "    → cyclops-ram.jpeg (images)",
     "    → cyclops-ram.png (images)",
-    "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → invisible-octopus-woman.jpeg (images)",
-    "    → invisible-octopus-woman.png (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "    → thing-turtle.png (images)",
@@ -2662,9 +2663,8 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
-    "• Review 17 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 5 heroes with multiple images - choose primary image"
+    "• Review 18 orphaned images - delete unused or rename to match heroes",
+    "• Resolve 4 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
