@@ -8,108 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <script src="battlecard.js"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-        }
-        
-        .battlecard {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .battlecard:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        
-        .battlecard::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
-        }
-        
-        .difficulty-easy {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-        }
-        
-        .difficulty-medium {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-        }
-        
-        .difficulty-hard {
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
-        }
-        
-        .hero-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            object-fit: cover;
-            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-        }
-        
-        .alphabet-nav {
-            position: sticky;
-            top: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 50;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        
-        .alphabet-nav button:hover {
-            background: #3b82f6;
-            color: white;
-            transform: scale(1.1);
-        }
-        
-        .search-container {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .stats-bar {
-            height: 8px;
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.3);
-            overflow: hidden;
-        }
-        
-        .stats-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #4ade80, #22c55e);
-            border-radius: 4px;
-            transition: width 0.6s ease;
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.5s ease;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .loading-shimmer {
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
         }
     </style>
 </head>
@@ -553,11 +456,11 @@
             applyFilters();
         }
 
-        // Open hero modal (placeholder for future enhancement)
+        // Open hero modal using shared battlecard manager
         function openHeroModal(heroName) {
             const hero = allHeroes.find(h => h.superhero_name === heroName);
             if (hero) {
-                alert(`${hero.superhero_name}\n\n${hero.origin}\n\nPowers: ${hero.powers}`);
+                battlecardManager.showHeroBattlecard(hero);
             }
         }
 

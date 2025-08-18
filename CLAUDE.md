@@ -13,6 +13,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run serve:python` - Alternative Python server
 - No build process required - direct file serving
 
+### MCP Servers
+Project uses MCP (Model Context Protocol) servers for enhanced capabilities:
+- **Fetch Server**: Web content fetching and conversion for Google Doc integration
+- **Filesystem Server**: Enhanced file system operations
+- Configuration: `.mcp.json` (automatically loaded by Claude Code)
+
 ### Deployment
 - `git push origin production` - Triggers automatic GitHub Pages deployment
 - GitHub Actions workflow deploys from `public/` directory

@@ -6,71 +6,10 @@
     <title>DuperHeroes - Animal Superhero Game</title>
     <meta name="description" content="Test your knowledge of satirical animal-themed superheroes in this fun identification game!">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shared.css">
+    <script src="battlecard.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        .hero-image {
-            font-size: 6rem;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
-        }
-        
-        .hero-image-img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
-        }
-        
-        .hero-image-emoji {
-            font-size: 6rem;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
-        }
-        
-        .choice-button {
-            transition: all 0.2s ease;
-            transform: translateY(0);
-        }
-        
-        .choice-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        .choice-button.correct {
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            border-color: #059669;
-        }
-        
-        .choice-button.incorrect {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-            color: white;
-            border-color: #dc2626;
-        }
-        
-        .choice-button.disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        .game-stats {
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
+        /* Game-specific styles only */
     </style>
 </head>
 <body>
@@ -90,6 +29,7 @@
                 this.selectedAnswer = '';
                 this.showFeedback = false;
                 this.loadError = null;
+                this.timerPaused = false;
                 this.stats = {
                     score: 0,
                     timeRemaining: 60,
@@ -192,11 +132,13 @@
 
             startTimer() {
                 this.gameTimer = setInterval(() => {
-                    this.stats.timeRemaining--;
-                    if (this.stats.timeRemaining <= 0) {
-                        this.endGame();
+                    if (!this.timerPaused) {
+                        this.stats.timeRemaining--;
+                        if (this.stats.timeRemaining <= 0) {
+                            this.endGame();
+                        }
+                        this.render();
                     }
-                    this.render();
                 }, 1000);
             }
 
@@ -231,13 +173,43 @@
                     this.stats.currentStreak = 0;
                 }
 
-                this.render();
-
-                setTimeout(() => {
-                    if (this.stats.timeRemaining > 0) {
-                        this.nextQuestion();
+                // Show feedback battlecard using shared manager
+                const streakBonus = isCorrect && this.stats.currentStreak > 1 ? this.stats.currentStreak - 1 : 0;
+                
+                battlecardManager.showFeedbackBattlecard(
+                    this.currentHero, 
+                    isCorrect, 
+                    streakBonus,
+                    () => {
+                        // Callback when battlecard closes - resume timer and continue game
+                        this.timerPaused = false;
+                        if (this.stats.timeRemaining > 0) {
+                            this.nextQuestion();
+                        }
+                    },
+                    () => {
+                        // Callback when battlecard shows - pause timer
+                        this.timerPaused = true;
                     }
-                }, 2000);
+                );
+            }
+
+            showHeroBattlecard(hero) {
+                battlecardManager.showHeroBattlecard(
+                    hero,
+                    () => {
+                        // Callback when battlecard closes - resume timer if in game
+                        if (this.gameState === 'playing') {
+                            this.timerPaused = false;
+                        }
+                    },
+                    () => {
+                        // Callback when battlecard shows - pause timer if in game
+                        if (this.gameState === 'playing') {
+                            this.timerPaused = true;
+                        }
+                    }
+                );
             }
 
             endGame() {
@@ -342,7 +314,7 @@
                         <div class="max-w-2xl mx-auto px-4 py-8">
                             <div class="bg-white rounded-lg shadow-xl overflow-hidden">
                                 <!-- Hero Image -->
-                                <div class="h-64 bg-gray-200 flex items-center justify-center">
+                                <div class="h-64 bg-gray-200 flex items-center justify-center cursor-pointer hover:bg-gray-300 transition-colors" onclick="game.showHeroBattlecard(game.currentHero)" title="Click to view battlecard">
                                     ${this.currentHeroImage}
                                 </div>
 
@@ -379,25 +351,6 @@
                                         }).join('')}
                                     </div>
 
-                                    <!-- Feedback -->
-                                    ${this.showFeedback ? `
-                                        <div class="mt-6 p-4 rounded-lg bg-blue-50">
-                                            <div class="text-center">
-                                                <div class="text-lg font-semibold mb-2">
-                                                    ${this.selectedAnswer === this.correctAnswer ? '✅ Correct!' : '❌ Incorrect'}
-                                                    ${this.selectedAnswer === this.correctAnswer && this.stats.currentStreak > 1 ? ` (+${this.stats.currentStreak - 1} streak bonus!)` : ''}
-                                                </div>
-                                                <div class="text-sm text-gray-600">
-                                                    <strong>${this.currentHero.superhero_name}</strong> is ${this.currentHero.real_name}
-                                                </div>
-                                                ${this.currentHero.trivia ? `
-                                                    <div class="text-sm text-gray-600 mt-2">
-                                                        💡 ${this.currentHero.trivia}
-                                                    </div>
-                                                ` : ''}
-                                            </div>
-                                        </div>
-                                    ` : ''}
                                 </div>
                             </div>
                         </div>
