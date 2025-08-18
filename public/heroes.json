@@ -823,7 +823,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Elektra",
       "difficulty": "Medium",
-      "imagePath": "./images/elek-tric-eel.png"
+      "imagePath": "./images/elek-tric-eel.jpeg"
     },
     {
       "superhero_name": "Echo-location Bat",
@@ -1417,7 +1417,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Man-Thing",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/man-thing-thang.png"
     },
     {
       "superhero_name": "Mephisto-Poodle",
