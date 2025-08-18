@@ -1219,7 +1219,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ghost (Ant-Man and The Wasp)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ghost-goose.png"
     },
     {
       "superhero_name": "Shuma-Gorath-Starfish",
