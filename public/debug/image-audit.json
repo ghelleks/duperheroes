@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-18T00:25:05.766Z",
+  "timestamp": "2025-08-18T00:27:47.283Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 216,
-    "heroesWithImages": 193,
-    "heroesWithoutImages": 0,
+    "totalImages": 215,
+    "heroesWithImages": 192,
+    "heroesWithoutImages": 1,
     "orphanedImages": 18,
     "duplicateImages": 5
   },
@@ -1928,17 +1928,6 @@
       ]
     },
     {
-      "heroName": "Galactus-Goat",
-      "slug": "galactus-goat",
-      "images": [
-        {
-          "filename": "galactus-goat.png",
-          "directory": "images",
-          "size": 1663917
-        }
-      ]
-    },
-    {
       "heroName": "The Silver Surfer-Slug",
       "slug": "the-silver-surfer-slug",
       "images": [
@@ -2159,7 +2148,13 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Galactus-Goat",
+      "slug": "galactus-goat",
+      "animalTheme": "Unknown"
+    }
+  ],
   "orphanedImages": [
     {
       "filename": "batty-batter.jpeg",
@@ -2258,15 +2253,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 216 images",
-    "✅ Found 216 total images",
+    "  images: 215 images",
+    "✅ Found 215 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 216",
-    "Heroes with Images: 193 (100%)",
-    "Heroes without Images: 0 (0%)",
+    "Total Images: 215",
+    "Heroes with Images: 192 (99%)",
+    "Heroes without Images: 1 (1%)",
     "Orphaned Images: 18",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
@@ -2615,8 +2610,6 @@
     "    → kang-the-kangaroo.png (images)",
     "  Dr. Doom-Duck (dr-doom-duck)",
     "    → dr-doom-duck.jpeg (images)",
-    "  Galactus-Goat (galactus-goat)",
-    "    → galactus-goat.png (images)",
     "  The Silver Surfer-Slug (the-silver-surfer-slug)",
     "    → the-silver-surfer-slug.png (images)",
     "  The Human-Fly (the-human-fly)",
@@ -2657,6 +2650,10 @@
     "    → okoye-okapi.png (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  Galactus-Goat (galactus-goat)",
+    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2697,6 +2694,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
+    "• Create images for 1 heroes missing images",
     "• Review 18 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
