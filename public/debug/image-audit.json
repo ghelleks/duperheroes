@@ -1,13 +1,13 @@
 {
-  "timestamp": "2025-08-18T15:31:07.172Z",
+  "timestamp": "2025-08-18T15:35:30.584Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 210,
-    "heroesWithImages": 187,
-    "heroesWithoutImages": 3,
+    "totalImages": 211,
+    "heroesWithImages": 189,
+    "heroesWithoutImages": 1,
     "orphanedImages": 19,
-    "duplicateImages": 4
+    "duplicateImages": 3
   },
   "heroesWithImages": [
     {
@@ -337,11 +337,6 @@
           "filename": "cyclops-ram.jpeg",
           "directory": "images",
           "size": 2155548
-        },
-        {
-          "filename": "cyclops-ram.png",
-          "directory": "images",
-          "size": 4139722
         }
       ]
     },
@@ -884,6 +879,17 @@
       ]
     },
     {
+      "heroName": "Ms. Marvel-ot",
+      "slug": "ms-marvel-ot",
+      "images": [
+        {
+          "filename": "ms-marvel-ot.png",
+          "directory": "images",
+          "size": 1271458
+        }
+      ]
+    },
+    {
       "heroName": "Squirrel Girl",
       "slug": "squirrel-girl",
       "images": [
@@ -1199,6 +1205,17 @@
           "filename": "thena-newt.png",
           "directory": "images",
           "size": 1409668
+        }
+      ]
+    },
+    {
+      "heroName": "Karnak-the-Mantis-Shrimp",
+      "slug": "karnak-the-mantis-shrimp",
+      "images": [
+        {
+          "filename": "karnak-the-mantis-shrimp.png",
+          "directory": "images",
+          "size": 1693972
         }
       ]
     },
@@ -2093,16 +2110,6 @@
       "heroName": "Mystique Chameleon",
       "slug": "mystique-chameleon",
       "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Ms. Marvel-ot",
-      "slug": "ms-marvel-ot",
-      "animalTheme": "Unknown"
-    },
-    {
-      "heroName": "Karnak-the-Mantis-Shrimp",
-      "slug": "karnak-the-mantis-shrimp",
-      "animalTheme": "Unknown"
     }
   ],
   "orphanedImages": [
@@ -2208,17 +2215,17 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 210 images",
-    "✅ Found 210 total images",
+    "  images: 211 images",
+    "✅ Found 211 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 210",
-    "Heroes with Images: 187 (98%)",
-    "Heroes without Images: 3 (2%)",
+    "Total Images: 211",
+    "Heroes with Images: 189 (99%)",
+    "Heroes without Images: 1 (1%)",
     "Orphaned Images: 19",
-    "Duplicate Images: 4",
+    "Duplicate Images: 3",
     "\n✅ HEROES WITH IMAGES",
     "======================",
     "  Dum dog (dum-dog)",
@@ -2280,7 +2287,7 @@
     "  Storm Breaker Bird (storm-breaker-bird)",
     "    → storm-breaker-bird.jpeg (images)",
     "  Cyclops Ram (cyclops-ram)",
-    "    → cyclops-ram.jpeg (images), cyclops-ram.png (images)",
+    "    → cyclops-ram.jpeg (images)",
     "  Phoenix Dove (phoenix-dove)",
     "    → phoenix-dove.jpeg (images)",
     "  Beast Buffalo (beast-buffalo)",
@@ -2377,6 +2384,8 @@
     "    → miles-mor-rat-les.png (images)",
     "  Ghost-Spider-Goat (ghost-spider-goat)",
     "    → ghost-spider-goat.png (images)",
+    "  Ms. Marvel-ot (ms-marvel-ot)",
+    "    → ms-marvel-ot.png (images)",
     "  Squirrel Girl (squirrel-girl)",
     "    → squirrel-girl.png (images)",
     "  Groot-A-Saurus (groot-a-saurus)",
@@ -2435,6 +2444,8 @@
     "    → america-cha-vez-chinchilla.png (images)",
     "  Thena-Newt (thena-newt)",
     "    → thena-newt.png (images)",
+    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
+    "    → karnak-the-mantis-shrimp.png (images)",
     "  Ghost-Goose (ghost-goose)",
     "    → ghost-goose.png (images)",
     "  Shuma-Gorath-Starfish (shuma-gorath-starfish)",
@@ -2599,10 +2610,6 @@
     "==========================",
     "  Mystique Chameleon (mystique-chameleon)",
     "    → Using emoji fallback: 🦸‍♂️",
-    "  Ms. Marvel-ot (ms-marvel-ot)",
-    "    → Using emoji fallback: 🦸‍♂️",
-    "  Karnak-the-Mantis-Shrimp (karnak-the-mantis-shrimp)",
-    "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2627,9 +2634,6 @@
     "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n🔄 DUPLICATE IMAGES",
     "====================",
-    "  Cyclops Ram (cyclops-ram)",
-    "    → cyclops-ram.jpeg (images)",
-    "    → cyclops-ram.png (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "    → thing-turtle.png (images)",
@@ -2641,9 +2645,9 @@
     "    → northstar-goose-aurora-goose.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 3 heroes missing images",
+    "• Create images for 1 heroes missing images",
     "• Review 19 orphaned images - delete unused or rename to match heroes",
-    "• Resolve 4 heroes with multiple images - choose primary image"
+    "• Resolve 3 heroes with multiple images - choose primary image"
   ],
   "error": null,
   "imageDirectories": [
