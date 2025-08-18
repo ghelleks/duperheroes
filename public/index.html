@@ -67,7 +67,7 @@
             getHeroImage(hero) {
                 // Use pre-stored image path from hero data
                 if (hero.imagePath) {
-                    return `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg">`;
+                    return `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="max-w-full max-h-full object-contain rounded-lg shadow-lg" width="300" height="300" loading="lazy">`;
                 }
                 
                 // Fallback to emoji if no image path stored

@@ -97,7 +97,8 @@ class BattlecardManager {
     getBattlecardHTML() {
         const hero = this.currentHero;
         const heroImage = hero.imagePath 
-            ? `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="battlecard-image">`
+            ? `<img src="${hero.imagePath}" alt="${hero.superhero_name}" class="battlecard-image" width="150" height="150" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+               <div class="battlecard-emoji" style="display:none;">${this.getAnimalEmoji(hero.animal_theme)}</div>`
             : `<div class="battlecard-emoji">${this.getAnimalEmoji(hero.animal_theme)}</div>`;
 
         const feedbackBanner = this.isFeedbackMode ? `
