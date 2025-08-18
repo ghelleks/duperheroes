@@ -11,7 +11,7 @@ const sizes = {
 async function generateResponsiveImages() {
     const inputDir = 'public/images';
     const outputDirs = {
-        thumbnail: 'public/images/thumbnails',
+        thumbnail: 'public/images/thumbnail',
         medium: 'public/images/medium',
         large: 'public/images/large'
     };

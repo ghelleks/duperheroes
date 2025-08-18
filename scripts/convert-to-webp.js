@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 async function convertToWebP() {
-    const directories = ['thumbnails', 'medium', 'large'];
+    const directories = ['thumbnail', 'medium', 'large'];
     
     console.log('🌐 Starting WebP conversion...');
     
