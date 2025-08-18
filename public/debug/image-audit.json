@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T00:54:52.416Z",
+  "timestamp": "2025-08-18T00:57:03.156Z",
   "status": "success",
   "stats": {
-    "totalHeroes": 193,
-    "totalImages": 215,
-    "heroesWithImages": 193,
+    "totalHeroes": 191,
+    "totalImages": 214,
+    "heroesWithImages": 191,
     "heroesWithoutImages": 0,
-    "orphanedImages": 17,
+    "orphanedImages": 18,
     "duplicateImages": 5
   },
   "heroesWithImages": [
@@ -1763,28 +1763,6 @@
       ]
     },
     {
-      "heroName": "She-Ra-Coon",
-      "slug": "she-ra-coon",
-      "images": [
-        {
-          "filename": "she-ra-coon.png",
-          "directory": "images",
-          "size": 1431713
-        }
-      ]
-    },
-    {
-      "heroName": "He-Man-atee",
-      "slug": "he-man-atee",
-      "images": [
-        {
-          "filename": "he-man-atee.png",
-          "directory": "images",
-          "size": 1861429
-        }
-      ]
-    },
-    {
       "heroName": "Skelet-eel",
       "slug": "skelet-eel",
       "images": [
@@ -2227,6 +2205,11 @@
       "size": 864995
     },
     {
+      "filename": "she-ra-coon.png",
+      "directory": "images",
+      "size": 1431713
+    },
+    {
       "filename": "than-otter.png",
       "directory": "images",
       "size": 1624004
@@ -2251,18 +2234,18 @@
     "🔍 DuperHeroes Image Audit",
     "==========================",
     "📚 Loading heroes database...",
-    "✅ Loaded 193 heroes",
+    "✅ Loaded 191 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 215 images",
-    "✅ Found 215 total images",
+    "  images: 214 images",
+    "✅ Found 214 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
-    "Total Heroes: 193",
-    "Total Images: 215",
-    "Heroes with Images: 193 (100%)",
+    "Total Heroes: 191",
+    "Total Images: 214",
+    "Heroes with Images: 191 (100%)",
     "Heroes without Images: 0 (0%)",
-    "Orphaned Images: 17",
+    "Orphaned Images: 18",
     "Duplicate Images: 5",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2580,10 +2563,6 @@
     "    → spider-woman-spider.png (images)",
     "  The Falcon-and-the-Winter-Soldier-Snails (the-falcon-and-the-winter-soldier-snails)",
     "    → the-falcon-and-the-winter-soldier-snails.png (images)",
-    "  She-Ra-Coon (she-ra-coon)",
-    "    → she-ra-coon.png (images)",
-    "  He-Man-atee (he-man-atee)",
-    "    → he-man-atee.png (images)",
     "  Skelet-eel (skelet-eel)",
     "    → skelet-eel.png (images)",
     "  Dr. Octopus-Octopus (dr-octopus-octopus)",
@@ -2668,6 +2647,7 @@
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
     "  sabertooth-tabby.jpeg (images) - 844.7 KB",
     "  sabreooth-tabby.jpeg (images) - 844.7 KB",
+    "  she-ra-coon.png (images) - 1.4 MB",
     "  than-otter.png (images) - 1.5 MB",
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
     "  venom-snake.jpeg (images) - 575.6 KB",
@@ -2691,7 +2671,7 @@
     "    → shang-chimpanzee.png (images)",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Review 17 orphaned images - delete unused or rename to match heroes",
+    "• Review 18 orphaned images - delete unused or rename to match heroes",
     "• Resolve 5 heroes with multiple images - choose primary image"
   ],
   "error": null,
