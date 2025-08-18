@@ -845,7 +845,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Kate Bishop (Hawkeye)",
       "difficulty": "Medium",
-      "imagePath": "./images/kate-bishop-hawk.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Miles Mor-rat-les",
@@ -1208,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/karnak-the-mantis-shrimp.png"
     },
     {
       "superhero_name": "Ghost-Goose",
