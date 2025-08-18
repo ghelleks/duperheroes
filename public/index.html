@@ -137,9 +137,16 @@
                         if (this.stats.timeRemaining <= 0) {
                             this.endGame();
                         }
-                        this.render();
+                        this.updateTimer();
                     }
                 }, 1000);
+            }
+
+            updateTimer() {
+                const timerElement = document.querySelector('.game-timer');
+                if (timerElement) {
+                    timerElement.textContent = `⏰ ${this.stats.timeRemaining}s`;
+                }
             }
 
             async nextQuestion() {
@@ -305,7 +312,7 @@
                         <div class="game-stats p-4">
                             <div class="max-w-4xl mx-auto flex justify-between items-center text-white">
                                 <div class="text-xl font-bold">Score: ${this.stats.score}</div>
-                                <div class="text-2xl font-bold">⏰ ${this.stats.timeRemaining}s</div>
+                                <div class="text-2xl font-bold game-timer">⏰ ${this.stats.timeRemaining}s</div>
                                 <div class="text-xl">Streak: ${this.stats.currentStreak}</div>
                             </div>
                         </div>
