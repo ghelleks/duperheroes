@@ -328,7 +328,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Cyclops",
       "difficulty": "Medium",
-      "imagePath": "./images/cyclops-ram.png"
+      "imagePath": "./images/cyclops-ram.jpeg"
     },
     {
       "superhero_name": "Phoenix Dove",
@@ -878,7 +878,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Ms. Marvel (Kamala Khan)",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/ms-marvel-ot.png"
     },
     {
       "superhero_name": "Squirrel Girl",
@@ -1208,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/karnak-the-mantis-shrimp.png"
     },
     {
       "superhero_name": "Ghost-Goose",
