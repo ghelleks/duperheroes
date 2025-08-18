@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-18T00:27:47.283Z",
+  "timestamp": "2025-08-18T00:37:29.947Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
@@ -956,17 +956,6 @@
           "filename": "star-lord-seahorse.png",
           "directory": "images",
           "size": 1566763
-        }
-      ]
-    },
-    {
-      "heroName": "Gamora-affe",
-      "slug": "gamora-affe",
-      "images": [
-        {
-          "filename": "gamora-affe.png",
-          "directory": "images",
-          "size": 1346597
         }
       ]
     },
@@ -1928,6 +1917,17 @@
       ]
     },
     {
+      "heroName": "Galactus-Goat",
+      "slug": "galactus-goat",
+      "images": [
+        {
+          "filename": "galactus-goat.png",
+          "directory": "images",
+          "size": 1746463
+        }
+      ]
+    },
+    {
       "heroName": "The Silver Surfer-Slug",
       "slug": "the-silver-surfer-slug",
       "images": [
@@ -2150,8 +2150,8 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Galactus-Goat",
-      "slug": "galactus-goat",
+      "heroName": "Gamora-affe",
+      "slug": "gamora-affe",
       "animalTheme": "Unknown"
     }
   ],
@@ -2434,8 +2434,6 @@
     "    → rocket-raccoon.png (images)",
     "  Star-Lord Seahorse (star-lord-seahorse)",
     "    → star-lord-seahorse.png (images)",
-    "  Gamora-affe (gamora-affe)",
-    "    → gamora-affe.png (images)",
     "  Drax the Destroyer Dung-Beetle (drax-the-destroyer-dung-beetle)",
     "    → drax-the-destroyer-dung-beetle.png (images)",
     "  Praying Mantis (praying-mantis)",
@@ -2610,6 +2608,8 @@
     "    → kang-the-kangaroo.png (images)",
     "  Dr. Doom-Duck (dr-doom-duck)",
     "    → dr-doom-duck.jpeg (images)",
+    "  Galactus-Goat (galactus-goat)",
+    "    → galactus-goat.png (images)",
     "  The Silver Surfer-Slug (the-silver-surfer-slug)",
     "    → the-silver-surfer-slug.png (images)",
     "  The Human-Fly (the-human-fly)",
@@ -2652,7 +2652,7 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Galactus-Goat (galactus-goat)",
+    "  Gamora-affe (gamora-affe)",
     "    → Using emoji fallback: 🦸‍♂️",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
