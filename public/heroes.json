@@ -460,7 +460,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
       "difficulty": "Medium",
-      "imagePath": "./images/invisible-octopus-woman.png"
+      "imagePath": "./images/invisible-octopus-woman.jpeg"
     },
     {
       "superhero_name": "Thing Turtle",
@@ -1208,7 +1208,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Karnak (The Inhumans)",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/karnak-the-mantis-shrimp.png"
     },
     {
       "superhero_name": "Ghost-Goose",
