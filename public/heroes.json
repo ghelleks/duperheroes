@@ -47,13 +47,24 @@
     {
       "superhero_name": "Spider-Swinger",
       "real_name": "Peter primate",
-      "powers": "Echolocation, brooding, accidentally becoming a meme, a thirst for smoothies (and blood).",
-      "origin": "A brilliant bat scientist with a rare blood disease who spliced his DNA with a vampire bat. The experiment was a \"success,\" granting him vampire-like powers but also an uncontrollable urge to say \"It's Morbin' time!\" before every fight.",
+      "powers": "Web-spinning from tail/armpits, supersonic tree swinging, banana spider-sense, coconut web-shooters",
+      "origin": "Young monkey bitten by radioactive spider at Nuclear-Powered Fruit Research Facility. Uncle Banana taught him \"with great banana power comes great banana responsibility.\"",
       "trivia": "Spider-Swinger is a unique hero with many secrets.",
       "animal_theme": "Spider",
+      "hero_inspiration": "Spider-Man",
+      "difficulty": "Easy",
+      "imagePath": "./images/spider-swinger.jpeg"
+    },
+    {
+      "superhero_name": "Batty Batter",
+      "real_name": "Dr. Michael Morbius-Flap",
+      "powers": "Echolocation, brooding, accidentally becoming a meme, a thirst for smoothies (and blood).",
+      "origin": "A brilliant bat scientist with a rare blood disease who spliced his DNA with a vampire bat. The experiment was a \"success,\" granting him vampire-like powers but also an uncontrollable urge to say \"It's Morbin' time!\" before every fight.",
+      "trivia": "Batty Batter is a unique hero with many secrets.",
+      "animal_theme": "Bat",
       "hero_inspiration": "Morbius (the movie)",
       "difficulty": "Medium",
-      "imagePath": "./images/spider-swinger.jpeg"
+      "imagePath": "./images/batty-batter.jpeg"
     },
     {
       "superhero_name": "Iron Eagle",
@@ -460,7 +471,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
       "difficulty": "Medium",
-      "imagePath": "./images/invisible-octopus-woman.jpeg"
+      "imagePath": null
     },
     {
       "superhero_name": "Thing Turtle",
@@ -498,13 +509,35 @@
     {
       "superhero_name": "Nick Furry",
       "real_name": "Nicholas Burrow-Fury",
-      "powers": "Mystical strength derived from the Amulet of Right-On, flight (more of a determined, droopy-jowled glide), Force Field generation (powered by sheer stubbornness), can summon a cup of tea in any situation.",
-      "origin": "A mild-mannered bulldog from Essex who stumbled upon the mystical burial site of Merlin the Magician while chasing a squirrel. Chosen for his indomitable spirit (and refusal to let go of a squeaky toy), he now protects the United Kingdom from mystical threats and improperly brewed tea.",
+      "powers": "Steel-concrete burrowing, sniper-precision one-eyed targeting, global underground intelligence, computer eyepatch, jack-in-box surprise appearances",
+      "origin": "S.H.I.E.L.D. director lost eye in alien time-travel tunneling accident. Keeps world safe by popping up in most unexpected places like furry surprise.",
       "trivia": "Nick Furry is a unique hero with many secrets.",
       "animal_theme": "Unknown",
+      "hero_inspiration": "Nick Fury",
+      "difficulty": "Easy",
+      "imagePath": "./images/nick-furry.png"
+    },
+    {
+      "superhero_name": "Than-otter",
+      "real_name": "The Mad Titan-ian Otter",
+      "powers": "Wields the Infinity Gauntlet of Infinitely Shiny River Stones, can snap his fingers to turn half of all life in the universe into sea urchins, commands the Black Otter, cosmic-level brooding.",
+      "origin": "A philosophical purple otter from the moon Titan (a very small, watery moon). He believes the universe is overpopulated and the only solution is to make it... more adorable and spiky. His quest for the Infinity Stones is driven by a desire for a perfectly balanced, and very wet, universe.",
+      "trivia": "Than-otter is a unique hero with many secrets.",
+      "animal_theme": "Unknown",
+      "hero_inspiration": "Thanos",
+      "difficulty": "Hard",
+      "imagePath": "./images/than-otter.png"
+    },
+    {
+      "superhero_name": "Captain Bulldog",
+      "real_name": "Brian Brad-dog",
+      "powers": "Mystical strength derived from the Amulet of Right-On, flight (more of a determined, droopy-jowled glide), Force Field generation (powered by sheer stubbornness), can summon a cup of tea in any situation.",
+      "origin": "A mild-mannered bulldog from Essex who stumbled upon the mystical burial site of Merlin the Magician while chasing a squirrel. Chosen for his indomitable spirit (and refusal to let go of a squeaky toy), he now protects the United Kingdom from mystical threats and improperly brewed tea.",
+      "trivia": "Captain Bulldog is a unique hero with many secrets.",
+      "animal_theme": "Dog",
       "hero_inspiration": "Captain Britain",
       "difficulty": "Medium",
-      "imagePath": "./images/nick-furry.png"
+      "imagePath": "./images/captain-bulldog.png"
     },
     {
       "superhero_name": "Ultron Bug",
