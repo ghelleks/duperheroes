@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-20T21:49:49.972Z",
+  "timestamp": "2025-08-20T21:55:24.216Z",
   "status": "success",
   "stats": {
-    "totalHeroes": 190,
-    "totalImages": 205,
-    "heroesWithImages": 190,
-    "heroesWithoutImages": 0,
-    "orphanedImages": 15,
+    "totalHeroes": 193,
+    "totalImages": 204,
+    "heroesWithImages": 192,
+    "heroesWithoutImages": 1,
+    "orphanedImages": 12,
     "duplicateImages": 0
   },
   "heroesWithImages": [
@@ -62,6 +62,17 @@
           "filename": "spider-swinger.jpeg",
           "directory": "images",
           "size": 1033455
+        }
+      ]
+    },
+    {
+      "heroName": "Batty Batter",
+      "slug": "batty-batter",
+      "images": [
+        {
+          "filename": "batty-batter.jpeg",
+          "directory": "images",
+          "size": 1766957
         }
       ]
     },
@@ -462,17 +473,6 @@
       ]
     },
     {
-      "heroName": "Invisible Octopus-Woman",
-      "slug": "invisible-octopus-woman",
-      "images": [
-        {
-          "filename": "invisible-octopus-woman.jpeg",
-          "directory": "images",
-          "size": 2790699
-        }
-      ]
-    },
-    {
       "heroName": "Thing Turtle",
       "slug": "thing-turtle",
       "images": [
@@ -513,6 +513,28 @@
           "filename": "nick-furry.png",
           "directory": "images",
           "size": 734522
+        }
+      ]
+    },
+    {
+      "heroName": "Than-otter",
+      "slug": "than-otter",
+      "images": [
+        {
+          "filename": "than-otter.png",
+          "directory": "images",
+          "size": 1624004
+        }
+      ]
+    },
+    {
+      "heroName": "Captain Bulldog",
+      "slug": "captain-bulldog",
+      "images": [
+        {
+          "filename": "captain-bulldog.png",
+          "directory": "images",
+          "size": 1925482
         }
       ]
     },
@@ -2101,18 +2123,14 @@
       ]
     }
   ],
-  "heroesWithoutImages": [],
+  "heroesWithoutImages": [
+    {
+      "heroName": "Invisible Octopus-Woman",
+      "slug": "invisible-octopus-woman",
+      "animalTheme": "Octopus"
+    }
+  ],
   "orphanedImages": [
-    {
-      "filename": "batty-batter.jpeg",
-      "directory": "images",
-      "size": 1766957
-    },
-    {
-      "filename": "captain-bulldog.png",
-      "directory": "images",
-      "size": 1925482
-    },
     {
       "filename": "crimson-koala.png",
       "directory": "images",
@@ -2164,11 +2182,6 @@
       "size": 1566054
     },
     {
-      "filename": "than-otter.png",
-      "directory": "images",
-      "size": 1624004
-    },
-    {
       "filename": "the-thing-turtle.jpeg",
       "directory": "images",
       "size": 2842498
@@ -2183,18 +2196,18 @@
     "🔍 DuperHeroes Image Audit",
     "==========================",
     "📚 Loading heroes database...",
-    "✅ Loaded 190 heroes",
+    "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 205 images",
-    "✅ Found 205 total images",
+    "  images: 204 images",
+    "✅ Found 204 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
-    "Total Heroes: 190",
-    "Total Images: 205",
-    "Heroes with Images: 190 (100%)",
-    "Heroes without Images: 0 (0%)",
-    "Orphaned Images: 15",
+    "Total Heroes: 193",
+    "Total Images: 204",
+    "Heroes with Images: 192 (99%)",
+    "Heroes without Images: 1 (1%)",
+    "Orphaned Images: 12",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2208,6 +2221,8 @@
     "    → claw-cat.jpeg (images)",
     "  Spider-Swinger (spider-swinger)",
     "    → spider-swinger.jpeg (images)",
+    "  Batty Batter (batty-batter)",
+    "    → batty-batter.jpeg (images)",
     "  Iron Eagle (iron-eagle)",
     "    → iron-eagle.png (images)",
     "  Thor-ough Bred (thor-ough-bred)",
@@ -2280,8 +2295,6 @@
     "    → iceman-polar-bear.jpeg (images)",
     "  Human Torch-Mander (human-torch-mander)",
     "    → human-torch-mander.jpeg (images)",
-    "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → invisible-octopus-woman.jpeg (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
@@ -2290,6 +2303,10 @@
     "    → black-widow-spider.jpeg (images)",
     "  Nick Furry (nick-furry)",
     "    → nick-furry.png (images)",
+    "  Than-otter (than-otter)",
+    "    → than-otter.png (images)",
+    "  Captain Bulldog (captain-bulldog)",
+    "    → captain-bulldog.png (images)",
     "  Ultron Bug (ultron-bug)",
     "    → ultron-bug.png (images)",
     "  Doctor Goose (doctor-goose)",
@@ -2578,11 +2595,13 @@
     "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
+    "\n❌ HEROES WITHOUT IMAGES",
+    "==========================",
+    "  Invisible Octopus-Woman (invisible-octopus-woman)",
+    "    → Using emoji fallback: 🐙",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
-    "  batty-batter.jpeg (images) - 1.7 MB",
-    "  captain-bulldog.png (images) - 1.8 MB",
     "  crimson-koala.png (images) - 330.8 KB",
     "  invisible-woman-octopus.jpeg (images) - 2.7 MB",
     "  karnak-the-mantis-shimp.jpeg (images) - 1.9 MB",
@@ -2593,12 +2612,12 @@
     "  quicksiver-swimmer.jpeg (images) - 2.4 MB",
     "  sabreooth-tabby.jpeg (images) - 844.7 KB",
     "  skelet-eel.png (images) - 1.5 MB",
-    "  than-otter.png (images) - 1.5 MB",
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
     "  venom-snake.jpeg (images) - 575.6 KB",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Review 15 orphaned images - delete unused or rename to match heroes"
+    "• Create images for 1 heroes missing images",
+    "• Review 12 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
   "imageDirectories": [
