@@ -1,12 +1,12 @@
 {
-  "timestamp": "2025-08-18T17:34:13.868Z",
+  "timestamp": "2025-08-20T21:49:49.972Z",
   "status": "success",
   "stats": {
     "totalHeroes": 190,
-    "totalImages": 206,
+    "totalImages": 205,
     "heroesWithImages": 190,
     "heroesWithoutImages": 0,
-    "orphanedImages": 16,
+    "orphanedImages": 15,
     "duplicateImages": 0
   },
   "heroesWithImages": [
@@ -2177,11 +2177,6 @@
       "filename": "venom-snake.jpeg",
       "directory": "images",
       "size": 589435
-    },
-    {
-      "filename": "wolverine-whiskers.png",
-      "directory": "images",
-      "size": 7855022
     }
   ],
   "logs": [
@@ -2190,16 +2185,16 @@
     "📚 Loading heroes database...",
     "✅ Loaded 190 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 206 images",
-    "✅ Found 206 total images",
+    "  images: 205 images",
+    "✅ Found 205 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 190",
-    "Total Images: 206",
+    "Total Images: 205",
     "Heroes with Images: 190 (100%)",
     "Heroes without Images: 0 (0%)",
-    "Orphaned Images: 16",
+    "Orphaned Images: 15",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
     "======================",
@@ -2601,10 +2596,9 @@
     "  than-otter.png (images) - 1.5 MB",
     "  the-thing-turtle.jpeg (images) - 2.7 MB",
     "  venom-snake.jpeg (images) - 575.6 KB",
-    "  wolverine-whiskers.png (images) - 7.5 MB",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Review 16 orphaned images - delete unused or rename to match heroes"
+    "• Review 15 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
   "imageDirectories": [
