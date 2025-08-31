@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-20T21:56:14.300Z",
+  "timestamp": "2025-08-31T16:23:35.708Z",
   "summary": {
     "totalHeroes": 193,
     "missingImages": 1,
@@ -10,21 +10,21 @@
   },
   "errors": [],
   "logs": [
-    "[2025-08-20T21:56:08.164Z] 🚀 Initializing Hero Image Generator...",
-    "[2025-08-20T21:56:08.727Z] ✅ Generator initialized successfully",
-    "[2025-08-20T21:56:08.727Z] 📋 Analyzing heroes database for missing images...",
-    "[2025-08-20T21:56:08.738Z] 📊 Found 193 total heroes",
-    "[2025-08-20T21:56:08.738Z] 🎯 1 heroes need images",
-    "[2025-08-20T21:56:08.739Z] 🔄 Starting batch generation for 1 heroes...",
-    "[2025-08-20T21:56:08.739Z] 📋 Batch size setting: 2",
-    "[2025-08-20T21:56:08.739Z] 📦 Processing batch 1/1 (1 heroes)",
-    "[2025-08-20T21:56:08.739Z]   🎯 Processing hero 1/1: Invisible Octopus-Woman",
-    "[2025-08-20T21:56:08.739Z] 🎨 Generating image for Invisible Octopus-Woman...",
-    "[2025-08-20T21:56:08.739Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nInvisible Octopus-Woman (🐙) - Susan Storm-Arms\nInspired by: Invisible Woman\nPowers: Complete space-unde...",
-    "[2025-08-20T21:56:08.740Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
-    "[2025-08-20T21:56:14.294Z] ✅ Generated image for Invisible Octopus-Woman",
-    "[2025-08-20T21:56:14.295Z] 📝 Updating heroes.json with generated image paths...",
-    "[2025-08-20T21:56:14.300Z] ✅ Updated 1 hero records with image paths"
+    "[2025-08-31T16:23:29.632Z] 🚀 Initializing Hero Image Generator...",
+    "[2025-08-31T16:23:30.189Z] ✅ Generator initialized successfully",
+    "[2025-08-31T16:23:30.189Z] 📋 Analyzing heroes database for missing images...",
+    "[2025-08-31T16:23:30.199Z] 📊 Found 193 total heroes",
+    "[2025-08-31T16:23:30.199Z] 🎯 1 heroes need images",
+    "[2025-08-31T16:23:30.199Z] 🔄 Starting batch generation for 1 heroes...",
+    "[2025-08-31T16:23:30.199Z] 📋 Batch size setting: 2",
+    "[2025-08-31T16:23:30.199Z] 📦 Processing batch 1/1 (1 heroes)",
+    "[2025-08-31T16:23:30.199Z]   🎯 Processing hero 1/1: Invisible Octopus-Woman",
+    "[2025-08-31T16:23:30.199Z] 🎨 Generating image for Invisible Octopus-Woman...",
+    "[2025-08-31T16:23:30.199Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nInvisible Octopus-Woman (🐙) - Susan Storm-Arms\nInspired by: Invisible Woman\nPowers: Complete space-unde...",
+    "[2025-08-31T16:23:30.200Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
+    "[2025-08-31T16:23:35.703Z] ✅ Generated image for Invisible Octopus-Woman",
+    "[2025-08-31T16:23:35.704Z] 📝 Updating heroes.json with generated image paths...",
+    "[2025-08-31T16:23:35.708Z] ✅ Updated 1 hero records with image paths"
   ],
   "options": {
     "dryRun": false,
