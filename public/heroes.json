@@ -471,7 +471,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/invisible-octopus-woman.png"
     },
     {
       "superhero_name": "Thing Turtle",
@@ -1010,7 +1010,7 @@
       "animal_theme": "Unknown",
       "hero_inspiration": "Medusa",
       "difficulty": "Medium",
-      "imagePath": "./images/medusa-moth.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Fin Fang Foom-Fly",
