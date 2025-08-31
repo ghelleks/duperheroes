@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-31T16:22:43.843Z",
+  "timestamp": "2025-08-31T17:03:41.868Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
@@ -183,17 +183,6 @@
           "filename": "flipper-the-flippy.jpeg",
           "directory": "images",
           "size": 2577159
-        }
-      ]
-    },
-    {
-      "heroName": "Sabretooth Tabby",
-      "slug": "sabretooth-tabby",
-      "images": [
-        {
-          "filename": "sabretooth-tabby.png",
-          "directory": "images",
-          "size": 2037208
         }
       ]
     },
@@ -469,6 +458,17 @@
           "filename": "human-torch-mander.jpeg",
           "directory": "images",
           "size": 597479
+        }
+      ]
+    },
+    {
+      "heroName": "Invisible Octopus-Woman",
+      "slug": "invisible-octopus-woman",
+      "images": [
+        {
+          "filename": "invisible-octopus-woman.png",
+          "directory": "images",
+          "size": 1785433
         }
       ]
     },
@@ -2125,9 +2125,9 @@
   ],
   "heroesWithoutImages": [
     {
-      "heroName": "Invisible Octopus-Woman",
-      "slug": "invisible-octopus-woman",
-      "animalTheme": "Octopus"
+      "heroName": "Sabretooth Tabby",
+      "slug": "sabretooth-tabby",
+      "animalTheme": "Tiger"
     }
   ],
   "orphanedImages": [
@@ -2243,8 +2243,6 @@
     "    → doctor-strange-topus.jpeg (images)",
     "  Flipper the Flippy (flipper-the-flippy)",
     "    → flipper-the-flippy.jpeg (images)",
-    "  Sabretooth Tabby (sabretooth-tabby)",
-    "    → sabretooth-tabby.png (images)",
     "  Rhino Beetle-Borg (rhino-beetle-borg)",
     "    → rhino-beetle-borg.jpeg (images)",
     "  Lizard Larry (lizard-larry)",
@@ -2295,6 +2293,8 @@
     "    → iceman-polar-bear.jpeg (images)",
     "  Human Torch-Mander (human-torch-mander)",
     "    → human-torch-mander.jpeg (images)",
+    "  Invisible Octopus-Woman (invisible-octopus-woman)",
+    "    → invisible-octopus-woman.png (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
@@ -2597,8 +2597,8 @@
     "    → shuri-shrew.png (images)",
     "\n❌ HEROES WITHOUT IMAGES",
     "==========================",
-    "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → Using emoji fallback: 🐙",
+    "  Sabretooth Tabby (sabretooth-tabby)",
+    "    → Using emoji fallback: 🐅",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",

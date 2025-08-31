@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-31T16:23:35.708Z",
+  "timestamp": "2025-08-31T17:04:29.788Z",
   "summary": {
     "totalHeroes": 193,
     "missingImages": 1,
@@ -10,21 +10,21 @@
   },
   "errors": [],
   "logs": [
-    "[2025-08-31T16:23:29.632Z] 🚀 Initializing Hero Image Generator...",
-    "[2025-08-31T16:23:30.189Z] ✅ Generator initialized successfully",
-    "[2025-08-31T16:23:30.189Z] 📋 Analyzing heroes database for missing images...",
-    "[2025-08-31T16:23:30.199Z] 📊 Found 193 total heroes",
-    "[2025-08-31T16:23:30.199Z] 🎯 1 heroes need images",
-    "[2025-08-31T16:23:30.199Z] 🔄 Starting batch generation for 1 heroes...",
-    "[2025-08-31T16:23:30.199Z] 📋 Batch size setting: 2",
-    "[2025-08-31T16:23:30.199Z] 📦 Processing batch 1/1 (1 heroes)",
-    "[2025-08-31T16:23:30.199Z]   🎯 Processing hero 1/1: Invisible Octopus-Woman",
-    "[2025-08-31T16:23:30.199Z] 🎨 Generating image for Invisible Octopus-Woman...",
-    "[2025-08-31T16:23:30.199Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nInvisible Octopus-Woman (🐙) - Susan Storm-Arms\nInspired by: Invisible Woman\nPowers: Complete space-unde...",
-    "[2025-08-31T16:23:30.200Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
-    "[2025-08-31T16:23:35.703Z] ✅ Generated image for Invisible Octopus-Woman",
-    "[2025-08-31T16:23:35.704Z] 📝 Updating heroes.json with generated image paths...",
-    "[2025-08-31T16:23:35.708Z] ✅ Updated 1 hero records with image paths"
+    "[2025-08-31T17:04:24.130Z] 🚀 Initializing Hero Image Generator...",
+    "[2025-08-31T17:04:24.704Z] ✅ Generator initialized successfully",
+    "[2025-08-31T17:04:24.704Z] 📋 Analyzing heroes database for missing images...",
+    "[2025-08-31T17:04:24.715Z] 📊 Found 193 total heroes",
+    "[2025-08-31T17:04:24.715Z] 🎯 1 heroes need images",
+    "[2025-08-31T17:04:24.715Z] 🔄 Starting batch generation for 1 heroes...",
+    "[2025-08-31T17:04:24.715Z] 📋 Batch size setting: 2",
+    "[2025-08-31T17:04:24.715Z] 📦 Processing batch 1/1 (1 heroes)",
+    "[2025-08-31T17:04:24.715Z]   🎯 Processing hero 1/1: Sabretooth Tabby",
+    "[2025-08-31T17:04:24.716Z] 🎨 Generating image for Sabretooth Tabby...",
+    "[2025-08-31T17:04:24.716Z] 📝 Prompt: create a photo for this mutant animal character in action. here is some inspiring information:\n\nSabretooth Tabby (🐅) - Victor Stripe-Creed\nInspired by: Sabretooth\nPowers: Rainbow-colored regenerating...",
+    "[2025-08-31T17:04:24.716Z] 🔧 Vertex AI request parameters: {\n  \"aspectRatio\": \"1:1\",\n  \"addWatermark\": false,\n  \"enhancePrompt\": true,\n  \"safetySetting\": \"block_low_and_above\"\n}",
+    "[2025-08-31T17:04:29.783Z] ✅ Generated image for Sabretooth Tabby",
+    "[2025-08-31T17:04:29.783Z] 📝 Updating heroes.json with generated image paths...",
+    "[2025-08-31T17:04:29.788Z] ✅ Updated 1 hero records with image paths"
   ],
   "options": {
     "dryRun": false,
