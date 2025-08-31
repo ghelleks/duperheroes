@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-20T21:55:24.216Z",
+  "timestamp": "2025-08-31T16:20:08.959Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 204,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
+    "totalImages": 205,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
     "orphanedImages": 12,
     "duplicateImages": 0
   },
@@ -469,6 +469,17 @@
           "filename": "human-torch-mander.jpeg",
           "directory": "images",
           "size": 597479
+        }
+      ]
+    },
+    {
+      "heroName": "Invisible Octopus-Woman",
+      "slug": "invisible-octopus-woman",
+      "images": [
+        {
+          "filename": "invisible-octopus-woman.png",
+          "directory": "images",
+          "size": 1423038
         }
       ]
     },
@@ -1007,7 +1018,7 @@
         {
           "filename": "medusa-moth.png",
           "directory": "images",
-          "size": 1678192
+          "size": 1588746
         }
       ]
     },
@@ -2123,13 +2134,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Invisible Octopus-Woman",
-      "slug": "invisible-octopus-woman",
-      "animalTheme": "Octopus"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "crimson-koala.png",
@@ -2198,15 +2203,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 204 images",
-    "✅ Found 204 total images",
+    "  images: 205 images",
+    "✅ Found 205 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 204",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Total Images: 205",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 12",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
@@ -2295,6 +2300,8 @@
     "    → iceman-polar-bear.jpeg (images)",
     "  Human Torch-Mander (human-torch-mander)",
     "    → human-torch-mander.jpeg (images)",
+    "  Invisible Octopus-Woman (invisible-octopus-woman)",
+    "    → invisible-octopus-woman.png (images)",
     "  Thing Turtle (thing-turtle)",
     "    → thing-turtle.jpeg (images)",
     "  Hawkeye Hawk (hawkeye-hawk)",
@@ -2595,10 +2602,6 @@
     "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Invisible Octopus-Woman (invisible-octopus-woman)",
-    "    → Using emoji fallback: 🐙",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2616,7 +2619,6 @@
     "  venom-snake.jpeg (images) - 575.6 KB",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 12 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
