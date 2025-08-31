@@ -185,7 +185,7 @@
       "animal_theme": "Tiger",
       "hero_inspiration": "Sabretooth",
       "difficulty": "Hard",
-      "imagePath": "./images/sabretooth-tabby.png"
+      "imagePath": null
     },
     {
       "superhero_name": "Rhino Beetle-Borg",
@@ -471,7 +471,7 @@
       "animal_theme": "Octopus",
       "hero_inspiration": "Invisible Woman",
       "difficulty": "Medium",
-      "imagePath": null
+      "imagePath": "./images/invisible-octopus-woman.png"
     },
     {
       "superhero_name": "Thing Turtle",
