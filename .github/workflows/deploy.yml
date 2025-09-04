@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ production ]
+    branches: [ main ]
   workflow_dispatch:
     inputs:
       generate_images:
@@ -71,7 +71,7 @@ jobs:
           🤖 Generated with [Claude Code](https://claude.ai/code)
           
           Co-Authored-By: Claude <noreply@anthropic.com>"
-          git push origin production
+          git push origin main
 
   audit-images:
     needs: fetch-heroes
@@ -84,7 +84,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: production  # Get latest after potential hero data commit
+          ref: main  # Get latest after potential hero data commit
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -123,13 +123,13 @@ jobs:
 
   cleanup-duplicates:
     needs: audit-images
-    if: ${{ needs.audit-images.outputs.duplicates-found != '0' && github.ref == 'refs/heads/production' }}
+    if: ${{ needs.audit-images.outputs.duplicates-found != '0' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: production
+          ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
@@ -161,18 +161,18 @@ jobs:
             🤖 Generated with [Claude Code](https://claude.ai/code)
             
             Co-Authored-By: Claude <noreply@anthropic.com>"
-            git push origin production
+            git push origin main
           fi
 
   generate-images:
     needs: [audit-images, cleanup-duplicates]
-    if: ${{ needs.audit-images.outputs.missing-images != '0' && (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/production' && always() }}
+    if: ${{ needs.audit-images.outputs.missing-images != '0' && (github.event.inputs.generate_images != 'false' || github.event_name == 'push') && github.ref == 'refs/heads/main' && always() }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: production  # Get latest after potential hero data commit
+          ref: main  # Get latest after potential hero data commit
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
@@ -233,7 +233,7 @@ jobs:
             🤖 Generated with [Claude Code](https://claude.ai/code)
             
             Co-Authored-By: Claude <noreply@anthropic.com>"
-            git push origin production
+            git push origin main
           fi
 
   process-images:
@@ -247,7 +247,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: production  # Get latest including any new images
+          ref: main  # Get latest including any new images
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
@@ -319,7 +319,7 @@ jobs:
             🤖 Generated with [Claude Code](https://claude.ai/code)
             
             Co-Authored-By: Claude <noreply@anthropic.com>"
-            git push origin production
+            git push origin main
           fi
 
   deploy:
@@ -334,7 +334,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: production  # Get latest including any commits from previous jobs
+          ref: main  # Get latest including any commits from previous jobs
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

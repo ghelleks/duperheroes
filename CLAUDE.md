@@ -20,7 +20,7 @@ Project uses MCP (Model Context Protocol) servers for enhanced capabilities:
 - Configuration: `.mcp.json` (automatically loaded by Claude Code)
 
 ### Deployment
-- `git push origin production` - Triggers automatic GitHub Pages deployment
+- `git push origin main` - Triggers automatic GitHub Pages deployment
 - GitHub Actions workflow deploys from `public/` directory
 - Live at: https://ghelleks.github.io/duperheroes
 
