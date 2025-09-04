@@ -152,7 +152,7 @@ The project includes an automated image audit system that compares the heroes da
 
 ## 🚀 Deployment
 
-The site automatically deploys to GitHub Pages when you push to the main branch. The GitHub Action:
+The site automatically deploys to GitHub Pages when you push to the production branch. The GitHub Action:
 
 1. Fetches latest hero data from Google Doc
 2. Builds and publishes the `public/` directory
@@ -163,7 +163,7 @@ The site automatically deploys to GitHub Pages when you push to the main branch.
 1. Fork this repository
 2. Enable GitHub Pages in repository settings
 3. Set source to "GitHub Actions"
-4. Push to main branch - automatic deployment!
+4. Push to production branch - automatic deployment!
 
 ## 📝 License
 
