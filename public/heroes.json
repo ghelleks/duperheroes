@@ -185,7 +185,7 @@
       "animal_theme": "Tiger",
       "hero_inspiration": "Sabretooth",
       "difficulty": "Hard",
-      "imagePath": null
+      "imagePath": "./images/sabretooth-tabby.png"
     },
     {
       "superhero_name": "Rhino Beetle-Borg",
