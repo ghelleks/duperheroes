@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-08-31T17:03:41.868Z",
+  "timestamp": "2025-09-04T14:42:06.816Z",
   "status": "success",
   "stats": {
     "totalHeroes": 193,
-    "totalImages": 204,
-    "heroesWithImages": 192,
-    "heroesWithoutImages": 1,
+    "totalImages": 205,
+    "heroesWithImages": 193,
+    "heroesWithoutImages": 0,
     "orphanedImages": 12,
     "duplicateImages": 0
   },
@@ -183,6 +183,17 @@
           "filename": "flipper-the-flippy.jpeg",
           "directory": "images",
           "size": 2577159
+        }
+      ]
+    },
+    {
+      "heroName": "Sabretooth Tabby",
+      "slug": "sabretooth-tabby",
+      "images": [
+        {
+          "filename": "sabretooth-tabby.png",
+          "directory": "images",
+          "size": 1944109
         }
       ]
     },
@@ -2123,13 +2134,7 @@
       ]
     }
   ],
-  "heroesWithoutImages": [
-    {
-      "heroName": "Sabretooth Tabby",
-      "slug": "sabretooth-tabby",
-      "animalTheme": "Tiger"
-    }
-  ],
+  "heroesWithoutImages": [],
   "orphanedImages": [
     {
       "filename": "crimson-koala.png",
@@ -2198,15 +2203,15 @@
     "📚 Loading heroes database...",
     "✅ Loaded 193 heroes",
     "\n📁 Scanning image directories...",
-    "  images: 204 images",
-    "✅ Found 204 total images",
+    "  images: 205 images",
+    "✅ Found 205 total images",
     "\n🔗 Analyzing hero-image relationships...",
     "\n📊 AUDIT RESULTS",
     "================",
     "Total Heroes: 193",
-    "Total Images: 204",
-    "Heroes with Images: 192 (99%)",
-    "Heroes without Images: 1 (1%)",
+    "Total Images: 205",
+    "Heroes with Images: 193 (100%)",
+    "Heroes without Images: 0 (0%)",
     "Orphaned Images: 12",
     "Duplicate Images: 0",
     "\n✅ HEROES WITH IMAGES",
@@ -2243,6 +2248,8 @@
     "    → doctor-strange-topus.jpeg (images)",
     "  Flipper the Flippy (flipper-the-flippy)",
     "    → flipper-the-flippy.jpeg (images)",
+    "  Sabretooth Tabby (sabretooth-tabby)",
+    "    → sabretooth-tabby.png (images)",
     "  Rhino Beetle-Borg (rhino-beetle-borg)",
     "    → rhino-beetle-borg.jpeg (images)",
     "  Lizard Larry (lizard-larry)",
@@ -2595,10 +2602,6 @@
     "    → okoye-okapi.jpeg (images)",
     "  Shuri-Shrew (shuri-shrew)",
     "    → shuri-shrew.png (images)",
-    "\n❌ HEROES WITHOUT IMAGES",
-    "==========================",
-    "  Sabretooth Tabby (sabretooth-tabby)",
-    "    → Using emoji fallback: 🐅",
     "\n⚠️  ORPHANED IMAGES",
     "===================",
     "Images with no corresponding hero entries:",
@@ -2616,7 +2619,6 @@
     "  venom-snake.jpeg (images) - 575.6 KB",
     "\n💡 RECOMMENDATIONS",
     "==================",
-    "• Create images for 1 heroes missing images",
     "• Review 12 orphaned images - delete unused or rename to match heroes"
   ],
   "error": null,
