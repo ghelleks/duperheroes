@@ -78,7 +78,7 @@
                 
                 // Create img element with multiple source fallbacks
                 const img = document.createElement('img');
-                img.alt = hero.superhero_name;
+                img.alt = "Quiz character";
                 img.className = 'actual hero-image max-w-full max-h-full object-contain rounded-lg shadow-lg';
                 img.width = sizeConfig.width;
                 img.height = sizeConfig.height;
@@ -151,7 +151,7 @@
                         <picture>
                             <source data-srcset="${preferredImagePath.webp}" type="image/webp">
                             <img data-src="${preferredImagePath.fallback}" 
-                                 alt="${hero.superhero_name}" 
+                                 alt="Quiz character" 
                                  class="actual hero-image max-w-full max-h-full object-contain rounded-lg shadow-lg"
                                  width="${sizeConfig.width}" 
                                  height="${sizeConfig.height}">
